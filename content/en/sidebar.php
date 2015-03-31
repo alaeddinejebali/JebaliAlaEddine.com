@@ -31,8 +31,7 @@
             <li>
                 <a href="blog.html"><span class="iconfa-file"></span> Blog</a>
             </li>
-            <li><?php echo $_SESSION["loggedUser"]; ?></li>
-            <?php if( isset($_SESSION['loggedUser']) ){ ?>
+            <?php if( !empty($_SESSION['login.loggedUser']) ){ ?>
             <li>
                 <a href=""><span class="iconfa-star"></span> Wiki</a><i class="iconfa-angle-right sub-indicator"></i>
                 <ul>
@@ -83,6 +82,9 @@
                                         <a href="">Bootstrap</a>
                                     </li>
                                 </ul>
+                            </li>
+                            <li>
+                                <a href="/wiki/web/tips-web">Trucs web</a>
                             </li>
                         </ul>
                     </li>
