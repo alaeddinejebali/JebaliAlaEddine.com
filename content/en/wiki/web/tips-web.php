@@ -3,19 +3,19 @@
 		<div class="span12">
 			<section class="wiki-article">
 				<div class="wiki-article-title">
-					Title 1
+					<h1>Title 1<h1>
 				</div>
 				<div class="wiki-article-body">
 					bbbbbb
 				</div>
 				<div class="wiki-article-title">
-					Title 2
+					<h1>Title 2<h1>
 				</div>
 				<div class="wiki-article-body">
 					bbbbbb
 				</div>
 				<div class="wiki-article-title">
-					Title 3
+					<h1>Title 3<h1>
 				</div>
 				<div class="wiki-article-body">
 					bbbbbb
