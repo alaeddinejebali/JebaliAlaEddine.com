@@ -3,21 +3,21 @@
 		<div class="span12">
 			<section class="wiki-article">
 				<div class="wiki-article-title">
-					<h1>Title 1<h1>
+					<h1 class="btnShowHideArticleBody">Title 1<h1>
 				</div>
-				<div class="wiki-article-body">
+				<div class="wiki-article-body invisible">
 					bbbbbb
 				</div>
 				<div class="wiki-article-title">
-					<h1>Title 2<h1>
+					<h1 class="btnShowHideArticleBody">Title 2<h1>
 				</div>
-				<div class="wiki-article-body">
+				<div class="wiki-article-body invisible">
 					bbbbbb
 				</div>
 				<div class="wiki-article-title">
-					<h1>Title 3<h1>
+					<h1 class="btnShowHideArticleBody">Title 3<h1>
 				</div>
-				<div class="wiki-article-body">
+				<div class="wiki-article-body invisible">
 					bbbbbb
 				</div>
 			</section>
