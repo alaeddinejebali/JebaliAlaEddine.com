@@ -64,7 +64,7 @@
 					<h1 class="btnShowHideArticleBody" data-article-visibility="off">How to change default Xampp port?<h1>
 				</div>
 				<div class="wiki-article-body invisible">
-					bbbbbb
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget orci eget erat convallis pellentesque. Nullam tortor mi, molestie quis auctor eu, sodales posuere nulla. Nam vestibulum fringilla urna. Nullam quam urna, sodales sed sem malesuada, iaculis lobortis neque. Phasellus et mi in velit fermentum varius et in sem. Morbi vel quam tempus felis bibendum posuere ut sit amet sem. Phasellus accumsan diam a cursus ultricies. Etiam vehicula lorem enim, vel imperdiet leo accumsan et. Integer iaculis risus lacus. Quisque vel ipsum non lorem varius efficitur vel at ante. Donec ultrices lorem odio. Donec vel tellus ac purus tempus feugiat non ac nulla. Mauris varius dolor eget mattis sollicitudin
 				</div>
 			</section>
 			<section class="wiki-article">
@@ -72,7 +72,7 @@
 					<h1 class="btnShowHideArticleBody" data-article-visibility="off">This is title 3?<h1>
 				</div>
 				<div class="wiki-article-body invisible">
-					bbbbbb
+					lorem
 				</div>
 			</section>
 		</div>
