@@ -90,6 +90,10 @@
                     </li>
                 </ul>
             </li>
+            <?php }else{ ?>
+            <li>
+                <a href="/admin"><span class="iconfa-user-md"></span> Admin</a>
+            </li>
             <?php } ?>
         </ul>
     </div><!--menupanel-->
