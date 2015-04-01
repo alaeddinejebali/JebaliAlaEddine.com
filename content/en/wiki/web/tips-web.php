@@ -69,7 +69,7 @@
 			</section>
 			<section class="wiki-article">
 				<div class="wiki-article-title">
-					<h1 class="btnShowHideArticleBody" data-article-visibility="off">Title 3<h1>
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">This is title 3?<h1>
 				</div>
 				<div class="wiki-article-body invisible">
 					bbbbbb
