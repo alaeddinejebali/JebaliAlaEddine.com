@@ -8,7 +8,7 @@
 		<div class="span12">
 			<section class="wiki-article">
 				<div class="wiki-article-title">
-					<h1 class="btnShowHideArticleBody" data-article-visibility="off">Howa to create a virtual host on Xampp?<h1>
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">How to create a virtual host on Xampp?<h1>
 				</div>
 				<div class="wiki-article-body invisible">
 					<p>The goal is to acceed <a href="#">http://localhost:8081/jebalialaeddine.com</a> using <a href="#">http://jebalialaeddine.dev:8081</a></p>
@@ -61,7 +61,7 @@
 			</section>
 			<section class="wiki-article">
 				<div class="wiki-article-title">
-					<h1 class="btnShowHideArticleBody" data-article-visibility="off">Title 2<h1>
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">Xhange xampp port<h1>
 				</div>
 				<div class="wiki-article-body invisible">
 					bbbbbb
