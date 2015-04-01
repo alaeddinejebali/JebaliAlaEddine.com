@@ -72,7 +72,7 @@
 					<h1 class="btnShowHideArticleBody" data-article-visibility="off">This is title 3?<h1>
 				</div>
 				<div class="wiki-article-body invisible">
-					lorem
+					Aenean elementum tempus ligula, egestas posuere purus mollis nec. Nullam vehicula blandit tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Aenean congue tellus dui, quis auctor elit commodo non. Quisque eget faucibus diam, id mollis ipsum. Morbi laoreet dolor odio, non suscipit nisi eleifend eget. Praesent volutpat, quam quis maximus euismod, nisi ante aliquet odio, eu feugiat ligula metus eu odio. Integer venenatis porttitor sapien. Aliquam auctor enim vitae convallis volutpat. 
 				</div>
 			</section>
 		</div>
