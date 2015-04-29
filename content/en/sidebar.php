@@ -68,8 +68,10 @@
                         <a href="company.html">Web</a><i class="iconfa-angle-right sub-indicator"></i>
                         <ul>
                             <li>
-                                <a href="ourteam.html">JavaScript</a><i class="iconfa-angle-right sub-indicator"></i>
+                                <a href="/wiki/web/javascript">JavaScript</a><i class="iconfa-angle-right sub-indicator"></i>
                                 <ul>
+                                    <li>
+                                        <a href="/wiki/web/javascript">JavaScript</a>
                                     <li>
                                         <a href="">AngularJS</a>
                                     </li>
