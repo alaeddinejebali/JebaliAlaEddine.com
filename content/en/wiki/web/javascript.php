@@ -19,9 +19,11 @@
 					<p>The alternative compiled language is one in which the program code is converted to machine code before it’s actually run, and this conversion has to be done only once.</p>
 					<p>Including the "<strong>type</strong>" attribute is good practice, but within a web page it can be left off. Browsers such as IE and Firefox use JavaScript as their default script language. This means that if the browser encounters a &lte;script&gt; tag with no type attribute set, it assumes that the script block is written in JavaScript. However, use of the <strong>type</strong> attribute is specifi ed as mandatory by W3C</p>
 					<p>
-<pre><code class="javascript">
-	<script type="text/javascript" src="myJavascriptFile.js"></script>
-</code></pre>
+<pre>
+<code class="javascript">
+	&lt;script type="text/javascript" src="myJavascriptFile.js"></script>
+</code>
+</pre>
 					</p>
 					<p class="caution">Be ware of linking to external fi les if they are controlled by other people. It would give those people the ability to control and change your web page, so you need to be very sure you trust them!</p>
 					<p>When the browser loads in the web page, the browser goes through it, rendering it tag by tag from top to bottom of the page. This process is called <strong>parsing</strong>.</p>
@@ -67,6 +69,118 @@ function isSet(myVariable){
 		return false;
 	}
 }
+</code>
+</pre>
+					</p>
+					<p class="caution">Whenever JavaScript detects that the contents of a variable are no longer usable, such as when you allocate a new value, it performs the garbage collection process and makes the memory available.</p>
+					<h2>Basic String Operations</h2>
+					<p>When you concatenate string and numbers, Javascript treat the number as string</p>
+<pre>
+<code class="javascript">
+function concatenate(str1, str2){
+	return str1 + str2;
+}
+console.log( concatenate('Hello ', 'world') ); //outputs: Hello world
+console.log( concatenate('My age is ', 29) ); //outputs: My age is 29
+</code>
+</pre>
+					<h2>Data Type Conversion</h2>
+					<h3>Convert Strings to Numbers</h3>
+					<ul>
+						<li>parseInt(string): It actually goes through (that is, parses) each character of the string you ask it to convert and sees if it’s a valid number. If it is valid, parseInt() uses it to build up the number; if it is not valid, the command simply stops converting and returns the number it has converted so far.</li>
+						<li>parseFloat(string): Returns fl oating-point numbers</li>
+					</ul>
+					<h3>Convert Numbers to Strings</h3>
+
+<pre>
+<code class="javascript">
+console.log( parseInt('123') ); //outputs: 123
+console.log( parseInt('123abc') ); //outputs: 123
+console.log( parseInt('123abc456') ); //outputs: 123
+
+console.log( parseFloat('123') ); //outputs: 123
+console.log( parseFloat('1.23abc') ); //outputs: 1.23
+console.log( parseFloat('1,23abc456') ); //outputs: 1
+</code>
+</pre>
+					<p class="caution">
+						If you use parseInt() or parseFloat() with any string that is empty or does not start with at least one valid digit, you get NaN, meaning Not a Number.
+					</p>
+					<p>
+<pre>
+<code class="javascript">
+console.log( parseInt('abc') ); //outputs: NAN
+console.log( parseFloat('abc123') ); //outputs: NAN
+console.log( parseFloat('') ); //outputs: NAN
+</code>
+</pre>
+					- NaN is actually a special value in JavaScript. It has its own function, isNaN(), which checks whether something is NaN or not.
+<pre>
+<code class="javascript">
+console.log( parseInt('abc') ); //outputs: NAN
+console.log( parseFloat('abc123') ); //outputs: NAN
+console.log( parseFloat('') ); //outputs: NAN
+</code>
+</pre>
+					</p>
+					<h2>JavaScript Arrays</h2>
+					<p>
+<pre>
+<code class="javascript">
+//Declare array with unlimited number of elements
+var myArray = new Array();
+
+//Declare array with 6 elements
+var myArray = new Array(6);
+
+//Declare array with elements
+var myArray = new Array('a', 'hello', 345, '*', 12.06);
+//Note that you can’t use this method to declare an array containing just one piece of numerical data,
+//such as 345, var myArray = new Array(345);
+//because JavaScript assumes that you are declaring an array that will hold 345 elements.
+
+//Another wy to declare arrays
+var myArray = new Array();
+myArray[0] = 'a';
+myArray[1] = 'hello';
+myArray[2] = 345;
+myArray[3] = '*';
+myArray[4] = 12.06;
+</code>
+</pre>
+					</p>
+					<p>
+						- If you declare an array with a known elements number and then update the index of greater one, JavaScript would not complain and would happily assume that you had changed your mind and wanted an array that had (at least) 131 elements in it.
+<pre>
+<code class="javascript">
+var myArray = new Array(2);
+myArray[0] = 'a';
+myArray[1] = 'b';
+myArray[2] = 'c';
+myArray[131] = 'r';
+console.log( myArray.length ); //outputs: 132
+console.log( myArray ); //outputs: 
+</code>
+</pre>
+					</p>
+					<h2>Multi-Dimensional Array</h2>
+					<p>
+<pre>
+<code class="javascript">
+var myArray = new Array();
+
+myArray[0] = new Array();
+myArray[0][0] = 'a';
+myArray[0][1] = 'b';
+
+myArray[1] = new Array();
+myArray[1][0] = 'x';
+myArray[1][1] = 'y';
+
+myArray[2] = 'hi';
+
+console.log( myArray.length ); //outputs: 3
+console.log( myArray ); //outputs: [ Array(2), Array(2), 'hi' ]
 </code>
 </pre>
 					</p>
