@@ -36,6 +36,40 @@
 				<div class="wiki-article-body invisible">
 					<p>JavaScript, on the other hand, is a weakly typed language and a lot more forgiving about how you use different types of data.</p>
 					<p>JavaScript treats integer and floating-points numbers as floatingpoint numbers. It kindly hides the detail from you so you generally don’t need to worry about it. One exception is when you want an integer but you have a fl oating-point number, in which case you’ll round the number to make it an integer.</p>
+					<h2>Special characters</h2>
+					<ul>
+						<li>\b : Backspace</li>
+						<li>\f : Form feed</li>
+						<li>\n : New line</li>
+						<li>\r : Carriage return</li>
+						<li>\t : Tab</li>
+						<li>\xNN : NN is a hexadecimal number that identifi es a character in the Latin-1character set.</li>
+						<li>\uNNNN : Refer to characters using their Unicode escape sequence</li>
+					</ul>
+					<h2>JavaScript variables</h2>
+					<ul>
+						<li>Case sensitive.</li>
+						<li>You can't use <i>reserved</i> words (like var, with,..etc)</li>
+						<li>You are allowed to use numbers in your variable names, but the names must not begin with numbers.</li>
+						<li>Certain characters are also forbidden in variable names (like the ampersand (&) and the percent sign (%)).</li>
+					</ul>
+					<p class="caution">A common method to name variiables is <i>Hungarian notation</i>: where the beginning of each variable name is a three-letter identifier indicating the data type. For example, you may start integer variable names with <i>int</i>; flating-point variable names with <i>flt</i>; string variable names with <i>str</i>, and so on.</p>
+					<p>
+						Check if a variable has been assigned a value. <i><u>undefined</u> is an actual primitive value in JavaScript</i>
+<pre>
+<code class="javascript">
+function isSet(myVariable){
+	if( typeof myVariable == 'undefined'){
+		console.log("myVariable is declared but not set");
+		return true;
+	}else{
+		console.log("The value of myVariable  is: " + myVariable);
+		return false;
+	}
+}
+</code>
+</pre>
+					</p>
 				</div>
 			</section>
 		</div>
