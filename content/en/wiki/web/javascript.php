@@ -114,7 +114,7 @@ console.log( parseFloat('abc123') ); //outputs: NAN
 console.log( parseFloat('') ); //outputs: NAN
 </code>
 </pre>
-					- NaN is actually a special value in JavaScript. It has its own function, isNaN(), which checks whether something is NaN or not.
+					- NaN is actually a special value in JavaScript. It has its own function, <strong>isNaN()</strong>, which checks whether something is NaN or not.
 <pre>
 <code class="javascript">
 console.log( parseInt('abc') ); //outputs: NAN
@@ -184,6 +184,106 @@ console.log( myArray ); //outputs: [ Array(2), Array(2), 'hi' ]
 </code>
 </pre>
 					</p>
+				</div>
+			</section>
+
+			<section class="wiki-article">
+				<div class="wiki-article-title">
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">Decisions, Loops, and Functions<h1>
+				</div>
+				<div class="wiki-article-body invisible">
+					<h2>The if Statement</h2>
+<pre>
+<code class="javascript">
+if(condition1 && condition2 || condition3){
+	(...)
+}else if(condition4){
+	(...)
+}else{
+	(...)
+}
+</code>
+</pre>
+					<h2>Comparing Strings</h2>
+					<ul>
+						<li>- Javascript goes through each letter in turn on the LHS (Left-Hand Side) and checks it with the letter in the same position on the RHS (Right-Hand Side) to see if it’s actually the same. If at any point it finds a difference, it stops, and the result is false.</li>
+						<li>- String comparison in JavaScript is case sensitive.</li>
+						<li>- the code numbers (in the ASCII and Unicode character sets) for uppercase letters are lower than the code numbers for lowercase letters.</li>
+						<li>
+<pre>
+<code class="javascript">
+("A" < "B") = true //because A comes before B in the alphabet.
+("a" < "B") = false //because uppercase letters are treated as always coming before lowercase letters.
+</code>
+</pre>
+						</li>
+					</ul>
+					<h2>The switch Statement</h2>
+					<p>
+<pre>
+<code class="javascript">
+switch(myVariable){
+	case "abc":
+		//some code here
+		break;
+	case "def":
+		//some code here
+		break;
+	default:
+		//default code
+		//This code executes when none of the case statements match
+		//The default statement is optional
+		break;
+}
+</code>
+</pre>
+					</p>
+					<p>
+						- Executing the same code for different cases
+<pre>
+<code class="javascript">
+var score = prompt("What is your score?", 0);
+score = parseInt(score);
+switch(score){
+	case 0:
+		console.log('You get a very bad score');
+		break;
+	case 1:
+	case 2:
+		console.log('You get a low score');
+		break;
+	case 3:
+	case 4:
+		console.log('You get a good score');
+		break;
+	case 5:
+		console.log('You get a high score');
+		break;
+	default:
+		console.log('Score must be between 1 and 5');
+		break;
+}
+</code>
+
+
+
+
+
+
+
+
+
+
+
+			<section class="wiki-article">
+				<div class="wiki-article-title">
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">To be prepared<h1>
+				</div>
+				<div class="wiki-article-body invisible">
+					<ul>
+						<li>- Look at available debugging tools</li>
+						<li>- Look at what we can do with Console</li>
+					</ul>
 				</div>
 			</section>
 		</div>
