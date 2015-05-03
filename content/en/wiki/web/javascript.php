@@ -507,6 +507,57 @@ try{
 							- The <strong>debugger</strong> Keyword: The debugger keyword stops the execution of JavaScript, and calls (if available) the debugging function. This has the same function as setting a breakpoint in the debugger.
 							<ul>
 								<li>
+<pre>
+<code class="javascript">
+function firstCall(){
+	secondCall();
+}
+function secondCall(){
+	thirdCall();
+}
+function thirdCall(){
+	//
+}
+function button1_onclick(){
+	debugger
+	firstCall();
+}
+</code>
+</pre>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<h3>Debugging in Internet Explorer</h3>
+					<p>- To activate it:</p>
+					<ul>
+						<li>1. Click Tools -> Internet Options.</li>
+						<li>2. Under the Browsing section, click the Advanced tab, and uncheck the box next to "Disable script debugging (Internet)</li>
+						<li>3. You can bring up the debugger by clicking Tools -> Developer Tools.</li>
+					</ul>
+					<h3>Debugging in Safari</h3>
+					<p>- To activate it:</p>
+					<ul>
+						<li>1. Click Settings -> Preferences</li>
+						<li>2. Click the Advanced tab and select the Show Develop Menu in Menu Bar option</li>
+						<li>3. Click the Settings menu button and select the Show Menu Bar option. This will display the traditional menus at the top of the window.</li>
+						<li>4. To open the debugger, select Develop ➪ Start Debugging JavaScript from the menu bar.</li>
+					</ul>
+					<h3>Debugging in Opera: <a href="http://www.opera.com/dragonfly/">Dragonfly</a></h3>
+				</div>
+			</section>
+
+			<section class="wiki-article">
+				<div class="wiki-article-title">
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">An Object based language<h1>
+				</div>
+				<div class="wiki-article-body invisible">
+					<h2>Is JavaScript Object Oriented?</h2>
+					<p>To be done...</p>
+					<h2></h2>
+					<p>- Variables assigned to objects don’t hold the actual data, but rather a reference to the memory address where the data can be found.</p>
+					<p>
+						- When it comes to objects, it’s a reference to the object and not the object itself that is stored in a variable. When you did the assignment, it didn’t make a copy of the array object, it simply copied the reference.
 
 
 
