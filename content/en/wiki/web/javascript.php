@@ -558,7 +558,61 @@ function button1_onclick(){
 					<p>- Variables assigned to objects don’t hold the actual data, but rather a reference to the memory address where the data can be found.</p>
 					<p>
 						- When it comes to objects, it’s a reference to the object and not the object itself that is stored in a variable. When you did the assignment, it didn’t make a copy of the array object, it simply copied the reference.
+<pre>
+<code class="javascript">
+var myArray1 = new Array('a', 'b', 'c');
+var myArray2 = myArray1;
+myArray2[2] = 'Yes';
+console.log(myArray1);
+//outputs: ['a', 'b', 'Yes']
+</code>
+</pre>
+					</p>
+					<h2>Create JavaScript object</h2>
+					<p>var myVariable = new ConstructorName(optional parameters);</p>
+					<h2>String, Number, and Boolean objects</h2>
+<pre>
+<code class="javascript">
+var str = new String("Hello world");
+console.log("str.length = " + str.length);
+var nbr = new Number(19);
+console.log("toExponential(" + nbr + ") = " + nbr.toExponential());
+var test = new Boolean();
+</code>
+</pre>
+					<p class="caution">If you declare a primitive string (var str = "Hello world";) and then treat it as an object (str.length), such as by trying to access one of its methods or properties, JavaScript will know that the operation you’re trying to do won’t work. The operation will only work with an object; for example, it would be valid with a String object. In this case, JavaScript converts the plain-text string into a temporary String object, just for that operation, and destroys the object when it’s fi nished the operation. The same ideas expressed here are also true for number and Boolean primitives and their corresponding Number and Boolean objects.</p>
+<p>
+<pre>
+<code class="javascript">
+var str1 = new String("Hello world");
+var str2 = new String("Hello world");
+var str3 = str1;
+if(str1 == str2){
+	console.log("str1 == str2");
+}else{
+	console.log("str1 is different from str2");
+}
+//outputs: str1 is different from str2
 
+if(str3 == str1){
+	console.log("str3 == str1");
+}else{
+	console.log("str3 is different from str1");
+}
+//outputs: str3 == str1
+</code>
+</pre>
+</p>
+					<p class="caution">When you try to compare string objects with primitive string values, the actual values are compared, but with String objects, the object references are compared.</p>
+					<h2>String object</h2>
+					<h3>Finding a String Inside Another String</h3>
+					<ul>
+						<li><strong>str.indexOf(searchValue[, fromIndex])v: returns the index within the calling String object of the first occurrence of the specified value, starting the search at fromIndex. Returns -1 if the value is not found.</li>
+						<li><strong>str.lastIndexOf(searchValue[, fromIndex])</strong>:
+						</li>
+					</ul>
+				</div>
+			</section>
 
 
 
