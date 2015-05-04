@@ -16,7 +16,7 @@
 					<p>A website domain name (a friendly name) is converted to the actual IP address by computers called DNS (Domain Name Servers), which your Internet service provider will have set up for you.</p>
 					<p>JavaScript is a scripting language that enables you to enhance static web applications by providing dynamic, personalized, and interactive content.</p>
 					<p>JavaScript is an interpreted language rather than a compiled language: As the browser goes through the JavaScript, it passes it to a special program called an interpreter, which converts the JavaScript to the machine code your computer understands.</p>
-					<p>The alternative compiled language is one in which the program code is converted to machine code before it’s actually run, and this conversion has to be done only once.</p>
+					<p>The alternative compiled language is one in which the program code is converted to machine code before it's actually run, and this conversion has to be done only once.</p>
 					<p>Including the "<strong>type</strong>" attribute is good practice, but within a web page it can be left off. Browsers such as IE and Firefox use JavaScript as their default script language. This means that if the browser encounters a &lte;script&gt; tag with no type attribute set, it assumes that the script block is written in JavaScript. However, use of the <strong>type</strong> attribute is specifi ed as mandatory by W3C</p>
 					<p>
 <pre>
@@ -27,7 +27,7 @@
 					</p>
 					<p class="caution">Be ware of linking to external fi les if they are controlled by other people. It would give those people the ability to control and change your web page, so you need to be very sure you trust them!</p>
 					<p>When the browser loads in the web page, the browser goes through it, rendering it tag by tag from top to bottom of the page. This process is called <strong>parsing</strong>.</p>
-					<p>The message box displayed by the alert() function is "<strong>modal</strong>": It simply means that the message box won’t go away until the user closes it by clicking the OK button. In fact, parsing of the page stops at the line where the alert() function is used and doesn’t restart until the user closes the message box.</p>
+					<p>The message box displayed by the alert() function is "<strong>modal</strong>": It simply means that the message box won't go away until the user closes it by clicking the OK button. In fact, parsing of the page stops at the line where the alert() function is used and doesn't restart until the user closes the message box.</p>
 					
 				</div>
 			</section>
@@ -37,7 +37,7 @@
 				</div>
 				<div class="wiki-article-body invisible">
 					<p>JavaScript, on the other hand, is a weakly typed language and a lot more forgiving about how you use different types of data.</p>
-					<p>JavaScript treats integer and floating-points numbers as floatingpoint numbers. It kindly hides the detail from you so you generally don’t need to worry about it. One exception is when you want an integer but you have a fl oating-point number, in which case you’ll round the number to make it an integer.</p>
+					<p>JavaScript treats integer and floating-points numbers as floatingpoint numbers. It kindly hides the detail from you so you generally don't need to worry about it. One exception is when you want an integer but you have a fl oating-point number, in which case you'll round the number to make it an integer.</p>
 					<h2>Special characters</h2>
 					<ul>
 						<li>\b : Backspace</li>
@@ -87,7 +87,7 @@ console.log( concatenate('My age is ', 29) ); //outputs: My age is 29
 					<h2>Data Type Conversion</h2>
 					<h3>Convert Strings to Numbers</h3>
 					<ul>
-						<li>parseInt(string): It actually goes through (that is, parses) each character of the string you ask it to convert and sees if it’s a valid number. If it is valid, parseInt() uses it to build up the number; if it is not valid, the command simply stops converting and returns the number it has converted so far.</li>
+						<li>parseInt(string): It actually goes through (that is, parses) each character of the string you ask it to convert and sees if it's a valid number. If it is valid, parseInt() uses it to build up the number; if it is not valid, the command simply stops converting and returns the number it has converted so far.</li>
 						<li>parseFloat(string): Returns fl oating-point numbers</li>
 					</ul>
 					<h3>Convert Numbers to Strings</h3>
@@ -135,7 +135,7 @@ var myArray = new Array(6);
 
 //Declare array with elements
 var myArray = new Array('a', 'hello', 345, '*', 12.06);
-//Note that you can’t use this method to declare an array containing just one piece of numerical data,
+//Note that you can't use this method to declare an array containing just one piece of numerical data,
 //such as 345, var myArray = new Array(345);
 //because JavaScript assumes that you are declaring an array that will hold 345 elements.
 
@@ -206,7 +206,7 @@ if(condition1 && condition2 || condition3){
 </pre>
 					<h2>Comparing Strings</h2>
 					<ul>
-						<li>- Javascript goes through each letter in turn on the LHS (Left-Hand Side) and checks it with the letter in the same position on the RHS (Right-Hand Side) to see if it’s actually the same. If at any point it finds a difference, it stops, and the result is false.</li>
+						<li>- Javascript goes through each letter in turn on the LHS (Left-Hand Side) and checks it with the letter in the same position on the RHS (Right-Hand Side) to see if it's actually the same. If at any point it finds a difference, it stops, and the result is false.</li>
 						<li>- String comparison in JavaScript is case sensitive.</li>
 						<li>- the code numbers (in the ASCII and Unicode character sets) for uppercase letters are lower than the code numbers for lowercase letters.</li>
 						<li>
@@ -293,7 +293,7 @@ for(score in scores){
 					</p>
 					<h3>While</h3>
 					<p>
-						- The while loop is more useful when you don’t know how many times you’ll need to loop.
+						- The while loop is more useful when you don't know how many times you'll need to loop.
 <pre>
 <code class="javascript">
 while(condition){
@@ -417,14 +417,14 @@ getUser( sayHello );
 						<li>- <i>exception.message</i> property contains the error message the user would normally see</li>
 					</ul>
 					<p class="caution">
-						Before executing any code, the browser’s JavaScript engine goes through all the code and checks for syntax errors, or code that breaches JavaScript’s rules. If the engine fi nds a syntax error, the browser deals with it as usual.
+						Before executing any code, the browser's JavaScript engine goes through all the code and checks for syntax errors, or code that breaches JavaScript's rules. If the engine fi nds a syntax error, the browser deals with it as usual.
 					</p>
 					<p>
 <pre>
 <code class="javascript">
 try{
 	console.log('This is code inside the try clause');
-	console.log('This code won'’'t work');
+	console.log('This code won'''t work');
 }catch(exception){
 	console.log('exception: ' + exception.message);
 }
@@ -433,7 +433,7 @@ try{
 </pre>
 					<h3>Trowing errors</h3>
 					<p class="caution">
-						Throwing errors can be very useful for indicating problems such as invalid user input. Rather than using lots of <i>if...else</i> statements, you can check the validity of user input, then use throw to stop code execution in its tracks and cause the error-catching code in the catch block of code to take over. In the catch clause, you can determine whether the error is based on user input, in which case you can notify the user what went wrong and how to correct it. Alternatively, if it’s an unexpected error, you can handle it more gracefully than with lots of JavaScript errors.
+						Throwing errors can be very useful for indicating problems such as invalid user input. Rather than using lots of <i>if...else</i> statements, you can check the validity of user input, then use throw to stop code execution in its tracks and cause the error-catching code in the catch block of code to take over. In the catch clause, you can determine whether the error is based on user input, in which case you can notify the user what went wrong and how to correct it. Alternatively, if it's an unexpected error, you can handle it more gracefully than with lots of JavaScript errors.
 					</p>
 					<p>
 <pre>
@@ -463,7 +463,7 @@ try{
 	}
 }catch(exception){
 	if( typeof(exception) == "string" ){
-		//exception thrown by your code, this instance you’ve thrown only primitive strings
+		//exception thrown by your code, this instance you've thrown only primitive strings
 		console.log('A code exception encountered: ' + exception);
 	}else{
 		//it must be the browser that has generated this exception and that exception is an Exception object
@@ -555,9 +555,9 @@ function button1_onclick(){
 					<h2>Is JavaScript Object Oriented?</h2>
 					<p>To be done...</p>
 					<h2></h2>
-					<p>- Variables assigned to objects don’t hold the actual data, but rather a reference to the memory address where the data can be found.</p>
+					<p>- Variables assigned to objects don't hold the actual data, but rather a reference to the memory address where the data can be found.</p>
 					<p>
-						- When it comes to objects, it’s a reference to the object and not the object itself that is stored in a variable. When you did the assignment, it didn’t make a copy of the array object, it simply copied the reference.
+						- When it comes to objects, it's a reference to the object and not the object itself that is stored in a variable. When you did the assignment, it didn't make a copy of the array object, it simply copied the reference.
 <pre>
 <code class="javascript">
 var myArray1 = new Array('a', 'b', 'c');
@@ -580,7 +580,7 @@ console.log("toExponential(" + nbr + ") = " + nbr.toExponential());
 var test = new Boolean();
 </code>
 </pre>
-					<p class="caution">If you declare a primitive string (var str = "Hello world";) and then treat it as an object (str.length), such as by trying to access one of its methods or properties, JavaScript will know that the operation you’re trying to do won’t work. The operation will only work with an object; for example, it would be valid with a String object. In this case, JavaScript converts the plain-text string into a temporary String object, just for that operation, and destroys the object when it’s fi nished the operation. The same ideas expressed here are also true for number and Boolean primitives and their corresponding Number and Boolean objects.</p>
+					<p class="caution">If you declare a primitive string (var str = "Hello world";) and then treat it as an object (str.length), such as by trying to access one of its methods or properties, JavaScript will know that the operation you're trying to do won't work. The operation will only work with an object; for example, it would be valid with a String object. In this case, JavaScript converts the plain-text string into a temporary String object, just for that operation, and destroys the object when it's fi nished the operation. The same ideas expressed here are also true for number and Boolean primitives and their corresponding Number and Boolean objects.</p>
 <p>
 <pre>
 <code class="javascript">
@@ -607,8 +607,102 @@ if(str3 == str1){
 					<h2>String object</h2>
 					<h3>Finding a String Inside Another String</h3>
 					<ul>
-						<li><strong>str.indexOf(searchValue[, fromIndex])v: returns the index within the calling String object of the first occurrence of the specified value, starting the search at fromIndex. Returns -1 if the value is not found.</li>
-						<li><strong>str.lastIndexOf(searchValue[, fromIndex])</strong>:
+						<li><strong>string.indexOf(searchValue[, fromIndex])</strong>: returns the index within the calling String object of the first occurrence of the specified value, starts searching from the beginning of the string, or the position you specified in the second parameter, and works towards the end,. Returns -1 if the value is not found. It's case sensitive.</li>
+						<li><strong>string.lastIndexOf(searchValue[, fromIndex])</strong>: The same but it starts at the end of the string, or the position you specified in the second parameter, and works towards the beginning of the string.</li>
+						<li class="noStyle">
+<pre>
+<code class="javascript">
+var message = "Hello James, how are you tody? Please James call me.";
+var pos1 = message.indexOf("James");
+var pos2 = message.lastIndexOf("James");
+console.log("pos1 = " + pos1); //outputs: 6
+console.log("pos2 = " + pos2); //outputs: 38
+
+var pos3 = message.indexOf("James", 3);
+var pos4 = message.lastIndexOf("James", 3);
+console.log("pos3 = " + pos3); //outputs: 6
+console.log("pos4 = " + pos4);
+//outputs: -1
+//because it will search for 'James' in 'Hell'
+
+var pos5 = message.lastIndexOf("James", 14);
+console.log("pos5 = " + pos5);
+//outputs: 6
+//because it will search for 'James' in 'Hello James, ho'
+</code>
+</javascrip>
+						</li>
+					</ul>
+					<h3>Cutting Strings</h3>
+					<ul>
+						<li><strong>string.substring(start</strong><i>[, end]</i><strong>)</strong></li>
+						<li><strong>string.substr(start</strong><i>[, length]</i><strong>)</strong></li>
+						<li>The difference between <i>substr()</i> and <i>substring()</i> is in the parameters they require.</li>
+						<li class="noStyle">
+<pre>
+<code class="javascript">
+var message = "Hello James, how are you tody? Please James call me.";
+var part1 = message.substring(6, 11);
+console.log("part1 = " + part1); //outputs: James
+
+var part2 = message.substring(6);
+console.log("part2 = " + part2);
+//outputs: James, how are you tody? Please James call me.
+
+var part3 = message.substr(6, 5);
+console.log("part3 = " + part3);//outputs: James
+
+var part4 = message.substr(6);
+console.log("part4 = " + part4);
+//outputs: James, how are you tody? Please James call me.
+</code>
+</pre>
+						</li>
+					</ul>
+					<h3>change the case of a string</h3>
+					<ul>
+						<li>string.toLowerCase()</li>
+						<li>string.toUpperCase()</li>
+					</ul>
+					<h3>Selecting a Single Character from a String</h3>
+					<ul>
+						<li><strong>string.charAt(indexPosition)</strong>: returns the character in that position.</li>
+						<li><strong>string.charCodeAt(indexPosition)</strong>: similar in use to the charAt() method, but instead of returning thecharacter itself, it returns a number that represents the decimal character code for that character in the Unicode character set (recall that computers only understand numbers)</li>
+						<li>Character codes go in order, so, for example, the letter A has the code 65, B 66, and so on. Lowercase letters start at 97 (a is 97, b is 98, and so on). Digits go from 48 (for the number 0) to 57 (for the number 9).</li>
+						<li class="noStyle">
+<pre>
+<code class="javascript">
+var message = "Hello James, how are you tody? Please James call me";
+
+var lastCharacter = message.charAt( message.length-1 );
+console.log("lastCharacter = " + lastCharacter); //outputs: e
+
+var lastCharacterCharCode = message.charCodeAt( message.length-1 );
+console.log("lastCharacterCharCode = " + lastCharacterCharCode); //outputs: 101
+</code>
+</pre>
+						</li>
+					</ul>
+					<h3>Converting Character Codes to a String</h3>
+					<ul>
+						<li><strong>fromCharCode(n1[, n2, ...[, nN]])</strong>: can be thought of as the opposite of <i>charCodeAt()</i>, in that you pass it a series of comma-separated numbers representing character codes, and it converts them to a single string.</li>
+						<li>it's a static method (— )you don't need to have created a String object to use it with)</li>
+						<li class="noStyle">
+<pre>
+<code class="javascript">
+var myString;
+myString = String.fromCharCode(65, 66, 67);
+console.log(myString);
+//outputs: ABC
+
+var result = "";
+for(var i=65 ; i<=90 ; i++){
+	result += String.fromCharCode(i);
+}
+console.log(result);
+//outputs: ABCDEFGHIJKLMNOPQRSTUVWXYZ;
+</code>
+</pre>
 						</li>
 					</ul>
 				</div>
