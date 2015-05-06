@@ -658,6 +658,7 @@ console.log("part4 = " + part4);
 </code>
 </pre>
 						</li>
+						<li class="caution">In string.substring(start[, end]) the start index is included but the <i>end</i>index is not.</li>
 					</ul>
 					<h3>change the case of a string</h3>
 					<ul>
@@ -701,6 +702,87 @@ for(var i=65 ; i<=90 ; i++){
 }
 console.log(result);
 //outputs: ABCDEFGHIJKLMNOPQRSTUVWXYZ;
+</code>
+</pre>
+						</li>
+					</ul>
+
+					<h2>Array Objects</h2>
+					<h3>Number of elements in an Array</h3>
+					<ol>
+						<li>Use myArray<strong>.length</strong></li>
+					</ol>
+					<h3>Joining Arrays</h3>
+					<ol>
+						<li>myArray1<strong>.concat(</strong>myArray2<strong>)</strong></li>
+						<li class="noStyle">
+<pre>
+<code class="javascript">
+var myArray1 = new Array('a', 'b', 'c');
+var myArray2 = new  Array(1, 2, 3);
+myArray1 = myArray1.concat(myArray2);
+console.log(myArray1);
+//ouputs: ['a', 'b', 'c', 1, 2, 3]
+</code>
+</pre>
+						</li>
+					</ol>
+					<h3>Copying Part of an Array</h3>
+					<ul>
+						<li><strong>myArra.slice(</strong>start[, end]<strong>)</strong></li>
+						<li class="noStyle">
+<pre>
+<code class="javascript">
+var myArray1 = new Array('a', 'b', 'c', 'd', 'e', 'f');
+var myArray2 = myArray1.slice(2, 4);
+console.log(myArray2);
+//ouputs: ['c', 'd']
+
+var myArray3 = myArray1.slice(2);
+console.log(myArray3);
+//ouputs: ['c', 'd', 'e', 'f']
+</code>
+</pre>
+						</li>
+						<li class="caution">Note that the <i>start</i> index is included but the <i>end</i> index is not</li>
+					</ul>
+
+					<h3>Convert an Array into a String</h3>
+					<ul>
+						<li><strong>myArra.join(</strong>optionalSeparator<strong>)</strong> method concatenates all the elements in an array and returns them as a string.</li>
+						<li class="noStyle">
+<pre>
+<code class="javascript">
+var myArray1 = new Array('a', 'b', 'c', 'd');
+var myArray2 = myArray1.join();
+console.log(myArray2);
+//ouputs: abcd
+
+var myArray3 = myArray1.join('*-*');
+console.log(myArray3);
+//ouputs: a*-*b*-*c*-*d*-*
+</code>
+</pre>
+						</li>
+					</ul>
+
+					<h3>Order elements in an Array</h3>
+					<ul>
+						<li>Usefull when you have same type data in an array</li>
+						<li>Ascending sort: <strong>.sort()</strong> and Descending sort: <strong>.reverse()</strong></li>
+						<li>Sorting is case sensitive</li>
+						<li class="caution">Remember that JavaScript stores letters encoded in their equivalent Unicode number, and that sorting is done based on Unicode numbers rather than actual letters. It just happens that Unicode numbers match the order in the alphabet. However, lowercase letters are given a different sequence of numbers, which come after the uppercaseletters.</li>
+						<li class="noStyle">
+<pre>
+<code class="javascript">
+var myArray1 = new Array('a', 'b', 'c', 'A', 'd', 'Z');
+var myArray2 = myArray1.sort();
+console.log(myArray2);
+//ouputs: ['A', 'Z', 'a', 'b', 'c']
+
+var myArray3 = myArray1.reverse();
+console.log(myArray3);
+//ouputs: ['c', 'b', 'a', 'Z', 'A']
 </code>
 </pre>
 						</li>
