@@ -787,6 +787,367 @@ console.log(myArray3);
 </pre>
 						</li>
 					</ul>
+
+					<H3>New Array Methods</H3>
+					<ul>
+						<li>In 2005, Mozilla updated the JavaScript engine in Firefox. In doing so, they added 7 new methods to the Array object. These seven methods can be divided into two categories: location methods (indexOf(), lastIndexOf()) and iterative methods (every(), some(), filter(), forEach(), map()).</li>
+						<li class="caution">The following seven methods do not work Internet Explorer. They do, however, work in Firefox, Safari, Opera, and Chrome.</li>
+						<li>
+							<ol>
+								<li>
+									Location methods
+									<ul>
+										<li>
+											Finding Array Elements
+<pre>
+<code class="javascript">
+var myArray = new Array('a', 'b', 'c', 'a', 'b', 'c');
+var indexOfB = myArray.indexOf('b');
+console.log(indexOfB); //ouputs: 1
+
+var indexOfB = myArray.lastIndexOf('b');
+console.log(indexOfB); //ouputs: 4
+
+var indexOfX = myArray.lastIndexOf('x');
+console.log(indexOfX); //ouputs: -1
+</code>
+</pre>
+										</li>
+									</ul>
+								</li>
+								<li>Iterative methods
+									<ul>
+										<li>These methods execute a function you define on every element while they iterate through the array.</li>
+										<li>
+											The function must accept three arguments like the following code.
+<pre>
+<code class="javascript">
+function functionName(value, index, array) {
+	(...)
+}
+</code>
+</pre>
+										</li>
+										<li>
+											every()
+											<ul>
+												<li>Tests whether <strong>all elements</strong> in the array pass the test in your function.</li>
+												<li>
+<pre>
+<code class="javascript">
+var scores = new Array(1, 4, 4.2, 3, 0, 4.8, 5, 2.6);
+
+function checkGoodscores(value, index, array){
+	var isGoodScore = false;
+	if (value >= 4){
+		isGoodScore = true;
+	}
+	return isGoodScore;
+}
+
+var testAllScores = scores.every(checkGoodscores);
+if(testAllScores){
+	console.log( "All scores are Good!" );
+}else{
+	console.log( "Not all scores are Good!" );
+}
+//outputs: Not all scores are Good!
+</code>
+</pre>
+												</li>
+											</ul>
+										</li>
+										<li>
+											some()
+											<ul>
+												<li>Tests whether <strong>some elements</strong> in the array pass the test in your function.</li>
+												<li>
+<pre>
+<code class="javascript">
+var scores = new Array(1, 4, 4.2, 3, 0, 4.8, 5, 2.6);
+
+function checkGoodscores(value, index, array){
+	var isGoodScore = false;
+	if (value >= 4){
+		isGoodScore = true;
+	}
+	return isGoodScore;
+}
+
+var testAllScores = scores.some(checkGoodscores);
+if(testAllScores){
+	console.log( "Some elements have a Good score." );
+}else{
+	console.log( "No element has a Good score!" );
+}
+//outputs: Not all scores are Good!
+</code>
+</pre>
+												</li>
+											</ul>
+										</li>
+										<li>
+											filter()
+											<ul>
+												<li>Executes your function on every element in the array, and if your function returns true for a particular element, that element is added to another array the filter() method returns.</li>
+												<li>
+<pre>
+<code class="javascript">
+var scores = new Array(1, 4, 4.2, 3, 0, 4.8, 5, 2.6);
+
+function checkGoodscores(value, index, array){
+	var isGoodScore = false;
+	if (value >= 4){
+		isGoodScore = true;
+	}
+	return isGoodScore;
+}
+
+if( scores.some(checkGoodscores) ){
+	var filteredGoodScores = scores.filter(checkGoodscores);
+	console.log( "Elements which have a Good score are: " + filteredGoodScores );
+}else{
+		console.log( "No element has a Good score!" );
+	}
+//outputs: Elements which have a Good score are: 4,4.2,4.8,5
+</code>
+</pre>
+												</li>
+											</ul>
+										</li>
+										<li>
+											Foreach()
+											<ul>
+												<li>Unlike the previous iterative methods, forEach() and map() methods do not test each element in the array with your function; instead, the function you write should perform some kind of operation that uses the element in some way.</li>
+												<li>
+<pre>
+<code class="javascript">
+var scores = new Array(1, 4, 4.2, 3, 0, 4.8, 5, 2.6);
+
+function calculateDouble(value, index, array){
+	var result = value * 2;
+	console.log(result);
+}
+
+scores.forEach( calculateDouble );
+</code></pre>
+												</li>
+												<li class="caution">Note how the function calculateDouble() cannot return any value; its only purpose is to perform an operation on every element in the array. While this is useful in some cases, it’s almost useless when you want the results of the operation. That’s where the map() method comes in.</li>
+											</ul>
+										</li>
+										<li>
+											Map()
+											<ul>
+												<li>the map() method is similar to that of forEach(), except that the results of every operation are stored in another array that the map() method returns.</li>
+												<li class="noStyle">
+<pre>
+<code class="javascript">
+var scores = new Array(1, 4, 4.2, 3, 0, 4.8, 5, 2.6);
+
+function calculateDouble(value, index, array){
+	var result = value * 2;
+	return result;
+}
+
+var doubledScores = scores.map( calculateDouble );
+console.log(doubledScores);
+</code></pre>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ol>
+						</li>
+					</ul>
+
+					<h3>Math Object</h3>
+					<ul>
+						<li>Please check <a href="http://www.w3schools.com/jsref/default.asp">http://www.w3schools.com/jsref/default.asp</a></li>
+						<li>
+							abs(n)
+							<ul>
+								<li>returns the absolute value of n</li>
+								<li class="noStyle">
+<pre>
+<code class="javascript">
+var absValue = Math.abs(-9);
+console.log(9); //ouputs: 9
+
+var absValue = Math.abs(4);
+console.log(4); //ouputs: 4
+</code></pre>
+								</li>
+							</ul>
+						</li>
+						<li>
+							min() and max()
+							<ul>
+								<li>
+<pre>
+<code class="javascript">
+var minValue = Math.min(15, 6, -7, 66, 3);
+console.log(minValue); //outputs: -7
+
+var minValue = Math.max(15, 6, -7, 66, 3);
+console.log(minValue); //outputs: 66
+</code></pre>
+								</li>
+							</ul>
+						</li>
+						<li>
+							Rounding Numbers
+							<ul>
+								<li>
+									ceil()
+									<ul>
+										<li>rounds a number up to the next largest whole number or integer.</li>
+									</ul>
+								</li>
+								<li>
+									floor()
+									<ul>
+										<li>rounds a number up to the next largest whole number or integer.</li>
+									</ul>
+								</li>
+								<li>
+									round()
+									<ul>
+										<li>rounds up if the decimal part is >= .5, and rounds down otherwise.</li>
+									</ul>
+								</li>
+								<li class="noStyle">
+<pre>
+<code class="javascript">
+var myArray = new Array(4, 2.5, 2.7, 2.2, 6.6, -4.3, -4.5, -4.8);
+
+function ceilFlourRound(value, index,  array){
+	var resultCeil = Math.ceil(value);
+	var resultFloor = Math.floor(value);
+	var resultRound = Math.round(value);
+	console.log( "ceil(" + value + ") = " + resultCeil );
+	console.log( "floor(" + value + ") = " + resultFloor );
+	console.log( "round(" + value + ") = " + resultRound );
+}
+
+myArray.forEach( ceilFlourRound );
+</code></pre>
+								</li>
+								<li class="noStyle">
+									<table class="table table-striped table-bordered">
+										<thead>
+											<tr>
+												<th></th><th>ceil</th><th>floor</th><th>round</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>4</td><td>4</td><td>4</td><td>4</td>
+											</tr>
+											<tr>
+												<td>2.5</td><td>3</td><td>2</td><td>3</td>
+											</tr>
+											<tr>
+												<td>2.7</td><td>3</td><td>2</td><td>3</td>
+											</tr>
+											<tr>
+												<td>2.2</td><td>3</td><td>2</td><td>2</td>
+											</tr>
+											<tr>
+												<td>6.6</td><td>7</td><td>6</td><td>7</td>
+											</tr>
+											<tr>
+												<td>-4.3</td><td>-4</td><td>-5</td><td>-4</td>
+											</tr>
+											<tr>
+												<td>-4.5</td><td>-4</td><td>-5</td><td>-4</td>
+											</tr>
+											<tr>
+												<td>-4.8</td><td>-4</td><td>-5</td><td>-5</td>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li>
+									random()
+									<ul>
+										<li>
+											returns a random fl oating-point number in the range between 0 and 1 (1 is not included)</li>
+											<li class="noStyle">
+<pre>
+<code class="javascript">
+//Get a random number between 1 and 15
+var i = 10;
+while(i>0){
+	i--;
+	var randomNumber = Math.floor( Math.random() * 15 ) + 1;
+	console.log(randomNumber);
+}
+</code></pre>
+											</li>
+										</ul>
+								</li>
+								<li>
+									pow(number, power)
+									<ul>
+											<li class="noStyle">
+<pre>
+<code class="javascript">
+var result = Math.pow(3, 5);
+console.log(result);
+//outputs: 3*3*3*3*3 = 243
+</code></pre>
+											</li>
+											<li>Example: Fix the number of decimal places in a number.</li>
+											<li class="noStyle">
+<pre>
+<code class="javascript">
+function fix(fixNumber, decimalPlaces){
+	var div = Math.pow(10, decimalPlaces);
+	fixNumber = Math.round(fixNumber * div) / div;
+	return fixNumber;
+}
+
+console.log( fix(78.123456, 2) );
+//outputs: 78.12
+
+console.log( fix(78.123456, 5) );
+//outputs: 78.12345
+</code></pre>
+											</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<h3>Number Object</h3>
+					<ul>
+						<li>toFixed()</li>
+						<li>
+							<ul>
+								<li>Cuts a number off after a certain point.</li>
+								<li>Rounds up or down the result.</li>
+								<li class="noStyle">
+									<pre>
+									<code class="javascript">
+                                    var number = 78.123456
+									console.log( number.toFixed(2) );
+									//outputs: 78.12
+
+									var number = 78.125456
+									console.log( number.toFixed(2) );
+									//outputs: 78.13
+
+									var number = 78.127456
+									console.log( number.toFixed(2) );
+									//outputs: 78.13
+									</code></pre>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
 				</div>
 			</section>
 
