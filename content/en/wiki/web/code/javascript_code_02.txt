@@ -1,0 +1,13 @@
+<pre>
+<code class="javascript">
+function isSet(myVariable){
+	if( typeof myVariable == 'undefined'){
+		console.log("myVariable is declared but not set");
+		return true;
+	}else{
+		console.log("The value of myVariable  is: " + myVariable);
+		return false;
+	}
+}
+</code>
+</pre>
