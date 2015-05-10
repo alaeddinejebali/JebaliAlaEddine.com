@@ -19,11 +19,7 @@
 					<p>The alternative compiled language is one in which the program code is converted to machine code before it's actually run, and this conversion has to be done only once.</p>
 					<p>Including the "<strong>type</strong>" attribute is good practice, but within a web page it can be left off. Browsers such as IE and Firefox use JavaScript as their default script language. This means that if the browser encounters a &lte;script&gt; tag with no type attribute set, it assumes that the script block is written in JavaScript. However, use of the <strong>type</strong> attribute is specifi ed as mandatory by W3C</p>
 					<p>
-<pre>
-<code class="javascript">
-	&lt;script type="text/javascript" src="myJavascriptFile.js"></script>
-</code>
-</pre>
+						<?php include "code/javascript_code_01.txt"; ?>
 					</p>
 					<p class="caution">Be ware of linking to external fi les if they are controlled by other people. It would give those people the ability to control and change your web page, so you need to be very sure you trust them!</p>
 					<p>When the browser loads in the web page, the browser goes through it, rendering it tag by tag from top to bottom of the page. This process is called <strong>parsing</strong>.</p>
@@ -58,32 +54,12 @@
 					<p class="caution">A common method to name variiables is <i>Hungarian notation</i>: where the beginning of each variable name is a three-letter identifier indicating the data type. For example, you may start integer variable names with <i>int</i>; flating-point variable names with <i>flt</i>; string variable names with <i>str</i>, and so on.</p>
 					<p>
 						Check if a variable has been assigned a value. <i><u>undefined</u> is an actual primitive value in JavaScript</i>
-<pre>
-<code class="javascript">
-function isSet(myVariable){
-	if( typeof myVariable == 'undefined'){
-		console.log("myVariable is declared but not set");
-		return true;
-	}else{
-		console.log("The value of myVariable  is: " + myVariable);
-		return false;
-	}
-}
-</code>
-</pre>
+						<?php include "code/javascript_code_02.txt"; ?>
 					</p>
 					<p class="caution">Whenever JavaScript detects that the contents of a variable are no longer usable, such as when you allocate a new value, it performs the garbage collection process and makes the memory available.</p>
 					<h2>Basic String Operations</h2>
 					<p>When you concatenate string and numbers, Javascript treat the number as string</p>
-<pre>
-<code class="javascript">
-function concatenate(str1, str2){
-	return str1 + str2;
-}
-console.log( concatenate('Hello ', 'world') ); //outputs: Hello world
-console.log( concatenate('My age is ', 29) ); //outputs: My age is 29
-</code>
-</pre>
+					<?php include "code/javascript_code_03.txt"; ?>
 					<h2>Data Type Conversion</h2>
 					<h3>Convert Strings to Numbers</h3>
 					<ul>
@@ -91,18 +67,7 @@ console.log( concatenate('My age is ', 29) ); //outputs: My age is 29
 						<li>parseFloat(string): Returns fl oating-point numbers</li>
 					</ul>
 					<h3>Convert Numbers to Strings</h3>
-
-<pre>
-<code class="javascript">
-console.log( parseInt('123') ); //outputs: 123
-console.log( parseInt('123abc') ); //outputs: 123
-console.log( parseInt('123abc456') ); //outputs: 123
-
-console.log( parseFloat('123') ); //outputs: 123
-console.log( parseFloat('1.23abc') ); //outputs: 1.23
-console.log( parseFloat('1,23abc456') ); //outputs: 1
-</code>
-</pre>
+					<?php include "code/javascript_code_04.txt"; ?>
 					<p class="caution">
 						If you use parseInt() or parseFloat() with any string that is empty or does not start with at least one valid digit, you get NaN, meaning Not a Number.
 					</p>
@@ -1143,6 +1108,277 @@ console.log( fix(78.123456, 5) );
 									console.log( number.toFixed(2) );
 									//outputs: 78.13
 									</code></pre>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<h3>Date Object</h3>
+					<ul>
+						<li>
+							Creating a Date Object
+							<ul>
+								<li>
+<pre>
+<code class="javascript">
+//Get the current PC date and time
+var dt = new Date();
+
+//Set date and time based on timestamp
+var dt = new Date(milliseconds);
+
+//Set date and time based on a string representing a date, or a date and time
+var dt = new Date("31 January 2010");
+var dt = new Date("31 Jan 2010, Jan 31 2010");
+var dt = new Date("31 Jan 2010, Jan 31 2010");
+
+//Set date by passing the following parameters separated by commas:
+//year, month, day, hours and/or minutes, seconds, and milliseconds
+var theDate4 = new Date(2010, 0, 31, 15, 35, 20, 20);
+var theDate4 = new Date(2010, 0, 31);
+</code></pre>
+								</li>
+								<li class="caution">Be aware of is that in this instance January is month 0, not month 1, as you’d expect, and December is month 11.</li>
+							</ul>	
+						</li>
+						<li>
+							Getting <i>and setting</i> Date Values
+							<ul>
+								<li>getDate() <i>and setDate()</i>: The day of the month</li>
+								<li>getDay() <i>and setDay()</i>: The day of the week as an integer, with Sunday as 0, Monday as 1, and so on</li>
+								<li>getMonth() <i>and getmonth()</i>: The month as an integer, with January as 0, February as 1, and so on</li>
+								<li>getFullYear() <i>and setFullYear()</i>: The year as a four-digit number</li>
+								<li>toDateString(): Returns the full date based on the current time zone as a human-readable string. For example, “Wed 31 Dec 2003”.</li>
+								<li class="caution">setMonth(): If you set it to a value greater than 11, the date automatically rolls over to the next year. So if you use setMonth(12), that will set the date to January of the next year, and similarly setMonth(13) is February of the next year.</li>
+							</ul>
+						</li>
+						<li>
+							Calculations and Dates
+							<ul>
+								<li>Add nDays to a date: dateObject.setDate(nDays)</li>
+								<li class="noStyle">
+<pre>
+<code class="javascript">
+var nowDate = new Date();
+var currentDay = nowDate.getDate();
+nowDate.setDate(currentDay + 28);
+</code></pre>
+								</li>
+							</ul>
+						</li>
+						<li>
+							Getting <i>and setting</i> Time Values
+							<ul>
+								<li>getHours()</li>
+								<li>getMinutes()</li>
+								<li>getSeconds()</li>
+								<li>getMilliseconds()</li>
+								<li>toTimeString()</li>
+							</ul>
+						</li>
+					</ul>
+
+					<h2>Creating New Types of Objects (Reference Types)</h2>
+					<ul>
+						<li>The key to define your own objects is the JavaScript’s support for the definition of <strong>reference types</strong>. Reference types are essentially templates for an object</li>
+						<li class="caution">
+							Before you start, an important distinction must be made. Many developers refer to reference types as classes and use the two terms interchangeably. While this is correct for many object-oriented languages such as Java, C#, and C++, it is not correct for JavaScript. JavaScript has no formal class construct, even though the logical equivalent, reference types, are fully supported by the language.
+						</li>
+						<li class="caution">
+							It’s also important to point out that the built-in objects discussed thus far in this chapter are also reference types. String, Array, Number, Date, and even Object are all reference types, and the objects you created are instances of these types.
+						</li>
+						<li>
+							A reference type consists of three things:
+							<ul>
+								<li>A constructor</li>
+								<li>Method definitions</li>
+								<li>Properties</li>
+							</ul>
+						</li>
+						<li>
+							Defining a Reference Type
+							<ul>
+								<li class="noStyle">
+<pre><code class="javascript">
+function Client(id, name, age){
+	this.id = id;
+	this.name = name;
+	this.age = age;
+}
+
+var client = new Client();
+</code></pre>
+								</li>
+								<li>
+									Typically, a reference type is defi ned with an uppercase letter. Doing so makes it easy to differentiate a function from a reference type easily and quickly.
+								</li>
+								<li>
+									You might wonder where you defi ned this customerName property. The answer is that you didn’t; simply by assigning a property a value, JavaScript creates it for you.
+								</li>
+								<li class="caution">
+									JavaScript won’t tell you if you accidentally misspell a property name; it’ll just create a new property with the misspelled name, something that can make it diffi cult to track bugs. One way around this problem is to create getters and setters methods.
+								</li>
+								<li>
+									Whenever you want to create a method for your type, you simply write the following:
+<pre><code class="javascript">
+typeName.prototype.methodName = function(methodParametersList){
+    (...)
+}
+</code></pre>
+								</li>
+							</ul>
+						</li>
+						<li>
+							Creating and Using Reference Type Instances
+							<ul>
+								<li class="noStyle">
+<pre><code class="javascript">
+typeName.prototype.methodName = function(methodParametersList){
+    (...)
+}
+</code></pre>
+								</li>
+								<li>
+									The use of the new keyword is very important when creating an object with a constructor. The browser does not throw an error if you do not use the new keyword, but your script will not work correctly.
+									Instead of creating a new object, you actually add properties to the global window object. The problems caused by not using the new keyword can be hard to diagnose, so make sure you specify the new keyword when creating objects with a constructor.
+								</li>
+								<li class="noStyle">
+<pre><code class="javascript">
+/**
+ Define Client type
+*/
+function Client(id, name, age){
+	this.id = id;
+	this.name = name;
+	this.age = age;
+}
+
+Client.prototype.getId = function(){
+	return this.id;
+}
+Client.prototype.setId = function(id){
+	this.id = id;
+}
+
+Client.prototype.getName = function(){
+	return this.name;
+}
+Client.prototype.setName = function(name){
+	this.name = name;
+}
+
+Client.prototype.getAge = function(){
+	return this.age;
+}
+Client.prototype.setAge = function(age){
+	this.age = age;
+}
+
+var client1 = new Client();
+client1.setId(108);
+client1.setName("Ala Eddine");
+client1.setAge(29);
+console.log(client1.getId() + ": " + client1.getName() + " (" + client1.getAge() + " years old)");
+
+var client2 = new Client(74, "John Doe", 35);
+console.log(client2.getId() + ": " + client2.getName() + " (" + client2.getAge() + " years old)");
+
+var client3 = new Client(14, 9);
+console.log(client3.getId() + ": " + client3.getName() + " (" + client3.getAge() + " years old)");
+//outputs: 14: 9 (undefined years old)
+</code></pre>
+								</li>
+								<li>
+									An Array of Items
+									<ul>
+										<li>Define a Store type which has an address and a list of clients
+										</li>
+										<li class="noStyle">
+<pre>
+<code class="javascript">
+/**
+ Define Client type
+*/
+function Client(id, name, age){
+	this.id = id;
+	this.name = name;
+	this.age = age;
+}
+
+Client.prototype.getId = function(){
+	return this.id;
+}
+Client.prototype.setId = function(id){
+	this.id = id;
+}
+
+Client.prototype.getName = function(){
+	return this.name;
+}
+Client.prototype.setName = function(name){
+	this.name = name;
+}
+
+Client.prototype.getAge = function(){
+	return this.age;
+}
+Client.prototype.setAge = function(age){
+	this.age = age;
+}
+
+Client.prototype.displayInfo = function(){
+	console.log(this.getId() + ": " + this.getName() + " ( " + this.getAge() + " years old)");
+}
+
+/**
+ Define Store type
+*/
+function Store(client){
+	this.clients = new Array();
+}
+
+Store.prototype.getAddress = function(){
+	return this.address;
+}
+Store.prototype.setAddress = function(address){
+	this.address = address;
+}
+
+Store.prototype.getClients = function(){
+	return this.clients;
+}
+Store.prototype.setClients = function(clients){
+	this.clients = clients;
+}
+
+Store.prototype.addClient = function(client){
+	this.clients[client.getId()] = client;
+}
+
+/**
+ Create and display store informations
+*/
+var client1 = new Client(108, "Ala Eddine", 29);
+var client2 = new Client(74, "John Doe", 35);
+var client3 = new Client(14, "David Doe", 31);
+
+var store = new Store();
+store.setAddress("11 Flowers street");
+store.addClient(client1);
+store.addClient(client2);
+store.addClient(client3);
+
+var storeClients = store.getClients();
+console.log("Store address: " + store.getAddress());
+console.log("List of clients:");
+for(storeClient in storeClients){
+	var oneClient = storeClients[storeClient];
+	oneClient.displayInfo();
+}
+
+</code></pre>
+										</li>
+									</ul>
 								</li>
 							</ul>
 						</li>
