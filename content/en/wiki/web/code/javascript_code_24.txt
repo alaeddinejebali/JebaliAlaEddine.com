@@ -1,0 +1,21 @@
+<pre>
+<code class="javascript">
+var message = "Hello James, how are you tody? Please James call me.";
+var pos1 = message.indexOf("James");
+var pos2 = message.lastIndexOf("James");
+console.log("pos1 = " + pos1); //outputs: 6
+console.log("pos2 = " + pos2); //outputs: 38
+
+var pos3 = message.indexOf("James", 3);
+var pos4 = message.lastIndexOf("James", 3);
+console.log("pos3 = " + pos3); //outputs: 6
+console.log("pos4 = " + pos4);
+//outputs: -1
+//because it will search for 'James' in 'Hell'
+
+var pos5 = message.lastIndexOf("James", 14);
+console.log("pos5 = " + pos5);
+//outputs: 6
+//because it will search for 'James' in 'Hello James, ho'
+</code>
+</pre>

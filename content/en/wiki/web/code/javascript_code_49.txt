@@ -1,0 +1,9 @@
+<pre>
+<code class="javascript">
+var scores = new Array(10, 20, 30, 40, 50);
+for(score in scores){
+	console.log("current itertion is: " + score);
+	console.log("current value is: " + scores[score]);
+}
+</code>
+</pre>

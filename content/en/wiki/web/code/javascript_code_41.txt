@@ -1,0 +1,15 @@
+<pre>
+<code class="javascript">
+var myArray = new Array(4, 2.5, 2.7, 2.2, 6.6, -4.3, -4.5, -4.8);
+
+function ceilFlourRound(value, index,  array){
+	var resultCeil = Math.ceil(value);
+	var resultFloor = Math.floor(value);
+	var resultRound = Math.round(value);
+	console.log( "ceil(" + value + ") = " + resultCeil );
+	console.log( "floor(" + value + ") = " + resultFloor );
+	console.log( "round(" + value + ") = " + resultRound );
+}
+
+myArray.forEach( ceilFlourRound );
+</code></pre>

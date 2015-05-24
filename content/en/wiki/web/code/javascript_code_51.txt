@@ -1,0 +1,7 @@
+<pre>
+<code class="javascript">
+do{
+	(...)
+}while(condition);
+</code>
+</pre>
