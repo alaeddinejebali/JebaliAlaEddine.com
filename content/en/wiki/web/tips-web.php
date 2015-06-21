@@ -110,6 +110,35 @@
 					</ul>
 				</div>
 			</section>
+			<section class="wiki-article">
+				<div class="wiki-article-title">
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">How to install Python on Ubuntu?<h1>
+				</div>
+				<div class="wiki-article-body invisible">
+					<h2>Install some dependencies</h2>
+					<ul>
+						<li>$> sudo apt-get install build-essential checkinstall</li>
+						<li>$> sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev</li>
+						<li>$> </li>
+					</ul>
+					<h2>Download Python</h2>
+					<ul>
+						<li>$> cd ~/Downloads/</li>
+						<li>$> wget http://python.org/ftp/python/2.7.5/Python-2.7.5.tgz</li>
+					</ul>
+					<h2>Extract and go to the dirctory</h2>
+					<ul>
+						<li>$> tar -xvf Python-2.7.5.tgz</li>
+						<li>$> cd Python-2.7.5</li>
+					</ul>
+					<h2>Install</h2>
+					<ul>
+						<li>$> ./configure</li>
+						<li>$> make</li>
+						<li>$> sudo checkinstall</li>
+					</ul>
+				</div>
+			</section>
 
 	
 	
