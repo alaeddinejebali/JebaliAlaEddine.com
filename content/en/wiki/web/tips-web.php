@@ -139,6 +139,20 @@
 					</ul>
 				</div>
 			</section>
+			<section class="wiki-article">
+				<div class="wiki-article-title">
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">Develop Firefox extensions<h1>
+				</div>
+				<div class="wiki-article-body invisible">
+					<h2>Install</h2>
+					<ul>
+						<li>Install Python as described above</li>
+						<li>Download the SDK from <a herf="https://ftp.mozilla.org/pub/mozilla.org/labs/jetpack/jetpack-sdk-latest.tar.gz" target="_blank">https://ftp.mozilla.org/pub/mozilla.org/labs/jetpack/jetpack-sdk-latest.tar.gz</a></li>
+						<li>$> tar -xf addon-sdk.tar.gz</li>
+						<li>$> cd addon-sdk</li>
+					</ul>
+				</div>
+			</section>
 
 	
 	
