@@ -69,10 +69,23 @@
 			</section>
 			<section class="wiki-article">
 				<div class="wiki-article-title">
-					<h1 class="btnShowHideArticleBody" data-article-visibility="off">This is title 3?<h1>
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">How to install Chrome on Ubuntu?<h1>
 				</div>
 				<div class="wiki-article-body invisible">
-					Aenean elementum tempus ligula, egestas posuere purus mollis nec. Nullam vehicula blandit tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Aenean congue tellus dui, quis auctor elit commodo non. Quisque eget faucibus diam, id mollis ipsum. Morbi laoreet dolor odio, non suscipit nisi eleifend eget. Praesent volutpat, quam quis maximus euismod, nisi ante aliquet odio, eu feugiat ligula metus eu odio. Integer venenatis porttitor sapien. Aliquam auctor enim vitae convallis volutpat. 
+					<h2>Check if you have 32 or 64 machine</h2>
+					<ul>
+						<li>
+							$> arch
+							<ul>
+								<li>If you get "i386" => 32 bits</li>
+								<li>If you get "amd64" => 64 bits</li>
+							</ul>
+						</li>
+						<li>Download Chrome</li>
+						<li>$> cd ~/Downloads</li>
+						<li>$> wget https://dl-ssl.google.com/linux/direct/google-chrome-stable_current_i386.deb (for 32 bits)</li>
+						<li>$> wget https://dl-ssl.google.com/linux/direct/google-chrome-stable_current_amd64.deb (for 64bits)</li>
+					</ul>
 				</div>
 			</section>
 		</div>
