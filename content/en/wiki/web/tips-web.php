@@ -88,6 +88,49 @@
 					</ul>
 				</div>
 			</section>
+			<section class="wiki-article">
+				<div class="wiki-article-title">
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">How to install PHP and Apache on Ubuntu?<h1>
+				</div>
+				<div class="wiki-article-body invisible">
+					<h2>Install Apache2</h2>
+					<ul>
+						<li>$> sudo apt-get install apache2</li>
+						<li>To check if Apache is installed go to http://127.0.1.1/ (you should get the message "It works!")</li>
+					</ul>
+					<h2>Restart Apache</h2>
+					<ul>
+						<li>$> sudo /etc/init.d/apache2 restart</li>
+					</ul>
+					<h2>Install PHP5</h2>
+					<ul>
+						<li>$> sudo apt-get install php5 libapache2-mod-php5</li>
+						<li>$> sudo chmod -R 777 /var/www</li>
+						<li>$> sudo chown -R **yourusername** /var/www</li>
+					</ul>
+				</div>
+			</section>
+
+	
+	
+
+	
+
+
+
+			<section class="wiki-article">
+				<div class="wiki-article-title">
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">Title<h1>
+				</div>
+				<div class="wiki-article-body invisible">
+					<h2>Sub title</h2>
+					<ul>
+						<li>
+							
+						</li>
+					</ul>
+				</div>
+			</section>
 		</div>
 	</div>
 </div>
