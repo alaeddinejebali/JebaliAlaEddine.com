@@ -13,11 +13,7 @@
 					<ul>
 						<li>update the package index</li>
 						<li class="noStyle">
-<pre>
-<code class="bash">
-$> sudo apt-get update
-</code>
-</pre>
+                                                    <?php include "code/linux_code_01.txt"; ?>
 						</li>
 						<li>check if Java is not already installed:</li>
 						<li class="noStyle">
@@ -50,6 +46,10 @@ $> sudo apt-get update
 						<li>....</li>
 					</ul>
 				</div>
+			</section>
+
+			<section class="wiki-article">
+
 			</section>
 
 
