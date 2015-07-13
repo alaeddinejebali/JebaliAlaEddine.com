@@ -50,13 +50,6 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="company.html">.Net</a><i class="iconfa-angle-right sub-indicator"></i>
-                        <ul>
-                            <li><a href="company.html">Framework .Net</a></li>
-                            <li><a href="ourteam.html">DNN</a></li>
-                        </ul>
-                    </li>
-                    <li>
                         <a href="company.html">PHP</a><i class="iconfa-angle-right sub-indicator"></i>
                         <ul>
                             <li><a href="ourteam.html">CakePHP</a></li>
@@ -88,6 +81,12 @@
                             <li>
                                 <a href="/wiki/web/tips-web">Trucs web</a>
                             </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="company.html">Others</a><i class="iconfa-angle-right sub-indicator"></i>
+                        <ul>
+                            <li><a href="/wiki/divers/git">GIT</a></li>
                         </ul>
                     </li>
                 </ul>
