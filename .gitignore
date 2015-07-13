@@ -1,1 +1,12 @@
+#Do not commit those folders/files
+.htaccess
+.gitignore
+index.php
+settings.php
+admin.php
+404.php
+robots.txt
+assets/
+#~demo/
+.idea/
 /nbproject/
