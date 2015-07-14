@@ -1,3 +1,5 @@
+<pre>
+<code class="sh">
 [user]
 	name = Ala Eddine JEBALI
 	email = myEmail@domain.com
@@ -24,3 +26,5 @@
 	deleted = red
 	untracked = cyan reverse
 	branch = magenta
+</code>
+</pre>

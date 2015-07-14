@@ -9,7 +9,9 @@
 
             <section class="wiki-article">
                 <div class="wiki-article-title">
-                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">How to color the Git console in Ubuntu??<h1>
+                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">How to color the Git console in Ubuntu!?</h1>
+                </div>
+                <div class="wiki-article-body invisible">
                     <ul>
                         <li>update the package index</li>
                         <li class="noStyle">
@@ -22,18 +24,18 @@
 
             <section class="wiki-article">
                 <div class="wiki-article-title">
-                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">How to check for remote updates without Pull?<h1>
+                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">How to check for remote updates without Pull?</h1>
                 </div>
                 <div class="wiki-article-body invisible">
                     <ul>
                         <li>Update the remote branch in your repository to point to the latest version
-                            $> git fetch origin
+                            <?php include "code/git_code_02.txt"; ?>
                         </li>
                         <li>Show difference against remote
-                            $> git diff HEAD origin/master
+                            <?php include "code/git_code_03.txt"; ?>
                         </li>
                         <li>Accept (if you're okay) the remote changes:
-                            $> git merge origin/master
+                            <?php include "code/git_code_04.txt"; ?>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +45,7 @@
             
             <section class="wiki-article">
                 <div class="wiki-article-title">
-                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">To be prepared<h1>
+                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">To be prepared</h1>
                 </div>
                 <div class="wiki-article-body invisible">
                     <ul>
