@@ -2,7 +2,7 @@
 <div class="leftpanel">
 	
     <div class="logopanel">
-    	<a href=""><img src="/assets/images/sartana-logo.png" alt="Sartana" /></a>
+    	<a href="/"><img src="/assets/images/logo.png" alt="Ala Eddine JEBALI" /></a>
     </div><!--logopanel-->
     
     <div class="searchpanel">
@@ -13,26 +13,23 @@
 
    <div class="menupanel">
        <ul>
-            <li class="current">
-                <a href="index.html"><span class="iconfa-home"></span> Home</a>
+            <li class="<?= $currentActivePage['home'] ?>">
+                <a href="/"><span class="iconfa-home"></span> Home</a>
             </li>
-            <li>
-                <a href="contact.html"><span class="iconfa-envelope"></span> Portfolio</a>
+            <li class="<?= $currentActivePage['aboutMe'] ?>">
+                <a href="/about-me"><span class="iconfa-user-md"></span> About me</a>
             </li>
-            <li>
-                <a href="contact.html"><span class="iconfa-envelope"></span> Certifications</a>
+            <li class="<?= $currentActivePage['certifications'] ?>">
+                <a href="/certifications"><span class="iconfa-trophy"></span> Certifications</a>
             </li>
-            <li>
-                <a href="contact.html"><span class="iconfa-envelope"></span> Studies</a>
+            <li class="<?= $currentActivePage['contact'] ?>">
+                <a href="/contact"><span class="iconfa-envelope"></span> Contact Me</a>
             </li>
-            <li>
-                <a href="contact.html"><span class="iconfa-envelope"></span> Contact Me</a>
-            </li>
-            <li>
-                <a href="blog.html"><span class="iconfa-file"></span> Blog</a>
+            <li class="<?= $currentActivePage['blog'] ?>">
+                <a href="/blog"><span class="iconfa-file"></span> Blog</a>
             </li>
             <?php if( !empty($_SESSION['login.loggedUser']) ){ ?>
-            <li>
+            <li class="<?= $currentActivePage['wiki'] ?>">
                 <a href=""><span class="iconfa-star"></span> Wiki</a><i class="iconfa-angle-right sub-indicator"></i>
                 <ul>
                     <li>
@@ -50,10 +47,10 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="company.html">PHP</a><i class="iconfa-angle-right sub-indicator"></i>
+                        <a href="#">PHP</a><i class="iconfa-angle-right sub-indicator"></i>
                         <ul>
                             <li><a href="ourteam.html">CakePHP</a></li>
-                            <li><a href="company.html">PHP5</a></li>
+                            <li><a href="/wiki/php/php5">PHP5</a></li>
                             <li><a href="careers.html">Symfony2</a></li>
                         </ul>
                     </li>
@@ -91,9 +88,12 @@
                     </li>
                 </ul>
             </li>
+                <li>
+                    <a href="/logout"><span class="iconfa-lock"></span> Logout</a>
+                </li>
             <?php }else{ ?>
-            <li>
-                <a href="/admin"><span class="iconfa-user-md"></span> Admin</a>
+            <li class="<?= $currentActivePage['login'] ?>">
+                <a href="/login"><span class="iconfa-unlock"></span> Login</a>
             </li>
             <?php } ?>
         </ul>
