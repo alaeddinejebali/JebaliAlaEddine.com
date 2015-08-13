@@ -1,0 +1,8 @@
+<pre><code class="php">
+	//Disable error reporting
+	error_reporting(0);<br/>
+	//Report runtime errors
+	error_reporting(E_ERROR | E_WARNING | E_PARSE);<br/>
+	//Report all errors
+	error_reporting(E_ALL);
+</code></pre>

@@ -1,0 +1,6 @@
+<pre><code class="php">
+	$s1 = "123a";
+	$s2 = "123A";
+	$Res1 = strcmp($s1, $s2); // Res1 = 1 (s1<s2)
+	$Res2 = strcasecmp($s1, $s2); //Res2 = 0
+</code></pre>

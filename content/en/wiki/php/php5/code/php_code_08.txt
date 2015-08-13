@@ -1,0 +1,5 @@
+<pre><code class="php">
+    $name = 'foo';
+    $$name = 'bar';
+    echo $foo; //outputs: 'bar'
+</code></pre>

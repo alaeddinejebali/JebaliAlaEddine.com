@@ -1,0 +1,14 @@
+<pre><code class="php">
+    function hello(){
+        if (func_num_args() > 1) {
+            $isAdmin = func_get_arg(0);
+            $name = func_get_arg(1);
+            if($isAdmin=='yes') echo "Hello " . $name ."! Take a look at our....";
+        }else{
+            $name = func_get_arg(0);
+            echo "Hello " . $name;
+        }
+     }<br/>
+     hello("Ala"); // Displays "Hello Ala"
+     hello("yes", "David"); // Displays "Hello David! Take a look at our...."
+</code></pre>

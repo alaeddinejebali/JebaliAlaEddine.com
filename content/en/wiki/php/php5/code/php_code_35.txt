@@ -1,0 +1,4 @@
+<pre><code class="php">
+	$a = array (2 => 5);<br/>
+	$a[] = 'a'; // This will have a key of 3
+</code></pre>

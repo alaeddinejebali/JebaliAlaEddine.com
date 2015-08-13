@@ -1,0 +1,7 @@
+<pre><code class="php">
+	// Single character version
+	echo strtr ('abc', 'a', '1'); // Outputs: 1bc
+	// Multiple-character version
+	$subst = array('1' => 'one', '2' => 'two',);
+	echo strtr ('123', $subst); // Outputs: onetwo3
+</code></pre>

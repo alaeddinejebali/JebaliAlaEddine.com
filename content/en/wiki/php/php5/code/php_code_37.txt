@@ -1,0 +1,7 @@
+<pre><code class="php">
+	$sql = "SELECT user_name, user_age, lst_log FROM users";
+	$result = mysql_query($sql);
+	while (list($name, $age, $last_login) = mysql_fetch_row($result)) {
+		echo "$name, $age - Last Login: $last_login";
+	}
+</code></pre>

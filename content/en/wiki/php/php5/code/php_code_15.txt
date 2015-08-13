@@ -1,0 +1,6 @@
+<pre><code class="php">
+	$a = 7;
+	$b = &$a;
+	$b = 5;
+	echo $a; //outputs 5
+</code></pre>

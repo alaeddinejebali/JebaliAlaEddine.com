@@ -1,0 +1,5 @@
+<pre><code class="php">
+    nEm = n * 10<sup>m</sup>
+    2E7 = 2 * 10<sup>7</sup> = 20 000 000
+    1.2E2 = 1.2 * 10<sup>2</sup> = 120
+</code></pre>

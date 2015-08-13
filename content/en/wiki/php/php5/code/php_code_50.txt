@@ -1,0 +1,2 @@
+$lastDate = new DateTime($dtInDatabase);
+$timestampLastDate = $lastDate->getTimestamp();

@@ -1,0 +1,5 @@
+<pre><code class="php">
+	$tab = array('a' => 1, 'b' => 2, 'c' => 3);
+	unset($tab['b']);
+	var_dump($tab); //Outputs: array(2) { ["a"]=> int(1) ["c"]=> int(3) }
+</code></pre>

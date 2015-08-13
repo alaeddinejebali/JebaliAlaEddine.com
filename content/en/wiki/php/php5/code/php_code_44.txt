@@ -1,0 +1,10 @@
+<pre><code class="php">
+        $array = array('foo' => 'bar', 'baz', 'bat' => 2);
+        function displayArray($array){
+            end($a);
+            while (key($array) !== null) {
+                echo key($array) .": " .current($array) . PHP_EOL;
+                prev(($array);
+            }
+        }
+</code></pre>

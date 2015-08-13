@@ -1,0 +1,11 @@
+<pre><code class="php">
+    $i = 0;
+    while(++i){
+       switch($i){
+            case 5:
+                break 1; // Exit only the switch
+            case 10:
+                break 2; // Exit only the switch and the while
+       }
+    }
+</code></pre>

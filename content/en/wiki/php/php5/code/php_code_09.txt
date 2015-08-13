@@ -1,0 +1,5 @@
+<pre><code class="php">
+	$name = '123'; /* 123 is your variable name, this would normally be invalid. */
+	$$name = '456'; // Again, you assign a value
+	echo ${'123'}; // Finally, using curly braces you can output '456'
+</code></pre>

@@ -1,0 +1,4 @@
+<pre><code class="php">
+    echo 10 == $x ? 'Yes' : 'No';
+    // if(10==$x) echo 'Yes'; else echo 'No';
+</code></pre>

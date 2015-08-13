@@ -1,0 +1,4 @@
+<pre><code class="php">
+   error_reporting=E_ALL & ~E_NOTICE
+   // Allow the reporting of all errors, except notices
+</code></pre>

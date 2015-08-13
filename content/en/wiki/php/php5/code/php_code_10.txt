@@ -1,0 +1,5 @@
+<pre><code class="php">
+	function myFunc() {...}
+	$f = 'myFunc';
+	$f(); // will call myFunc();
+</code></pre>

@@ -1,0 +1,6 @@
+<pre><code class="php">
+    <b>String --> Boolean</b>
+    var_dump( (boolean) $string );
+    //if( $string == '' | $string == '0' ) outputs 'false'
+    //else outputs 'true'
+</code></pre>

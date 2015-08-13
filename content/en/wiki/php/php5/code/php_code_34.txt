@@ -1,0 +1,6 @@
+<pre><code class="php">
+	$tab1 = array(1, 2, 3);
+	$tab2 = array(4, 5, 6);
+	var_dump($tab1, $tab2); //works
+	print_r($tab1, $tab2); //will not work
+</code></pre>

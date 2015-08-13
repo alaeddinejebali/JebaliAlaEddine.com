@@ -1,0 +1,4 @@
+<pre><code class="php">
+    display_errors = on
+    //Errors are outputted to the script's output;
+</code></pre>

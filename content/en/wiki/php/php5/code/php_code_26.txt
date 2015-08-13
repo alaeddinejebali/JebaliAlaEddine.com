@@ -1,0 +1,13 @@
+<pre><code class="php">
+     echo $_SERVER['PHP_SELF'];
+     //filename of the currently executing script<br/>
+     echo $_SERVER['SERVER_NAME'];
+     //name of the host server (like www.jebalialaeddine.com)<br/>
+     echo $_SERVER['HTTP_HOST'];
+     //host header from the current request<br/>
+     echo $_SERVER['HTTP_REFERER'];
+     //address of the page (if any) which referred the user agent to the current page. <br/>
+     echo $_SERVER['HTTP_USER_AGENT'];
+     //<br/>
+     echo $_SERVER['SCRIPT_NAME'];
+</code></pre>

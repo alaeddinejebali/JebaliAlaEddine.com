@@ -1,0 +1,5 @@
+<pre><code class="php">
+	foreach ($array as $key => $value){
+		echo "$key: $value";
+	}
+</code></pre>

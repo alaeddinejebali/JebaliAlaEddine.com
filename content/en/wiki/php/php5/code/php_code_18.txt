@@ -1,0 +1,7 @@
+<pre><code class="php">
+   $i = 0;
+   while ($i < 10){
+        echo $i . PHP_Eol;
+        $i++;
+   }
+</code></pre>

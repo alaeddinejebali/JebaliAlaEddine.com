@@ -1,0 +1,7 @@
+<pre><code class="php">
+    <b>Boolean --> Number or String</b>
+    var_dump( (string) $boolean);
+    var_dump( (int) $boolean);
+    //if( $boolean == true ) outputs '1' or 1
+    //else outputs '0' or 0
+</code></pre>

@@ -1,0 +1,4 @@
+<pre><code class="php">
+	define('EMAIL', 'jebali.ala<spane</span>ddine<span>@</span>gmail.com');
+	echo EMAIL;
+</code></pre>

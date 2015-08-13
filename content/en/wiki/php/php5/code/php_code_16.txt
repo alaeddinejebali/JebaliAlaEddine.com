@@ -1,0 +1,4 @@
+<pre><code class="php">
+    $x = @mysql_connect();
+    //prevent the call to mysql_connect() from outputting an error
+</code></pre>

@@ -1,0 +1,4 @@
+<pre><code class="php">
+    $name = 'Ala Eddine JEBALI';
+    echo $GLOBALS['name'];
+</code></pre>

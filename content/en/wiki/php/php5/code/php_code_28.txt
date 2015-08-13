@@ -1,0 +1,8 @@
+<pre><code class="php">
+	$a = "Hello";
+	$b = "World";
+	function hello(){
+		echo $GLOBALS['a'] .' '. $GLOBALS['b'];
+	}
+	hello(); //outputs:  "Hello World"
+</code></pre>

@@ -1,0 +1,14 @@
+<pre><code class="php">
+   for ($i = 0; $i < 5; $i++) {
+        echo "i = " . $i;
+        for ($j = 1; $j < 10; $j++) {
+            echo "j = " . $j . PHP_Eul;
+            if($j % 5 == 0) {
+                break 2; // Exit from this loop and the next one.
+            }
+        }
+   }
+        //outputs:
+        // i= 0
+        // j = 1, j = 2, j = 3, j = 4, j = 5
+</code></pre>

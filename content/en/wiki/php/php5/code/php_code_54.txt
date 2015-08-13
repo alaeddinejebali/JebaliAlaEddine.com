@@ -1,0 +1,5 @@
+<pre><code class="php">
+	$v = "123aa";
+	if($v == 123) echo "A";
+	else echo "B";
+</code></pre>

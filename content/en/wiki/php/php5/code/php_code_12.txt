@@ -1,0 +1,7 @@
+<pre><code class="php">
+	$a = 1;
+	echo $a++; // Outputs 1, $a is now equal to 2
+	echo ++$a; // Outputs 3, $a is now equal to 3
+	echo --$a; // Outputs 2, $a is now equal to 2
+	echo $a--; // Outputs 2, $a is now equal to 1
+</code></pre>

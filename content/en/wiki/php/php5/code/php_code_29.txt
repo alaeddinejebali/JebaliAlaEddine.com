@@ -1,0 +1,4 @@
+<pre><code class="php">
+     function f($optional, $required);
+     function hello($newUser="no", $name){}
+</code></pre>
