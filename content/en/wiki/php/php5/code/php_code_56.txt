@@ -1,0 +1,5 @@
+<pre><code class="php">
+	$who = "World";
+	echo "Hello $who\n"; // Shows "Hello World" followed by a newline
+	echo 'Hello $who\n'; // Shows "Hello $who\n"
+</code></pre>

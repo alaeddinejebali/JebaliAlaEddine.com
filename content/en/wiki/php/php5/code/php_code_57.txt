@@ -1,0 +1,6 @@
+<pre><code class="php">
+	$me = 'Davey';
+	$names = array ('Smith', 'Jones', 'Jackson');
+	echo "There cannot be more than two {$me}s!";
+	echo "Citation: {$names[1]}[1987]";
+</code></pre>
