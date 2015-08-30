@@ -25,7 +25,7 @@ if (!empty($_POST)){
 						<h4>Error!</h4> E-mail and/or password are not correct...
 					</div>
 				<?php } ?>
-				<form class="form-horizontal" action="/admin" method="POST">
+				<form class="form-horizontal" action="/login" method="POST">
 					<div class="control-group">
 						<label class="control-label" for="inputEmail">E-mail</label>
 						<div class="controls">

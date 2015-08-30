@@ -1,1 +1,3 @@
+<pre><code class="php">
 $dtInDatabase = date('Y-m-d H:i:s');
+</code></pre>

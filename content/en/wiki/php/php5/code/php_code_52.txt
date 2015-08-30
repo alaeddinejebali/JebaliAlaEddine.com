@@ -1,1 +1,3 @@
+<pre><code class="php">
 $currentTime = time();
+</code></pre>
