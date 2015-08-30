@@ -1,0 +1,10 @@
+<pre><code class="html">
+HTTP/1.1 200 OK
+Date: Sat, 02 Apr 2011 21:05:05 GMT
+Server: lighttpd/1.4.19
+Content-Type: text/html
+
+&lt;html&gt;
+    &lt;!-- ... HTML for the xkcd comic --&gt;
+&lt;/html&gt;
+</code></pre>
