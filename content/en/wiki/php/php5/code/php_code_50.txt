@@ -1,2 +1,5 @@
+<pre><code class="php">
+$dtInDatabase = date('Y-m-d H:i:s');
 $lastDate = new DateTime($dtInDatabase);
 $timestampLastDate = $lastDate->getTimestamp();
+</code></pre>
