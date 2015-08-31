@@ -1,0 +1,6 @@
+<pre><code class="php">
+{# app/Resources/views/article/article_details.html.twig #}
+&lt;h2&gt;{{ article.title }}&lt;/h2&gt;
+&lt;h3 class="byline"&gt;by {{ article.authorName }}&lt;/h3&gt;
+&lt;p&gt;{{ article.body }}&lt;/p&gt;
+</code></pre>
