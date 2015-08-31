@@ -1,0 +1,10 @@
+<pre><code class="php">
+{# app/Resources/views/article/list.html.twig #}
+{% extends 'layout.html.twig' %}
+{% block body %}
+	&lt;h1&gt;Recent Articles&lt;h1&gt;
+	{% for article in articles %}
+		{{ include('article/article_details.html.twig', { 'article': article }) }}
+	{% endfor %}
+{% endblock %}
+</code></pre>
