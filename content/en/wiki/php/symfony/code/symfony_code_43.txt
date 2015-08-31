@@ -1,0 +1,10 @@
+<pre><code class="php">
+{# app/Resources/views/base.html.twig #}
+{# ... #}
+&lt;div id="sidebar"&gt;
+    {{ render(controller(
+        'AppBundle:Article:recentArticles',
+        { 'max': 3 }
+    )) }}
+&lt;div&gt;
+</code></pre>
