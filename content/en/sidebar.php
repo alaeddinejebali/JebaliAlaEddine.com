@@ -75,8 +75,10 @@
                         <li>
                             <a href="company.html">Others</a><i class="iconfa-angle-right sub-indicator"></i>
                             <ul>
+                                <li><a href="/wiki/divers/docker">Docker</a></li>
                                 <li><a href="/wiki/divers/git">GIT</a></li>
                                 <li><a href="/wiki/divers/ide">IDE</a></li>
+                                <li><a href="/wiki/divers/linux">Linux</a></li>
                             </ul>
                         </li>
                     </ul>
