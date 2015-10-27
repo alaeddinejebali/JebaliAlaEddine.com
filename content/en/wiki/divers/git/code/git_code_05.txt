@@ -1,0 +1,6 @@
+<pre>
+<code class="sh">
+$> sudo git config --global user.email jeba<span>li.</span>alaeddine<span>@</span>gmail.com
+$> sudo git config --global user.name "Ala Eddine JEBALI"
+</code>
+</pre>
