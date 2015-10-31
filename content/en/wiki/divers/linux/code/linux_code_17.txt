@@ -1,0 +1,5 @@
+<pre><code class="sh">
+$> sudo apt-get purge libapache2-mod-php5
+$> sudo apt-get install libapache2-mod-php5
+$> sudo service apache2 restart
+</code></pre>

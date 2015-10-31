@@ -1,0 +1,4 @@
+<pre><code class="bash">
+$> sudo a2enmod rewrite
+$> sudo apache2ctl -M 
+</code></pre>

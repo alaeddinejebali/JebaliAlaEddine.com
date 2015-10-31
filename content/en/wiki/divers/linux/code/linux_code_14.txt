@@ -1,0 +1,14 @@
+<pre><code class="sh">
+# Check your original path
+$> echo $PATH
+
+# Add your program to that path 
+$> export PATH=$PATH:/opt/PhpStorm/bin
+
+#  Check that it has been added
+$> echo $PATH
+
+#  Launch the program (only for the first time), after that you can launch it from the start menu
+$> cd /opt/PHPStorm/bin/
+$> ./phpstorm.sh
+</code></pre>

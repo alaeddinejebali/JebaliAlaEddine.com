@@ -1,0 +1,4 @@
+<pre><code class="sh">
+$> sudo chown -R ala www
+$> sudo chmod -R 7777 www
+</code></pre>

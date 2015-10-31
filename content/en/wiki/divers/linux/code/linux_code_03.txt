@@ -1,0 +1,5 @@
+<pre>
+<code class="bash">
+sudo apt-get install default-jdk
+</code>
+</pre>

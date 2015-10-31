@@ -1,0 +1,13 @@
+<pre><code class="sh">
+$> sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/jebalialaeddine.com.conf
+$> sudo gedit /etc/apache2/sites-available/jebalialaeddine.com.conf
+# /etc/apache2/sites-available/jebalialaeddine.com.conf
+	&lt;VirtualHost *:80&gt;
+	    ServerAdmin jebali.alaeddine@gmail.com
+	    ServerName jebalialaeddine.dev
+	    ServerAlias www.jebalialaeddine.dev
+	    DocumentRoot /var/www/jebalialaeddine.com
+	    ErrorLog ${APACHE_LOG_DIR}/error.log
+	    CustomLog ${APACHE_LOG_DIR}/access.log combined
+	&lt;/VirtualHost&gt;
+</code></pre>

@@ -1,0 +1,3 @@
+<pre><code class="sh">
+$> sudo cp -R /Downloads/PhpStorm /opt/
+</code></pre>

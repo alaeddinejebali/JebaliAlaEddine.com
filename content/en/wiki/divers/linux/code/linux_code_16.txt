@@ -1,0 +1,4 @@
+<pre><code class="sh">
+$> sudo gedit /etc/apache2/sites-available/000-default.conf
+$> sudo service apache2 restart
+</code></pre>
