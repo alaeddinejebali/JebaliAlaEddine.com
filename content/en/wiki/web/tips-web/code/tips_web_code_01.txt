@@ -1,0 +1,5 @@
+<pre><code class="html">
+    &lt;base href="http://jebalialaeddine.com"&gt;
+    &lt;a href="contact.html"&gt;Contact us&lt;/a&gt;
+    &lt;!-- equal to: &lt;a href="http://jebalialaeddine.com/contact.html"&gt;Contact us&lt;/a&gt; --&gt;
+</code></pre>

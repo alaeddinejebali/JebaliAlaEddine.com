@@ -153,6 +153,19 @@
 					</ul>
 				</div>
 			</section>
+			<section class="wiki-article">
+				<div class="wiki-article-title">
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">Base URL in HTML<h1>
+				</div>
+				<div class="wiki-article-body invisible">
+					<h2>Sub title</h2>
+					<ul>
+						<li style="noStyle">
+							<?php include "code/tips_web_code_01.txt"; ?>
+						</li>
+					</ul>
+				</div>
+			</section>
 
 	
 	
