@@ -83,9 +83,6 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="/logout"><span class="iconfa-lock"></span> Logout</a>
-                </li>
             <?php } ?>
             <li class="<?= $currentActivePage['aboutMe'] ?>">
                 <a href="/about-me"><span class="iconfa-user-md"></span> About me</a>
@@ -102,6 +99,10 @@
             <?php if (empty($_SESSION['login.loggedUser'])) { ?>
                 <li class="<?= $currentActivePage['login'] ?>">
                     <a href="/login"><span class="iconfa-unlock"></span> Login</a>
+                </li>
+            <?php }else{ ?>
+                <li>
+                    <a href="/logout"><span class="iconfa-lock"></span> Logout</a>
                 </li>
             <?php } ?>
         </ul>
