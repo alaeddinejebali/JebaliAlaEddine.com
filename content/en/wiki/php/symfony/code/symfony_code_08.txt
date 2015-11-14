@@ -1,0 +1,5 @@
+<pre><code class="php">
+// src\Mycompany\GreetingBundle\Resources\views\Default/index.html.twig
+
+Hello {{ name }}!
+</code></pre>

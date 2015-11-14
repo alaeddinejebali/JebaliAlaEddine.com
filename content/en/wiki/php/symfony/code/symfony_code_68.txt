@@ -1,0 +1,12 @@
+<pre><code class="php">
+public function updateAction($id){
+	$em = $this->getDoctrine()->getManager();
+	$product = $em->getRepository('AppBundle:Product')->find($id);
+	if (!$product) {
+		throw $this->createNotFoundException('No product found for id '.$id);
+	}
+	$product->setName('New product name!');
+	$em->flush();
+	return $this->redirectToRoute('homepage');
+}
+</code></pre>

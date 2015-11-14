@@ -1,0 +1,4 @@
+<pre><code class="php">
+$this->generateUrl('blog_show', array('slug' => 'my-blog-post'), true);
+// http://www.example.com/blog/my-blog-post
+</code></pre>

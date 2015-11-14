@@ -1,3 +1,4 @@
 <pre><code class="php">
-
+{{ render_hinclude(controller('...')) }}
+{{ render_hinclude(url('...')) }}
 </code></pre>

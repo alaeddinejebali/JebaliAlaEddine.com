@@ -1,0 +1,8 @@
+<pre><code class="php">
+class MainController extends Controller{
+    public function showAction($slug){
+        $url = $this->generateUrl( 'blog_show', array('slug' => 'my-blog-post') );
+        // do something with $url
+    }
+}
+</code></pre>

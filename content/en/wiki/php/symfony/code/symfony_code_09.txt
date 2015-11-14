@@ -1,0 +1,7 @@
+<pre><code class="php">
+public function indexAction(){
+    return $this->redirect($this->generateUrl('homepage'));
+    //The redirect() method is simply a shortcut that creates a Response object that specializes in redirecting the user.
+    return new RedirectResponse( $this->generateUrl('homepage') );
+}
+</code></pre>

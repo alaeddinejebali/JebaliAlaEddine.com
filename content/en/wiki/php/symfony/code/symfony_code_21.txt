@@ -1,0 +1,19 @@
+<pre><code class="php">
+// src/AppBundle/Controller/BlogController.php
+
+class BlogController extends Controller{
+    /**
+    * @Route("/blog/{page}", defaults={"page" = 1}),requirements={"page": "\d+"}
+    */
+    public function indexAction($page){
+        // ...
+    }
+
+    /**
+    * @Route("/blog/{slug}")
+    */
+    public function showAction($slug){
+        // ...
+    }
+}
+</code></pre>

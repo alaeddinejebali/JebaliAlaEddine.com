@@ -1,0 +1,5 @@
+<pre><code class="php">
+/**
+* @Route("/blog/{page}", defaults={"page" = 1})
+*/
+</code></pre>

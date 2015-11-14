@@ -1,0 +1,16 @@
+<pre><code class="php">
+$repository = $this->getDoctrine()->getRepository('AppBundle:Product');
+$query = $repository->createQueryBuilder('p')
+					->where('p.price > :price')
+					->setParameter('price', '19.99')
+					->orderBy('p.price', 'ASC')
+					->getQuery();
+// get all
+$products = $query->getResult();
+
+// get just one
+$product = $query->setMaxResults(1)->getOneOrNullResult();
+
+// get single result
+$product = $query->getSingleResult();
+</code></pre>

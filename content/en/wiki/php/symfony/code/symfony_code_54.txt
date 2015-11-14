@@ -1,0 +1,13 @@
+<pre><code class="php">
+#app/Resources/TwigBundle/views/Exception/error404.html.twig
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+    &lt;title&gt;An error has occured : {{ status_text }}&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;The server returns this error: "{{ status_code }} {{ status_text }}".&lt;/h2&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>

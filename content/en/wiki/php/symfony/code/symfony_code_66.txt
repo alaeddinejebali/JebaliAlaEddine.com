@@ -1,0 +1,22 @@
+<pre><code class="php">
+use AppBundle\Entity\Product;
+use Symfony\Component\HttpFoundation\Response;
+
+public function createAction(){
+    $product = new Product();
+    $product->setName('A Foo Bar');
+    $product->setPrice('19.99');
+    $product->setDescription('Lorem ipsum dolor');
+
+    $em = $this->getDoctrine()->getManager();
+
+    $em->persist($product);
+    //This does not actually cause a query to be made to the database (yet).
+
+    $em->flush();
+    //Now doctrine looks through all of the objects that it's managing to see if they need to be persisted to the database.
+    //So, the entity manager executes an INSERT query and a row is created in the product table.
+
+    return new Response('Created product id '.$product->getId());
+}
+</code></pre>

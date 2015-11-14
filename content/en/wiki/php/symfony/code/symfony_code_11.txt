@@ -1,0 +1,3 @@
+<pre><code class="bash">
+php app/console debug:container
+</code></pre>

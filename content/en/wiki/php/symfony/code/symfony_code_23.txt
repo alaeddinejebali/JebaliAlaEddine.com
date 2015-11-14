@@ -1,0 +1,18 @@
+<pre><code class="php">
+class ArticleController extends Controller{
+    /**
+    * @Route(
+    *       "/articles/{_locale}/{year}/{title}.{_format}",
+    *       defaults={"_format": "html"},
+    *       requirements={
+    *           "_locale": "en|fr",
+    *           "_format": "html|rss",
+    *           "year": "\d+"
+    *       }
+    * )
+    */
+    public function showAction($_locale, $year, $title){
+        //...
+    }
+}
+</code></pre>

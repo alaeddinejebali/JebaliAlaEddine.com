@@ -1,0 +1,7 @@
+<pre><code class="php">
+&lt;p&gt;Username: {{ app.user.username }}&lt;/p&gt;
+{% if app.debug %}
+    &lt;p&gt;Request method: {{ app.request.method }}&lt;/p&gt;
+    &lt;p&gt;Application Environment: {{ app.environment }}&lt;/p&gt;
+{% endif %}
+</code></pre>

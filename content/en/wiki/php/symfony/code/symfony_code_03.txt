@@ -1,0 +1,12 @@
+<pre><code class="php">
+use Symfony\Component\HttpFoundation\Response;
+
+$response = new Response();
+
+$response->setContent('&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello world!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;');
+$response->setStatusCode(Response::HTTP_OK);
+$response->headers->set('Content-Type', 'text/html');
+
+// prints the HTTP headers followed by the content
+$response->send();
+</code></pre>

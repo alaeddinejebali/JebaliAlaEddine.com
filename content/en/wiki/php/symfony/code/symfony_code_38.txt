@@ -1,0 +1,13 @@
+<pre><code class="php">
+{# app/Resources/views/blog/index.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}My cool blog posts{% endblock %}
+
+{% block body %}
+	{% for entry in blog_entries %}
+		&lt;h2&gt;{{ entry.title }}&lt;/h2&gt;
+		&lt;p&gt;{{ entry.body }}&lt;/p&gt;
+	{% endfor %}
+{% endblock %}
+</code></pre>

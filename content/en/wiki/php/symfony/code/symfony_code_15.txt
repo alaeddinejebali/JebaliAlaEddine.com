@@ -1,0 +1,7 @@
+<pre><code class="php">
+    //get a $_GET parameter
+    $request->query->get('param');
+
+    //get a $_POST parameter
+    $request->request->get('param');
+</code></pre>

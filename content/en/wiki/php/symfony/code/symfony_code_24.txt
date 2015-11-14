@@ -1,0 +1,7 @@
+<pre><code class="php">
+// app/config/routing.yml
+
+mycompany_greeting:
+    resource: "@MycompanyGreetingBundle/Controller/"
+    type: annotation # required to enable the Annotation reader for this resource
+</code></pre>

@@ -1,0 +1,5 @@
+<pre><code class="php">
+{{ render_hinclude(controller('...'), {
+'default': 'default/content.html.twig'
+}) }}
+</code></pre>

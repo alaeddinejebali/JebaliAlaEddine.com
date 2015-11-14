@@ -1,0 +1,15 @@
+<pre><code class="php">
+public function updateAction(){
+    $this->get('session')->getFlashBag()->add(
+        'notice',
+        'Your changes were saved!'
+    );
+}
+
+//Then in the template:
+{% for flashMessage in app.session.flashbag.get('notice') %}
+    &lt;div class="flash-notice"&gt;
+        {{ flashMessage }}
+    &lt;/div&gt;
+{% endfor %}
+</code></pre>

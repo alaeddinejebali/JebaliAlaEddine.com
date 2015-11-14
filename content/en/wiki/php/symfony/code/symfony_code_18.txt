@@ -1,0 +1,12 @@
+<pre><code class="php">
+// src/AppBundle/Controller/BlogController.php
+
+class BlogController extends Controller{
+    /**
+    * @Route("/blog/{slug}")
+    */
+    public function showAction($slug){
+
+    }
+}
+</code></pre>

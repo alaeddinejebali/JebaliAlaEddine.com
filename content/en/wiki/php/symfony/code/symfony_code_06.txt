@@ -1,0 +1,7 @@
+<pre><code class="php">
+// src/Mycompany/GreetingBundle/Resources/config/routing.yml
+
+mycompany_greeting_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MycompanyGreetingBundle:Default:index, name: 'world' }
+</code></pre>

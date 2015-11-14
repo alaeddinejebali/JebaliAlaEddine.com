@@ -1,0 +1,7 @@
+<pre><code class="php">
+{% block sidebar %}
+    &lt;h3&gt;Table of Contents&lt;/h3&gt;
+    {# ... #}
+    {{ parent() }}
+{% endblock %}
+</code></pre>

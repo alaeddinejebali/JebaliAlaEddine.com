@@ -1,0 +1,7 @@
+<pre><code class="php">
+class MainController extends ContainerAware{
+    public function showAction($slug){
+        $url = $this->container->get('router')->generate( 'blog_show', array('slug' => 'my-blog-post') );
+    }
+}
+</code></pre>

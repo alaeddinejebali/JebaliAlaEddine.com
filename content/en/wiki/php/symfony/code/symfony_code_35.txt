@@ -1,0 +1,4 @@
+<pre><code class="html">
+// make the title uppercase
+{{ title|upper }}
+</code></pre>

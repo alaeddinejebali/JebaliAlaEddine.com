@@ -1,0 +1,5 @@
+<pre><code class="php">
+$templating = $this->get('templating');
+$router = $this->get('router');
+$mailer = $this->get('mailer');
+</code></pre>

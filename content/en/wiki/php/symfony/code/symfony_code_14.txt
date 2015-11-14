@@ -1,0 +1,11 @@
+<pre><code class="php">
+public function indexAction($name){
+    $response = $this->forward('AcmeHelloBundle:Hello:fancy', array(
+        'name' => $name,
+        'color' => 'green',
+    ));
+
+    // ... further modify the response or return it directly
+    return $response;
+}
+</code></pre>

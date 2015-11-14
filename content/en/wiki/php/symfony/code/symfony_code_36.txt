@@ -1,0 +1,10 @@
+<pre><code class="php">
+// in the twig page
+&lt;a href="{{ path('article_show', {'id': 123, '_format': 'pdf'}) }}"&gt;PDF Version&lt;/a&gt;
+
+// in the controller
+public function indexAction(Request $request){
+    $format = $request->getRequestFormat();
+    return $this->render('article/index.'.$format.'.twig');
+}
+</code></pre>

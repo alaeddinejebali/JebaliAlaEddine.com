@@ -1,0 +1,13 @@
+<pre><code class="php">
+$em = $this->getDoctrine()->getManager();
+$query = $em->createQuery(
+			'SELECT p
+			FROM AppBundle:Product p
+			WHERE p.price > :price
+			ORDER BY p.price ASC'
+		)->setParameter('price', '19.99');
+$products = $query->getResult();
+
+// get just one result:
+$product = $query->setMaxResults(1)->getOneOrNullResult();
+</code></pre>

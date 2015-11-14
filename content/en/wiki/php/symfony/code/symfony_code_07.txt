@@ -1,0 +1,13 @@
+<pre><code class="php">
+// Mycompany\GreetingBundle\Controller
+
+namespace Mycompany\GreetingBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+class DefaultController extends Controller{
+    public function indexAction($name){
+        return $this->render('MycompanyGreetingBundle:Default:index.html.twig', array('name' => $name));
+    }
+}
+</code></pre>

@@ -1,0 +1,15 @@
+<pre><code class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Welcome to Symfony!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;{{ page_title }}&lt;/h1&gt;
+    &lt;ul id="navigation"&gt;
+        {% for item in navigation %}
+            &lt;li&gt;&lt;a href="{{ item.href }}"&gt;{{ item.caption }}&lt;/a&gt;&lt;/li&gt;
+        {% endfor %}
+    &lt;/ul&gt;
+&lt;/body&gt;
+</code></pre>

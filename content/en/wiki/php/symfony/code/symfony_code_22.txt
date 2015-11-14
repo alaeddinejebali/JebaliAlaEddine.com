@@ -1,0 +1,19 @@
+<pre><code class="php">
+class MainController extends Controller{
+    /**
+    * @Route("/contact")
+    * @Method("GET")
+    */
+    public function contactAction(){
+        // ... display contact form
+    }
+
+    /**
+    * @Route("/contact")
+    * @Method("POST")
+    */
+    public function sendContactAction(){
+        // ... process contact form
+    }
+}
+</code></pre>

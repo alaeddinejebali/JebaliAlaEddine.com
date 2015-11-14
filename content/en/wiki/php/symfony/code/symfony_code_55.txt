@@ -1,0 +1,3 @@
+<pre><code class="php">
+Hello &lt;?php echo $view->escape($name) ?&gt;
+</code></pre>

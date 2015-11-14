@@ -1,0 +1,7 @@
+<pre><code class="php">
+# app/config/config.yml
+framework:
+    # ...
+    templating:
+    hinclude_default_template: hinclude.html.twig
+</code></pre>

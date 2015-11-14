@@ -1,0 +1,6 @@
+<pre><code class="php">
+# app/config/config.yml
+framework:
+    # ...
+    router: { resource: "%kernel.root_dir%/config/routing.yml" }
+</code></pre>

@@ -1,0 +1,7 @@
+<pre><code class="php">
+$this->get('router')->generate('blog', array(
+    'page' => 2,
+    'category' => 'Symfony'
+    )
+);
+</code></pre>

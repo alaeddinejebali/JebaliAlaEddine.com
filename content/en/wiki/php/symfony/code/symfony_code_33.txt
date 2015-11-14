@@ -1,0 +1,5 @@
+<pre><code class="html">
+&lt;a href="{{ url('blog_show', {'slug': 'my-blog-post'}) }}"&gt;
+Read this blog post.
+&lt;/a&gt;
+</code></pre>

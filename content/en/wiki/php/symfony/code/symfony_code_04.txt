@@ -1,0 +1,11 @@
+<pre><code class="php">
+// app/AppKernel.php
+public function registerBundles(){
+    $bundles = array(
+        (...)
+        new Mycompany\GreetingBundle\MycompanyGreetingBundle(),
+    );
+	(...)
+    return $bundles;
+}
+</code></pre>

@@ -1,0 +1,17 @@
+<pre><code class="php">
+{# app/Resources/views/base.html.twig #}
+&lt;html&gt;
+    &lt;head&gt;
+        {# ... #}
+        {% block stylesheets %}
+            &lt;link href="{{ asset('css/main.css') }}" rel="stylesheet" /&gt;
+        {% endblock %}
+    &lt;/head&gt;
+    &lt;body&gt;
+        {# ... #}
+        {% block javascripts %}
+            &lt;script src="{{ asset('js/main.js') }}"&gt;&lt;/script&gt;
+        {% endblock %}
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
