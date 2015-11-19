@@ -8,6 +8,7 @@
         <div class="span12">
             <?php include "installation.php"; ?>
             <?php include "repl.php"; ?>
+            <?php include "npm.php"; ?>
 
 
 

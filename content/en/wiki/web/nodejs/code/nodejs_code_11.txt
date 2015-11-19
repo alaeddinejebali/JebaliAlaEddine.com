@@ -1,0 +1,3 @@
+<pre><code class="sh">
+$> npm uninstall moduleName
+</code></pre>

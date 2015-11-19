@@ -25,6 +25,11 @@
                             </li>
                         </ul>
                     </li>
+		<li class="caution">
+			If you encounter this problem "/usr/bin/env: node: No such file or directory",
+			You solve it using this command:
+			<?php include "code/nodejs_code_17.txt"; ?>
+		</li>
                 </ul>
             </li>
             </li>

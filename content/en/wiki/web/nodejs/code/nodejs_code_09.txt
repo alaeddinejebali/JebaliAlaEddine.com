@@ -1,0 +1,3 @@
+<pre><code class="sh">
+$> npm ls
+</code></pre>
