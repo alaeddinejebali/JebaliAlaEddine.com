@@ -39,6 +39,14 @@
                         <li>Accept (if you're okay) the remote changes:
                             <?php include "code/git_code_04.txt"; ?>
                         </li>
+                        <li>
+                            To be verified if this solution is better
+                            <ul>
+                                <li>$> git remote update</li>
+                                <li>$> git status -uno will tell you whether the branch you are tracking is ahead, behind or has diverged. If it says nothing, the local and remote are the same.</li>
+                                <li>$> git show-branch *master will show you the commits in all of the branches whose names end in master (eg master and origin/master).</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </section>
