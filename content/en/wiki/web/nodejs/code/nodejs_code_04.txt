@@ -1,0 +1,13 @@
+<pre><code class="sh">
+#Start RELP:
+$> node
+
+#Some operations
+> var x = 10
+> var y = 20
+> x + y
+
+
+#Quit RELP
+$> Ctrl+d
+</code></pre>
