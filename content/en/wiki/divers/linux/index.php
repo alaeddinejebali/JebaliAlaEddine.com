@@ -136,11 +136,24 @@
             </section>
             <section class="wiki-article">
                 <div class="wiki-article-title">
-                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">To be prepared</h1>
+                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">Install Phpmyadmin</h1>
                 </div>
                 <div class="wiki-article-body invisible">
                     <ul>
-                        <li>....</li>
+                        <li>
+				Install MySql and PhpMyadmin
+				<?php include "code/linux_code_19.txt"; ?>
+			</li>
+                        <li>For the server selection, choose apache2.</li>
+                        <li>Select yes when asked whether to use dbconfig-common to set up the database</li>
+			<li>Don't leave the database password empty. Write a password</li>
+                        <li>
+				Install MySql and PhpMyadmin
+				<?php include "code/linux_code_19.txt"; ?>
+			</li>
+                        <li>
+				Go to <a href="http://127.0.0.1/phpmyadmin" target="_blank"></a>
+			</li>
                     </ul>
                 </div>
             </section>
