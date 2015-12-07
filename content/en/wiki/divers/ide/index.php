@@ -7,6 +7,7 @@
     <div class="row-fluid">
         <div class="span12">
             <?php include "phpstorm.php"; ?>
+            <?php include "eclipse.php"; ?>
         </div>
     </div>
 </div>

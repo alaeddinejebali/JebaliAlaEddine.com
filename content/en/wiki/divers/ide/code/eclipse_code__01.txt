@@ -1,0 +1,12 @@
+<pre><code class="sh">
+$> sudo touch /usr/bin/EclipsePHP
+$> sudo chmod 755 /usr/bin/EclipsePHP
+$> sudo gedit /usr/bin/EclipsePHP (copy/paste the following code between "---")
+--- Start copy
+#!/bin/sh
+#export MOZILLA_FIVE_HOME="/usr/lib/mozilla/"
+export ECLIPSE_HOME="/opt/EclipsePHP"
+
+$ECLIPSE_HOME/eclipse $*
+--- End copy
+</code></pre>
