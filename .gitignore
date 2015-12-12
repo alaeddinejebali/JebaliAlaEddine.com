@@ -16,3 +16,6 @@ assets/
 #~demo/
 .idea/
 /nbproject/
+.buildpath
+.project
+.settings/
