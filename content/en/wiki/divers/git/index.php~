@@ -50,16 +50,6 @@
                     </ul>
                 </div>
             </section>
-            <section class="wiki-article">
-                <div class="wiki-article-title">
-                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">Adding an existing project to GitHub</h1>
-                </div>
-                <div class="wiki-article-body invisible">
-                    <ul>
-                         <?php include "code/git_code_06.txt"; ?>
-                    </ul>
-                </div>
-            </section>
             
             
             

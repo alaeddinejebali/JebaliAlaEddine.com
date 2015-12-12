@@ -23,7 +23,7 @@
                     	Create a gnome menu item
                     	<ul>
                     		<li>
-                    			$> sudo nano /usr/share/applications/eclipse.desktop
+                    			$> sudo gedit /usr/share/applications/eclipse.desktop
                     			<?php include "code/eclipse_code__02.txt"; ?>
                     		</li>
                     	</ul>
