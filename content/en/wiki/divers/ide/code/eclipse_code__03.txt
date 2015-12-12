@@ -1,3 +1,3 @@
 <pre><code class="sh">
-$> /opt/EclipsePHP/eclipse -clean &
+$> /opt/eclipse/eclipse -clean &
 </code></pre>
