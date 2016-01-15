@@ -1,0 +1,3 @@
+<pre><code class="sh">
+$> git diff master:myFile.java develop:myFile.java
+</code></pre>
