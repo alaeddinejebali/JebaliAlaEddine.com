@@ -8,17 +8,17 @@
         <div class="span12">
 
             <section class="wiki-article">
-                <div class="wiki-article-title">
-                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">How to color the Git console in Ubuntu!?</h1>
+				<div class="wiki-article-title">
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">How to color the Git console in Ubuntu!?</h1>
                 </div>
                 <div class="wiki-article-body invisible">
                     <ul>
                         <li>update the package index</li>
                         <li class="noStyle">
-                            Open "home/userName/.gitconfig" file (Ctrl+H to display hidden files) and edit it like this:
+							Open "home/userName/.gitconfig" file (Ctrl+H to display hidden files) and edit it like this:
                             <?php include "code/git_code_01.txt"; ?>
-			   If you don't see your "home/userName/.gitconfig" even when you display hidden files "Ctrl+H"
-			   <?php include "code/git_code_05.txt"; ?>
+							If you don't see your "home/userName/.gitconfig" even when you display hidden files "Ctrl+H"
+							<?php include "code/git_code_05.txt"; ?>
                         </li>
                     </ul>
                 </div>
@@ -50,6 +50,7 @@
                     </ul>
                 </div>
             </section>
+            
             <section class="wiki-article">
                 <div class="wiki-article-title">
                     <h1 class="btnShowHideArticleBody" data-article-visibility="off">Adding an existing project to GitHub</h1>
@@ -61,6 +62,24 @@
                 </div>
             </section>
             
+            <section class="wiki-article">
+				<div class="wiki-article-title">
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">Show file's diffence between master and develop</h1>
+                </div>
+                <div class="wiki-article-body invisible">
+                    <ul>
+                        <li class="noStyle">
+                        	<?php include "code/git_code_07.txt"; ?>
+                        </li>
+                        <li>
+                        	Red lines are lines removed from 'develop' and they are existing for now in 'master'.
+                        </li>
+                        <li>
+                        	Green lines are lines added in 'develop' and they are not existing for now in 'master'.
+                        </li>
+                    </ul>
+                </div>
+            </section>            
             
             
             <section class="wiki-article">

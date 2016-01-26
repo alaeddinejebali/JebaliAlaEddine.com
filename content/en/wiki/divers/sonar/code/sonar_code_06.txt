@@ -1,0 +1,4 @@
+<pre><code class="sh">
+SONAR_RUNNER_HOME=/home/ala/sonar-scanner-2.5
+PATH DEFAULT=${PATH}:${SONAR_RUNNER_HOME}/bin
+</code></pre>

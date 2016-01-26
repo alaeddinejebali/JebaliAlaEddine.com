@@ -1,7 +1,7 @@
 <pre><code class="sh">
 [Desktop Entry]
 Encoding=UTF-8
-Name=EclipsePHP
+Name=Eclipse
 Comment=Eclipse IDE
 Exec=EclipsePHP
 Icon=/opt/EclipsePHP/icon.xpm

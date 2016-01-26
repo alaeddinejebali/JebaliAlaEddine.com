@@ -1,0 +1,7 @@
+<pre><code class="sh">
+# Give write permissions to .sh file
+$> sudo chmod +x sonar.sh
+
+# Start sonarQube
+$> ./sonar.sh console
+</code></pre>
