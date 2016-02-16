@@ -1,0 +1,6 @@
+<pre><code class="sh">
+$> sudo gedit ~/.pam_environment
+
+#If the file does not exist, create it
+$> sudo touch ~/.pam_environment
+</code></pre>

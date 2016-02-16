@@ -1,0 +1,4 @@
+<pre><code class="sh">
+$> cd path/to/myProject
+$> sonar-runner
+</code></pre>
