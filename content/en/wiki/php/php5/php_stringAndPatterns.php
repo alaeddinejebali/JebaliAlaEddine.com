@@ -35,7 +35,20 @@
                     </li>
                 </ul>
             </li>
-
+			<li>
+				<h2>The Heredoc Syntax</h2>
+				<ul>
+					<li>Used to declare complex strings</li>
+					<li>You don't need to escape charaxters</li>
+					<li>
+						It's easier to declare strings that include many double-quote characters
+						<?php include 'code/php_code_58.txt'; ?>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2>Simple Searching</h2>
+			</li>
         </ul>
     </div>
 </section>

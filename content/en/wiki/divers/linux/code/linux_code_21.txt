@@ -1,3 +1,14 @@
 <pre><code class="sh">
-
+$> cd /etc/apache2/sites-available/
+$> sudo touch jebalialaeddine.dev.conf
+$> sudo gedit /etc/apache2/sites-available/jebalialaeddine.dev.conf
+# Copy/paste the following content inside it
+&lt;VirtualHost *:80&gt;
+ServerAdmin jebali.alaeddine@gmail.com
+	ServerName jebalialaeddine.dev
+	ServerAlias www.jebalialaeddine.dev
+	DocumentRoot /var/www/jebalialaeddine.com
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+&lt;/VirtualHost&gt;
 </code></pre>

@@ -1,8 +1,8 @@
 <pre><code class="bash">
 &lt;Directory /var/www/&gt;
-         Options Indexes FollowSymLinks
-         #AllowOverride None
-	 AllowOverride All 
-         Require all granted
+	Options Indexes FollowSymLinks
+	#AllowOverride None
+	AllowOverride All 
+	Require all granted
 &lt;/Directory&gt;
 </code></pre>

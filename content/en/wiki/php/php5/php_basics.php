@@ -32,7 +32,7 @@
                                     has a void return type)
                                     <?php include "code/php_code_01.txt"; ?>
                             </li>
-                            <li>print statement can only output one string, and always returns 1. That's why the echo
+                            <li class="caution">print statement can only output one string, and always returns 1. That's why the echo
                                     statement considered marginally faster than the print statement since it doesn't return any
                                     value.
                             </li>
@@ -51,13 +51,13 @@
                         output any text.
                     </li>
                     <li>An easy way to prevent spurious output from an include file is to omit the closing tag at the
-                        end, which the parser considers this perfectly legal.
-                        <?php include "code/php_code_02.txt"; ?>
+                        end, which the parser considers this perfectly legal.</li>
+                    <li>Comments:
+						<?php include "code/php_code_02.txt"; ?>
                     </li>
                     <li>Because the closing tag "?>" will end a comment, code like "// Do not show this ?> or this" will
                                 output " or this", which is not the intended behaviour.
                     </li>
-                    <li>print is a function (returns 1, always). echo is a construct.</li>
                     <li>die is a construct. die is also an alias of exit()</li>
                 </ul>
             </li>
@@ -234,7 +234,7 @@
                                 <?php include "code/php_code_15.txt"; ?>
                             </li>
                             <li>
-                                unlike what happens in many other languages, byreference activity is often slower than its
+                                unlike what happens in many other languages, by reference activity is often slower than its
                                 by-value counterpart, because PHP uses a clever "deferred-copy" mechanism that actually
                                 optimizes by-value assignments.
                             </li>

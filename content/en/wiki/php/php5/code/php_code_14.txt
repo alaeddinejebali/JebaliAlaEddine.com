@@ -1,6 +1,8 @@
 <pre><code class="php">
 	$x = 1;
-	echo $x << 1; // $x = 01 ; $x << 1 -> 10
+	echo $x << 1;
+	// $x = 01 ;
+	// $x << 1 ==> 10
 	//outputs 2<br/>
 	$x = 8;
 	echo $x >> 1 // $x = 1000 ; $x >> 1 -> 0100

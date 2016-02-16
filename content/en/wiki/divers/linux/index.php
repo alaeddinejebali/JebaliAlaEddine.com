@@ -61,7 +61,7 @@
             </section>
             <section class="wiki-article">
                 <div class="wiki-article-title">
-                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">Create a virtual host</h1>
+                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">Enable .htaccess</h1>
                 </div>
                 <div class="wiki-article-body invisible">
                     <ul>
@@ -83,25 +83,32 @@
             </section>
             <section class="wiki-article">
                 <div class="wiki-article-title">
-                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">Enable .htaccess</h1>
+                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">Create a virtual host</h1>
                 </div>
                 <div class="wiki-article-body invisible">
                     <ul>
                         <li>The goal is to access <a href="#" target="_blank">http://localhost/jebalialaeddine.com</a>
-                            by going to <a href="#" target="_blank">http://jebalialaeddine.dev</a></li>
-                        <li>
-                            Enable the New Virtual Host Files
-                            <?php include "code/linux_code_09.txt"; ?>
-                        </li>
-                        <li>
-                            Restart Apache
-                            <?php include "code/linux_code_10.txt"; ?>
-                            You will most likely receive a message saying "ould not reliably determine the server's
-                            fully qualified domain" don't carry about it.
-                        </li>
-                        <li>
-                            Set Up Local Hosts File to add it a line
-                            <?php include "code/linux_code_11.txt"; ?>
+                            by going to <a href="#" target="_blank">http://jebalialaeddine.dev</a>
+                            <ol>
+		                        <li>
+		                            Set Up Local Hosts File by adding this line to /etc/hosts
+		                            <?php include "code/linux_code_11.txt"; ?>
+		                        </li>
+                            	<li>
+                            		Create a new virtual host file
+		                            <?php include "code/linux_code_21.txt"; ?>
+                            	</li>
+		                        <li>
+		                            Enable the New Virtual Host Files
+		                            <?php include "code/linux_code_09.txt"; ?>
+		                        </li>
+		                        <li>
+		                            Restart Apache
+		                            <?php include "code/linux_code_10.txt"; ?>
+		                            You will most likely receive a message saying "ould not reliably determine the server's
+		                            fully qualified domain" don't carry about it.
+		                        </li>
+                        	</ol>
                         </li>
                     </ul>
                 </div>
