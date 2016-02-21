@@ -64,12 +64,10 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="ourteam.html">Design</a><i class="iconfa-angle-right sub-indicator"></i>
-                                    <ul>
-                                        <li>
-                                            <a href="">Bootstrap</a>
-                                        </li>
-                                    </ul>
+                                    <a href="/wiki/web/nodejs">NodeJS</a>
+                                </li>
+                                <li>
+                                    <a href="/wiki/web/firefox-addons">Firefox addons</a>
                                 </li>
                                 <li>
                                     <a href="/wiki/web/tips-web">Trucs web</a>

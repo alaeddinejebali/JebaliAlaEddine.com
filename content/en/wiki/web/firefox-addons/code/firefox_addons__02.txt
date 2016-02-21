@@ -1,0 +1,4 @@
+<pre><code class="sh">
+$> npm install jpm --global
+$> jpm #you should see some command
+</code></pre>

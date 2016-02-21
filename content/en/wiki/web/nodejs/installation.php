@@ -10,14 +10,14 @@
                 	<?php include "code/nodejs_code_02.txt"; ?>
                 </li>
 			</ul>
-    	<h2>Automatic installation</h2>
+    	<h2>Method 1: Automatic installation</h2>
     	<ul>
     		<li>
     			Run:
 				<?php include "code/nodejs_code_18.txt"; ?>
     		</li>
     	</ul>
-    	<h2>Manual installation</h2>
+    	<h2>Method 2: Manual installation</h2>
     	<ul>
 			<li>
             	Go to <a href="https://nodejs.org/en/" target="_blank">https://nodejs.org/en/</a> and download the archive file (node-v4.2.2-linux-x64.tar.gz)
