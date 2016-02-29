@@ -1,0 +1,7 @@
+<pre><code class="sh">
+	#Check your current setting:
+	$> git config --global push.default
+	
+	#If it displays something other than “current“, you need to change it:
+	$> git config --global push.default current
+</code></pre>

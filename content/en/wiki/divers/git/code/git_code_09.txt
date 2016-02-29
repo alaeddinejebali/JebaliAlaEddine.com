@@ -1,0 +1,4 @@
+<pre><code class="sh">
+	$> cd /path/to/C2_project
+	$> git config user.email "ala@c2.com”
+</code></pre>

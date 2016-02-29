@@ -1,10 +1,10 @@
 <pre>
 <code class="sh">
-$> cd path/to/my/project
-$> git init
-$> git add
-$> git commit -m "First commit"
-$> git remote add origin remote http://path/to/my/myProjectOnGithub.git
-$> git push origin master
+	$> cd path/to/my/project
+	$> git init
+	$> git add
+	$> git commit -m "First commit"
+	$> git remote add origin remote http://path/to/my/myProjectOnGithub.git
+	$> git push origin master
 </code>
 </pre>

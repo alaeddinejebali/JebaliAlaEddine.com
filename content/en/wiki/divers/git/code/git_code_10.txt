@@ -1,0 +1,9 @@
+<pre><code class="sh">
+	$> cd /var/www/projectC2/
+	
+	#Display name
+	$> git config user.name
+	
+	#Display Email
+	$> git config user.email
+</code></pre>

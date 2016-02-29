@@ -1,0 +1,3 @@
+<pre><code class="sh">
+	$> git checkout path/To/File.ext
+</code></pre>

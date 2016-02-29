@@ -79,8 +79,47 @@
                         </li>
                     </ul>
                 </div>
-            </section>            
+            </section>
             
+            <section class="wiki-article">
+                <div class="wiki-article-title">
+                    <h1 class="btnShowHideArticleBody" data-article-visibility="off">Tips and Trics</h1>
+                </div>
+                <div class="wiki-article-body invisible">
+                	<h2>Make git push the current branch by default</h2>
+                	<ul>
+                    	<li class="noStyle">
+                    		<?php include "code/git_code_11.txt"; ?>
+                    	</li>
+                	</ul>
+                	
+                	<h2>Configure 2 GIT accounts on the same PC</h2>
+                    <ul>
+                        <li>
+                        	Let’s say that you’re working for a company C1 and a company C2. We suppose that you've configured globally your account:
+                        	<?php include "code/git_code_08.txt"; ?>
+                        </li>
+                        <li>
+                        	Now if you’ll work for a C2 project, you can configure a GIT account only for this repository:
+                        	<?php include "code/git_code_09.txt"; ?>
+                        </li>
+                    </ul>
+                    
+                    <h2>Display your GIT configuration by project</h2>
+                    <ul>
+                    	<li class="noStyle">
+                    		<?php include "code/git_code_10.txt"; ?>
+                    	</li>
+                    </ul>
+                    
+                    <h2>Discard changes on file</h2>
+                    <ul>
+                    	<li class="noStyle">
+                    		<?php include "code/git_code_12.txt"; ?>
+                    	</li>
+                    </ul>
+                </div>
+            </section>
             
             <section class="wiki-article">
                 <div class="wiki-article-title">
@@ -92,6 +131,8 @@
                     </ul>
                 </div>
             </section>
+            
+            
         </div>
     </div>
 </div>

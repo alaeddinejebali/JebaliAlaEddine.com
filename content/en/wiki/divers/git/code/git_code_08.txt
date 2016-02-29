@@ -1,0 +1,4 @@
+<pre><code class="sh">
+	$> git config --global user.name "Ala Eddine JEBALI"
+	$> git config --global user.name "ala@c1.com"
+</code></pre>

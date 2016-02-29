@@ -1,6 +1,6 @@
 <pre>
 <code class="vim">
-$> git fetch origin
-sudo apt-get update
+	$> git fetch origin
+	$> sudo apt-get update
 </code>
 </pre>
