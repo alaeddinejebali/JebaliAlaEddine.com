@@ -1,0 +1,7 @@
+<pre><code class="sh">
+	# Create local branch
+	$> git checkout -b myNewBranch
+	
+	# Edit files, add and commit
+	$> git push -u origin myNewBranch
+</code></pre>

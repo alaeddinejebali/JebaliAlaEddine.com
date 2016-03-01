@@ -1,0 +1,7 @@
+<pre><code class="sh">
+	# If myFile.ext is not added to stage
+	$> git diff myfile.ext
+	
+	# If myFile.ext is already added to stage
+	$> git diff --cached myfile.txt
+</code></pre>

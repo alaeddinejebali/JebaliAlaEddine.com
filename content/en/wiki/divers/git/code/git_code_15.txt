@@ -1,0 +1,3 @@
+<pre><code class="sh">
+	$> git config --global push.default simple
+</code></pre>
