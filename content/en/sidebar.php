@@ -79,6 +79,7 @@
                             <ul>
                                 <li><a href="/wiki/divers/docker">Docker</a></li>
                                 <li><a href="/wiki/divers/git">GIT</a></li>
+                                <li><a href="/wiki/divers/go">Go</a></li>
                                 <li><a href="/wiki/divers/ide">IDE</a></li>
                                 <li><a href="/wiki/divers/linux">Linux</a></li>
                             </ul>
