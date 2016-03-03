@@ -1,0 +1,3 @@
+<pre><code class="go">
+	x := [5]float64{ 98, 93, 77, 82, 83 }
+</code></pre>

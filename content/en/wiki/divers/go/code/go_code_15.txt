@@ -1,0 +1,10 @@
+<pre><code class="go">
+	// aslice with length=0
+	var x []float64
+	
+	//a slice with length=5
+	x := make([]float64, 5)
+	
+	//The make function also allows a 3 rd parameter:
+	x := make([]float64, 5, 10)
+</code></pre>

@@ -1,0 +1,5 @@
+<pre><code class="go">
+	fun main(){
+		x := "Hello World"
+	}
+</code></pre>

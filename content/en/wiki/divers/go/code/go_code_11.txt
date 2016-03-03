@@ -1,0 +1,5 @@
+<pre><code class="go">
+	var x [5]int
+	x[3] = 100
+	fmt.Println(x)
+</code></pre>

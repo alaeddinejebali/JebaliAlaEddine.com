@@ -1,0 +1,15 @@
+<pre><code class="go">
+	//main.go
+	package main
+	
+	//import format package
+	import "fmt"
+	
+	func main() {
+		//Println: Print Line
+		fmt.Println("Hello World")
+	}
+	
+	# Run program
+	$> go run main.go
+</code></pre>

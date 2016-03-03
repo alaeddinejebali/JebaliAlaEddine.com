@@ -1,0 +1,4 @@
+<pre><code class="go">
+	# Show fmt help
+	$> godoc fmt Println
+</code></pre>

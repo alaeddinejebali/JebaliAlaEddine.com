@@ -1,0 +1,15 @@
+<pre><code class="go">
+	var total float64 = 0
+	for i, value := range x {
+		total += value
+	}
+	fmt.Println(total / float64(len(x)))
+	# This will generate an error since i variable is never used
+	
+	#solution: use "_": it tells compiler that we don't need it.
+	var total float64 = 0
+	for _, value := range x {
+		total += value
+	}
+	fmt.Println(total / float64(len(x)))
+</code></pre>

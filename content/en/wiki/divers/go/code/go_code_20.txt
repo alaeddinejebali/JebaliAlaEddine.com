@@ -1,0 +1,6 @@
+<pre><code class="go">
+	#Get the value from the map, then if it's successful we run the code inside of the block.
+	if name, ok := elements["Un"]; ok {
+		fmt.Println(name, ok)
+	}
+</code></pre>
