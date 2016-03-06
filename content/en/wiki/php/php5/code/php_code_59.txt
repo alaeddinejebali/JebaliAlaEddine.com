@@ -1,0 +1,4 @@
+<pre><code class="php">
+	//Compare the first four characters
+	echo strncasecmp ($s1, $s2, 4);
+</code></pre>

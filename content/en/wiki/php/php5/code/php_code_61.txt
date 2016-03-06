@@ -1,0 +1,5 @@
+<pre><code class="php">
+	$haystack = '123456';
+	$needle = '34';
+	echo strstr ($haystack, $needle); // outputs 3456
+</code></pre>

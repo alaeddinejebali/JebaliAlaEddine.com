@@ -1,0 +1,4 @@
+<pre><code class="php">
+	echo strrpos ("abcwxyzabcqq", "abc");
+	// outputs: 7
+</code></pre>

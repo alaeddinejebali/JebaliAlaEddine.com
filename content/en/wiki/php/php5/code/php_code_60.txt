@@ -1,0 +1,10 @@
+<pre><code class="php">
+	$Res = strpos("abcd", "a")
+	if( $Res == false ){
+		//String not found
+	}
+	// This will generate string not found because 0 == false
+	// So you need to use: if( $Res === false )
+		
+	echo strpos ('123456123456', '123', 1); // outputs 6
+</code></pre>

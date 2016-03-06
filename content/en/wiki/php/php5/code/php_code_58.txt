@@ -1,0 +1,8 @@
+<pre><code class="php">
+	&dollar;who = "Ala Eddine";
+	echo &lt;&lt;&lt;AN_IDENTIFIER
+		So I said, "Hello &dollar;who"
+		AN_IDENTIFIER;
+		
+	//outputs: So I said, "Hello Ala Eddine" 
+</code></pre>
