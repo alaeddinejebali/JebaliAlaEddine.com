@@ -1,3 +1,15 @@
 <pre><code class="php">
+echo strcspn('abcd',  'apple');
+// 'a' dosn't exist in 'apple' => false => exit
+// outputs: 0
 
+echo strcspn('abcd',  'banana');
+// 'a' dosn't exist in 'banana' => false => exit
+//outputs: 0
+
+echo strcspn('hello', 'ala');
+// 'h' dosn't exist in 'ala' => true  => result: 1
+// 'e' dosn't exist in 'ala' => true  => result: 2
+// 'l' dosn't exist in 'ala' => false => exit
+//outputs: 2
 </code></pre>

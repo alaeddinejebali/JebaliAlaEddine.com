@@ -90,13 +90,23 @@
 				<h2>Matching Against a Mask</h2>
 				<ul>
 					<li>
-						strspn ($string, $mask)
+						strspn($string, $mask, $optionalStartIndex, $optionalLength): The whitelist approach
 						<ul>
 							<li>
-								match a string against a “whitelist” mask of allowed characters.
+								match a string against a whitelist mask of allowed characters.
 							</li>
 							<li>
-								returns the length of the initial segment of the string that contains any of the characters specified in the mask
+								returns the length of the <u>initial segment</u> of the string that contains any of the characters specified in the mask
+								<?php include 'code/php_code_63.txt'; ?>
+							</li>
+						</ul>
+					</li>
+					<li>
+						strspn($string, $mask, $optionalStartIndex, $optionalLength): The blacklist approach
+						<ul>
+							<li>
+								returns the length of <u>the initial segment</u> of the string that does not contain any of the characters from the mask.
+								<?php include 'code/php_code_64.txt'; ?>
 							</li>
 						</ul>
 					</li>

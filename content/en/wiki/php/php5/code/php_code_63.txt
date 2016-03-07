@@ -1,3 +1,18 @@
 <pre><code class="php">
+$string = "Hallo world from Ala, Hi!";
 
+$mask = "alxwz";
+echo strspn ($string, $mask);
+// outputs 0
+// 'H' is present in &dollar;mask ==> result=0 ==> exit
+
+
+$mask = "Halxwz";
+echo strspn ($string, $mask);
+// outputs: 4
+// 'H' is present in &dollar;mask ==> true==> result=1
+// 'a' is present in &dollar;mask ==> true==> result=2
+// 'l' is present in &dollar;mask ==> true==> result=3
+// 'l' is present in &dollar;mask ==> true==> result=4
+// 'o' is present in &dollar;mask ==> false ==> exit
 </code></pre>
