@@ -1,3 +1,15 @@
 <pre><code class="php">
+$string = "Hello from Ala!";
 
+//echo substr($string, 1, 6);
+//outputs: ello f
+
+//echo substr($string, 3);
+//outputs: lo from Ala!
+
+//echo substr($string, -6);
+//outputs: m Ala!
+
+echo substr($string, -6, 4);
+//outputs: m Al
 </code></pre>

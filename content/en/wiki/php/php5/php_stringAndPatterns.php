@@ -112,6 +112,49 @@
 					</li>
 				</ul>
 			</li>
+        	<li>
+        		<h2>Search and Replace</h2>
+        		<ul>
+        			<li>
+        				str_replace($needle, $replacement, $haystack, $optionalNbrReplacements) : case sensitive
+        				<ul>
+		        			<li>
+		        				str_ireplace($needle, $replacement, $haystack, $optionalNbrReplacements) : case insensitive
+		        			</li>
+		        			<li>
+		        				Look for the needle in the haystack and substitute every single instance of the latter with the replacement string.
+		        				<?php include "code/php_code_65.txt"; ?>
+		        			</li>
+	        			</ul>
+	        		</li>
+	        		<li>
+	        			substr_replace($needle, $replacement, $startIndex, $optionalLength)
+	        			<ul>
+	        				<li>
+	        					Used if you know the starting and the ending point
+	        					<?php include "code/php_code_66.txt"; ?>
+	        				</li>
+	        			</ul>
+	        		</li>
+        		</ul>
+        	</li>
+        	<li>
+        		<h2>Extracting Substrings</h2>
+        		<ul>
+        			<li>
+        				substr($string, $startIndex, $optionalLength)
+        				<?php include "code/php_code_67.txt"; ?>
+        			</li>
+        		</ul>
+        	</li>
+        	<li>
+        		<h2>Formatting strings</h2>
+        		<ul>
+        			<li>
+        			
+        			</li>
+        		</ul>
+        	</li>
         </ul>
     </div>
 </section>

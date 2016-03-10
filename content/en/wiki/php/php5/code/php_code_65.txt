@@ -1,3 +1,20 @@
 <pre><code class="php">
+echo str_replace("world", "Ala", "Hello World!");
+//outputs: Hello World!
 
+echo str_replace("World", "Ala", "Hello World!");
+//outputs: Hello Ala!
+
+echo str_ireplace("World", "Ala", "Hello World! This World Is mine. what about your world is it like my world?", $nbrReplacements);
+//outputs: Hello Ala! This Ala Is mine. what about your Ala is it like my Ala?
+
+echo $nbrReplacements;
+//outputs: 4
+
+echo str_replace(array("Hello", "World"), array("Bonjour", "Monde"), "Hello World!");
+//outouts: Bonjour Monde!
+
+echo str_replace(array("Hello", "World"), "Monde", "Hello World!");
+//is translated to: str_replace(array("Hello", "World"), array("Monde", "Monde"), "Hello World!");
+//outputs: Monde Monde!
 </code></pre>

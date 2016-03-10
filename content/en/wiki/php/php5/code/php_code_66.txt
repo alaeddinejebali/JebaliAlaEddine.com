@@ -1,3 +1,7 @@
 <pre><code class="php">
+//echo substr_replace("Hello World! This World Is mine. what about your world is it like my world?", "XXX", 6);
+//outputs: Hello XXX
 
+echo substr_replace("Hello World! This World Is mine. what about your world is it like my world?", "XXX", 6, 10);
+//outputs: Hello XXXs World Is mine. what about your world is it like my world?
 </code></pre>
