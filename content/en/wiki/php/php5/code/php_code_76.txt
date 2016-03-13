@@ -1,0 +1,18 @@
+<pre><code class="php">
+$subjects[’body’] = "[b]Make Me Bold![/b]";
+$subjects[’subject’] = "[i]Make Me Italics![/i]";
+
+$regex[] = "@\[b\](.*?)\[/b\]@i";
+$regex[] = "@\[i\](.*?)\[/i\]@i";
+
+$replacements[] = "&lt;b&gt;$1&lt;/b&gt;";
+$replacements[] = "&lt;i&gt;$1&lt;/i&gt;";
+
+$results = preg_replace($regex, $replacements, $subjects);
+
+/*outputs: array(2) {
+	["body"] => "&lt;b&gt;Make Me Bold!&lt;/b&gt;",
+	["subject"]=> "&lt;i&gt;Make Me Italic!&lt;/i&gt;"
+}
+*/
+</code></pre>

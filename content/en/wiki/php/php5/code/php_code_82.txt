@@ -1,0 +1,6 @@
+<pre><code class="php">
+$file = "test.txt";
+if( is_uploaded_file($file) ){
+	echo ("$file is uploaded via HTTP POST");
+}
+</code></pre>

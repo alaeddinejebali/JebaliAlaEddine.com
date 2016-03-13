@@ -1,0 +1,16 @@
+<pre><code class="php">
+echo $_FILES['myFile']['name'];
+// The original name of the file
+
+echo $_FILES['myFile']['type'];
+// The MIME type of the file provided by the browser
+
+echo $_FILES['myFile']['size'];
+// The size (in bytes) of the file
+
+echo $_FILES['myFile']['tmp_name'];
+// The name of the file’s temporary location
+
+echo $_FILES['myFile']['error'];
+// A value of <b>UPLOAD_ERR_OK</b> indicates a successful transfer, while any other error indicates that something went wrong
+</code></pre>

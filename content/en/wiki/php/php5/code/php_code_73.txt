@@ -1,0 +1,11 @@
+<pre><code class="php">
+$name = "Ala Eddine JEBALI 1985";
+$regex = "/^(\w+)\s(\w+)\s(\w+)\s(\d)+/";
+
+$matches = array();
+if (preg_match ($regex, $name, $matches)) {
+    print_r ($matches);
+}
+
+//outputs: Array([0] => Ala Eddine JEBALI 1985, [1] => Ala, [2] => Eddine, [3] => JEBALI, [4] => 5)
+</code></pre>

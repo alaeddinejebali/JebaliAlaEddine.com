@@ -1,0 +1,19 @@
+<pre><code class="php">
+$body = "[b]Make Me Bold![/b]";
+$regex = "@\[b\](.*?)\[/b\]@i";
+
+$replacement = "<b>$0</b>";
+$body1 = preg_replace($regex, $replacement, $body);
+//print_r($body1);
+//outputs: &lt;b&gt;[b]Make Me Bold![/b]&lt;/b&gt;
+
+$replacement = "<b>$1</b>";
+$body2 = preg_replace($regex, $replacement, $body);
+//print_r($body2);
+//outputs: &lt;b&gt;Make Me Bold!&lt;/b&gt;
+
+$replacement = "<b>$2</b>";
+$body3 = preg_replace($regex, $replacement, $body);
+//print_r($body3);
+//outputs: &lt;b&gt;&lt;/b&gt;
+</code></pre>

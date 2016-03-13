@@ -1,0 +1,6 @@
+<pre><code class="php">
+&lt;form enctype="multipart/form-data" action="index.php" method="post"&gt;
+	&lt;input type="hidden" name="MAX_FILE_SIZE" value="50000" /&gt;
+	&lt;input name="myFile" type="file" /&gt;
+&lt;/form&gt;
+</code></pre>

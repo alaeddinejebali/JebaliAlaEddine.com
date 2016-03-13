@@ -1,0 +1,5 @@
+<pre><code class="php">
+if ($_POST['btnSubmit']) {
+	//....
+}
+</code></pre>

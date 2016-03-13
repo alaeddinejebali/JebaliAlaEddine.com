@@ -1,3 +1,10 @@
 <pre><code class="php">
+$number = 1234.56789;
 
+echo number_format($number);
+// 1,235
+
+
+echo number_format($number, 2, '!', '*');
+// 1*234!56
 </code></pre>

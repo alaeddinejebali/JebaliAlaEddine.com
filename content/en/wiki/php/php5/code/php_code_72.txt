@@ -1,0 +1,10 @@
+<pre><code class="php">
+$data = "123 ab 6789";
+$format = "%d %s %d";
+var_dump( sscanf($data, $format) );
+//outputs: array(3){123, "ab", 6789}
+
+$format = "%s %d %s %d";
+var_dump( sscanf($data, $format) );
+//outputs: array(3){123, null, null, null}
+</code></pre>

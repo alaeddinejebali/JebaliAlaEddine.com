@@ -1,0 +1,7 @@
+<pre><code class="php">
+#http://example.org/index.php?list=user&order[by]=column&order[dir]=asc
+
+#and then access them using the following syntax:
+echo $_GET['order']['by'];
+echo $_GET['order']['dir']
+</code></pre>

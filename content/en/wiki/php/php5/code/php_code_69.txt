@@ -1,0 +1,13 @@
+<pre><code class="php">
+setlocale(LC_MONETARY, "en_US");
+echo money_format("%.2n", "100000.698");
+// outputs: $100,000.70
+echo money_format("%.2i", "100000.698")
+// outputs: USD 100,000.70
+
+setlocale(LC_MONETARY, "ja_JP.UTF-8");
+echo money_format("%.2n", "100000.698");
+// outputs: ¥100,000.70
+echo money_format("%.2i", "100000.698");
+// outputs: JPY100,000.70
+</code></pre>

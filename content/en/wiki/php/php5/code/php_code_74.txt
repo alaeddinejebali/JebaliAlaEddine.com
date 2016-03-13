@@ -1,0 +1,31 @@
+<pre><code class="php">
+$string = "a1bb b2cc c2dd";
+
+$regex = "/[abc]\d/";
+if (preg_match_all ($regex, $string, $matches)) {
+    //print_r($matches);
+}
+//outputs: Array([0] => Array([0] => a1, [1] => b2, [2] => c2))
+
+$regex = "/([abc])*\d/";
+if (preg_match_all ($regex, $string, $matches)) {
+    print_r($matches);
+}
+/*outputs:
+Array(
+    [0] => Array(
+            [0] => a1
+            [1] => b2
+            [2] => c2
+        )
+
+    [1] => Array
+        (
+            [0] => a
+            [1] => b
+            [2] => c
+        )
+
+)
+*/
+</code></pre>

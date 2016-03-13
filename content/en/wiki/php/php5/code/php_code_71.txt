@@ -1,0 +1,14 @@
+<pre><code class="php">
+$n = 123;
+$f = 123.45;
+$s = "A string";
+
+printf ("%d", $n); // outputs: 123
+
+printf ("%d", $f); // outputs 123
+
+printf ("The string is %s", $s);
+
+printf ("%3.3f", $f);
+// outputs: 123.450
+</code></pre>

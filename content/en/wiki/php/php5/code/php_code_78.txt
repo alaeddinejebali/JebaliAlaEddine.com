@@ -1,0 +1,4 @@
+<pre><code class="php">
+$data = "Max & Ruby";
+echo "http://www.phparch.com/index.php?name=" . urlencode ($data);
+</code></pre>
