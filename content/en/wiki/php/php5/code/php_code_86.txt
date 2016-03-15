@@ -1,0 +1,27 @@
+<pre><code class="php">
+class A{
+    public $name;
+    
+    function getName(){
+        return $this->name;
+    }
+    
+    function setName($name){
+        $this->name = $name;
+    }
+}
+
+$x = new A();
+$x->setName('Ala');
+//echo "x.name = '" . $x->getName() . "'";
+//outputs: x.name = 'Ala'
+
+$y = new A();
+$y->setName('John Doe');
+echo "y.name = '" . $y->getName() . "'";
+// outputs: y.name = 'John Doe'
+
+$x = $y;
+echo "x.name='" . $x->getName() . "' | y.name='" . $y->getName() . "'";
+// outputs: x.name='John Doe' | y.name='John Doe'
+</code></pre>

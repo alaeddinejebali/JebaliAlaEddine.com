@@ -65,6 +65,48 @@
         		</ul>
         	</li>
         	<li>
+        		<h2>Cookies</h2>
+        		<ul>
+        			<li>
+						How cookies works:
+						<ol>
+							<li>You request www.ala.com</li>
+							<li>Server hosting www.ala.com sets the cookie on the client (in its HTTP <b>response header</b>) and save it on your PC under the domain www.ala.com.</li>
+							<li>When you refresh the page (or request another page under www.ala.com), server receives the cookie (browser sends it in its HTTP <b>request header</b>).</li>
+							<li>Server send it back to you again.</li>
+						</ol>
+					</li>
+					<li>PHP interpreter takes care of automatically separating the individual cookies from the header and places them in the $_COOKIE superglobal array.</li>
+					<li>
+						setcookie($cookieName, $optionalValue, $optionalExpires=0, $optionalPath, $optionalDomain, $optionalSecure=false, $optionalHttpOnly=false);
+						<ul>
+							<li>
+								$optionalExpires: in seconds (1day = 24h * 60m * 60s = 86400). If $optionalExpires == 0, cookie expires when session ends.
+							</li>
+							<li>
+								$optionalPath: the browser will only send a cookie to pages within this path. If set to "/", the cookie will be available within the entire domain. If set to "/php/", the cookie will only be available within the php directory and all sub-directories of php.
+							</li>
+							<li>
+								$optionalDomain: you cannot set this value to a domain other than the one of the page setting the cookie (the host www.ala.com can set a cookie for blog.ala.com , but not for www.microsoft.com).
+							</li>
+							<li>
+								$optionalSecure: TRUE indicates that the cookie will only be set if a secure (HTTPS) connection exists.
+							</li>
+							<li>
+								$optionalHttpOnly: If set to true the cookie will be accessible only through the HTTP protocol (the cookie will not be accessible by scripting languages).
+							</li>
+							<li class="noStyle">
+								<?php include "code/php_code_84.txt"; ?>
+							</li>
+							<li>
+									There is no way to delete a cookie—primarily because you really have no control over how cookies are stored and managed on the client side. So just reset it:
+									<?php include 'code/php_code_85.txt'; ?>
+							</li>
+						</ul>
+					</li>
+        		</ul>
+        	</li>
+        	<li>
         		<h2>Sessions</h2>
         		<ul>
         			<li>
