@@ -1,3 +1,29 @@
 <pre><code class="php">
+class A{
+	public $name = 'Ala';
+	protected $age = 31;
+	private $address = 'France';
+	function __construct(){
+		var_dump( get_object_vars($this) );
+	}
+}
+class B extends A{
+	function __construct(){
+		var_dump( get_object_vars($this) );
+	}
+}
+class C{
+	function __construct(){
+		$a = new A();
+		var_dump( get_object_vars($a) );
+	}
+}
+new A();
+//outputs: array(3){ ["name"]=>"Ala", ["age"]=> 31, ["address"]=> "France"}
 
+new B();
+//outputs: array(2){["name"]=> Ala", ["age"]=> 31}
+
+new C();
+//outputs: array(1){["name"]=> "Ala"}
 </code></pre>

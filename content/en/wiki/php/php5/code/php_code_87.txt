@@ -1,3 +1,23 @@
 <pre><code class="php">
-
+class A{
+	function f(){
+		echo "A::f() called";
+	}
+	function g(){
+		echo "A::g() called";
+	}
+}
+class B extends A{
+	//This will override A::f()
+	function f(){
+		echo "B::f() called";
+	}
+	
+	function h(){
+		parent::g();
+	}
+}
+$b = new B();
+$b->f(); // outputs: B::f() called
+$b->g(); // outputs: A::g() called
 </code></pre>

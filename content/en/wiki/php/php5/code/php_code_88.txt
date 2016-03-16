@@ -1,3 +1,14 @@
 <pre><code class="php">
+class A{
+	function __construct(){
+		echo __METHOD__;
+	}
+	function __destruct(){
+		echo __METHOD__;
+	}
+}
 
+new foo();
+//outputs: A::__construct
+// A::__destruct
 </code></pre>
