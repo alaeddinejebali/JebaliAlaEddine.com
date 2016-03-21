@@ -1,3 +1,21 @@
 <pre><code class="php">
+class myException extends Exception {
+	// ...
+}
 
+//...
+try {
+	try {
+		try {
+			new PDO("mysql:dbname=zce");
+			throw new myException("An unknown error occurred.");
+		} catch (PDOException $e) {
+			echo $e->getMessage();
+		}
+	} catch(myException $e) {
+		echo $e->getMessage();
+	}
+} catch (Exception $e) {
+	echo $e->getMessage();
+}
 </code></pre>

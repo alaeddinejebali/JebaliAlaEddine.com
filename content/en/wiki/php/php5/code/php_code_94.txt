@@ -1,3 +1,5 @@
 <pre><code class="php">
-
+class PDODataStoreAdapter implements DataStoreAdapter, SeekableIterator{
+	// ...
+}
 </code></pre>

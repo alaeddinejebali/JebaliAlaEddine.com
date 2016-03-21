@@ -1,3 +1,27 @@
 <pre><code class="php">
+class A{
+    public $name = 'Ala';
+    public function f() {
+        echo $this->name;
+    }
 
+}
+
+class B extends A{
+    public $name = 'David';
+
+}
+
+$a = new A();
+$b = new B();
+
+var_dump($a instanceof A); // outputs: True
+var_dump($b instanceof B); // outputs: True
+var_dump($a instanceof B); // outputs: False
+var_dump($b instanceof A); // outputs: True
+
+var_dump( is_subclass_of($a, 'A') ); // outputs: False
+var_dump( is_subclass_of($b, 'A') ); // outputs: True
+var_dump( is_subclass_of($a, 'B') ); // outputs: False
+var_dump( is_subclass_of($b, 'B') ); // outputs: False
 </code></pre>

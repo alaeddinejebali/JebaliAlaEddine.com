@@ -1,0 +1,10 @@
+<pre><code class="php">
+function handleUncaughtException($e){
+	echo $e->getMessage();
+}
+set_exception_handler("handleUncaughtException");
+
+//If you want to test it:
+throw new Exception("You caught me!");
+echo "This is never displayed";
+</code></pre>

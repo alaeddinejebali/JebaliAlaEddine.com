@@ -1,3 +1,36 @@
 <pre><code class="php">
-
+class Exception {
+	// The error message associated with this exception
+	protected $message = 'Unknown Exception';
+	
+	// The error code associated with this exception
+	protected $code = 0;
+	
+	// The pathname of the file where the exception occurred
+	protected $file;
+	
+	// Constructor
+	function __construct ($message = null, $code = 0);
+	
+	// Returns the message
+	final function getMessage();
+	
+	// Returns the error code
+	final function getCode();
+	
+	// Returns the file name
+	final function getFile();
+	
+	// Returns the file line
+	final function getLine();
+	
+	// Returns an execution backtrace as an array
+	final function getTrace();
+	
+	// Returns a backtrace as a string
+	final function getTraceAsString();
+	
+	// Returns a string representation of the exception
+	function __toString();
+}
 </code></pre>

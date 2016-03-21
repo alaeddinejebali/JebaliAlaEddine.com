@@ -1,3 +1,26 @@
 <pre><code class="php">
+class A{
+	const MY_NAME = 'Ala';
+	
+	function f(){
+	    echo A::MY_NAME;
+	}
+	
+	function g(){
+	    echo $this::MY_NAME;
+	}
+}
+$a = new A();
 
+echo A::MY_NAME;
+// outputs: Ala
+
+echo a::MY_NAME;
+// outputs: Ala
+
+$a->f();
+// outputs: Ala
+
+$a->g();
+// outputs: Ala
 </code></pre>

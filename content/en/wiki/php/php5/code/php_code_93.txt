@@ -1,3 +1,23 @@
 <pre><code class="php">
+interface DataStoreAdapter {
+	public function insert();
+	public function update();
+	public function save();
+	public function newRecord($name = null);
+}
 
+class PDODataStoreAdapter implements DataStoreAdapter {
+	public function insert(){
+		// ...
+	}
+	public function update(){
+		// ...
+	}
+	public function save(){
+		// ...
+	}
+	public function newRecord($name = null){
+		// ...
+	}
+}
 </code></pre>

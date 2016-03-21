@@ -1,3 +1,26 @@
 <pre><code class="php">
+abstract class DataStoreAdapter {
+	private $id;
+	abstract function insert();
+	abstract function update()
+	public function save(){
+		if (!is_null($this->id)){
+			$this->update();
+		}else {
+			$this->insert();
+		}
+	}
+}
 
+class PDODataStoreAdapter extends DataStoreAdapter {
+	public __construct($dsn){
+		// ...
+	}
+	function insert(){
+		// ...
+	}
+	function update(){
+		// ...
+	}
+}
 </code></pre>
