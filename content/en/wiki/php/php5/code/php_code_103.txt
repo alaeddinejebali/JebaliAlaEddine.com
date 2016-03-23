@@ -1,3 +1,52 @@
 <pre><code class="php">
+&lt;?php
+/**
+* Greeting Class
+*
+* Extends a greeting to someone/thing
+*/
+class Greeting {
+	/**
+	* Say Hello
+	*
+	* @param string $to
+	*/
+	function hello($to = "World"){
+		echo "Hello $to";
+	}
+}
+$class = new ReflectionClass("Greeting");
+?&gt;
 
+&lt;h1&gt;Documentation&lt;/h1&gt;
+&lt;h2&gt;&lt;?php echo $class-&gt;getName(); ?&gt;&lt;/h2&gt;
+&lt;p&gt;Comment:&lt;/p&gt;
+&lt;pre&gt;&lt;?php echo $class-&gt;getDocComment(); ?&gt;&lt;/pre&gt;
+&lt;p&gt;
+	File: &lt;?php echo $class-&gt;getFileName(); ?&gt;&lt;br /&gt;
+	Lines: &lt;?php echo $class-&gt;getStartLine(); ?&gt; - &lt;?php echo $class-&gt;getEndLine(); ?&gt;
+&lt;/p&gt;
+&lt;?php
+foreach( $class-&gt;getMethods() as $method ){
+	$prototype = $method-&gt;name . ' ( ';
+	$args = array();
+	foreach ($method-&gt;getParameters() as $param){
+		$arg = '';
+		if($param-&gt;isPassedByReference()){
+			$arg = '&';
+		}
+		if( $param-&gt;isOptional() ){
+			$arg = '[' .$param-&gt;getName(). ' = ' .$param-&gt;getDefaultValue(). ']';
+		}else{
+			$arg = $param-&gt;getName();
+		}
+		$args[] = $arg;
+	}
+	$prototype .= implode(", ", $args) . ' )';
+	echo "&lt;h3&gt;$prototype&lt;/h3&gt;";
+	echo "&lt;p&gt;Comment:&lt;/p&gt;&lt;pre&gt;" .$method-&gt;getDocComment(). "&lt;/pre&gt;";
+	echo "&lt;p&gt;File: " .$method-&gt;getFileName(). "&lt;br /&gt;";
+	echo "Lines: " .$method-&gt;getStartLine(). " - " .$method-&gt;getEndLine(). "&lt;/p&gt;";
+}
+?&gt;
 </code></pre>

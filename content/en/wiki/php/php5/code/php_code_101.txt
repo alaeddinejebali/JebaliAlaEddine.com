@@ -1,3 +1,8 @@
 <pre><code class="php">
-
+function __autoload($class){
+	require_once str_replace("_", "/", $class);
+}
+$obj = new Those_Some_Class();
+// __autoload() is called and passed "Those_Some_Class.php" as its argument
+// and load those/Some/Class.php
 </code></pre>

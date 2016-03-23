@@ -1,3 +1,54 @@
 <pre><code class="php">
+&lt;?php
+	/**
+	* Say Hello
+	*
+	* @param string $to
+	*/
+	function hello($to = "World"){
+		echo "Hello $to";
+	}
+	$funcs = get_defined_functions();
+?&gt;
 
+&lt;h1&gt;Documentation&lt;/h1&gt;
+
+&lt;?php
+/**
+* Do Foo
+*
+* @param string $bar Some Bar
+* @param array $baz An Array of Baz
+*/
+function foo($bar, $baz = array()){ 
+	// ....
+}
+$funcs = get_defined_functions();
+foreach ($funcs['user'] as $func){
+	try{
+		$func = new ReflectionFunction($func);
+	} catch (ReflectionException $e) {
+		// ...
+	}
+	$prototype = $func-&gt;name . ' ( ';
+	$args = array();
+	foreach ($func-&gt;getParameters() as $param){
+		$arg = '';
+		if( $param-&gt;isPassedByReference() ){
+			$arg = '&';
+		}
+		if( $param-&gt;isOptional() ){
+			$arg = '[' .$param-&gt;getName(). ' = ' .$param-&gt;getDefaultValue(). ']';
+		} else{
+			$arg = $param-&gt;getName();
+		}
+		$args[] = $arg;
+	}
+	$prototype .= implode(", ", $args) . ' )';
+	echo "&lt;h2&gt;$prototype&lt;/h2&gt;";
+	echo "&lt;p&gt;Comment:&lt;/p&gt;&lt;pre&gt;" .$func-&gt;getDocComment(). "&lt;/pre&gt;";
+	echo "&lt;p&gt;File: " .$func-&gt;getFileName(). "&lt;br /&gt;";
+	echo "Lines: " .$func-&gt;getStartLine(). " - " .$func-&gt;getEndLine(). "&lt;/p&gt;";
+}
+?&gt;
 </code></pre>
