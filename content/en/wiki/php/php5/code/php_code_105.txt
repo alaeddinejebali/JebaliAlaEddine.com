@@ -1,3 +1,25 @@
-<pre><code class="php">
+<pre><code class="sql">
+# Create alaDB
+CREATE DATABASE alaDB;
 
+# Create book table
+CREATE TABLE book(
+	id INT NOT NULL PRIMARY KEY,
+	isbn VARCHAR(13),
+	title VARCHAR(255),
+	author VARCHAR(255),
+	publisher VARCHAR(255)
+);
+
+# Create a unique index on the isbn column
+CREATE INDEX book_isbn ON book (isbn)
+
+# Add a table that contains a list of all of the chapter titles for every book
+# This code creates a one-to-many relationship between 
+# the parent table book and the child table book_chapter based on the isbn field
+CREATE TABLE book_chapter (
+	isbn VARCHAR(13) REFERENCES book (id),
+	chapter_number INT NOT NULL,
+	chapter_title VARCHAR(255)
+);
 </code></pre>
