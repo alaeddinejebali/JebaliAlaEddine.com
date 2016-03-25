@@ -1,3 +1,7 @@
 <pre><code class="sql">
-DROP table book
+# Drop table
+DROP TABLE book
+
+# Drop database
+DROP SCHEMA aladb
 </code></pre>

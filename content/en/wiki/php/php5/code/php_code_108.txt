@@ -1,3 +1,5 @@
-<pre><code class="php">
-
+<pre><code class="sql">
+SELECT *
+FROM book INNER JOIN book_chapter
+ON book.isbn = book_chapter.isbn;
 </code></pre>

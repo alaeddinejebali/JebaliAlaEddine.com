@@ -1,3 +1,16 @@
-<pre><code class="php">
+<pre><code class="sql">
+# Insert data
+INSERT INTO <tablename> (<field1>[, ..., <fieldn>]) VALUES (<field1value>[, ..., <fieldnvalue>]);
 
+# Update data
+UPDATE book SET publisher = 'Tor Science Fiction', author = 'Orson S. Card' WHERE isbn = '0812550706';
+
+# Empty a table (remove all data)
+DELETE FROM book;
+
+# Remove data
+DELETE FROM book WHERE isbn = '0812550706';
+
+# Retrieving data
+SELECT isbn, author FROM book WHERE (author = 'Ray Bradbury' AND publisher LIKE '%Del Ray');
 </code></pre>
