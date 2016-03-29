@@ -1,0 +1,10 @@
+<pre><code class="php">
+interface SeekableIterator{
+	function current();
+	function next();
+	function rewind();
+	function key();
+	function valid();
+	function seek($index);
+}
+</code></pre>

@@ -1,0 +1,16 @@
+<pre><code class="php">
+try{
+	$dsn = 'mysql:host=localhost;dbname=library';
+	$dbh = new PDO($dsn, 'dbuser', 'dbpass');
+	$dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, TRUE);
+	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$dbh->beginTransaction();
+	$dbh->exec("INSERT INTO book (isbn, title, author_id, publisher_id)
+	VALUES ('0395974682', 'The Lord of the Rings', 1, 3)");
+	$dbh->exec("INSERT INTO book (title) VALUES ('Animal Farm', 3, 2)");
+	$dbh->commit();
+}catch (PDOException $e){
+	$dbh->rollBack();
+	echo 'Failed: ' . $e->getMessage();
+}
+</code></pre>

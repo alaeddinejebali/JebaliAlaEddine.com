@@ -1,0 +1,15 @@
+<pre><code class="php">
+
+// Set a named placeholder in the SQL statement for author
+$sql = "INSERT INTO users(firstname, lastname, age) VALUES (?, ?, ?)";
+
+$stmt = $dbh->prepare($sql);
+
+// first user
+$stmt->bindParam("ssi", $firstname1, $lastname1, $age1);
+$stmt->execute();
+
+// second user
+$stmt->bindParam("ssi", $firstname2, $lastname2, $age2);
+$stmt->execute();
+</code></pre>

@@ -1,0 +1,46 @@
+<pre><code class="php">
+// Suppose this array
+$company = array(
+	array("Grasp Company"),
+	array(array("Human Resources", array("Tom", "Dick", "Harry")),
+	array("Developers", array("Zoe", "Duncan", "Jack", "Jane")))
+);
+
+class CompanyIterator extends RecursiveIteratorIterator {
+	function beginChildren(){
+		if ($this-&gt;getDepth() &gt;= 3){
+			echo str_repeat("\t", $this-&gt;getDepth() - 1);
+			echo "&lt;ul&gt;" . PHP_EOL;
+		}
+	}
+	function endChildren(){
+		if ($this-&gt;getDepth() &gt;= 3){
+			echo str_repeat("\t", $this-&gt;getDepth() - 1);
+			echo "&lt;/ul&gt;" . PHP_EOL;
+		}
+	}
+}
+
+class RecursiveArrayObject extends ArrayObject {
+	function getIterator(){
+		return new RecursiveArrayIterator($this);
+	}
+}
+
+// To produce our desired end result
+$it = new Company_Iterator(new RecursiveArrayObject($company));
+$in_list = false;
+foreach ($it as $item){
+	echo str_repeat("\t", $it-&gt;getDepth());
+	switch( $it-&gt;getDepth() ){
+		case 1:
+			echo "&lt;h1&gt;Company: $item&lt;/h1&gt;" . PHP_EOL;
+			break;
+		case 2:
+			echo "&lt;h2&gt;Department: $item&lt;/h2&gt;" . PHP_EOL;
+			break;
+		default:
+			echo "&lt;li&gt;$item&lt;/li&gt;" . PHP_EOL;
+	}
+}
+</code></pre>

@@ -1,0 +1,5 @@
+<pre><code class="sql">
+SELECT book.id, book.title, book_chapter.chapter_name
+FROM book_chapter
+LEFT JOIN book ON book.isbn = book_chapter.isbn;
+</code></pre>

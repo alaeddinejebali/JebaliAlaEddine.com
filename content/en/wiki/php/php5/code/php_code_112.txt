@@ -1,0 +1,12 @@
+<pre><code class="sql">
+START TRANSACTION;
+DELETE FROM book WHERE isbn LIKE '0655%';
+UPDATE book_chapter set chapter_number = chapter_number + 1;
+ROLLBACK;
+# This will produce no changes to DB
+
+START TRANSACTION;
+UPDATE book SET id = id + 1;
+DELETE FROM book_chapter WHERE isbn LIKE '0433%';
+COMMIT;
+</code></pre>

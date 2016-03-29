@@ -1,0 +1,11 @@
+<pre><code class="php">
+$mysqli->autocommit(FALSE);
+
+$mysqli->query("INSERT INTO book VALUES ('0395974682', 'The Lord of the Rings', 1, 3)");
+
+$mysqli->query("INSERT INTO book VALUES ('Animal Farm', 3, 2)");
+
+if( !$mysqli->commit() ){
+	$mysqli->rollback();
+}
+</code></pre>

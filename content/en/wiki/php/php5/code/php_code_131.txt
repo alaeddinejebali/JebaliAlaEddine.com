@@ -1,0 +1,30 @@
+<pre><code class="php">
+RecursiveIteratorIterator implements OuterIterator {
+	const integer LEAVES_ONLY = 0 ;
+	const integer SELF_FIRST = 1 ;
+	const integer CHILD_FIRST = 2 ;
+	const integer CATCH_GET_CHILD = 16 ;
+	
+	public void beginChildren ()
+	public void beginIteration ()
+	public RecursiveIterator callGetChildren ()
+	public bool callHasChildren ()
+	public __construct ($iterator, int $optionalMode, int $optionalFlags)
+	public mixed current ()
+	public void endChildren ()
+	public void endIteration ()
+	public int getDepth ()
+	public iterator getInnerIterator ()
+	public mixed getMaxDepth ()
+	public RecursiveIterator getSubIterator ([ int $level ] )
+	public mixed key ()
+	public void next ()
+	public void nextElement ()
+	// Rewind the iterator to the first element of the top level inner iterator
+	public void rewind ()
+	public void setMaxDepth ([ string $max_depth = -1 ] )
+	// Check whether the current position is valid
+	public bool valid ()
+	public Iterator OuterIterator::getInnerIterator ()
+}
+</code></pre>

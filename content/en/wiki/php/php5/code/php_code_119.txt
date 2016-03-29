@@ -1,0 +1,16 @@
+<pre><code class="php">
+// Set a named placeholder in the SQL statement for author
+$sql = 'SELECT book.title FROM author
+LEFT JOIN book ON author.id = book.author_id
+WHERE author.last_name = ?';
+
+if( $stmt = $mysqli->prepare($sql) ){
+	$stmt->bind_param('s', $author);
+	$stmt->execute();
+	$stmt->bind_result($title);
+	while ($stmt->fetch()) {
+		echo "{$title}, {$author}\n";
+	}
+	$stmt->close();
+}
+</code></pre>

@@ -1,0 +1,29 @@
+<pre><code class="php">
+$author = '';
+if (ctype_alpha($_GET['author'])){
+	$author = $_GET['author'];
+}
+
+// Escape the value of $author with quote()
+$sql = 'SELECT ... FROM ... ';
+
+// Execute the statement and echo the results
+
+//With default stateent (PDO::FETCH_BOTH)
+$results = $dbh->query($sql);
+foreach ($results as $row){
+	echo "{$row['title']}, {$row['last_name']}\n";
+}
+
+//Using PDO::FETCH_OBJ
+$results = $dbh->query($sql);
+$results->setFetchMode(PDO::FETCH_OBJ);
+foreach ($results as $row){
+	echo "{$row->title}, {$row->last_name}\n";
+}
+
+//Update query
+$sql = "INSERT INTO book ....";
+$affected = $dbh->exec($sql);
+echo "Records affected: {$affected}";
+</code></pre>

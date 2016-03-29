@@ -1,0 +1,31 @@
+<pre><code class="php">
+class NumberFilter extends FilterIterator{
+	const FILTER_EVEN = 1;
+	const FILTER_ODD = 2;
+	private $_type;
+	
+	function __construct($iterator, $odd_or_even = self::FILTER_EVEN){
+		$this->_type = $odd_or_even;
+		parent::__construct($iterator);
+	}
+	
+	// determines whether any given element should be allowed in the iteration
+	function accept(){
+		if ($this->_type == self::FILTER_EVEN){
+			return ($this->current() % 2 == 0);
+		}
+		} else {
+			return ($this->current() % 2 == 1);
+		}
+	}
+}
+
+$numbers = new ArrayObject(range(0, 10));
+$numbers_it = new ArrayIterator($numbers);
+
+$it = new NumberFilter($numbers_it, NumberFilter::FILTER_ODD);
+
+foreach ($it as $number) {
+	echo $number . PHP_EOL;
+}
+</code></pre>

@@ -1,0 +1,15 @@
+<pre><code class="php">
+interface ArrayAccess {
+	// sets a value in the array
+	function offsetSet($offset, $value);
+	
+	// retrieves a value from the array
+	function offsetGet($offset);
+	
+	// removes a value from the array
+	function offsetUnset($offset);
+	
+	// determines whether an element exists
+	function offsetExists($offset);
+}
+</code></pre>

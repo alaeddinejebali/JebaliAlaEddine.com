@@ -1,0 +1,13 @@
+<pre><code class="php">
+// Exemple for MySQL database
+try{
+	$dsn = 'mysql:host=localhost;dbname=library';
+	$dbh = new PDO($dsn, 'dbuser', 'dbpass');
+	$dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, TRUE);
+	// request PDO to throw a PDOExecption when an error occurs.
+	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	// All other database calls go here
+}catch (PDOException $e){
+	echo 'Failed: ' . $e->getMessage();
+}
+</code></pre>

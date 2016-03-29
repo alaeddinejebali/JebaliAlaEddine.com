@@ -1,0 +1,9 @@
+<pre><code class="php">
+interface Iterator {
+	function current();
+	function next();
+	function rewind();
+	function key();
+	function valid();
+}
+</code></pre>

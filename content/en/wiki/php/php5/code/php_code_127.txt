@@ -1,0 +1,24 @@
+<pre><code class="php">
+class myArray implements ArrayAccess {
+	protected $array = array();
+	function offsetSet ($offset, $value) {
+		if (!is_numeric ($offset)) {
+			throw new Exception ("Invalid key $offset");
+		}
+		$this->array[$offset] = $value;
+	}
+	function offsetGet ($offset) {
+		return $this->array[$offset];
+	}
+	function offsetUnset ($offset) {
+		unset ($this->array[$offset]);
+	}
+	function offsetExists ($offset) {
+		return array_key_exists ($this->array, $offset);
+	}
+}
+
+$obj = new myArray();
+$obj[1] = 2; // Works.
+$obj['a'] = 1; // Throws exception
+</code></pre>
