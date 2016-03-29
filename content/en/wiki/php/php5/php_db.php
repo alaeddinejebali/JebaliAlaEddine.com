@@ -115,14 +115,85 @@
 								<ul>
 									<li>
 										Returns rows from both tables only if keys from both tables can be found that satisfies the join conditions.
-										<?php include 'php/php_code_108.txt'; ?>
+										<?php include 'code/php_code_108.txt'; ?>
 										Rows are returned only if a common value for the isbn column can be found for both tables.
+										<ul>
+											<li>
+												Book:
+												<table class="table table-striped">
+													<tr>
+														<td>id</td><td>isbn</td><td>title</td><td>author</td><td>publisher</td>
+													</tr>
+													<tr>
+														<td>1</td><td>101</td><td>Understand Java</td><td>Ala Eddine</td><td>Tunisia</td>
+													</tr>
+													<tr>
+														<td>2</td><td>102</td><td>Programming in C</td><td>John Doe</td><td>France</td>
+													</tr>
+													<tr>
+														<td>3</td><td>103</td><td>Good developers</td><td>David Chafik</td><td>USA</td>
+													</tr>
+													<tr>
+														<td>4</td><td>104</td><td>UML Basics</td><td>Marrie Kolee</td><td>Finlande</td>
+													</tr>
+												</table>
+											</li>
+											<li>
+												Book_chapter:
+												<table class="table table-striped">
+													<tr>
+														<td>isbn</td><td>chapter_name</td><td>chapter_title</td>
+													</tr>
+													<tr>
+														<td>101</td><td>chapterName_101_01</td><td>chapter_101_01</td>
+													</tr>
+													<tr>
+														<td>101</td><td>chapterName_101_02</td><td>chapter_101_02</td>
+													</tr>
+													<tr>
+														<td>101</td><td>chapterName_101_03</td><td>chapter_101_03</td>
+													</tr>
+													<tr>
+														<td>102</td><td>chapterName_102_01</td><td>chapter_102_01</td>
+													</tr>
+													<tr>
+														<td>102</td><td>chapterName_102_02</td><td>chapter_102_02</td>
+													</tr>
+													<tr>
+														<td>105</td><td>chapterName_105_01</td><td>chapter_105_01</td>
+													</tr>
+												</table>
+											</li>
+											<li>
+												Result of join:
+												<table class="table table-striped">
+													<tr>
+														<td>id</td><td>isbn</td><td>title</td><td>author</td><td>publisher</td><td>isbn</td><td>chapter_name</td><td>chapter_title</td>
+													</tr>
+													<tr>
+														<td>1</td><td>101</td><td>Understand Java</td><td>Ala Eddine</td><td>Tunisia</td><td>101</td><td>chapterName_101_01</td><td>chapter_101_01</td>
+													</tr>
+													<tr>
+														<td>1</td><td>101</td><td>Understand Java</td><td>Ala Eddine</td><td>Tunisia</td><td>101</td><td>chapterName_101_02</td><td>chapter_101_02</td>
+													</tr>
+													<tr>
+														<td>1</td><td>101</td><td>Understand Java</td><td>Ala Eddine</td><td>Tunisia</td><td>101</td><td>chapterName_101_03</td><td>chapter_101_03</td>
+													</tr>
+													<tr>
+														<td>2</td><td>102</td><td>Programming in C</td><td>John Doe</td><td>France</td><td>102</td><td>chapterName_102_01</td><td>chapter_102_01</td>
+													</tr>
+													<tr>
+														<td>2</td><td>102</td><td>Programming in C</td><td>John Doe</td><td>France</td><td>102</td><td>chapterName_102_02</td><td>chapter_102_02</td>
+													</tr>
+												</table>
+											</li>
+										</ul>
 									</li>
 									<li class="caution">
 										inner joins only work well with assertive conditions—negative conditions often return bizarre-looking results.
 									</li>
-									<li>
-										<?php include 'php/php_code_109.txt'; ?>
+									<li class="noStyle">
+										<?php include 'code/php_code_109.txt'; ?>
 										You would probably expect this query to return a list of all the records in the book table that do not have a corresponding set of records in book_chapter. However, the database engine returns a data set that contains an entry for each record in book_chapter that does not match each record in book; the end result is, in fact, a dataset that contains every line in book_chapter repeated many times over.
 									</li>
 								</ul>
@@ -136,9 +207,316 @@
 									<li>
 										This means that some of the columns in the results will contain NULL values.
 									</li>
+									<li>
+										There are 2 types of outer-join: left-join and right-join.
+									</li>
+									<li>
+										Left-Join
+										<ul>
+											<li>
+												Every record in the left table that matches the WHERE clause (if there is one) will be returned regardless of a match made in the ON clause of the right table.
+												<?php include 'code/php_code_110.txt'; ?>
+											</li>
+											<li>
+												Result of Left-join:
+												<table class="table table-striped">
+													<tr>
+														<td>id</td><td>title</td><td>chapter_name</td>
+													</tr>
+													<tr>
+														<td>1</td><td>Understand Java</td><td>chapterName_101_01</td>
+													</tr>
+													<tr>
+														<td>1</td><td>Understand Java</td><td>chapterName_101_02</td>
+													</tr>
+													<tr>
+														<td>1</td><td>Understand Java</td><td>chapterName_101_03</td>
+													</tr>
+													<tr>
+														<td>2</td><td>Programming in C</td><td>chapterName_102_01</td>
+													</tr>
+													<tr>
+														<td>2</td><td>Programming in C</td><td>chapterName_102_02</td>
+													</tr>
+													<tr>
+														<td>NULL</td><td>NULL</td><td>chapterName_105_01</td>
+													</tr>
+												</table>
+											</li>
+										</ul>
+									</li>
+									<li>
+										Right-Join
+										<ul>
+											<li>
+												Returns all results from the "right" side, restricting results from the "left" side to matches of the ON clause.
+											</li>
+											<li>
+												Here left table is still the 'book_chapter' table, and the right table is still the 'book' table.
+												<?php include 'code/php_code_111.txt'; ?>
+											</li>
+											<li>
+												Result of Right-join:
+												<table class="table table-striped">
+													<tr>
+														<td>id</td><td>title</td><td>chapter_name</td>
+													</tr>
+													<tr>
+														<td>1</td><td>Understand Java</td><td>chapterName_101_01</td>
+													</tr>
+													<tr>
+														<td>1</td><td>Understand Java</td><td>chapterName_101_02</td>
+													</tr>
+													<tr>
+														<td>1</td><td>Understand Java</td><td>chapterName_101_03</td>
+													</tr>
+													<tr>
+														<td>2</td><td>Programming in C</td><td>chapterName_102_01</td>
+													</tr>
+													<tr>
+														<td>2</td><td>Programming in C</td><td>chapterName_102_02</td>
+													</tr>
+													<tr>
+														<td>3</td><td>Good developers</td><td>NULL</td>
+													</tr>
+													<tr>
+														<td>4</td><td>UML basics</td><td>NULL</td>
+													</tr>
+												</table>
+											</li>
+										</ul>
+									</li>
 								</ul>
 							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2>Transactions</h2>
+				<ul>
+					<li>
+						Are groups of operations that are committed or discarded atomically.
+					</li>
+					<li>
+						Database engines that implement transactions are often said to be ACID-compliant (Atomicity Consistency Isolation Durability).
+					</li>
+					<li>
+						A transaction starts with a START TRANSACTION statement. From here on, all further operations take place in a sandbox that does not affect any other user or the database , until the transaction is either complete using the COMMIT statement, or undone using ROLLBACK.
+						<?php include 'code/php_code_112.txt'; ?>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2>Prepared Statements</h2>
+				<ul>
+					<li>
+						A prepared statement is, essentially, the template of an SQL statement that has been pre-parsed and compiled and is ready to be executed by passing it the appropriate data.
+					</li>
+					<li>
+						Good for security because you do not mix data and SQL code in the same string.
+					</li>
+					<li>
+						The process works in three steps:
+						<ol>
+							<li>
+								Create the prepared statement (replacing your data with a set of markers such as question marks).
+							</li>
+							<li>
+								Load the data in the statement.
+							</li>
+							<li>
+								Execute it.
+							</li>
+						</ol>
+					</li>
+					<li>
+						The 2 advantages of using prepares statements are security and performance (since most database engines internally cache prepared statements for reuse).
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2>Working With Databases</h2>
+				<ul>
+					<li>
+						To connect to database engines, PHP offers 2 ways:
 						<ul>
+							<li>
+								Through a single interface is PDO: PHP Data Objects.
+							</li>
+							<li>
+								Through the native driver functions for a specific database.
+							</li>						
+						</ul>
+					</li>
+					<li>
+						PDO: PHP Data Objects
+						<ul>
+							<li>
+								The standard distribution of PHP 5.1 and greater includes PDO and the drivers for SQLite by default.
+							</li>
+							<li>
+								To use other database drivers for PDO (like mySQL, Oracle, ..etc) you need to install them.
+							</li>
+							<li>
+								Once installed, the process for using each driver is, for the most part, the same because PDO provides a unified data access layer to each of these database engines.
+							</li>
+							<li>
+								There is no longer a need for separate mysql_query() or pg_query() func- tions. PDO provides a single object-oriented interface to these databases.
+							</li>
+							<li class="caution">
+								PDO provides the ability to use prepared statements and bound parameters even if the database engine itself does not support these features.
+							</li>
+							<li>
+								Connecting To a Database With PDO
+								<ul>
+									<li>
+										PDO requires at least a DSN (Data Source Name) formatted according to the driver used.
+									</li>
+								</ul>
+							</li>
+							<li>
+								Querying the Database With PDO
+								<ul>
+									<li>
+										PDO::query(): Retrieve a rseultset.
+									</li>
+									<li>
+										PDO::quote(): Escape a value.
+									</li>
+									<li>
+										PDO::FETCH_BOTH: is the default statement. It return an array containing both associative and numeric indexes.
+									</li>
+									<li>
+										PDO::FETCH_OBJ: returns an object of results
+									</li>
+									<li>
+										PDO::exec(): executes an SQL statement and returns the number of rows affected.
+									</li>
+									<li>
+										example
+										<ul>
+											<li class="noStyle">
+												<?php include 'code/php_code_114.txt'; ?>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								Prepared Statements and Bound Parameters With PDO
+								<ul>
+									<li>
+										If a database does not support prepared statements, PDO will internally emulate the functionality.
+										<?php include 'code/php_code_115.txt'; ?>
+										By telling mysql what type of data to expect, we minimize the risk of SQL injections.
+										<ul>
+											<li>i - integer</li>
+											<li>d - double</li>
+											<li>s - string</li>
+											<li>b - BLOB</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								Transactions With PDO
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/php_code_115.txt'; ?>
+									</li>
+									<li class="caution">
+										PDO does not try to emulate transactions for those database engines that do not support them.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						MySQL Improved (mysqli extension)
+						<ul>
+							<li>
+								mysqli::query() immediately return a result set.
+							</li>
+							<li>
+								mysqli::real_query() the result set is not returned until mysqli::store_result() or mysqli::use_result() are called.
+							</li>
+							<li>
+								mysqli::fetch_assoc() return an associative array.
+							</li>
+							<li>
+								mysqli::fetch_row() return an associative array.
+							</li>
+							<li>
+								example using the object-oriented interface for mysqli
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/php_code_117.txt'; ?>
+									</li>
+								</ul>
+							</li>
+							<li>
+								example using procedural approach
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/php_code_118.txt'; ?>
+									</li>
+								</ul>
+							</li>
+							<li>
+								Prepared Statements and Bound Parameters With mysqli
+								<ul>
+									<li>
+										Object approach:
+										<ul>
+											<li class="noStyle">
+												<?php include 'code/php_code_119.txt'; ?>
+											</li>
+										</ul>
+									</li>
+									<li>
+										Procedural approach:
+										<ul>
+											<li class="noStyle">
+												<?php include 'code/php_code_120.txt'; ?>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								Transactions With mysqli
+								<ul>
+									<li>
+										By default, mysqli runs in auto-commit mode, which means that each database statement will be committed immediately.
+									</li>
+									<li>
+										To disable this functionality and begin a transaction, set the auto-commit mode to FALSE using the 'autocommit' methods.
+									</li>
+									<li>
+										example
+										<ul>
+											<li>
+												Object approach:
+												<ul>
+													<li class="noStyle">
+														<?php include 'code/php_code_119.txt'; ?>
+													</li>
+												</ul>
+											</li>
+											<li>
+												Procedural approach:
+												<ul>
+													<li class="noStyle">
+														<?php include 'code/php_code_120.txt'; ?>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</li>
