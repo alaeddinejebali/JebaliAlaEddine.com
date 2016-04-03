@@ -10,11 +10,42 @@
                 	<li>
                 		XML: eXtensible Markup Language.
                 	</li>
+					<li>
+						It is a subset of SGML (Standard Generalized Markup Language).
+					</li>
+					<li>
+						It was designed to store and transport data.
+					</li>
+					<li>
+						XML was designed to be both human- and machine-readable.
+					</li>
                     <li>
                     	Its most common applications are the popular RSS (Really Simple Syndication).
 					</li>
 					<li>
-						It is a subset of SGML (Standard Generalized Markup Language).
+						XMl vs HTML
+						<ul>
+							<li>
+								Similarities
+								<ul>
+									<li>XML is a markup language much like HTML</li>
+								</ul>
+							</li>
+							<li>
+								Differences
+								<ul>
+									<li>
+										XML tags are not predefined like HTML tags are.
+									</li>
+									<li>
+										XML was designed to carry data (with focus on what data is), HTML was designed to display data (with focus on how data looks).
+									</li>
+									<li>
+										XML is Often a Complement to HTML: XML is used to store or transport data, while HTML is used to format and display the same data.
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 					<li>
 						Terms:
