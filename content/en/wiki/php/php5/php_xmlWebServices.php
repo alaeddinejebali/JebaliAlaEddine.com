@@ -23,6 +23,15 @@
                     	Its most common applications are the popular RSS (Really Simple Syndication).
 					</li>
 					<li>
+						XML documents must contain one root element that is the parent of all other elements.
+					</li>
+					<li>
+						In XML, the attribute values must always be quoted (&lt;book isbn="101"&gt;).
+					</li>
+					<li>
+					An XML can be extended (adding new child and/or attributes) without breaking applications.
+					</li>
+					<li>
 						XMl vs HTML
 						<ul>
 							<li>
@@ -43,6 +52,42 @@
 									<li>
 										XML is Often a Complement to HTML: XML is used to store or transport data, while HTML is used to format and display the same data.
 									</li>
+									<li>
+										In HTML, some elements might work well, even with a missing closing tag. In XML, it is illegal to omit the closing tag (all elements must have a closing tag).
+									</li>
+									<li>
+										HTML tags are case insensitive. XML tags are case sensitive (opening and closing tags must be written with the same case).
+									</li>
+									<li>
+										In HTML, you might see improperly nested elements (&lt;b&gt;&lt;i&gt;Hello&lt;/b&gt;&lt;/i&gt;). In XML, all elements must be properly nested within each other.
+									</li>
+									<li>
+										HTML truncates multiple white-spaces to one single white-space. XML does not truncate multiple white-spaces.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h2>XML vs JSON (to be determined)</h2>
+						<ul>
+							<li>
+								Similarities
+								<ul>
+									<li>
+										Both are used to interchange data.
+									</li>
+									<li>
+										Both are human and machine-readable.
+									</li>
+								</ul>
+							</li>
+							<li>
+								Differences
+								<ul>
+									<li>
+										XML makes it easy to put metadata into the tags (in the form of attributes).
+									</li>
 								</ul>
 							</li>
 						</ul>
@@ -51,10 +96,13 @@
 						Terms:
 						<ul>
 							<li>
+								Siblings are children on the same level (brothers and sisters). Like &lt;name/&gt;&lt;age/&gt; in &lt;person/&gt;.
+							</li>
+							<li>
 								Entity: An entity is a named unit of storage.
 							</li>
 							<li>
-								Element: A data object that is part of an XML document.
+								Element: Everything from (including) the element's start tag to (including) the element's end tag (text, attributes, other elements).
 							</li>
 							<li>
 								DTD (Document Type Declaration): A set of instructions that describes the accepted structure and content of an XML file.
