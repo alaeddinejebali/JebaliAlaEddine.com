@@ -69,7 +69,7 @@
 						</ul>
 					</li>
 					<li>
-						<h2>XML vs JSON (to be determined)</h2>
+						XML vs JSON (to be determined)
 						<ul>
 							<li>
 								Similarities
@@ -113,13 +113,21 @@
 							<li>
 								Valid: An XML document is valid when it is both well-formed and obeys a referenced DTD (an XML document can never be valid and not well-formed).
 							</li>
+							<li>
+								However, all XML documents must be well-formed for PHP’s XML functionality to properly parse them.
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/php_code_134.txt'; ?>
+									</li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<li>
-						However, all XML documents must be well-formed for PHP’s XML functionality to properly parse them.
+						Namespaces
 						<ul>
-							<li class="noStyle">
-								<?php include 'code/php_code_134.txt'; ?>
+							<li>
+								
 							</li>
 						</ul>
 					</li>
