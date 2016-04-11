@@ -1,0 +1,14 @@
+<pre><code class="xml">
+&lt;h:table xmlns:h="http://www.w3.org/TR/html4/"&gt;
+	&lt;h:tr&gt;
+		&lt;h:td&gt;Ala&lt;/h:td&gt;
+		&lt;h:td&gt;John&lt;/h:td&gt;
+	&lt;/h:tr&gt;
+&lt;/h:table&gt;
+
+&lt;f:table xmlns:f="http://www.w3schools.com/furniture"&gt;
+	&lt;f:name&gt;Good book&lt;/f:name&gt;
+	&lt;f:width&gt;80&lt;/f:width&gt;
+	&lt;f:length&gt;120&lt;/f:length&gt;
+&lt;/f:table&gt;
+</code></pre>
