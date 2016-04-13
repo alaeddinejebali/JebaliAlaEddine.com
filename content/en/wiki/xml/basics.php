@@ -8,28 +8,33 @@
                 <h2>XML Basics</h2>
                 <ul>
                 	<li>
-                		XML: eXtensible Markup Language.
-                	</li>
-					<li>
-						It is a subset of SGML (Standard Generalized Markup Language).
-					</li>
-					<li>
-						It was designed to store and transport data.
-					</li>
-					<li>
-						XML was designed to be both human- and machine-readable.
-					</li>
-                    <li>
-                    	Its most common applications are the popular RSS (Really Simple Syndication).
-					</li>
-					<li>
-						XML documents must contain one root element that is the parent of all other elements.
-					</li>
-					<li>
-						In XML, the attribute values must always be quoted (&lt;book isbn="101"&gt;).
-					</li>
-					<li>
-					An XML can be extended (adding new child and/or attributes) without breaking applications.
+                		Intro
+                		<ul>
+		                	<li>
+		                		XML: eXtensible Markup Language.
+		                	</li>
+							<li>
+								It is a subset of SGML (Standard Generalized Markup Language).
+							</li>
+							<li>
+								It was designed to store and transport data.
+							</li>
+							<li>
+								XML was designed to be both human- and machine-readable.
+							</li>
+		                    <li>
+		                    	Its most common applications are the popular RSS (Really Simple Syndication).
+							</li>
+							<li>
+								XML documents must contain one root element that is the parent of all other elements.
+							</li>
+							<li>
+								In XML, the attribute values must always be quoted (&lt;book isbn="101"&gt;).
+							</li>
+							<li>
+								An XML can be extended (adding new child and/or attributes) without breaking applications.
+							</li>
+						</ul>
 					</li>
 					<li>
 						XMl vs HTML
@@ -160,12 +165,145 @@
                 		XSLT (eXtensible Stylesheet Language Transformations)
                 		<ul>
                 			<li>
-                				You can use CSS to stylesheets XML but XSLT is the recommended style sheet language for XML.
+                				You can use CSS to stylesheets XML but XSLT is the recommended stylesheet language for XML.
                 			</li>
                 			<li>
                 				With XSLT you can add/remove elements and attributes to or from the output file. You can also rearrange and sort elements, perform tests and make decisions about which elements to hide and display, and a lot more.
                 			</li>
+                			<li>
+                				XSLT uses XPath to find information in an XML document.
+                				<ul>
+                					<li>
+                						Suppose that we have an XML which describes Food object (food{name, price, description}). We use XSLT to make food.name and food.price in blue and the food.description under them.
+                						<?php include 'code/xml_code_03.txt'; ?>
+                					</li>
+                				</ul>
+                			</li>
                 		</ul>
+                	</li>
+                	<li>
+                		XPATH (XML Path language)
+                		<ul>
+							<li>It's a syntax for defining parts of an XML document.</li>
+							<li>It uses path expressions to navigate in XML documents (xsl:for-each, xsl:value-of,..etc).</li>
+							<li>It contains a library of standard functions.</li>
+							<li>It is a major element in XSLT (it's also used in XQuery, XPointer and XLink).</li>
+							<li>
+								Suppose that we have a Book XML
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/xml_code_05.txt'; ?>
+									</li>
+								</ul>
+								Some XPath expressions and their results:
+								<ul>
+									<li>
+										/bookstore/book[1]:
+										<ul>
+											<li>Selects the first book element that is the child of the bookstore element.</li>
+										</ul>
+									</li>
+									<li>
+										/bookstore/book[last()]:
+										<ul>
+											<li>Selects the last book element that is the child of the bookstore element.</li>
+										</ul>
+									</li>
+									<li>
+										/bookstore/book[last()-1]:
+										<ul>
+											<li>Selects the last but one book element that is the child of the bookstore element.</li>
+										</ul>
+									</li>
+									<li>
+										/bookstore/book[position()&lt;3]:
+										<ul>
+											<li>Selects the first two book elements that are children of the bookstore element.</li>
+										</ul>
+									</li>
+									<li>
+										//title[@lang]:
+										<ul>
+											<li>Selects all the title elements that have an attribute named lang.</li>
+										</ul>
+									</li>
+									<li>
+										//title[@lang='en']:
+										<ul>
+											<li>Selects all the title elements that have a "lang" attribute with a value of "en".</li>
+										</ul>
+									</li>
+									<li>
+										/bookstore/book[price&gt;35.00]:
+										<ul>
+											<li>Selects all the book elements of the bookstore element that have a price element with a value greater than 35.00.</li>
+										</ul>
+									</li>
+									<li>
+										/bookstore/book[price&gt;35.00]/title:
+										<ul>
+											<li>Selects all the title elements of the book elements of the bookstore element that have a price element with a value greater than 35.00.</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+                		</ul>
+                	</li>
+                	<li>
+                		XLink
+                		<ul>
+                			<li>
+                				XLink is used to create hyperlinks within XML documents (like &lt;a href=""&gt; in HTML).
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/xml_code_06.txt'; ?>
+									</li>
+								</ul>
+                				
+                			</li>
+                			<li>
+                				XLink Attributes
+                				<ul>
+                					<li>
+                						xlink:actuate
+                						<ul>
+                							<li>
+                								Defines when the linked resource is read and shown.
+                							</li>
+                							<li>
+                								Values:
+                								<ul>
+	                								<li>onLoad (the resource should be loaded and shown when the document loads)</li>
+	                								<li>onRequest (he resource is not read or shown before the link is clicked)</li>
+	                								<li>other</li>
+	                								<li>none</li>
+                								</ul>
+                							</li>
+                						</ul>
+                					</li>
+                					<li>
+                						xlink:href
+                					</li>
+                					<li>
+                						xlink:show
+                						<ul>
+                							<li>Specifies where to open the link. Default is: replace.</li>
+                							<li>Values: embed, new, replace, other, none</li>
+                						</ul>
+                					</li>
+                					<li>
+                						xlink:type
+                						<ul>
+                							<li>Specifies the type of link.</li>
+                							<li>values: simple, extended, locator, arc, resource, title, none.</li>
+                						</ul>
+                					</li>
+                				</ul>
+                			</li>
+                		</ul>
+                	</li>
+                	<li>
+                		XPointer
                 	</li>
                 </ul>
             </li>

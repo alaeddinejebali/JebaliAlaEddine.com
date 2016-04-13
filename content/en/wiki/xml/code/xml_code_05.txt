@@ -1,3 +1,8 @@
 <pre><code class="xml">
-
+&lt;book category=""&gt;
+	&lt;title lang=""&gt;&lt;/title&gt;
+	&lt;author&gt;&lt;/author&gt;
+	&lt;year&gt;&lt;/year&gt;
+	&lt;price&gt;&lt;/price&gt;
+&lt;/book&gt;
 </code></pre>
