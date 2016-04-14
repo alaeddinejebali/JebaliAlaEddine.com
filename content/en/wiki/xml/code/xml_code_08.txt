@@ -1,3 +1,15 @@
 <pre><code class="xml">
-
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;dogbreeds&gt;
+	&lt;dog breed="Rottweiler" id="Rottweiler"&gt;
+		&lt;picture url="http://dog.com/rottweiler.gif" /&gt;
+		&lt;history&gt;The Rottweiler's ancestors were probably Roman...&lt;/history&gt;
+		&lt;temperament&gt;Confident, bold, alert and imposing,...&lt;/temperament&gt;
+	&lt;/dog&gt;
+	&lt;dog breed="FCRetriever" id="FCRetriever"&gt;
+		&lt;picture url="http://dog.com/fcretriever.gif" /&gt;
+		&lt;history&gt;One of the earliest uses of retrieving dogs was to...&lt;/history&gt;
+		&lt;temperament&gt;The flat-coated retriever is a sweet....&lt;/temperament&gt;
+	&lt;/dog&gt;
+&lt;/dogbreeds&gt;
 </code></pre>

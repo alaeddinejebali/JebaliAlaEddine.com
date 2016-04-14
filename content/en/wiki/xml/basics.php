@@ -64,7 +64,7 @@
 										HTML tags are case insensitive. XML tags are case sensitive (opening and closing tags must be written with the same case).
 									</li>
 									<li>
-										In HTML, you might see improperly nested elements (&lt;b&gt;&lt;i&gt;Hello&lt;/b&gt;&lt;/i&gt;). In XML, all elements must be properly nested within each other.
+										In HTML, you might see improperly nested elements (&lt;b&gt;&lt;i&gt;Hello&lt;/b&gt;&lt;/i&gt;). In XML, all elements must be properly nested within each other. With XML, errors are not allowed.
 									</li>
 									<li>
 										HTML truncates multiple white-spaces to one single white-space. XML does not truncate multiple white-spaces.
@@ -300,10 +300,35 @@
                 					</li>
                 				</ul>
                 			</li>
+                			<li class="caution">
+                				If we set the value of the xlink:show attribute to "embed", the linked resource should be processed inline within the page. When you consider that this could be another XML document you could, for example, build a hierarchy of XML documents.
+                			</li>
                 		</ul>
                 	</li>
                 	<li>
                 		XPointer
+                		<ul>
+                			<li>It allows links to point to specific parts of an XML document.</li>
+							<li>it uses XPath expressions to navigate in the XML document.</li>
+							<li class="caution">Instead of linking to the entire document (as with XLink), XPointer allows us to link to specific parts of the document.</li>
+							<li>
+								Suppose we have this XML:
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/xml_code_08.txt'; ?>
+									</li>
+								</ul>
+								we will use XPointer in conjunction with XLink to point to a specific part of another document:
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/xml_code_07.txt'; ?>
+									</li>
+								</ul>
+							</li>
+							<li>
+								xlink:href="http://dog.com/dogbreeds.xml#xpointer(id('Rottweiler'))". The expression .
+							</li>
+                		</ul>
                 	</li>
                 </ul>
             </li>
