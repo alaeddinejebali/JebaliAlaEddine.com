@@ -1,3 +1,14 @@
 <pre><code class="php">
+// $isPathToFile: it informs the constructor that the 1st argument represents the path to a file,
+// rather than a string that contains 1the XML data itself.
 
+// Load an XML string
+$xmlstr = file_get_contents('library.xml');
+$library = new SimpleXMLElement($xmlstr);
+
+/ Load an XML file
+$library = new SimpleXMLElement('library.xml', NULL, true);
+
+// $isPathToFile: it informs the constructor that the first argument represents the path to a file,
+rather than a string that contains 1the XML data itself.
 </code></pre>

@@ -1,3 +1,13 @@
 <pre><code class="php">
+// Search the root element
+$results = $library->xpath('/library/book/title');
+foreach ($results as $title){
+	echo $title;
+}
 
+// Search the first child element
+$results = $library->book[0]->xpath('title');
+foreach ($results as $title){
+	echo $title;
+}
 </code></pre>

@@ -1,3 +1,15 @@
 <pre><code class="php">
-
+foreach ($library->children() as $child){
+	echo $child->getName();
+	
+	// Get attributes of this element
+	foreach ($child->attributes() as $attr){
+		echo ' ' . $attr->getName() . ': ' . $attr;
+	}
+	
+	// Get children
+	foreach ($child->children() as $subchild){
+		echo ' ' . $subchild->getName() . ': ' . $subchild;
+	}
+}
 </code></pre>

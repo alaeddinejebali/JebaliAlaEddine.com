@@ -1,3 +1,9 @@
 <pre><code class="php">
-
+$library = new SimpleXMLElement('library.xml', NULL, true);
+foreach ($library->book as $book){
+	echo $book['isbn'];
+	echo $book->title;
+	echo $book->author;
+	echo $book->publisher;
+}
 </code></pre>

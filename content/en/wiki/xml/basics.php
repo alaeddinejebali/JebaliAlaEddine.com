@@ -34,6 +34,13 @@
 							<li>
 								An XML can be extended (adding new child and/or attributes) without breaking applications.
 							</li>
+							<li>
+								when to use elements and when to use attributes?
+								<ul>
+									<li>There is no rule in the W3C recommendation.</li>
+									<li>However, as a general design principle, it is best to use elements to express essential information intended for communication, while attributes can express information that is peripheral or helpful only to process the main communication.</li>
+									<li>The <b>principle of core content</b>: elements contain data, while attributes contain metadata.
+							</li>
 						</ul>
 					</li>
 					<li>
