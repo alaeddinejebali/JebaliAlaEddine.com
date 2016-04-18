@@ -102,6 +102,46 @@
             					It returns a SimpleXMLElement object.
             					<?php include 'code/php_code_140.txt'; ?>
             				</li>
+            				<li class="caution">
+            					If a file with the same path already exists, a call to asXML() will overwrite it without warning.
+            				</li>
+            				<li>
+            					Remove XML children and attributes
+            					<ul>
+            						<li>SimpleXML does not provide the means to remove children and attributes.</li>
+            						<li>
+            							You can do:
+            							<?php include 'code/php_code_141.txt'; ?>
+            						</li>
+            						<li>
+            							This only removes child elements and their attributes, however. It will not remove attributes from the element at the book level.
+            						</li>
+            						<li>
+            							To effectively remove children and attributes, you must export  your SimpleXMLElement to DOM.
+            						</li>
+            					</ul>
+            				</li>
+            			</ul>
+            		</li>
+            		<li>
+            			Working With Namespaces
+            			<ul>
+            				<li>
+            					It allows a provider to associate certain element and attribute names with namespaces identified by URIs.
+            				</li>
+            				<li>
+            					SimpleXMLElement::getDocNamespaces(): returns an array of <b>all</b> namespaces declared in the document (declared in the root element referenced by the SimpleXMLElement object).
+            				</li>
+            				<li>
+            					SimpleXMLElement::getDocNamespaces($optionalDoRecursive): behave recursively and return the namespaces declared in all children. 
+            				</li>
+            				<li>
+            					SimpleXMLElement::getNamespaces($optionalDoRecursive): returns an array that <b>only contains those namespaces that are actually used</b> throughout the document.
+            				</li>
+            				<li class="noStyle">
+            					Example:
+								<?php include 'code/php_code_142.txt'; ?>
+            				</li>
             			</ul>
             		</li>
             	</ul>

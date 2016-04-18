@@ -1,0 +1,3 @@
+<pre><code class="php">
+$library->book[0] = NULL;
+</code></pre>

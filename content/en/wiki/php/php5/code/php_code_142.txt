@@ -1,0 +1,26 @@
+<pre><code class="php">
+// Suppose we have this
+&lt;?xml version="1.0"?&gt;
+&lt;library xmlns="http://example.org/library"
+	xmlns:meta="http://example.org/book-meta"
+	xmlns:pub="http://example.org/publisher"
+	xmlns:foo="http://example.org/foo"&gt;
+	&lt;book meta:isbn="0345342968"&gt;
+		&lt;title&gt;Fahrenheit 451&lt;/title&gt;
+		&lt;author&gt;Ray Bradbury&lt;/author&gt;
+		&lt;pub:publisher&gt;Del Rey&lt;/pub:publisher&gt;
+	&lt;/book&gt;
+&lt;/library&gt;
+
+// Get all namespaces declared in the document
+$namespaces = $library->getDocNamespaces();
+foreach ($namespaces as $key => $value){
+	echo "{$key} => {$value}";
+}
+
+// Get only used namespaces in the documents
+$namespaces = $library->getNamespaces(true);
+foreach ($namespaces as $key => $value){
+	echo "{$key} => {$value}";
+}
+</code></pre>
