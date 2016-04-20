@@ -1,3 +1,11 @@
 <pre><code class="php">
+$dom = new DOMDocument();
+$dom->load("library.xml");
 
+$xpath = new DomXPath($dom);
+$xpath->registerNamespace("lib", "http://example.org/library");
+$result = $xpath->query("//lib:book");
+$clone = $result->item(0)->cloneNode();
+
+$result->item(1)->parentNode->appendChild($clone)
 </code></pre>

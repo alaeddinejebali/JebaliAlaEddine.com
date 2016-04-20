@@ -147,7 +147,73 @@
             	</ul>
             </li>
             <li>
-            	
+            	<h2>DOM</h2>
+            	<ul>
+            		<li>
+            			Since SimpleXML and DOM objects are inter-operable, you can use SimpleXML for simplicity and DOM for power on the same document with minimal effort.
+            		</li>
+            		<li>
+            			Load and save an XML Document
+            			<ul>
+            				<li class="noStyle">
+            					<?php include 'code/php_code_143.txt'; ?>
+            				</li>
+            			</ul>
+            		</li>
+            		<li>
+            			XPath Queries
+            			<ul>
+            				<li>
+            					<i>DomXpath</i> is far more powerful than the <i>SimpleXML</i> equivalent.
+            					<?php include 'code/php_code_144.txt'; ?>
+            				</li>
+            			</ul>
+            		</li>
+            		<li>
+            			Modifying XML Documents
+            			<ul>
+            				<li>
+            					Example: Add a new book to our “libary.xml” document
+            					<?php include 'code/php_code_145.txt'; ?>
+            				</li>
+            			</ul>
+            		</li>
+            		<li>
+            			Moving data
+            			<ul>
+            				<li>
+            					DOM extension doesn’t provide a method that takes care of that, explicitly.
+            				</li>
+            				<li>
+            					Use a combination of DomNode::appendChild() and DomNode::insertBefore()
+            					<?php include 'code/php_code_146.txt'; ?>
+            				</li>
+            				<li>
+            					If you want to duplicate a node, use DomNode::cloneNode()
+            					<?php include 'code/php_code_147.txt'; ?> 
+            				</li>
+            			</ul>
+            		</li>
+            		<li>
+            			Modifying data
+            			<ul>
+            				<li>
+            					When modifying data, you typically want to edit the CDATA within a node. Apart from using the methods shown above, you can use XPath to find a CDATA node and modify its contents directly:
+            					<?php include 'code/php_code_148.txt'; ?>
+            					Resulting in the following output:
+            					<?php include 'code/php_code_149.txt'; ?>
+            				</li>
+            			</ul>
+            		</li>
+            		<li>
+            			Removing Data
+            			<ul>
+            				<li>
+            					
+            				</li>
+            			</ul>
+            		</li>
+            	</ul>
             </li>
         </ul>
     </div>

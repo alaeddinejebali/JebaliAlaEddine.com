@@ -1,3 +1,16 @@
 <pre><code class="php">
+$dom = new DomDocument();
 
+// Load XML document from a file
+$dom->load("library.xml");
+
+// Load XML document from a string
+// (handy when using REST Web services)
+$dom->loadXML($xml)
+
+// Save to a file
+$dom->save('library.xml')
+
+// save to string
+$res = $dom->saveXML();
 </code></pre>

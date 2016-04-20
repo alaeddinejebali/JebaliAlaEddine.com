@@ -1,3 +1,21 @@
 <pre><code class="php">
+$dom = new DomDocument();
+$dom->load("library.xml");
 
+$book = $dom->createElement("book");
+$book->setAttribute("meta:isbn", "0973589825");
+
+// possible way to create element
+$title = $dom->createElement("title");
+$text = $dom->createTextNode("My PHP5 course book");
+$title->appendChild($text);
+$book->appendChild($title);
+
+// another way to create element
+$book->appendChild($author);
+
+$publisher = $dom->createElement("pub:publisher", "US company pub.Inc.");
+$book->appendChild($publisher);
+
+$dom->documentElement->appendChild($book);
 </code></pre>

@@ -1,3 +1,6 @@
 <pre><code class="php">
-
+&lt;?xml version="1.0"?&gt;
+&lt;xml&gt;
+	&lt;text&gt;Some Text Here&lt;/text&gt;
+&lt;/xml&gt;
 </code></pre>

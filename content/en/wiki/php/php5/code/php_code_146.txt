@@ -1,3 +1,22 @@
 <pre><code class="php">
+// Take the second book element and place it before the first.
+$dom = new DOMDocument();
+$dom->load("library.xml");
 
+$xpath = new DomXPath($dom);
+$xpath->registerNamespace("lib", "http://example.org/library");
+
+$result = $xpath->query("//lib:book");
+$result->item(1)->parentNode->insertBefore($result->item(1), $result->item(0));
+
+
+//Take the first book element and place it at the end:
+$dom = new DOMDocument();
+$dom->load("library.xml");
+
+$xpath = new DomXPath($dom);
+$xpath->registerNamespace("lib", "http://example.org/library");
+
+$result = $xpath->query("//lib:book");
+$result->item(1)->parentNode->appendChild($result->item(0));
 </code></pre>

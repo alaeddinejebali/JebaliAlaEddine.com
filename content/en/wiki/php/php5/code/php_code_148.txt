@@ -1,3 +1,16 @@
 <pre><code class="php">
+xml = &lt;&lt;&lt;XML
+	&lt;xml&gt;
+		&lt;text&gt;some text here&lt;/text&gt;
+	&lt;/xml&gt;
+XML;
+$dom = new DOMDocument();
+$dom->loadXML($xml);
 
+$xpath = new DomXpath($dom);
+
+$node = $xpath->query("//text/text()")->item(0);
+$node->data = ucwords($node->data);
+
+echo $dom->saveXML();
 </code></pre>

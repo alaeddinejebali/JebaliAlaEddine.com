@@ -1,3 +1,24 @@
 <pre><code class="php">
+$dom = new DomDocument();
+$dom->load("library.xml");
+// instantiate a DomXpath object
+$xpath = new DomXPath($dom);
 
+// register only the namespaces we need
+// tthe default namespace, associating it with the lib prefix.
+$xpath->registerNamespace("lib", "http://example.org/library");
+// execute query
+$result = $xpath->query("//lib:title/text()");
+
+// loop results
+if( $result->length > 0 ){
+	// Random access
+	$book = $result->item (0);
+	echo $book->data;
+	
+	// Sequential access
+	foreach ($result as $book) {
+		echo $book->data;
+	}
+}
 </code></pre>
