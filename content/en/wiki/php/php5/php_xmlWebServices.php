@@ -208,10 +208,124 @@
             		<li>
             			Removing Data
             			<ul>
-            				<li>
-            					
+            				<li class="noStyle">
+            					<?php include 'code/php_code_150.txt'; ?>
             				</li>
             			</ul>
+            		</li>
+            		<li>
+            			Working With Namespaces
+            			<ul>
+            				<li>
+            					DOM is more than capable to handle namespaces on its own.
+            				</li>
+            				<li>
+            					Typically, you can ignore them and pass attribute and element names with the appropriate prefix directly to most DOM functions:
+            					<?php include 'code/php_code_151.txt'; ?>
+            				</li>
+            				<li>
+            					We can try to simplify the use of namespaces somewhat:
+            					<?php include 'code/php_code_152.txt'; ?>
+            				</li>
+            			</ul>
+            		</li>
+            		<li>
+            			Interfacing with SimpleXML
+            			<ul>
+            				<li>
+            					import SimpleXML objects for use with DOM
+            					<?php include 'code/php_code_153.txt'; ?>
+            				</li>
+            				<li>
+            					import DOM objects for use with SimpleXML
+            					<?php include 'code/php_code_154.txt'; ?>
+            				</li>
+            			</ul>
+            		</li>
+            	</ul>
+            </li>
+            <li>
+            	<h2>Web services</h2>
+            	<ul>
+            		<li>
+            			There are 3 popular types of Web Services:
+						<ol>
+							<li>
+								XML-RPC
+							</li>
+							<li>
+								SOAP
+								<ul>
+				            		<li>
+				            			It's the successor to XML-RPC.
+				            		</li>
+				            		<li>
+				            			Previously stood for "Simple Object Access Protocol" and niw it stands for "SOAP".
+				            		</li>
+									<li>
+										The most common SOAP messaging pattern is RPC 5Remote Procedure Call).
+									</li>
+									<li>
+										A SOAP Web service is defined by using a WSDL (pronounced "whisdl") document (Web Service Description Language): an XML document that describes the function calls made available by a Web service, as well as any specialized data types needed by it.
+									</li>
+									<li>
+										Accessing SOAP-based Web Services
+										<ul>
+											<li>
+												Example
+												<?php include 'code/php_code_155.txt'; ?>
+											</li>
+											<li>
+												Debugging
+												<ul>
+													<li>
+														trace=1: make it possible to debug messages sent to and received from a SOAP server.
+														<?php include 'code/php_code_156.txt'; ?>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										Creating SOAP-based Web Services
+										<ul>
+											<li>
+												Example
+												<?php include 'code/php_code_156.txt'; ?>
+												how a client might access the SOAP server:
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								REST
+								<ul>
+									<li>
+										Stands for: Representational State Transfer.
+									</li>
+									<li>
+										It's a Web service architectural style in which the focus is on the presence of resources in the system.
+									</li>
+									<li>
+										Each resource must be identified by a global identifier: a URI.
+									</li>
+									<li>
+										To access these resources, clients communicate with the REST service by HTTP, and the server responds with a representation of the resource.
+									</li>
+									<li>
+										Services that use the REST architecture are referred to as <b>RESTful services</b>.
+									</li>
+									<li>
+										Those who use or provide RESTful services are sometimes referred to as <b>RESTafarians</b>.
+									</li>
+									<li>
+										Example: Requests all bookmarks (from api.del.icio.us) tagged with the keyword 'foo'
+										<?php include 'code/php_code_159.txt'; ?>
+									</li>									
+								</ul>
+							</li>
+						</ol>
             		</li>
             	</ul>
             </li>

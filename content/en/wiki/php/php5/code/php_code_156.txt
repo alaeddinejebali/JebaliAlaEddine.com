@@ -1,0 +1,6 @@
+<pre><code class="php">
+$client = new SoapClient('http://api.google.com/GoogleSearch.wsdl', array('trace' => 1));
+$results = $client->doGoogleSearch($key, $query, 0, 10, FALSE, '', FALSE, '', '', '');
+echo $client->__getLastRequestHeaders();
+echo $client->__getLastRequest();
+</code></pre>

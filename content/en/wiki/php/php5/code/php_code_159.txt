@@ -1,0 +1,16 @@
+<pre><code class="php">
+$u = 'username';
+$p = 'password';
+
+$fooTag = "https://{$u}:{$p}@api.del.icio.us/v1/posts/all?tag=foo";
+// this is the resource identifier for the data retrieved
+
+$bookmarks = new SimpleXMLElement($fooTag, NULL, true);
+// SimpleXML handles the request and conversion of the received XML data into an object
+
+foreach ($bookmarks->post as $bookmark){
+	echo '&lt;a href="' . htmlentities($bookmark['href']) . '"&gt;';
+		echo htmlentities($bookmark['description']);
+	echo "&lt;/a&gt;";
+}
+</code></pre>

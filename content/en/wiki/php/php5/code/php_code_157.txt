@@ -1,0 +1,20 @@
+<pre><code class="php">
+class MySoapServer{
+	public function getMessage(){
+		return 'Hello, World!';
+	}
+	public function addNumbers($num1, $num2){
+		return $num1 + $num2;
+	}
+}
+
+//Create SOAP server
+$options = array('uri' => 'http://example.org/soap/server/');
+$server = new SoapServer(NULL, $options);
+
+// inform server of the class that we want the web service to be based on
+$server->setClass('MySoapServer');
+
+// process incoming requests
+$server->handle();
+</code></pre>

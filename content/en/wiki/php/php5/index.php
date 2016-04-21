@@ -15,6 +15,7 @@
             <?php include "php_db.php"; ?>
             <?php include "php_oodesign.php"; ?>
             <?php include 'php_xmlWebServices.php'; ?>
+            <?php include "php_security.php"; ?>
             <?php include "php_tips.php"; ?>
         </div>
     </div>

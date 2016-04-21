@@ -1,0 +1,7 @@
+<pre><code class="php">
+$options = array('	location' => 'http://example.org/soap/server/server.php', 
+					'uri' => 'http://example.org/soap/server/');
+$client = new SoapClient(NULL, $options);
+echo $client->getMessage();
+echo $client->addNumbers(3, 5);
+</code></pre>
