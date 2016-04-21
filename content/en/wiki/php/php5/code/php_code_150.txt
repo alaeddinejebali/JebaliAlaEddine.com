@@ -1,0 +1,28 @@
+<pre><code class="php">
+$xml = &lt;&lt;&lt;XML
+	&lt;xml&gt;
+		&lt;text type="misc"&gt;some text here&lt;/text&gt;
+		&lt;text type="misc"&gt;some more text here&lt;/text&gt;
+		&lt;text type="misc"&gt;yet more text here&lt;/text&gt;
+	&lt;/xml&gt;
+XML;
+
+$dom = new DOMDocument();
+$dom-&gt;loadXML($xml);
+
+$xpath = new DomXpath($dom);
+
+// retrieve all <i>text</i> nodes
+$result = $xpath-&gt;query("//text");
+// remove the 1<em>st</em> <i>text</i> node
+$result-&gt;item(0)-&gt;parentNode-&gt;removeChild($result-&gt;item(0));
+// remove the <i>type</i> attribute from the 2<em>nd</em> element
+$result-&gt;item(1)-&gt;removeAttribute('type');
+
+// retrieve the <i>text</i> node for the 3<em>rd</em> element
+$result = $xpath-&gt;query(’text()’, $result-&gt;item(2));
+// delete the CDATA
+$result-&gt;item(0)-&gt;deleteData(0, $result-&gt;item(0)-&gt;length);
+
+echo $dom-&gt;saveXML()
+</code></pre>
