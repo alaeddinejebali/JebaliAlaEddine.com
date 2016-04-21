@@ -1,0 +1,27 @@
+<pre><code class="php">
+$dom = new DomDocument();
+
+$node = $dom-&gt;createElement('ns1:somenode');
+
+$node-&gt;setAttribute('ns2:someattribute', 'somevalue');
+$node2 = $dom-&gt;createElement('ns3:anothernode');
+$node-&gt;appendChild($node2);
+
+// Set xmlns:* attributes
+$node-&gt;setAttribute('xmlns:ns1', 'http://example.org/ns1');
+$node-&gt;setAttribute('xmlns:ns2', 'http://example.org/ns2');
+$node-&gt;setAttribute('xmlns:ns3', 'http://example.org/ns3');
+
+$dom-&gt;appendChild($node);
+
+echo $dom-&gt;saveXML();
+//outputs:
+&lt;?xml version="1.0"?&gt;
+&lt;ns1:somenode 
+	ns2:someattribute="somevalue" 
+	xmlns:ns1="http://example.org/ns1" 
+	xmlns:ns2="http://example.org/ns2" 
+	xmlns:ns3="http://example.org/ns3"&gt;
+&lt;ns3:anothernode/&gt;
+&lt;/ns1:somenode&gt;
+</code></pre>
