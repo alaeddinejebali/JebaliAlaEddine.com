@@ -1,0 +1,8 @@
+<pre><code class="php">
+$dom = new DOMDocument();
+
+$dom->load('library.xml');
+$sxe = simplexml_import_dom($dom);
+
+echo $sxe->book[0]->title;
+</code></pre>
