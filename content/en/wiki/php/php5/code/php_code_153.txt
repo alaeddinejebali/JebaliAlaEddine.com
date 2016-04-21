@@ -1,0 +1,9 @@
+<pre><code class="php">
+$sxml = simplexml_load_file('library.xml');
+
+$node = dom_import_simplexml($sxml);
+$dom = new DomDocument();
+$dom->importNode($node, true);
+
+$dom->appendChild($node);
+</code></pre>
