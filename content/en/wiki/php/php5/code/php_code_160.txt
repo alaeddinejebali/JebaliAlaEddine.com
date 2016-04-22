@@ -1,3 +1,52 @@
 <pre><code class="php">
+&lt;!-- Suppose we have this form --&gt;
+&lt;form method="POST"&gt;
+	Username: &lt;input type="text" name="username" /&gt;
+	Password: &lt;input type="text" name="password" /&gt;
+	Favourite colour:
+	&lt;select name="colour"&gt;
+		&lt;option&gt;Red&lt;/option&gt;
+		&lt;option&gt;Blue&lt;/option&gt;
+		&lt;option&gt;Yellow&lt;/option&gt;
+		&lt;option&gt;Green&lt;/option&gt;
+	&lt;/select&gt;
+	&lt;input type="submit" /&gt;
+&lt;/form&gt;
 
+/*
+ * Using whitelist approach
+*/
+
+$clean = array();
+// later in your code, when encountering the variable $clean['username'],
+// you can be certain that this value has been filtered
+// However, if you see $_POST['username'] used, you cannot be certain that the data is trustworthy.
+
+if (ctype_alpha($_POST['username'])){
+	$clean['username'] = $_POST['username'];
+}
+if (ctype_alnum($_POST['password'])){
+	$clean['password'] = $_POST['password'];
+}
+$colours = array('Red', 'Blue', 'Yellow', 'Green');
+if (in_array($_POST['colour'], $colours)){
+	$clean['colour'] = $_POST['colour'];
+}
+
+// Validate data
+$errors = array();
+
+if( !array_key_exists('username', $clean) ){
+	$errors[] = 'Bad username!';
+}
+if( !array_key_exists('password', $clean) ){
+	$errors[] = 'Bad password!';
+}
+if( !array_key_exists('colour', $clean) ){
+	$errors[] = 'Bad colour';
+}
+
+if( !empty($errors) ){
+	// display errors and exit
+}
 </code></pre>

@@ -1,0 +1,22 @@
+<pre><code class="php">
+// First, filter the input
+$clean = array();
+if( ctype_alpha($_POST['username']) ){
+	$clean['username'] = $_POST['username'];
+}
+
+// Set a named placeholder in the SQL statement for username
+$sql = 'SELECT * FROM users WHERE username = :username';
+
+// Assume the database handler exists; prepare the statement
+$stmt = $dbh->prepare($sql);
+
+// Bind a value to the parameter
+$stmt->bindParam(':username', $clean['username']);
+
+// Execute
+$stmt->execute();
+
+// fetch results
+$results = $stmt->fetchAll()
+</code></pre>
