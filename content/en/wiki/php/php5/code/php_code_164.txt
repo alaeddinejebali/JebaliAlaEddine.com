@@ -1,3 +1,9 @@
 <pre><code class="php">
+// Initialize variable
+$authorized = false;
 
+// define $authorized = true only if user is authenticated
+if (authenticated_user()) {
+    $authorized = true;
+}
 </code></pre>

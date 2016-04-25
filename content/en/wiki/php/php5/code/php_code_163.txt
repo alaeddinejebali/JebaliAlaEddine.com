@@ -1,3 +1,6 @@
 <pre><code class="php">
-
+// define $authorized = true only if user is authenticated
+if (authenticated_user()) {
+    $authorized = true;
+}
 </code></pre>

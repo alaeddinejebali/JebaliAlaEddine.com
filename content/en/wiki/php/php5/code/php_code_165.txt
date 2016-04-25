@@ -1,3 +1,7 @@
 <pre><code class="php">
-
+<!-- Forms to place a comment -->
+<form method="POST" action="process.php">
+	<textarea name="comment"></textarea>
+	<input type="submit" />
+</form>
 </code></pre>

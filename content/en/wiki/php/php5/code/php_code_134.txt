@@ -6,5 +6,5 @@ $library = simplexml_load_string($xmlstr);
 // Load an XML file
 $library = simplexml_load_file('library.xml');
 
-//You can load a local file path or a valid URL (if <strong>allow_url_fopen</strong> is set to "On" in php.ini
+// You can load a local file path or a valid URL (if <strong>allow_url_fopen</strong> is set to "On" in php.ini
 </code></pre>
