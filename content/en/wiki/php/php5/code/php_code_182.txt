@@ -1,0 +1,7 @@
+<pre><code class="php">
+$f = fopen('file.csv');
+while( $row = fgetcsv($f) ){
+	// handle $row values
+}
+fclose($f);
+</code></pre>
