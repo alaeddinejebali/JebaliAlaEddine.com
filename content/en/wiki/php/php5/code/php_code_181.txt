@@ -1,0 +1,16 @@
+<pre><code class="php">
+/* 
+Possible values of $positionMove:
+{SEEK_SET (from beginning), 
+ SEEK_CUR (from current position), 
+ SEEK_END (from end)}
+*/
+$file = fopen('counter.txt', 'r+');
+
+fseek($file, 10, SEEK_SET);
+// moves pointer to the position 10
+
+
+fseek($file, 10, SEEK_CUR);
+// moves pointer to the (current position + 10)
+</code></pre>
