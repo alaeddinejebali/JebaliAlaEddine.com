@@ -19,3 +19,5 @@ assets/
 .buildpath
 .project
 .settings/
+.tern-project
+
