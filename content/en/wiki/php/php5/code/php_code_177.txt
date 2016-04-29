@@ -1,0 +1,9 @@
+<pre><code class="php">
+// php.ini
+
+; Disable functions
+disable_functions = exec,passthru,shell_exec,system
+
+; Disable classes
+disable_classes = DirectoryIterator,Directory
+</code></pre>
