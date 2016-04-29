@@ -1,0 +1,11 @@
+<pre><code class="php">
+$clean = array();
+$accteptedSections = array('home', 'news', 'photos', 'blog');
+if( in_array($_GET['section'], $accteptedSections) ){
+	$clean['section'] = $_GET['section'];
+}
+else{
+	$clean['section'] = 'home';
+}
+include "{clean['section']}/data.inc.php";
+</code></pre>
