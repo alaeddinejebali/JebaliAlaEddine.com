@@ -1,0 +1,11 @@
+<pre><code class="xml">
+# PHP only opens files located in the ""/home/user/www"" and ""/usr/local/lib/php"" directories
+
+&lt;VirtualHost *&gt;
+	DocumentRoot /home/user/www
+	ServerName www.example.org
+	&lt;Directory /home/user/www&gt;
+		php_admin_value open_basedir "/home/user/www/:/usr/local/lib/php/"
+	&lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</code></pre>
