@@ -1,0 +1,7 @@
+<pre><code class="php">
+session_start();
+// If the user login is successful, regenerate the session ID
+if( authenticate() ){
+	session_regenerate_id();
+}
+</code></pre>
