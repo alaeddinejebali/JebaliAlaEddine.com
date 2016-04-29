@@ -1,0 +1,3 @@
+<pre><code class="php">
+&lt;a href="http://example.org/index.php?PHPSESSID=1234"&gt;Click here&lt;/a&gt;
+</code></pre>
