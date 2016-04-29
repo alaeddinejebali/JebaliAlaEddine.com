@@ -1,3 +1,16 @@
 <pre><code class="php">
+/***************	aPage.php	***************/
+session_start();
+$token = md5(uniqid(rand(), TRUE));
+$_SESSION[’token’] = $token;
 
+&lt;form action="checkout.php" method="POST"&gt;
+	&lt;input type="hidden" name="token" value="<?php echo $token; ?&gt;" /&gt;
+	&lt;!-- Remainder of form --&gt;
+&lt;/form&gt;
+
+/***************	checkout.php	***************/
+if( isset($_SESSION[’token’]) && isset($_POST[’token’]) && $_POST[’token’] == $_SESSION[’token’] ){
+	// Token is valid, continue processing form data
+}
 </code></pre>

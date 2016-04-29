@@ -1,3 +1,17 @@
 <pre><code class="php">
+&lt;form method="login.php" action="POST"&gt;
+	Username: &lt;input type="text" name="username" /&gt;
+	Password: &lt;input type="password" name="password" /&gt;
+	&lt;input type="submit" value="Log In" /&gt;
+&lt;/form&gt;
 
+$username = $_POST['username'];
+$password = md5($_POST['password']);
+$sql = "SELECT * FROM users 
+		WHERE username = '{$username}' AND 
+		password = '{$password}'";
+/* database connection and query code */
+if (count($results) > 0){
+	// Successful login attempt
+}
 </code></pre>

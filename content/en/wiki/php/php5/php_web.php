@@ -128,13 +128,13 @@
 					<li>
 						When user visits a new page, the session id from the cookie is used to find the session data from the file storage. If the data is found it will load it into the Session global $_SESSION.
 					</li>
-					<li>
-						How PHP sessions works:droi d'éné peidnoi
+					<li id="php_howSessionWorks">
+						How PHP session works?
 						<ul>
 							<li>session_id (a random string of 32 hexadecimal numbers like <i>3c7foj34c3jj973hjkop2fc937e3443</i>) is sent to the user when his session is created.</li>
-							<li>session_id is stored in a cookie (called, by default, PHPSESSID).</li>
+							<li>session_id is stored in a cookie called by default <b>PHPSESSID</b> (it's possible to change the cookie name in php.ini or by using the <i>session_name()</i> function).</li>
 							<li>That cookie is sent by the browser to the server with each request.</li>
-							<li>The PHP server uses that cookie, containing the session_id, to know which file corresponds to that user.</li>
+							<li>The PHP server uses that cookie, containing the session_id, to know which file corresponds to that user. So it identify the user.</li>
 						</ul>
 					</li>
 					<li>

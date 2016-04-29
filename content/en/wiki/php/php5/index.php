@@ -16,6 +16,7 @@
             <?php include "php_oodesign.php"; ?>
             <?php include 'php_xmlWebServices.php'; ?>
             <?php include "php_security.php"; ?>
+            <?php include "php_streams.php"; ?>
             <?php include "php_tips.php"; ?>
         </div>
     </div>

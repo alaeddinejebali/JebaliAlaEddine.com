@@ -190,18 +190,288 @@
 						CSRF: Cross-Site Request Forgeries
 						<ul>
 							<li>
-								It attempts to cause a victim to un knowingly send arbitrary HTTP requests, usually to URLs requiring privileged access and using the existing session of the victim to determine access.
+								It attempts to cause a victim to unknowingly send arbitrary HTTP requests, usually to URLs requiring privileged access and using the existing session of the victim to determine access.
 							</li>
 							<li>
 								The HTTP request then causes the victim to execute a particular action based on his or her level of privilege, such as making a purchase or modifying or removing information.
 							</li>
 							<li>
-								Whereas an XSS attack exploits the user's trust in an application, a forged request exploits an application's trust in a user.
+								Whereas an XSS attack exploits the user's trust in an application, CSRF exploits an application's trust in a user.
 							</li>
 							<li>
-								While proper escaping of output will prevent your application from being used as the vehicle for a CSRF attack, it will not prevent your application from receiving forged requests.
+								While proper escaping of output will prevent your application from being used as the vehicle for a CSRF attack, it will not prevent your application from receiving forged requests (CSRF attack).
+							</li>
+							<li>
+								How a CSRF attack occurs?
+								<ul>
+									<li>
+										Suppose you have a Web site in which users register for an account and then browse a catalogue of books for purchase.
+									</li>
+									<li>
+										Suppose that a malicious user signs up for an account and proceeds through the process of purchasing a book from the site.
+									</li>
+									<li>
+										After selecting a book for purchase, he clicks the buy button, which redirects him through checkout.php.
+									</li>
+									<li>
+										He sees that the action to checkout.php is a POST action but wonders whether passing parameters to checkout.php through the query string (GET) will work.
+									</li>
+									<li>
+										When passing the same form values through the query string (i.e. checkout.php?isbn=0312863551&qty=1 ), she notices that he has, in fact, successfully purchased a book.
+									</li>
+									<li>
+										With this knowledge, the malicious user can cause others to make purchases at your site without their knowledge:
+										<ul>
+											<li>
+												You can use an image tag to embed an image in some arbitrary Web site other than your own website using:
+												&lt;img src="http://example.org/checkout.php?isbn=0312863551&qty=1" /&gt;
+											</li>
+											<li>
+												For most people, the request will fail because users must be logged in to make a purchase.
+											</li>
+											<li>
+												But, for those users who do happen to be logged into the site, this attack exploits the <b>web site's trust in that user</b> and causes them to make a purchase.
+											</li>
+										</ul>
+									</li>
+									<li>
+										This attack works because checkout.php uses the $_REQUEST superglobal array to access <i>isbn</i> and <i>qty</i>.
+									</li>
+								</ul>
+							</li>
+							<li>
+								Solutions
+								<ol>
+									<li>
+										Use $_POST instead of $_REQUEST or $_GET.
+										<ul>
+											<li>
+												Using $_POST will mitigate the risk of this kind of attack, but it won't protect against all forged requests.
+											</li>
+										</ul>
+									</li>
+									<li>
+										Use a token method
+										<ul>
+											<li>
+												It can block these attempts and force users to use your forms.
+											</li>
+											<li>
+												The principle is to use a randomly generated token that is stored in the user's session (when the user accesses the form page) and is also placed in a hidden field on the form.
+											</li>
+											<li>
+												checkout.php should check that the token value from the posted form is equal to the value in the user's session.
+												<?php include 'code/php_code_167.txt'; ?>
+											</li>
+										</ul>
+									</li>
+								</ol>
 							</li>
 						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2>Database Security</h2>
+				<ul>
+					<li>
+						SQL injection attack
+						<ul>
+							<li>
+								Example:
+								<?php include 'code/php_code_168.txt'; ?>
+							</li>
+							<li>
+								If you fill the username filed form with this value:  username' OR 1 = 1 --
+							</li>
+							<li>
+								With this username and a blank password, the SQL statement is now:
+								<?php include 'code/php_code_169.txt'; ?>
+							</li>
+							<li>
+								Since 1 = 1 is always true and - begins an SQL comment, the SQL query ignores everything after the - and successfully returns all user records.
+							</li>
+						</ul>
+						
+					</li>
+					<li>
+						How to avoid SQL injection attack?
+						<ol>
+							<li>
+								Filter input.
+							</li>
+							<li>
+								Escape output:
+								<?php include 'code/php_code_170.txt'; ?>
+							</li>
+						</ol>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2>Session Security</h2>
+				<ul>
+					<li>
+						Sessions attacks cannot be prevented by filtering input and escaping output.
+					</li>
+					<li>
+						There are 2 popular forms of session attacks:
+						<ol>
+							<li>
+								<b>Session fixation</b>
+								<ul>
+									<li>
+										It occurs when an attacker sets the session identifier manually (because the attacker fixes the session).
+										<?php include 'code/php_code_171.txt'; ?>
+									</li>
+									<li>
+										It's sometimes referred to as "<b>session riding</b>" since the purpose of the attack is to gain a higher level of privilege.
+									</li>
+									<li>
+										See <a href="#php_howSessionWorks">Sessions/How session works?</a>
+									</li>
+									<li>
+										How to avoid it?
+										<ul>
+											<li>
+												Every time a user's access level changes, it is necessary to regenerate the session identifier.
+												<?php include 'code/php_code_172.txt'; ?>
+											</li>
+											<li>
+												This will protect users from having their session fixed.
+											</li>
+											<li>
+												This is not enough because it won't help much against another common session attack known as session hijacking.
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<b>Session hijacking</b>
+								<ul>
+									<li>
+										It occurs when an attacker gains a user's valid session identifier (rather than providing one of his own).
+									</li>
+									<li>
+										Suppose that a user logs in. If the session identifier is regenerated, they have a new session ID. What if an attacker discovers this new ID and attempts to use it to gain access through that user's session.
+									</li>
+									<li>
+										How to avoid it?
+										<ul>
+											<li>
+												You need to use other means to identify the user.
+											</li>
+											<li>
+												One request header that is particularly helpful and does not change between requests is the <i>User-Agent</i> header.
+												<?php include 'code/php_code_173.txt'; ?>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2>Filesystem Security</h2>
+				<ul>
+					<li>
+						PHP has the ability to directly access the filesystem and even execute shell commands.
+					</li>
+					<li>
+						Remote Code Injection
+						<ul>
+							<li>
+								It occurs when an attacker is able to cause your application to execute PHP code of their choosing.
+							</li>
+							<li>
+								Example: suppose that when calling <a href="">http://yourSite.com/?section=s</a>, it'll include <i>s/data/inc.php</i> file.
+								<?php include 'code/php_code_175.txt'; ?>
+							</li>
+							<li>
+								How to prevent it?
+								<ul>
+									<li>
+										Filter all inputs.
+										<?php include 'code/php_code_174.txt'; ?>
+									</li>
+									<li class="caution">
+										In php.ini, you can set <i><b>allow_url_fopen</b>=off</i> (by default it's on) will prevent your applications from including or opening remote URLs as files.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Command Injection
+						<ul>
+							<li>
+								When possible, avoid the use of shell commands.
+							</li>
+							<li>
+								PHP provides <b>escapeshellcmd()</b> and <b>escapeshellarg()</b> to properly escape shell output before this data is passed to the exec() or system() functions.
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/php_code_176.txt'; ?>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2>Shared hosting</h2>
+				<ul>
+					<li>
+						When using shared hosting, there are 3 importants directives in <i>php.ini</i>
+						<ol>
+							<li>
+								<i>open_basedir</i>
+								<ul>
+									<li>
+										Limit files that can be accessed by PHP to the specified directory-tree, including the file itself.
+										<ul>
+											<li>
+												When PHP tries to open a file with, for example, with <i>fopen()</i> or <i>include</i>, it checks the the location of the file. If it exists within the directory tree specified by <i>open_basedir</i>, then it will succeed; otherwise, it will fail to open the file.
+											</li>
+											<li>
+												You may set the <i>open_basedir</i> directive in <i>php.ini</i> or on a per <i>virtual-host</i> basis in <i>httpd.conf</i>. 
+												<?php include 'code/php_code_178.txt'; ?>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<i>disable_functions</i>
+								<ul>
+									<li>
+										Disable certain native PHP functions for security reasons.
+									</li>
+									<li>
+										You may only set it in <i>php.ini</i>.
+									</li>
+								</ul>
+							</li>
+							<li>
+								<i>disable_classes</i>
+								<ul>
+									<li>
+										Disable certain native PHP classes for security reasons.
+									</li>
+									<li>
+										You may only set it in <i>php.ini</i>.
+									</li>
+								</ul>
+							</li>
+							<?php include 'code/php_code_177.txt'; ?>
+						</ol>
+					</li>
+					<li>
+						
 					</li>
 				</ul>
 			</li>
