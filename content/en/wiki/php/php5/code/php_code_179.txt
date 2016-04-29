@@ -1,0 +1,18 @@
+<pre><code class="php">
+$file = fopen("counter.txt", 'a+');
+if ($file == false) {
+	die ("Unable to open/create file");
+}
+// Make sure that the file is not empty
+if( filesize("counter.txt") == 0 ){
+	$counter = 0;
+} else {
+	// Grab the first line using <i>fgets()</i>
+	// which will continue to fetch data until it reaches a newline character
+	$counter = (int) fgets($file);
+}
+ftruncate($file, 0);
+$counter++;
+fwrite($file, $counter);
+echo "There has been $counter hits to this site.";
+</code></pre>
