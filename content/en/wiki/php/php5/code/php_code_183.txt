@@ -1,0 +1,18 @@
+<pre><code class="php">
+$f1 = fopen('myFile1.csv');
+$f2 = fopen('myFile2.csv');
+$values = array("Ala Eddine JEBALI", "http://jebalialaeddine.com", "Software Engineer");
+fputcsv($f1, $values);
+$values2 = array(
+			array('aaa', 'bbb', 'ccc', 'dddd'),
+			array('123', '456', '789'),
+			array('"aaa"', '"bbb"')
+		);
+fputcsv($f2, $values2);
+fclose($f2);
+/* content os $f2 will be:
+aaa, bbb, ccc, dddd
+123, 456, 789
+"""aaa""", """bbb"""
+*/
+</code></pre>
