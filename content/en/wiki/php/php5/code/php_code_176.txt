@@ -1,0 +1,6 @@
+<pre><code class="php">
+$dir = ".";
+system( 'ls ' . escapeshellarg($dir) );
+
+escapeshellcmd('ls $dir');
+</code></pre>
