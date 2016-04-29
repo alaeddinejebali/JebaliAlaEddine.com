@@ -1,0 +1,11 @@
+<pre><code class="php">
+//Suppose you filtered inputs
+
+$sql = "SELECT * FROM users 
+		WHERE username = '{$FilteredUsername}' AND 
+		password = '{$FilteredPassword}'";
+
+$users = $mysqli->query( <b>$mysqli->real_escape_string($sql)</b> )
+// real_escape_string("username’ OR 1 = 1 -- ")
+// return: username\' OR 1 = 1 --
+</code></pre>
