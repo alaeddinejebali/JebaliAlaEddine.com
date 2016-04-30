@@ -1,0 +1,7 @@
+<pre><code class="php">
+if( !mkdir ('posts/january/health/', 0666) ){
+	throw new Exception ("Unable to create directory");
+}
+// will fail because $optionalRecursive=false
+// correct: mkdir ('posts/january/health/', 0666, true)
+</code></pre>
