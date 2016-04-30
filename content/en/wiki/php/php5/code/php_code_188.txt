@@ -1,0 +1,11 @@
+<pre><code class="php">
+$f = fopen ('http://www.phparch.com');
+$page = '';
+if( $f ){
+	while( $s = fread ($f, 1000) ){
+		$page .= $s;
+	}
+} else {
+	throw new Exception ("Unable to open connection to www.phparch.com");
+}
+</code></pre>
