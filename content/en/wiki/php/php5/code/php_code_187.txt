@@ -1,0 +1,9 @@
+<pre><code class="php">
+$f = '/test/file.txt';
+
+// suppose that $f is not readable
+while (!is_readable($f)) {}
+
+// making $f readable, doesn't changes enaything
+$data = file_get_contents();
+</code></pre>
