@@ -1,3 +1,4 @@
 <pre><code class="php">
-
+header("content-type: video/mpeg");
+readfile("myMovie.mpeg");
 </code></pre>

@@ -33,7 +33,7 @@
 							</li>
 							<li>
 								<li class="caution">
-									{a, a+, w, w+}: automatically creates a new file if it doesn’t exist; BUT; {x, x+}: Throws an E_WARNING if the file already exists.
+									{a, a+, w, w+}: automatically creates a new file if it doesn't exist; BUT; {x, x+}: Throws an E_WARNING if the file already exists.
 								</li>
 							</li>
 							<li>
@@ -117,6 +117,130 @@
 					</li>
 					<li>
 						Simple File Functions
+						<ul>
+							<li>
+								readfile($fileHandle)
+								<ul>
+									<li>
+										Read a file and write it immediately to the script's standard output.
+									</li>
+									<li>
+										It offers much better performance and resource utilization than C-style function.
+									</li>
+									<li>
+										This is useful when you need to include static files.
+										<?php include 'code/php_code_185.txt'; ?>
+									</li>
+								</ul>
+							</li>
+							<li>
+								file($fileHandle) <i>and</i> file_get_contents($fileHandle)
+								<ul>
+									<li>
+										Read a file into an array of lines (that is one array element for each line of text in the file).
+									</li>
+									<li>
+										Loading an entire file in memory is not always a good idea (large files require a significant amount of system resources).
+										<?php include 'code/php_code_184.txt'; ?>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Working with Directories
+						<ul>
+							<li>
+								getcwd()
+								<ul>
+									<li>
+										Get current working directory.
+									</li>
+								</ul>
+							</li>
+							<li>
+								chdir($path)
+								<ul>
+									<li>
+										Changes the current working directory of the interpreter.
+									</li>
+									<li>
+										Return false when $path points to a directory that doesn't exist, or because the account under which PHP runs does not have the requisite privileges for accessing it.
+									</li>
+								</ul>
+							</li>
+							<li>
+								mkdir($pathname, $optionalMode=0777, $optionalRecursive=false)
+								<ul>
+									<li>
+										creates a new directory
+										<?php include 'code/php_code_186.txt'; ?>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Controlling File Access
+						<ul>
+							<li>
+								Functions:
+								<ul>
+									<li>is_dir(): checks if the path is a directory.</li>
+									<li>is_executable(): checks if the path is executable.</li>
+									<li>is_file(): checks if the path exists and is a regular file.</li>
+									<li>is_link(): checks if the path exists and is a symlink.</li>
+									<li>is_readable(): checks if the path exists and is readable.</li>
+									<li>is_writable(): checks if the path exists and is writable.</li>
+									<li>is_uploaded_file(): checks if the path is an uploaded file (sent via HTTP POST).</li>
+								</ul>
+							</li>
+							<li class="caution">
+								The results of a call to any of latest functions will be cached, so that two calls to a given function on the same stream resource and during the same script will return the same value, regardless of whether the underlying resource has changed in the meantime.
+							</li>
+							<li>
+								Example: this script below will never stop running:
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/php_code_187.txt'; ?>
+									</li>
+								</ul>
+							</li>
+							<li>
+								The internal cache maintained within PHP for these functions can be cleared by calling clearstatcache().
+							</li>
+							<li>
+								chmod($filePath, $newMode)
+								<ul>
+									<li>
+										Changes $filePath permissions.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2>Accessing Network Resources</h2>
+				<ul>
+					<li>
+						One of the strongest points of the streams layer is the fact that the same set of functionality that you use to access files can be used to access a number of network resources (remote URLsor using FTP), often without the need for any special adjustments.
+					</li>
+					<li>
+						Not all file functions may work with a given network resource; for example, you cannot write to an HTTP connection, because doing so is not allowed by the protocol, and would not make sense.
+					</li>
+					<li>
+						Simple Network Access
+						<ul>
+							<li>
+								Example: load up the main page of my website
+								<?php include 'code/php_code_188.txt'; ?>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Stream Contexts
 						<ul>
 							<li>
 								

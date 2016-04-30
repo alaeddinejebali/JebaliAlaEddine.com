@@ -470,9 +470,6 @@
 							<?php include 'code/php_code_177.txt'; ?>
 						</ol>
 					</li>
-					<li>
-						
-					</li>
 				</ul>
 			</li>
         </ul>

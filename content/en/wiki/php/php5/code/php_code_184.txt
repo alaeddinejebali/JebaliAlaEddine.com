@@ -1,3 +1,15 @@
 <pre><code class="php">
+// Get a file into an array.
+$lines = file('myFile.txt');
+// or $lines = file('http://website.com/');
 
+// Loop through our array, show HTML source as HTML source; and line numbers too.
+foreach ($lines as $line_num => $line) {
+    echo "Line #{$line_num} : " . htmlspecialchars($line);
+}
+
+// Another example, let's get a web page into a string.
+// Read 14 characters starting from the 21st character
+$section = file_get_contents('./people.txt', NULL, NULL, 20, 14);
+var_dump($section);
 </code></pre>
