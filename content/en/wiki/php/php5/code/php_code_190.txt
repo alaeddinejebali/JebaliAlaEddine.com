@@ -1,3 +1,11 @@
 <pre><code class="php">
+$socket = stream_socket_server("tcp://0.0.0.0:1037");
+while( $conn = stream_socket_accept($socket) ){
+	fwrite($conn, "Hello World\n");
+	fclose($conn);
+}
+fclose($socket);
 
+// To run it:
+$> php ./server.php &
 </code></pre>

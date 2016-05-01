@@ -243,7 +243,65 @@
 						Stream Contexts
 						<ul>
 							<li>
-								
+								A context is a set of parameters and wrapper specific options which modify or enhance the behavior of a stream.
+							</li>
+							<li>
+								Stream contexts allow you to pass options to the stream handlers allowing you to tweak a handler’s behaviour in ways that go beyond what normal file functionality can do.
+							</li>
+							<li>
+								It may be very handy when you want to work with web services as you can instruct the HTTP stream handler to perform a POST operation.
+							</li>
+							<li>
+								Example: Provide a custom user agent string and set the maximum number of transparent redirections.
+								<?php include 'code/php_code_189.txt'; ?>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Create sockets
+						<ul>
+							<li>
+								server:
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/php_code_190.txt'; ?>
+									</li>
+								</ul>
+							</li>
+							<li>
+								client:
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/php_code_191.txt'; ?>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Stream Filters
+						<ul>
+							<li>
+								It allow you to pass data in and out of a stream through a series of filters that can alter it dynamically.
+							</li>
+							<li>
+								stream_filter_prepend(): Add a filter to the beginning of the filter chain.
+							</li>
+							<li>
+								stream_filter_append(): Add a filter to the end of the filter chain.
+							</li>
+							<li>
+								Exampel:
+								<ul>
+									<li>
+										server
+										<?php include 'code/php_code_192.txt'; ?>
+									</li>
+									<li>
+										client
+										<?php include 'code/php_code_193.txt'; ?>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>

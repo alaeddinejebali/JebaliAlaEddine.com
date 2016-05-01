@@ -1,3 +1,8 @@
 <pre><code class="php">
-
+$http_options = stream_context_create(array(
+	'http' => array(
+	'user_agent' => "Davey Shafiks Browser",
+	'max_redirects' => 3)
+));
+$file = file_get_contents("http://localhost/", false, $http_options);
 </code></pre>

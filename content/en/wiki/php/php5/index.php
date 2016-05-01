@@ -17,6 +17,7 @@
             <?php include 'php_xmlWebServices.php'; ?>
             <?php include "php_security.php"; ?>
             <?php include "php_streams.php"; ?>
+            <?php include 'php_php5vsphp4.php'; ?>
             <?php include "php_tips.php"; ?>
         </div>
     </div>
