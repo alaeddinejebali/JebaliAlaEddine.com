@@ -1,0 +1,13 @@
+<pre><code class="php">
+// complete the implementation of a compressed data stream between server and client
+
+$socket = stream_socket_client('tcp://0.0.0.0:1037');
+
+// Apply the <i>zlib.inflate</i> filter to the client
+stream_filter_append($socket, 'zlib.inflate');
+
+while( !feof($socket) ){
+	echo fread($socket, 100);
+}
+fclose($socket);
+</code></pre>
