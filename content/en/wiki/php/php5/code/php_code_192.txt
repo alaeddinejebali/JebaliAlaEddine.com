@@ -1,0 +1,15 @@
+<pre><code class="php">
+$socket = stream_socket_server("tcp://0.0.0.0:1037");
+while( $conn = stream_socket_accept($socket) ){
+	
+	// convert the data to upper case
+	stream_filter_append($conn, 'string.toupper');
+	
+	// compress server stream whenever we write data to it
+	stream_filter_append($conn, 'zlib.deflate');
+	
+	fwrite($conn, "Hello World");
+	fclose($conn);
+}
+fclose($socket);
+</code></pre>
