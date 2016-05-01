@@ -1,0 +1,12 @@
+<pre><code class="php">
+$socket = stream_socket_client('tcp://0.0.0.0:1037');
+while( !feof($socket) ){
+	echo fread($socket, 100);
+}
+fclose($socket);
+
+// To run it:
+$> php ./client.php
+
+// outputs: Hello World
+</code></pre>
