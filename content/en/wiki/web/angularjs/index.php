@@ -7,6 +7,7 @@
     <div class="row-fluid">
         <div class="span12">
             <?php include "presentation.php"; ?>
+            <?php include "modules.php" ?>
         </div>
     </div>
 </div>
