@@ -1,0 +1,68 @@
+<pre><code class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"&gt;
+		&lt;script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body ng-app="myApp" ng-controller="userCtrl"&gt;
+		&lt;div class="container"&gt;
+			&lt;h3&gt;Users&lt;/h3&gt;
+			&lt;table class="table table-striped"&gt;
+				&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Edit&lt;/th&gt;&lt;th&gt;First Name&lt;/th&gt;&lt;th&gt;Last Name&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+				&lt;tbody&gt;
+					&lt;tr ng-repeat="user in users"&gt;
+						&lt;td&gt;
+							&lt;button class="btn" ng-click="editUser(user.id)"&gt;
+								&lt;span class="glyphicon glyphicon-pencil"&gt;&lt;/span&gt;Edit
+							&lt;/button&gt;
+						&lt;/td&gt;
+						&lt;td&gt;{{ user.fName }}&lt;/td&gt;
+						&lt;td&gt;{{ user.lName }}&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/tbody&gt;
+			&lt;/table&gt;
+
+			&lt;button class="btn btn-success" ng-click="editUser('new')"&gt;
+				&lt;span class="glyphicon glyphicon-user"&gt;&lt;/span&gt; Create New User
+			&lt;/button&gt;
+
+			&lt;h3 ng-show="edit"&gt;Create New User:&lt;/h3&gt;
+			&lt;h3 ng-hide="edit"&gt;Edit User:&lt;/h3&gt;
+
+			&lt;form class="form-horizontal"&gt;
+				&lt;div class="form-group"&gt;
+					&lt;label class="col-sm-2 control-label"&gt;First Name:&lt;/label&gt;
+					&lt;div class="col-sm-10"&gt;
+						&lt;input type="text" ng-model="fName" ng-disabled="!edit" placeholder="First Name"&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class="form-group"&gt;
+					&lt;label class="col-sm-2 control-label"&gt;Last Name:&lt;/label&gt;
+					&lt;div class="col-sm-10"&gt;
+						&lt;input type="text" ng-model="lName" ng-disabled="!edit" placeholder="Last Name"&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class="form-group"&gt;
+					&lt;label class="col-sm-2 control-label"&gt;Password:&lt;/label&gt;
+					&lt;div class="col-sm-10"&gt;
+						&lt;input type="password" ng-model="passw1" placeholder="Password"&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class="form-group"&gt;
+					&lt;label class="col-sm-2 control-label"&gt;Repeat:&lt;/label&gt;
+					&lt;div class="col-sm-10"&gt;
+						&lt;input type="password" ng-model="passw2" placeholder="Repeat Password"&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/form&gt;
+
+			&lt;button class="btn btn-success" ng-disabled="error || incomplete"&gt;
+				&lt;span class="glyphicon glyphicon-save"&gt;&lt;/span&gt; Save Changes
+			&lt;/button&gt;
+		&lt;/div&gt;
+
+		&lt;script src = "myUsers.js"&gt;&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
