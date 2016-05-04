@@ -53,7 +53,10 @@
                                         class="iconfa-angle-right sub-indicator"></i>
                                     <ul>
                                         <li>
-                                            <a href="/wiki/web/angularjs">AngularJS</a>
+                                            <a href="/wiki/web/angularjs1">Angular 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="/wiki/web/angularjs2">Angular 2</a>
                                         </li>
                                         <li>
                                             <a href="/wiki/web/javascript">JavaScript</a>
