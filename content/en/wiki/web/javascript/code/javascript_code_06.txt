@@ -1,6 +1,0 @@
-<pre>
-<code class="javascript">
-var myVariable = “Hello, World!”;
-alert(window.myVariable);
-</code>
-</pre>

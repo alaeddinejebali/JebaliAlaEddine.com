@@ -1,3 +1,0 @@
-<pre><code class="javascript">
-document.cookie = 'UserName=Ala';
-</code></pre>

@@ -1,6 +1,0 @@
-<pre>
-<code class="javascript">
-var result = Math.pow(3, 5);
-console.log(result);
-//outputs: 3*3*3*3*3 = 243
-</code></pre>

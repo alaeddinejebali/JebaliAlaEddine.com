@@ -1,9 +1,0 @@
-<pre>
-<code class="javascript">
-function concatenate(str1, str2){
-	return str1 + str2;
-}
-console.log( concatenate('Hello ', 'world') ); //outputs: Hello world
-console.log( concatenate('My age is ', 29) ); //outputs: My age is 29
-</code>
-</pre>

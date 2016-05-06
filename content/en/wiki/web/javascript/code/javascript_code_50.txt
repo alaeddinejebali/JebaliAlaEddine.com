@@ -1,7 +1,0 @@
-<pre>
-<code class="javascript">
-while(condition){
-	(...)
-}
-</code>
-</pre>

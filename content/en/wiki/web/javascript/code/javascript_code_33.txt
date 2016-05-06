@@ -1,7 +1,0 @@
-<pre>
-<code class="javascript">
-function functionName(value, index, array) {
-	(...)
-}
-</code>
-</pre>
