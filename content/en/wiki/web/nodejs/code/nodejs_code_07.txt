@@ -1,3 +1,0 @@
-<pre><code class="sh">
-$> npm install <moduleName>
-</code></pre>
