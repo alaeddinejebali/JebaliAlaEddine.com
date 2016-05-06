@@ -1,6 +1,0 @@
-<pre><code class="js">
-&lt;div ng-app=""&gt;
-	&lt;p ng-show="true"&gt;I am visible.&lt;/p&gt;
-	&lt;p ng-show="false"&gt;I am not visible.&lt;/p&gt;
-&lt;/div&gt;
-</code></pre>

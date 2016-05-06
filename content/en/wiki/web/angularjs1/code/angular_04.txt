@@ -1,8 +1,0 @@
-<pre><code class="js">
-&lt;!-- If <i>mySwitch</i> evaluates to true, the button will be disabled:  --&gt;
-&lt;div ng-app="" ng-init="mySwitch=true"&gt;
-	&lt;button ng-disabled="mySwitch"&gt;Click Me!&lt;/button&gt;
-	&lt;input type="checkbox" ng-model="mySwitch"/&gt;Button
-	&lt;p&gt;{{ mySwitch }}&lt;/p&gt;
-&lt;/div&gt;
-</code></pre>
