@@ -1,5 +1,0 @@
-<pre><code class="sh">
-$> cd path/to/MyFolder/hello
-$> touch main.js
-#In main.js, put this code: console.log(“Hello world!”);
-$> node main.js</code></pre>
