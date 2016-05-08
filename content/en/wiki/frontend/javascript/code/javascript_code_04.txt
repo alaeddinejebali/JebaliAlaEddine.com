@@ -1,0 +1,11 @@
+<pre>
+<code class="javascript">
+console.log( parseInt('123') ); //outputs: 123
+console.log( parseInt('123abc') ); //outputs: 123
+console.log( parseInt('123abc456') ); //outputs: 123
+
+console.log( parseFloat('123') ); //outputs: 123
+console.log( parseFloat('1.23abc') ); //outputs: 1.23
+console.log( parseFloat('1,23abc456') ); //outputs: 1
+</code>
+</pre>

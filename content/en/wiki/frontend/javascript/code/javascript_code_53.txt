@@ -1,0 +1,15 @@
+<pre>
+<code class="javascript">
+var scores = new Array(10, 20, -1, 30, 40, 50);
+for(score in scores){
+	if( scores[score]==-1 ){
+		alert("Score -1 reached, you will exit this iteration");
+		continue;
+	}
+	console.log("scores[" + score + "] = " + scores[score]);
+}
+//outputs: 10, 20
+//then display alert message
+//the outputs: 30, 40, 50
+</code>
+</pre>

@@ -1,0 +1,19 @@
+<pre>
+<code class="javascript">
+var user = 'anonymous';
+
+function sayHello(){
+	console.log("Hello " + user);
+}
+
+//getUser function accepts one argument that is a function.
+function getUser(greetUser){
+	user = 'Ala Eddine JEBALI';
+	greetUser();
+}
+
+//calls the getUser() function and passes a pointer of the sayHello() function
+getUser( sayHello );
+//outputs: Hello Ala Eddine JEBALI
+</code>
+</pre>

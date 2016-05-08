@@ -1,0 +1,17 @@
+<pre>
+<code class="javascript">
+function firstCall(){
+	secondCall();
+}
+function secondCall(){
+	thirdCall();
+}
+function thirdCall(){
+	//
+}
+function button1_onclick(){
+	debugger
+	firstCall();
+}
+</code>
+</pre>

@@ -1,0 +1,26 @@
+<pre><code class="html">
+<!-- The <i>novalidate</i> attribute is not needed for this application, 
+ 	but normally you'll use it in AngularJS forms, to override standard HTML5 validation. -->
+&lt;div ng-app="myApp" ng-controller="formCtrl"&gt;
+	&lt;form novalidate&gt;
+		First Name:
+		&lt;input type="text" ng-model="user.firstName"&gt;
+		Last Name:
+		&lt;input type="text" ng-model="user.lastName"&gt;
+		&lt;button ng-click="reset()"&gt;RESET&lt;/button&gt;
+	&lt;/form&gt;
+	&lt;p&gt;form = {{user}}&lt;/p&gt;
+	&lt;p&gt;master = {{master}}&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+var app = angular.module('myApp', []);
+app.controller('formCtrl', function($scope) {
+	$scope.master = {firstName: "John", lastName: "Doe"};
+	$scope.reset = function() {
+		$scope.user = angular.copy($scope.master);
+	};
+	$scope.reset();
+});
+&lt;/script&gt; 
+</code></pre>

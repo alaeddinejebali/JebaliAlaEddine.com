@@ -1,0 +1,10 @@
+<pre><code class="sh">
+$> cd /home/ala/Downloads
+$> tar xvfz node-v4.2.2-linux-x64.tar.gz
+$> cd /opt
+$> sudo mkdir NodeJS
+$> sudo mv /home/ala/Downloads/node-v4.2.2-linux-x64/* /opt/NodeJS
+$> sudo chown -R ala node-v4.2.2-linux-x64
+$> sudo chmod 777 -R node-v4.2.2-linux-x64
+$> export PATH=$PATH:/opt/NodeJS/bin
+</code></pre>

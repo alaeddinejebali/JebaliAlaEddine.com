@@ -1,0 +1,3 @@
+<pre><code class="javascript">
+setCookie("Name","","","Mon, 1 Jan 1990 00:00:00");
+</code></pre>

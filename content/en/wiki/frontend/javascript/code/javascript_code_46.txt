@@ -1,0 +1,17 @@
+<pre>
+<code class="javascript">
+switch(myVariable){
+	case "abc":
+		//some code here
+		break;
+	case "def":
+		//some code here
+		break;
+	default:
+		//default code
+		//This code executes when none of the case statements match
+		//The default statement is optional
+		break;
+}
+</code>
+</pre>
