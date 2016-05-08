@@ -1,4 +1,0 @@
-<pre><code class="sh">
-$> cd path/to/my/project
-$> npm init
-</code></pre>

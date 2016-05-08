@@ -1,3 +1,0 @@
-<pre><code class="sh">
-$> npm update moduleName
-</code></pre>

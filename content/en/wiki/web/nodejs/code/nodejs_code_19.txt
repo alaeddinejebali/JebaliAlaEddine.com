@@ -1,3 +1,0 @@
-<pre><code class="sh">
-$> node app.js Ala Jerom David Karim
-</code></pre>
