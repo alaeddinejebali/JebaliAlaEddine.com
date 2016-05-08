@@ -29,7 +29,7 @@
                 </ul>
                 <ul>
                     <li>Let's say that we want to have a function with 2 params with the 1<sup>st</sup> one is optional
-                        and the 2<sup>nd</sup> is requiredrequired.
+                        and the 2<sup>nd</sup> is required.
                         <?php include "code/php_code_29.txt"; ?>
                     </li>
                     <li>This does not cause any errors to be emitted, but it also makes no sense whatsoever because you
@@ -40,7 +40,7 @@
                         In this case, what you really want is variable-length argument lists:
                         <?php include "code/php_code_30.txt"; ?>
                     </li>
-                    <li class='caution'>Note -and this is very important- that only variables can be passed as by-reference
+                    <li class='caution'>In function, only variables can be passed as by-reference
                         arguments; you cannot pass an expression as a by-reference parameter.
                     </li>
                 </ul>
