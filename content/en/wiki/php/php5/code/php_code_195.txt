@@ -1,3 +1,8 @@
 <pre><code class="php">
-
+//place P0
+while($foo){//place P1
+	continue;
+	break;
+}
+//place P2
 </code></pre>

@@ -1,9 +1,15 @@
 <pre><code class="php">
-	$a = "Hello";
-	$b = "World";
-	function hello(){
-		global $a, $b;
-		echo "$a $b";
-	}
-	hello(); //outputs:  "Hello World"
+$a = "Hello";
+$b = "World";
+	
+function A(){
+	echo $a . " " . $b;
+	//outputs: Undefined variable: a, b
+}
+	
+function B(){
+	global $a, $b;
+	echo $a . " " . $b;
+	//outputs:  "Hello World"
+}
 </code></pre>

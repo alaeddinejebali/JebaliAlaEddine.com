@@ -1,9 +1,9 @@
 <pre><code class="php">
 	$a = array ('a', 'b', 'c');
 	var_dump( array_flip ($a) );
-	//array(3){
+	/*array(3){
         ["a"]=>int(0)
         ["b"]=>int(1)
         ["c"]=>int(2)
-    }
+    }*/
 </code></pre>

@@ -1,10 +1,16 @@
 <pre><code class="php">
-	$tab1 = array('a'=>'one', 'b'=>'two', 'c'=>'three', 'd'=>'four');
-	$tab2 = array('x'=>'five', 'b'=>'six', 'y'=>'seven', 'a'=>'one');
-	$Res = array_intersect_key($tab1, $tab2);
-	print_r( $Res );
-	//outputs: Array ( [a] => one [b] => two )<br/>
-	$Res = array_intersect_assoc($tab1, $tab2);
-	print_r( $Res );
-	//outputs: Array ( [a] => one )
+$tab1 = array('a'=>'one', 'b'=>'two', 'c'=>'three', 'd'=>'four');
+$tab2 = array('c'=> 'three', 'x'=>'five', 'b'=>'six', 'y'=>'seven', 'a'=>'one');
+
+print_r( array_diff($tab1, $tab2) );
+// outputs: Array([b] => two, [d] => four)
+
+print_r( array_intersect($tab1, $tab2) );
+// outputs: Array([a] => one, [c] => three)
+
+print_r( array_intersect_key($tab1, $tab2) );
+// outputs: Array([a] => one, [b] => two, [c] => three)
+
+print_r( array_intersect_assoc($tab1, $tab2) );
+// outputs: Array([a] => one, [c] => three)
 </code></pre>

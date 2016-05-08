@@ -1,4 +1,4 @@
 <pre><code class="php">
      function f($optional, $required);
-     function hello($newUser="no", $name){}
+     function hello($isAdmin="no", $name){}
 </code></pre>

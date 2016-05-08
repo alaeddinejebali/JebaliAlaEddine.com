@@ -2,10 +2,10 @@
 	$tab = array('a'=>'one', 'b'=>'two', 'c'=>'three', 'd'=>'four');
 	asort($tab);
 	print_r($tab);
-	//Array(
-            ['d'] => four
-            ['a'] => one
-            ['c'] => three
-            ['b'] => two
-        )
+	/*Array(
+		['d'] => four
+		['a'] => one
+		['c'] => three
+		['b'] => two
+	)*/
 </code></pre>
