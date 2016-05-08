@@ -1,9 +1,0 @@
-<pre><code class="sh">
-$> cd /path/to/yourProject/myProject/
-
-$> #Run tests only one file
-$> nightwatch tests/myFile.js
-
-$> #Run tests in all files
-$> nightwatchjs tests/
-</code></pre>
