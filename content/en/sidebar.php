@@ -24,17 +24,28 @@
                         class="iconfa-angle-right sub-indicator"></i>
                     <ul>
                         <li>
+                            <a href="#">Front-End</a><i class="iconfa-angle-right sub-indicator"></i>
+                            <ul>
+                            	<li>
+                                	<a href="/wiki/frontend/angularjs1">Angular 1</a>
+								</li>
+                                <li>
+                                	<a href="/wiki/frontend/angularjs2">Angular 2</a>
+                                </li>
+                                <li>
+                                	<a href="/wiki/frontend/javascript">JavaScript</a>
+                                </li>
+                                <li>
+                                	<a href="/wiki/frontend/nodejs">NodeJS</a>
+                                </li>
+                        	</ul>
+                        </li>
+                        <li>
                             <a href="company.html">Java/J2EE</a><i class="iconfa-angle-right sub-indicator"></i>
                             <ul>
                                 <li><a href="company.html">Java</a></li>
                                 <li><a href="ourteam.html">Hibernate</a></li>
                                 <li><a href="careers.html">Spring</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="company.html">Mobile</a><i class="iconfa-angle-right sub-indicator"></i>
-                            <ul>
-                                <li><a href="company.html">Android</a></li>
                             </ul>
                         </li>
                         <li>
@@ -48,24 +59,6 @@
                         <li>
                             <a href="company.html">Web</a><i class="iconfa-angle-right sub-indicator"></i>
                             <ul>
-                                <li>
-                                    <a href="#">JavaScript</a><i
-                                        class="iconfa-angle-right sub-indicator"></i>
-                                    <ul>
-                                        <li>
-                                            <a href="/wiki/web/angularjs1">Angular 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="/wiki/web/angularjs2">Angular 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="/wiki/web/javascript">JavaScript</a>
-                                        </li>
-                                        <li>
-                                            <a href="/wiki/web/nodejs">NodeJS</a>
-                                        </li>
-                                    </ul>
-                                </li>
                                 <li>
                                     <a href="/wiki/web/nodejs">NodeJS</a>
                                 </li>
