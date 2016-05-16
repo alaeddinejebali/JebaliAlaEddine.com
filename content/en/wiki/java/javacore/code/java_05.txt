@@ -1,0 +1,25 @@
+<pre><code class="java">
+// prog1/packagea/A.java
+package packagea;
+public class A {
+
+}
+
+// prog1/packageb/B.java
+package packageb;
+import packagea.A;
+public class B {
+        public static void main(String[] args) {
+                A a;
+                System.out.println("Got it");
+        }
+}
+
+$> cd prog1/
+$> javac packagea/A.java packageb/B.java 
+// Two new files will be created:
+// packagea/A.class and packageb/B.class .
+
+//Run
+$> java packageb.B 
+</code></pre>
