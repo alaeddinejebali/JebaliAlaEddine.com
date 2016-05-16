@@ -1,0 +1,8 @@
+<pre><code class="java">
+import java.util.Date;
+import java.sql.*;
+public class Conflicts {
+	Date date;
+	// java.util.Date will be used
+}
+</code></pre>
