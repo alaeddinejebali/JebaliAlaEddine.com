@@ -1,0 +1,7 @@
+<pre><code class="sh">
+$> java -cp ".:/tmp/someOtherLocation:/tmp/myJar.jar" myPackage.MyClass
+
+$> java -cp "C:\temp\directoryWithJars\*" myPackage.MyClass
+// Add all the JARs to the class path that are in directoryWithJars
+// But it won’t include any JARs in the class path that are in a subdirectory of directoryWithJars
+</code></pre>
