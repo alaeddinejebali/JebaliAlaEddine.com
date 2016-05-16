@@ -1,0 +1,24 @@
+<pre><code class="java">
+package packagea;
+public class A {
+	public A(){
+		System.out.println("A constructor is called");
+	}
+	{ System.out.println("instance initializers is called"); }
+}
+
+package packageb;
+import packagea.A;
+public class B {
+	public static void main(String[] args) {
+		A a = new A();
+		System.out.println("Got it");
+	}
+}
+
+/* 	outputs:
+	instance initializers is called
+	A constructor is called
+	Got it
+*/
+</code></pre>
