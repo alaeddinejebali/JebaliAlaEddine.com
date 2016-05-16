@@ -1,0 +1,13 @@
+<pre><code class="java">
+ // This works
+class A{
+	String name = "Ala";
+	{ System.out.println("Hello " + name); }
+}
+
+ // This does not work
+class A{
+	{ System.out.println("Hello " + name); }
+	String name = "Ala";
+}
+</code></pre>
