@@ -1,0 +1,14 @@
+<pre><code class="java">
+// Hello.java
+public class Hello{
+        public static void main(String[] args){
+                System.out.println("Hello " + args[0]);
+        }
+}
+
+// Compile Java code
+$> javac Hello.java
+
+// Run the program
+$> java Hello "Ala Eddine"
+</code></pre>
