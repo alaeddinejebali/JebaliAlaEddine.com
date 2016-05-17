@@ -1,0 +1,3 @@
+<pre><code class="sh">
+	$> git diff --name-only HEAD~<n> HEAD
+</code></pre>
