@@ -38,20 +38,25 @@
                                 <li>
                                 	<a href="/wiki/frontend/nodejs">NodeJS</a>
                                 </li>
+                                <li>
+                                	<a href="/wiki/frontend/typescript">TypeScript</a>
+                                </li>
                         	</ul>
                         </li>
                         <li>
                             <a href="company.html">Java/J2EE</a><i class="iconfa-angle-right sub-indicator"></i>
                             <ul>
-                                <li><a href="company.html">Java</a></li>
-                                <li><a href="ourteam.html">Hibernate</a></li>
-                                <li><a href="careers.html">Spring</a></li>
+                                <li><a href="/wiki/java/javacore">Core Java</a></li>
+                                <li><a href="/wiki/java/hibernate">Hibernate</a></li>
+                                <li><a href="/wiki/java/spring">Spring</a></li>
                             </ul>
                         </li>
+						<li>
+							<a href="/wiki/oop">OOP</a>
+						</li>
                         <li>
                             <a href="#">PHP</a><i class="iconfa-angle-right sub-indicator"></i>
                             <ul>
-                                <li><a href="ourteam.html">CakePHP</a></li>
                                 <li><a href="/wiki/php/php5">PHP5</a></li>
                                 <li><a href="/wiki/php/symfony">Symfony</a></li>
                             </ul>
@@ -60,9 +65,6 @@
                             <a href="company.html">Web</a><i class="iconfa-angle-right sub-indicator"></i>
                             <ul>
                                 <li>
-                                    <a href="/wiki/web/nodejs">NodeJS</a>
-                                </li>
-                                <li>
                                     <a href="/wiki/web/firefox-addons">Firefox addons</a>
                                 </li>
                                 <li>
@@ -70,9 +72,9 @@
                                 </li>
                             </ul>
                         </li>
-			<li>
-				<a href="/wiki/xml">XML</a>
-			</li>
+						<li>
+							<a href="/wiki/xml">XML</a>
+						</li>
                         <li>
                             <a href="company.html">Others</a><i class="iconfa-angle-right sub-indicator"></i>
                             <ul>

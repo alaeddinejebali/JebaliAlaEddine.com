@@ -1,0 +1,6 @@
+<pre><code class="java">
+public class Conflicts {
+	java.util.Date date;
+	java.sql.Date sqlDate;
+}
+</code></pre>
