@@ -1,0 +1,3 @@
+<pre><code class="java">
+int num, String value; // does not compile
+</code></pre>
