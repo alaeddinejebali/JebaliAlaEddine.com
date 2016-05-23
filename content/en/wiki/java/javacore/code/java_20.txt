@@ -1,0 +1,4 @@
+<pre><code class="java">
+int value = null; // doesn't compile
+String s = null; // compile
+</code></pre>
