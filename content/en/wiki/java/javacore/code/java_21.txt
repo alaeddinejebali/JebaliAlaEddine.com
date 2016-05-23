@@ -1,0 +1,5 @@
+<pre><code class="java">
+String reference = "hello";
+int len = reference.length();
+int bad = len.length(); // does not compile
+</code></pre>
