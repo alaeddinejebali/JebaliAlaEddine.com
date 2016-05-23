@@ -1,0 +1,6 @@
+<pre><code class="java">
+<i>boolean</i> okidentifier;
+<i>boolean</i> $OK2Identifier;
+<i>boolean</i> _alsoOK1d3ntifi3r;
+<i>boolean</i> __SStillOkbutKnotsonice$;
+</code></pre>
