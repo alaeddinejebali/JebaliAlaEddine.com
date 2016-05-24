@@ -1,0 +1,8 @@
+<pre><code class="java">
+public int notValid() {
+	int y = 10;
+	int x;
+	int reply = x + y; // does not compile
+	return reply;
+}
+</code></pre>

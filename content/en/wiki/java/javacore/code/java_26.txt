@@ -1,0 +1,6 @@
+<pre><code class="java">
+<i>boolean</i> 3DPointClass // identifiers cannot begin with a number
+<i>boolean</i> hollywood@vine // @ is not a letter, digit, $ or _
+<i>boolean</i> *$coffee // * is not a letter, digit, $ or _
+<i>boolean</i> public // public is a reserved word
+</code></pre>

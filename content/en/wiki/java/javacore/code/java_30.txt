@@ -1,0 +1,11 @@
+<pre><code class="java">
+public class Mouse {
+	// Class variable
+	static int MAX_LENGTH = 5;
+	
+	// Instance variable or field
+	int length;
+	
+	(...)
+}
+</code></pre>
