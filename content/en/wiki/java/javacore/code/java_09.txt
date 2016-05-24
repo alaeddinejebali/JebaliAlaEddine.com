@@ -1,3 +1,14 @@
-<pre><code class="java">
+<pre><code class="sh">
+# check current java version
+# in case you have java-8
+# you should see: java version "1.8.0_91"
+$> java -version
 
+# Install java-8 if you don't have it
+$> sudo add-apt-repository ppa:webupd8team/java
+$ sudo apt-get update
+$ sudo apt-get install oracle-java8-installer
+
+# Configuring Java Environment
+$> sudo apt-get install oracle-java8-set-default
 </code></pre>
