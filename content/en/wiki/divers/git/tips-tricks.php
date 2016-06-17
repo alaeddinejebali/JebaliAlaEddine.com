@@ -175,5 +175,12 @@
 			<li class="noStyle"><?php include "code/git_code_18.txt"; ?></li>
 		</ul>
 		
+		<h2>Show merge conflicts</h2>
+		<ul>
+			<li>
+				git diff
+			</li>
+		</ul>
+		
 	</div>
 </section>
