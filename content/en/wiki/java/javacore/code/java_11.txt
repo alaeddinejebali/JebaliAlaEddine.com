@@ -1,0 +1,24 @@
+<pre><code class="java">
+public class Scope {
+	public static void main(String[] args) {
+	
+		String one, two;
+		// No objects have gone on the heap yet
+		
+		one = new String("a");
+		two = new String("b");
+		<img src="images/java_01.png" alt="Java garbage collection" />
+		
+		one = two;
+		// This makes "a" eligible for garbage collection
+		
+		String three = one;
+		<img src="images/java_02.png" alt="Java garbage collection" />
+		
+		one = null;
+		<img src="images/java_03.png" alt="Java garbage collection" />
+		
+		// "b" geos out of scope
+	}
+}
+</code></pre>

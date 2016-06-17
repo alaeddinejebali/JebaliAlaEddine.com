@@ -359,7 +359,7 @@
 								</ul>
 							</li>
 							<li>
-								It's recommended that you don’t start any identifi ers with "$" because the compiler uses this symbol for some files.
+								It's recommended that you don’t start any identifiers with "$" because the compiler uses this symbol for some files.
 							</li>
 						</ul>
 					</li>
@@ -542,6 +542,20 @@
 									</li>
 									<li>
 										It is the object that gets garbage collected, not its reference.
+									</li>
+								</ul>
+							</li>
+							<li>
+								Example: When each object first becomes eligible for garbage collection?
+								<ul>
+									<li class="noClass">
+										<?php include "code/java_10.txt"; ?>
+									</li>
+								</ul>
+								Solution
+								<ul>
+									<li class="noClass">
+										<?php include "code/java_11.txt"; ?>
 									</li>
 								</ul>
 							</li>
