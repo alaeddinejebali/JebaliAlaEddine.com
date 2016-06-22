@@ -561,6 +561,65 @@
 							</li>
 						</ul>
 					</li>
+					<li>
+						finalize()
+						<ul>
+							<li>
+								Called if the garbage collector tries to collect the object.
+							</li>
+							<li>
+								If the garbage collector doesn’t run, the method doesn’t get called.
+							</li>
+							<li>
+								can run only 0 or 1 time
+								<ul>
+									<li>
+										If the garbage collector fails to collect the object and tries to run it again later, the method doesn’t get called a second time.
+									</li>
+								</ul>
+							<li>
+								Examples
+								<ul>
+									<li>
+										Example 1:
+										<ul>
+											<li class="noClass">
+												<?php include "code/java_12.txt"; ?>
+											</li>
+											<li>
+												There is no need to call the garbage collector ==> <i>finalize()</i> will not be called.
+											</li>
+										</ul>
+									</li>
+									<li>
+										Example 2:
+										<ul>
+											<li class="noClass">
+												<?php include "code/java_13.txt"; ?>
+											</li>
+											<li>
+												The end of the method, the object is no longer eligible for garbage collection because a static variable is referring to it and static variables stay in scope until the program ends ==> <i>finalize()</i> will not be called.
+											</li>
+										</ul>
+									</li>
+									<li>
+										Example 3:
+										<ul>
+											<li class="noClass">
+												<?php include "code/java_14.txt"; ?>
+											</li>
+											<li>
+												When <i>objects = null</i> => Java will remove the object from memory.
+											</li>
+											<li>
+												Java remembers already running finalize() on this object and will not do so again ==> <i>finalize()</i> will not be called.
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
 				</ul>
 			</li>
 		</ul>
