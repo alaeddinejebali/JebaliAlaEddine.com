@@ -1,3 +1,4 @@
 <pre><code class="java">
-
+int y = 4;
+double x = 3 + 2 * --y;
 </code></pre>
