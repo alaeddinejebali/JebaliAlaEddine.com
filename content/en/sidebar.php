@@ -23,6 +23,9 @@
                     <a href=""><span class="iconfa-star"></span> Wiki</a><i
                         class="iconfa-angle-right sub-indicator"></i>
                     <ul>
+						<li>
+							<a href="/wiki/designpatterns">Design patterns</a>
+						</li>
                         <li>
                             <a href="#">Front-End</a><i class="iconfa-angle-right sub-indicator"></i>
                             <ul>
