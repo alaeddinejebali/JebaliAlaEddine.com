@@ -154,9 +154,9 @@
 								 In a class that had multiple constructors, you would have to repeat the code in each constructor. With an instance initializer, you can just write the code once, and it will be executed no matter what constructor is used to create the object.
 							</li>
 							<li>
-								Order matters for the fi elds and blocks of code. You can’t refer to a variable before it has been initialized:
+								Order matters for the fields and blocks of code. You can’t refer to a variable before it has been initialized:
 								<ul>
-									<li><?php include 'code/java_08.txt'; ?></li>
+									<li class="noStyle"><?php include 'code/java_08.txt'; ?></li>
 								</ul>
 							</li>
 						</ul>
@@ -548,13 +548,13 @@
 							<li>
 								Example: When each object first becomes eligible for garbage collection?
 								<ul>
-									<li class="noClass">
+									<li class="noStyle">
 										<?php include "code/java_10.txt"; ?>
 									</li>
 								</ul>
-								Solution
 								<ul>
-									<li class="noClass">
+									<li class="noStyle">
+										Solution
 										<?php include "code/java_11.txt"; ?>
 									</li>
 								</ul>
@@ -583,7 +583,7 @@
 									<li>
 										Example 1:
 										<ul>
-											<li class="noClass">
+											<li class="noStyle">
 												<?php include "code/java_12.txt"; ?>
 											</li>
 											<li>
@@ -594,7 +594,7 @@
 									<li>
 										Example 2:
 										<ul>
-											<li class="noClass">
+											<li class="noStyle">
 												<?php include "code/java_13.txt"; ?>
 											</li>
 											<li>
@@ -605,7 +605,7 @@
 									<li>
 										Example 3:
 										<ul>
-											<li class="noClass">
+											<li class="noStyle">
 												<?php include "code/java_14.txt"; ?>
 											</li>
 											<li>
