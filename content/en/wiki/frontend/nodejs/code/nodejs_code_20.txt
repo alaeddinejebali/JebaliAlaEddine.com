@@ -4,4 +4,7 @@ process.argv.forEach(function (val, index, array) {
 		console.log( "Hello " + val );
 	}
 });
+
+# Run
+# $> node app.js Ala Jerom David Karim
 </code></pre>

@@ -1,3 +1,5 @@
 <pre><code class="sh">
-$> node app.js Ala Jerom David Karim
+$> node
+
+#You will see the REPL Command prompt ">" where you can type any Node.js command:
 </code></pre>
