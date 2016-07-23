@@ -1,0 +1,12 @@
+<pre><code class="sh">
+var fs = require("fs");
+
+fs.readFile('myFile.txt', function (err, data) {
+    if (err){
+    	return console.error(err);
+    }
+    console.log(data);
+});
+
+console.log("Program Ended");
+</code></pre>
