@@ -7,7 +7,7 @@
 			<li>
 				<h2>Install Java-8</h2>
 				<ul>
-					<li class="noStyle"><?php include 'code/java_code_09.txt'; ?></li>
+					<li class="noStyle"><?php include 'code/java_09.txt'; ?></li>
 				</ul>
 			</li>
 			<li>
