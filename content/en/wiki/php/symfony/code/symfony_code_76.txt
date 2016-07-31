@@ -1,3 +1,7 @@
-<pre><code class="php">
-
+<pre><code class="sh">
+$> nano /etc/php5/apache2/php.ini
+# Activate and set timezone:
+date.timezone = Europe/Paris
+# Then restart Apache
+$> /etc/init.d/apache2 restart
 </code></pre>

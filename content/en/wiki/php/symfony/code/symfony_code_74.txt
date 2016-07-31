@@ -1,3 +1,6 @@
 <pre><code class="php">
+$> <b>composer create-project</b> symfony/framework-standard-edition <b>myProjectName</b> "SymfonyVersion"
 
+#In our case:
+$> composer -vvv create-project symfony/framework-standard-edition SymfonyApp01 "3.1.*"
 </code></pre>

@@ -1,3 +1,4 @@
-<pre><code class="php">
-
+<pre><code class="sh">
+$> cd myProjectName/
+$> composer require symfony/finder
 </code></pre>

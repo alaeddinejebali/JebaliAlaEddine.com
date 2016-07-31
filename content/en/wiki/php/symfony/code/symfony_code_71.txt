@@ -1,3 +1,5 @@
-<pre><code class="php">
-
+<pre><code class="sh">
+$> git clone theSymfonyProject
+$> cd theSymfonyProject
+$> composer install
 </code></pre>

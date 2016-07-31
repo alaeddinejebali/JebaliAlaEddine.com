@@ -1,3 +1,5 @@
-<pre><code class="php">
-
+<pre><code class="sh">
+$> composer --version
+$> sudo /usr/local/bin/composer self-update
+$> composer --version
 </code></pre>
