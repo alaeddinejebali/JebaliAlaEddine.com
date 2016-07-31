@@ -18,7 +18,11 @@
 					<li>Not (yet) supported by HTML</li>
 					<li>
 						With AngularJS, you can include HTML content using the <b>ng-include</b> directive:
-						<?php include 'code/angular_12.txt'; ?>
+						<ul>
+							<li class="noStyle">
+								<?php include 'code/angular_12.txt'; ?>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</li>
@@ -27,11 +31,19 @@
 				<ul>
 					<li>
 						Layout
-						<?php include 'code/angular_11.txt'; ?>
+						<ul>
+							<li class="noStyle">
+								<?php include 'code/angular_11.txt'; ?>
+							</li>
+						</ul>
 					</li>
 					<li>
 						Script
-						<?php include 'code/angular_12.txt'; ?>
+						<ul>
+							<li class="noStyle">
+								<?php include 'code/angular_12.txt'; ?>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</li>

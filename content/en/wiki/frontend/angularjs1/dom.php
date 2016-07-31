@@ -10,7 +10,7 @@
 					<li>
 						The <b>ng-disabled</b> directive binds AngularJS application data to the disabled attribute of HTML elements.
 						<ul>
-							<li class"noStyle">
+							<li class="noStyle">
 								<?php include 'code/angular_04.txt'; ?>
 							</li>
 						</ul>
@@ -20,16 +20,30 @@
 					</li>
 					<li>
 						You can use any expression that evaluates to true or false the value of ng-show.
-						<?php include 'code/angular_05.txt' ?>
+						<ul>
+							<li class="noStyle">
+								<?php include 'code/angular_05.txt' ?>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<b>ng-click</b> directive defines an AngularJS click event. 
 						<ul>
 							<li>
-								example:
-								<?php include 'code/angular_06.txt'; ?>
+								Example:
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/angular_06.txt'; ?>
+									</li>
+								</ul>
+							</li>
+							<li>
 								Another example:
-								<?php include 'code/angular_07.txt'; ?>
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/angular_07.txt'; ?>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -48,7 +62,11 @@
 							<li>$pristine: User has not interacted with the field yet.</li>
 							<li>
 								Example:
-								<?php include 'code/angular_09.txt'; ?>
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/angular_09.txt'; ?>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>

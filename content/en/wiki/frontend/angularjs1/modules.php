@@ -27,7 +27,11 @@
 					</li>
 					<li>
 						Example:
-						<?php include 'code/angular_08.txt'; ?>
+						<ul>
+							<li class="noStyle">
+								<?php include 'code/angular_08.txt'; ?>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</li>

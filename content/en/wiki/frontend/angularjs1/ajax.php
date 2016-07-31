@@ -12,9 +12,15 @@
 					</li>
 					<li>
 						Example: suppose that the page http://www.website.com/page.php returns
-						<?php include 'code/angular_01.txt'; ?>
-						Html file:
-						<?php include 'code/angular_02.txt'; ?>
+						<ul>
+							<li class="noStyle">
+								<?php include 'code/angular_01.txt'; ?>
+							</li>
+							<li>
+								Html file:
+								<?php include 'code/angular_02.txt'; ?>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</li>

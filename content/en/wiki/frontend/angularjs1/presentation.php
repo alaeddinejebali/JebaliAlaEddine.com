@@ -104,7 +104,11 @@
 							<li>angular.isNumber()</li>
 							<li>
 								Example
-								<?php include 'code/angular_10.txt'; ?>
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/angular_10.txt'; ?>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
