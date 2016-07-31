@@ -1,12 +1,11 @@
 <pre><code class="sh">
 [Desktop Entry]
-Encoding=UTF-8
-Name=Eclipse
-Comment=Eclipse IDE
-Exec=eclipse
-Icon=/opt/eclipse/icon.xpm
-Terminal=false
 Type=Application
-Categories=GNOME;Application;Development;
-StartupNotify=true
+Name=EclipsePHP
+Comment=Eclipse Integrated Development Environment
+Icon=<something like /opt/eclipse/icon.png>
+Exec=<something like /opt/eclipse/eclipse>
+Terminal=false
+Categories=Development;IDE;Java;
+StartupWMClass=Eclipse
 </code></pre>
