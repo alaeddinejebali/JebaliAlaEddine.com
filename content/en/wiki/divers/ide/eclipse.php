@@ -14,7 +14,7 @@
                     <li>
                     	Create an eclipse executable in your path
                     	<ul>
-                    		<li>
+                    		<li class="noStyle">
                     			<?php include "code/eclipse_code__01.txt"; ?>
                     		</li>
                     	</ul>
@@ -45,88 +45,122 @@
             	<ul>
 					<li>
 						Manage Files and Projects
-						<table>
-							<tr>
-								<td>Ctrl+Shift+R</td>
-								<td>Open Resource (file, folder or project)</td>
-							</tr>
-							<tr>
-								<td>Ctrl+Shift+S</td>
-								<td>Save all files</td>
-							</tr>
-							<tr>
-								<td>Ctrl+W</td>
-								<td>Close current file</td>
-							</tr>
-							<tr>
-								<td>Ctrl+Shift+W</td>
-								<td>Close all files</td>
-							</tr>
-						</table>
+						<ul>
+							<li class="noStyle">
+								<table class="table table-striped table-bordered">
+									<tbody>
+										<tr>
+											<td>Ctrl+Shift+R</td>
+											<td>Open Resource (file, folder or project)</td>
+										</tr>
+										<tr>
+											<td>Ctrl+Shift+S</td>
+											<td>Save all files</td>
+										</tr>
+										<tr>
+											<td>Ctrl+W</td>
+											<td>Close current file</td>
+										</tr>
+										<tr>
+											<td>Ctrl+Shift+W</td>
+											<td>Close all files</td>
+										</tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
 					</li>
 					<li>
 						Editor Window
-						<table>
-							<tr>
-								<td>F12</td>
-								<td>Jump to Editor Window</td>
-							</tr>
-							<tr>
-								<td>Ctrl+E</td>
-								<td>Show list of open Editors. Use arrow keys and enter to switch</td>
-							</tr>
-							<tr>
-								<td>Ctrl+Page Down/Up</td>
-								<td>Switch to next editor / switch to previous editor</td>
-							</tr>
-							<tr>
-								<td>Ctrl+M</td>
-								<td>Maximize or un-maximize current Editor Window (also works for other Windows)</td>
-							</tr>
-						</table>
+						<ul>
+							<li class="noStyle">
+								<table class="table table-striped table-bordered">
+									<tbody>
+										<tr>
+											<td>F12</td>
+											<td>Jump to Editor Window</td>
+										</tr>
+										<tr>
+											<td>Ctrl+E</td>
+											<td>Show list of open Editors. Use arrow keys and enter to switch</td>
+										</tr>
+										<tr>
+											<td>Ctrl+Page Down/Up</td>
+											<td>Switch to next editor / switch to previous editor</td>
+										</tr>
+										<tr>
+											<td>Ctrl+M</td>
+											<td>Maximize or un-maximize current Editor Window (also works for other Windows)</td>
+										</tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
 					</li>
 					<li>
 						Navigate in Editor
-						<table>
-							<tr>
-								<td>Ctrl+LAURENT</td>
-								<td>Go to line</td>
-							</tr>
-							<tr>
-								<td>Ctrl+Q</td>
-								<td>Jump to last location edited</td>
-							</tr>
-							<tr>
-								<td>Ctrl+Shift+P</td>
-								<td>With a bracket selected: jump to the matching closing or opening bracket</td>
-							</tr>
-							<tr>
-								<td>Ctrl+Arrow Down/Up</td>
-								<td>Scroll Editor without changing cursor position</td>
-							</tr>
-						</table>
+						<ul>
+							<li class="noStyle">
+								<table class="table table-striped table-bordered">
+									<tbody>
+										<tr>
+											<td>Ctrl+L</td>
+											<td>Go to line</td>
+										</tr>
+										<tr>
+											<td>Ctrl+Q</td>
+											<td>Jump to last location edited</td>
+										</tr>
+										<tr>
+											<td>Ctrl+Shift+P</td>
+											<td>With a bracket selected: jump to the matching closing or opening bracket</td>
+										</tr>
+										<tr>
+											<td>Ctrl+Arrow Down/Up</td>
+											<td>Scroll Editor without changing cursor position</td>
+										</tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
 					</li>
 					<li>
 						Edit Text
-						<table>
-							<tr>
-								<td>Ctrl+D</td>
-								<td>Delete Line</td>
-							</tr>
-						</table>
+						<ul>
+							<li class="noStyle">
+								<table class="table table-striped table-bordered">
+									<tbody>
+										<tr>
+											<td>Ctrl+D</td>
+											<td>Delete Line</td>
+										</tr>
+										<tr>
+											<td>Alt+Shift+Y</td>
+											<td>Wrap selected text (fit text width to screen)</td>
+										</tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
 					</li>
 					<li>
 						Search and Replace
-						<table>
-							<tr>
-								<td>Ctrl+J</td>
-								<td>Type a term to search Then use Ctrl+J / Ctrl+shift+J to go up/back</td>
-							</tr>
-							<tr>
-								<td>Ctrl+K/Ctrl+Shift+K</td>
-								<td>Ctrl+H then close find window. Then Find previous / next occurrence of search term.</td>
-							</tr>
-						</table>
+						<ul>
+							<li class="noStyle">
+								<table class="table table-striped table-bordered">
+									<tbody>
+										<tr>
+											<td>Ctrl+J</td>
+											<td>Type a term to search Then use Ctrl+J / Ctrl+shift+J to go up/back</td>
+										</tr>
+										<tr>
+											<td>Ctrl+K/Ctrl+Shift+K</td>
+											<td>Ctrl+H then close find window. Then Find previous / next occurrence of search term.</td>
+										</tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
 					</li>
             	</ul>
             </li>
