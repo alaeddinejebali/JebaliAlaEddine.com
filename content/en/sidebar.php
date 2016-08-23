@@ -1,118 +1,60 @@
 <!-- START OF LEFT PANEL -->
 <div class="leftpanel">
 
-    <div class="logopanel">
-        <a href="/"><img src="/assets/images/logo.png" alt="Ala Eddine JEBALI"/></a>
-    </div>
-    <!--logopanel-->
+	<div class="logopanel">
+		<a href="/"><img src="/assets/images/logo.png" alt="Ala Eddine JEBALI" /></a>
+	</div>
+	<!--logopanel-->
 
-    <div class="searchpanel">
-        <form action="index.html" method="post">
-            <input type="text" name="keyword" placeholder="Search and hit enter..."/>
-        </form>
-    </div>
-    <!--searchpanel-->
-
-    <div class="menupanel">
-        <ul>
-            <li class="<?= $currentActivePage['home'] ?>">
-                <a href="/"><span class="iconfa-home"></span> Home</a>
-            </li>
+	<div class="menupanel">
+		<ul>
             <?php if (!empty($_SESSION['login.loggedUser'])) { ?>
-                <li class="<?= $currentActivePage['wiki'] ?>">
-                    <a href=""><span class="iconfa-star"></span> Wiki</a><i
-                        class="iconfa-angle-right sub-indicator"></i>
-                    <ul>
-						<li>
-							<a href="/wiki/designpatterns">Design patterns</a>
-						</li>
-                        <li>
-                            <a href="#">Front-End</a><i class="iconfa-angle-right sub-indicator"></i>
-                            <ul>
-                            	<li>
-                                	<a href="/wiki/frontend/angularjs1">Angular 1</a>
-								</li>
-                                <li>
-                                	<a href="/wiki/frontend/angularjs2">Angular 2</a>
-                                </li>
-                                <li>
-                                	<a href="/wiki/frontend/javascript">JavaScript</a>
-                                </li>
-                                <li>
-                                	<a href="/wiki/frontend/nodejs">NodeJS</a>
-                                </li>
-                                <li>
-                                	<a href="/wiki/frontend/typescript">TypeScript</a>
-                                </li>
-                        	</ul>
-                        </li>
-                        <li>
-                            <a href="company.html">Java/J2EE</a><i class="iconfa-angle-right sub-indicator"></i>
-                            <ul>
-                                <li><a href="/wiki/java/javacore">Core Java</a></li>
-                                <li><a href="/wiki/java/hibernate">Hibernate</a></li>
-                                <li><a href="/wiki/java/spring">Spring</a></li>
-                            </ul>
-                        </li>
-						<li>
-							<a href="/wiki/oop">OOP</a>
-						</li>
-                        <li>
-                            <a href="#">PHP</a><i class="iconfa-angle-right sub-indicator"></i>
-                            <ul>
-                                <li><a href="/wiki/php/php5">PHP5</a></li>
-                                <li><a href="/wiki/php/symfony">Symfony</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="company.html">Web</a><i class="iconfa-angle-right sub-indicator"></i>
-                            <ul>
-                                <li>
-                                    <a href="/wiki/web/firefox-addons">Firefox addons</a>
-                                </li>
-                                <li>
-                                    <a href="/wiki/web/tips-web">Trucs web</a>
-                                </li>
-                            </ul>
-                        </li>
-						<li>
-							<a href="/wiki/xml">XML</a>
-						</li>
-                        <li>
-                            <a href="company.html">Others</a><i class="iconfa-angle-right sub-indicator"></i>
-                            <ul>
-                                <li><a href="/wiki/divers/docker">Docker</a></li>
-                                <li><a href="/wiki/divers/git">GIT</a></li>
-                                <li><a href="/wiki/divers/go">Go</a></li>
-                                <li><a href="/wiki/divers/ide">IDE</a></li>
-                                <li><a href="/wiki/divers/linux">Linux</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            <?php } ?>
-            <li class="<?= $currentActivePage['aboutMe'] ?>">
-                <a href="/about-me"><span class="iconfa-user-md"></span> About me</a>
-            </li>
-            <li class="<?= $currentActivePage['certifications'] ?>">
-                <a href="/certifications"><span class="iconfa-trophy"></span> Certifications</a>
-            </li>
-            <li class="<?= $currentActivePage['contact'] ?>">
-                <a href="/contact"><span class="iconfa-envelope"></span> Contact Me</a>
-            </li>
-            <li class="<?= $currentActivePage['blog'] ?>">
-                <a href="/blog"><span class="iconfa-file"></span> Blog</a>
-            </li>
-            <?php if (empty($_SESSION['login.loggedUser'])) { ?>
-                <li class="<?= $currentActivePage['login'] ?>">
-                    <a href="/login"><span class="iconfa-unlock"></span> Login</a>
-                </li>
-            <?php }else{ ?>
-                <li>
-                    <a href="/logout"><span class="iconfa-lock"></span> Logout</a>
-                </li>
+            <li class="<?= $currentActivePage['designPatterns'] ?>"><a
+				href="/designpatterns"><span class="iconfa-road"></span> Design
+					patterns</a></li>
+			<li class="<?= $currentActivePage['frontEnd'] ?>"><a href="#"><span class="iconfa-eye-open"></span> Front-End</a><i
+				class="iconfa-angle-right sub-indicator"></i>
+				<ul>
+					<li><a href="/frontend/angularjs1">Angular 1</a></li>
+					<li><a href="/frontend/angularjs2">Angular 2</a></li>
+					<li><a href="/frontend/javascript">JavaScript</a></li>
+					<li><a href="/frontend/nodejs">NodeJS</a></li>
+					<li><a href="/frontend/typescript">TypeScript</a></li>
+				</ul></li>
+			<li class="<?= $currentActivePage['java'] ?>"><a href="company.html"><span class="iconfa-tint"></span> Java/J2EE</a><i
+				class="iconfa-angle-right sub-indicator"></i>
+				<ul>
+					<li><a href="/java/javacore">Core Java</a></li>
+					<li><a href="/java/hibernate">Hibernate</a></li>
+					<li><a href="/java/spring">Spring</a></li>
+				</ul></li>
+			<li class="<?= $currentActivePage['oop'] ?>"><a href="/oop"><span class="iconfa-th"></span> OOP</a></li>
+			<li class="<?= $currentActivePage['php'] ?>"><a href="#"><span class="iconfa-refresh"></span> PHP</a><i
+				class="iconfa-angle-right sub-indicator"></i>
+				<ul>
+					<li><a href="/php/php5">PHP5</a></li>
+					<li><a href="/php/symfony">Symfony</a></li>
+				</ul></li>
+			<li class="<?= $currentActivePage['web'] ?>"><a href="company.html"><span class="iconfa-picture"></span> Web</a><i
+				class="iconfa-angle-right sub-indicator"></i>
+				<ul>
+					<li><a href="/web/firefox-addons">Firefox addons</a></li>
+					<li><a href="/web/tips-web">Trucs web</a></li>
+				</ul></li>
+			<li class="<?= $currentActivePage['xml'] ?>"><a href="/xml"><span class="iconfa-random"></span> XML</a></li>
+			<li class="<?= $currentActivePage['others'] ?>"><a
+				href="company.html"><span class="iconfa-wrench"></span> Others</a><i
+				class="iconfa-angle-right sub-indicator"></i>
+				<ul>
+					<li><a href="/divers/docker">Docker</a></li>
+					<li><a href="/divers/git">GIT</a></li>
+					<li><a href="/divers/go">Go</a></li>
+					<li><a href="/divers/ide">IDE</a></li>
+					<li><a href="/divers/linux">Linux</a></li>
+				</ul></li>
             <?php } ?>
         </ul>
-    </div>
-    <!--menupanel-->
-</div><!--leftpanel-->
+	</div>
+	<!--menupanel-->
+</div>
+<!--leftpanel-->
