@@ -7,7 +7,10 @@
 		Typically people use this functionality to mark release points (v1.0, and so on).
 	</li>
 	<li>
-		By default, the git push command doesn’t transfer tags to remote servers. See <a href="#pushTags">Push Tags</a>
+		Tags are similar to branchs. So when you are on branch develop and add a Tag, when you switch to master branch you'll see this Tag too.
+	</li>
+	<li>
+		By default, the git push command doesn't transfer tags to remote servers. See <a href="#pushTags">Push Tags</a>
 	</li>
 	<li>
 		By default, when creating a tag, it'll be assigned to <b>last commit</b>... but GIT offers the ability of <a href="#taggingLater">Tagging later</a>.
