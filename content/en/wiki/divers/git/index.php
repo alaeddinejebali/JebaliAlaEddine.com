@@ -8,6 +8,7 @@
         <div class="span12">
             
             <?php include "tips-tricks.php"; ?>
+            <?php include "tagging.php"; ?>
             
             <section class="wiki-article">
                 <div class="wiki-article-title">
