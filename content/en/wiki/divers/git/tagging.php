@@ -7,7 +7,10 @@
 		Typically people use this functionality to mark release points (v1.0, and so on).
 	</li>
 	<li>
-		Tags are similar to branchs. So when you are on branch develop and add a Tag, when you switch to master branch you'll see this Tag too.
+		Tags functionalities are similar to branches.
+	</li>
+	<li>
+		Tags are independants from branches: when you are on branch develop and add a Tag, when you switch to master branch you'll see this Tag too.	
 	</li>
 	<li>
 		By default, the git push command doesn't transfer tags to remote servers. See <a href="#pushTags">Push Tags</a>
