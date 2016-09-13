@@ -1,6 +1,7 @@
 <pre><code class="html">
-<!-- The <i>novalidate</i> attribute is not needed for this application, 
- 	but normally you'll use it in AngularJS forms, to override standard HTML5 validation. -->
+&lt;!-- The <i>novalidate</i> attribute is not needed for this application, 
+     but normally you'll use it in AngularJS forms,
+     to override standard HTML5 validation. --&gt; 
 &lt;div ng-app="myApp" ng-controller="formCtrl"&gt;
 	&lt;form novalidate&gt;
 		First Name:

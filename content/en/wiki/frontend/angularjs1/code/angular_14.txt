@@ -1,0 +1,10 @@
+<pre><code class="html">
+&lt;body&gt;
+	&lt;div ng-app="myApp" ng-controller="myCtrl"&gt;
+	   {{ firstName + " " + lastName }}
+	&lt;/div&gt;
+
+	&lt;script src="myApp.js"&gt;&lt;/script&gt;
+	&lt;script src="myCtrl.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+</code></pre>

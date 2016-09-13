@@ -1,0 +1,20 @@
+<pre><code class="javascript">
+(function(){
+	var userCtrl = function($scope, $http){
+		var onComplete = function(response){
+			$scope.user = response.data;
+		};
+		var onError = function(error){
+			consol.error("No user found. Error: ", error);
+		};
+		$http.get("https://api.github.com/users/jebalialaeddine")
+			.then(onComplete, onError);
+	}
+	
+	//Call controller using array format
+	app.controller("userCtrl", ["$scope", "$http", userCtrl]);
+	
+	//Call controller whithout using array format
+	app.controller("userCtrl", userCtrl);
+}());
+</code></pre>

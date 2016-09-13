@@ -1,0 +1,15 @@
+<pre><code class="html">
+&lt;body ng-app="myApp"&gt;
+	&lt;div ng-controller="userCtrl"&gt;
+		&lt;h1&gt;{{error}}&lt;/h1&gt;
+		&lt;h1&gt;User info&lt;/h1&gt;
+		&lt;ul&gt;
+			&lt;li&gt;Name: {{user.name}}&lt;/li&gt;
+			&lt;li&gt;Location: {{user.location}}&lt;/li&gt;
+			&lt;li&gt;
+				&lt;img ng-src="{{user.avatar_url}}" title="{{user.name}}" /&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+</code></pre>

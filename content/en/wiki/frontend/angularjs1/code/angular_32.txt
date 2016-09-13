@@ -1,0 +1,10 @@
+<pre><code class="javascript">
+var app = angular.module("myApp", []);
+var alaCtrl = function($scope, $log, $timeout){
+$timeout(function(){
+	$log.log("Timeout reached after 5s");
+}, 5000);
+}
+app.controller("alaCtrl", ["$scope", "$log", alaCtrl]);
+
+</code></pre>

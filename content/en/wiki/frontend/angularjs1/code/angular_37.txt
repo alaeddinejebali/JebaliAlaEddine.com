@@ -1,0 +1,12 @@
+<pre><code class="javascript">
+app.filter('myFormat',['convertToHexa', function(convertToHexa) {
+    return function(x) {
+        return convertToHexa.myFunc(x);
+    };
+}]);
+
+&lt;!-- file.html --&gt;
+&lt;ul&gt;
+	&lt;li ng-repeat="x in counts"&gt;{{x | myFormat}}&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>

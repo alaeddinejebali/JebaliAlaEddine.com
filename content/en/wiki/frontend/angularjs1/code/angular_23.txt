@@ -1,0 +1,13 @@
+<pre><code class="html">
+&lt;body ng-app="myApp"&gt;
+&lt;script&gt; 
+var app = angular.module("myApp", []);
+app.directive("alaEddine55Jebali", function() {
+    return {
+    	restrict: "C",
+        template : "Hello from Ala directive!"
+    };
+});
+&lt;/script&gt;
+&lt;/body ng-app="myApp"&gt;
+</code></pre>

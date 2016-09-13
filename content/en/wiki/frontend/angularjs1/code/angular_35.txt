@@ -1,0 +1,8 @@
+<pre><code class="javascript">
+// Connect the service to the module
+app.service('convertToHexa', function() {
+    this.myFunc = function (x) {
+        return x.toString(16);
+    }
+});
+</code></pre>

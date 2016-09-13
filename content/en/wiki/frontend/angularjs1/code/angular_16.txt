@@ -1,0 +1,6 @@
+<pre><code class="javascript">
+app.controller("myCtrl", function($scope) {
+    $scope.firstName	= "John";
+    $scope.lastName= "Doe";
+});
+</code></pre>

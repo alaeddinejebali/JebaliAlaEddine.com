@@ -1,0 +1,12 @@
+<pre><code class="javascript">
+var app = angular.module("myApp", []);
+var alaCtrl = function($scope, $log){
+	$log.log("This is a simple log message.");
+	$log.info("This is an info message.");
+	$log.warn("This is a warn message.");
+	$log.error("This is an error message.");
+	$log.debug("This is a debug message.");
+}
+app.controller("alaCtrl", ["$scope", "$log", alaCtrl]);
+
+</code></pre>

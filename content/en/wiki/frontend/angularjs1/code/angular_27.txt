@@ -1,0 +1,7 @@
+<pre><code class="javascript">
+var userCtrl = function($scope, $http){
+	console.log("start");
+	$scope.user = $http.get("https://api.github.com/users/jebalialaeddine");
+	console.log("end");
+}
+</code></pre>

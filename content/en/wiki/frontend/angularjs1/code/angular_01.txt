@@ -1,8 +1,14 @@
-<pre>code class="json">
-{
-	"records": [
-		{"Name": "Alfreds Futterkiste", "City": "Berlin", "Country": "Germany"},
-		{"Name": "Alfreds Futterkiste", "City": "Berlin", "Country": "Germany"},
-	]
+<pre><code class="javascript">
+var userCtrl = function($scope, $http){
+	var onComplete = function(response){
+		$scope.user = response.data;
+	};
+	var onError = function(error){
+		consol.error("No user found. Error: ", error);
+	};
+	console.log("start");
+	$http.get("https://api.github.com/users/jebalialaeddine")
+		.then(onComplete, onError);
+	console.log("end");
 }
 </code></pre>

@@ -1,0 +1,16 @@
+<pre><code class="html">
+&lt;style&gt;
+input.ng-valid{
+    background-color: green;
+}
+input.ng-invalid{
+    background-color: red;
+}
+&lt;/style&gt;
+&lt;body&gt;
+	&lt;form ng-app="" name="myForm"&gt;
+		Name is required:
+		&lt;input name="myName" ng-model="myText" required&gt;
+	&lt;/form&gt;
+&lt;/body&gt;
+</code></pre>

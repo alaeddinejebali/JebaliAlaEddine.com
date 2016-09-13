@@ -1,0 +1,9 @@
+<pre><code class="html">
+&lt;div ng-app="myApp" ng-controller="myCtrl"&gt;
+	&lt;form name="myForm"&gt;
+	    Name: &lt;input ng-model="name"&gt;
+	    &lt;h1&gt;Hello {{name}}&lt;/h1&gt;
+	    &lt;span ng-show="isNotNumber(myForm.name)"&gt;Numbers are not authorized&lt;/span&gt;
+	&lt;/form&gt;
+&lt;/div&gt;
+</code></pre>

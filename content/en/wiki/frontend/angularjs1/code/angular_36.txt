@@ -1,0 +1,5 @@
+<pre><code class="javascript">
+app.controller('myCtrl', function($scope, convertToHexa) {
+    $scope.hex = convertToHexa.myFunc(255);
+});
+</code></pre>

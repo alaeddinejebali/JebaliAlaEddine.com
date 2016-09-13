@@ -1,21 +1,15 @@
 <pre><code class="html">
-&lt;!-- Layout --&gt;
-&lt;div ng-app="myApp" ng-controller="customersCtrl"&gt;
+&lt;body ng-app&gt;
+&lt;div ng-controller="userCtrl"&gt;
+	&lt;h1&gt;{{error}}&lt;/h1&gt;
+	&lt;h1&gt;User info&lt;/h1&gt;
 	&lt;ul&gt;
-		&lt;li ng-repeat="x in names"&gt;
-			{{ x.Name + ', ' + x.Country }}
+		&lt;li&gt;Name: {{user.name}}&lt;/li&gt;
+		&lt;li&gt;Location: {{user.location}}&lt;/li&gt;
+		&lt;li&gt;
+			&lt;img ng-src="{{user.avatar_url}}" title="{{user.name}}" /&gt;
 		&lt;/li&gt;
 	&lt;/ul&gt;
 &lt;/div&gt;
-
-&lt;!-- cutomersCtrl --&gt;
-&lt;script&gt;
-var app = angular.module('myApp', []);
-app.controller('customersCtrl', function($scope, $http) {
-    $http.get("http://website.com/page.php")
-    .success(function(response){
-				$scope.names = response.records;
-			});
-});
-&lt;/script&gt;
+&lt;/body&gt;
 </code></pre>

@@ -1,0 +1,25 @@
+<pre><code class="javascript">
+var app = angular.module("myApp", []);
+    
+var alaCtrl = function($scope, $log, $timeout, $interval){
+var nbr = 0;
+var intervalResult = null;
+    
+var timeoutFct = function(){
+	$log.warn("Timeout reached after 5s");
+	if(intervalResult){
+		$interval.cancel(intervalResult);
+		$log.warn("Interval is cleared!");
+	}
+}
+var intervalFct = function(){
+	nbr++;
+	$log.debug("intervalFct is called for the " + nbr + " time.");
+}
+//Run intervalFct each 100ms for 77 time
+intervalResult = $interval(intervalFct, 100, 77);
+$timeout(timeoutFct, 5000);
+}
+app.controller("alaCtrl", ["$scope", "$log", "$timeout", "$interval", alaCtrl]);
+
+</code></pre>

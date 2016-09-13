@@ -1,0 +1,5 @@
+<pre><code class="html">
+var mainCtrl = function($scope){
+	$scope.myVariable = "Hello from Ala";
+}
+</code></pre>
