@@ -1,6 +1,6 @@
 <pre>
 <code class="javascript">
-var program = function(){
+(function(){
 	var createWorker = function(){
 		var nbrWorker = 0;
 		var task1 = function(){
@@ -26,7 +26,6 @@ var program = function(){
 	worker.job2();
 	worker.job3();
 	worker.job2();
-}
-program();
+})();
 </code>
 </pre>
