@@ -90,16 +90,13 @@
 			<li>
 				<h2>Array Operations</h2>
 				<ul>
-					<li>
-						Example:
+					<li>Example:
 						<ul>
 							<li>
                         		<?php include "code/php_code_38.txt"; ?>
                        			Note how the the resulting array includes all of the elements of the two original arrays, even though they have the same values.
                         	</li>
-							<li>
-								This is a result of the fact that the keys are different
-							</li>
+							<li>This is a result of the fact that the keys are different</li>
 							<li>
 								If the two arrays had common elements that also share the same string keys or that have numeric keys (even if they are different), they would only appear once in the end result:
                         		<?php include "code/php_code_39.txt"; ?>
@@ -133,8 +130,8 @@
 									<li>Inverts the order of the array's elements, so that the last one appears first.
                                 <?php include "code/php_code_42.txt"; ?>
                             </li>
-									<li class="caution">Note how key association is only lost
-										for those elements whose keys are numeric.</li>
+									<li class="caution">Note how key association is only lost for
+										those elements whose keys are numeric.</li>
 								</ul>
 							</li>
 						</ul>
@@ -176,16 +173,22 @@
 							</li>
 							<li>To sort them in descending order, you can use rsort() and
 								arsort().</li>
-							<li>The sorting operation performed by <b>sort()</b> and <b>asort()</b> simply takes into consideration either the numeric value of each element, or performs a byte-by-byte comparison of strings values. This can result in an "unnatural" sorting order -for example, the string value '10t' will be considered "lower" than '2t' because it starts with the character 1, which has a lower value than 2.
-                       </li>
-                       <li>
-                       nat<small>ural</small>sort($array)
+							<li>The sorting operation performed by <b>sort()</b> and <b>asort()</b>
+								simply takes into consideration either the numeric value of each
+								element, or performs a byte-by-byte comparison of strings
+								values. This can result in an "unnatural" sorting order -for
+								example, the string value '10t' will be considered "lower" than
+								'2t' because it starts with the character 1, which has a lower
+								value than 2.
+							</li>
+							<li>nat<small>ural</small>sort($array)
                         <?php include "code/php_code_48.txt"; ?>
                     </li>
-							<li>You can sort by key (rather than by value) using: <b>ksort()</b> and
-								<b>krsort()</b></li>
-							<li>To randomize elements of array, use: <b>shuffle($array)</b>. You'll
-								lost all keys and will be replaced from zero to n.</li>
+							<li>You can sort by key (rather than by value) using: <b>ksort()</b>
+								and <b>krsort()</b></li>
+							<li>To randomize elements of array, use: <b>shuffle($array)</b>.
+								You'll lost all keys and will be replaced from zero to n.
+							</li>
 						</ul>
 					</li>
 					<li>
@@ -208,9 +211,8 @@
 					<li>
 						<h2>Other functionalities</h2>
 						<ul>
-							<li><b>array_diff ($a, $b))</b>: returns all the values of $a that do
-								not appear in $b.
-								</li>
+							<li><b>array_diff ($a, $b))</b>: returns all the values of $a
+								that do not appear in $b.</li>
 							<li><b>array_intersect ($a, $b))</b>: returns all values that are included in both arrays.
                         <?php include "code/php_code_49.txt"; ?>
                     </li>
