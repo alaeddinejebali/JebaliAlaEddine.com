@@ -1,34 +1,35 @@
 <section class="wiki-article">
 	<div class="wiki-article-title">
-    	<h1 class="btnShowHideArticleBody" data-article-visibility="off"> Arrays and slices</h1>
+		<h1 class="btnShowHideArticleBody" data-article-visibility="off">
+			Arrays and slices</h1>
 	</div>
-    <div class="wiki-article-body invisible">
-    
-    	<h2>Declaration</h2>
-    	<ul>
-    		<li class="noStyle">
+	<div class="wiki-article-body invisible">
+
+		<h2>Declaration</h2>
+		<ul>
+			<li class="noStyle">
     			<?php include 'git_code_11.txt'; ?>
     		</li>
-    		<li>
+			<li>
     			Another way to declare arrays:
     			<?php include 'git_code_14.txt'; ?>
     		</li>
-    	</ul>
-    	
-    	<h2>Looping</h2>
-    	<ul>
-    		<li>
+		</ul>
+
+		<h2>Looping</h2>
+		<ul>
+			<li>
     			Exemple 1:
     			<?php include 'git_code_12.txt'; ?>
     		</li>
-    		<li>
+			<li>
     			Exemple 2:
     			<?php include 'git_code_13.txt'; ?>
     		</li>
-    	</ul>
-    	
-    	<h2>Slices</h2>
-    	<ul>
+		</ul>
+
+		<h2>Slices</h2>
+		<ul>
 			<li>A slice is a segment of an array.</li>
 			<li>Unlike arrays this length is allowed to change.</li>
 			<li>
@@ -39,8 +40,7 @@
 				Another way to create slices is to use the [low : high] expression:
 				<?php include 'git_code_16.txt'; ?>
 			</li>
-			<li>
-				Slice functions
+			<li>Slice functions
 				<ul>
 					<li>
 						Append:
@@ -58,7 +58,7 @@
 					</li>
 				</ul>
 			</li>
-    	</ul>
-		
+		</ul>
+
 	</div>
 </section>

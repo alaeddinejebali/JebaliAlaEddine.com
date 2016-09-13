@@ -1,0 +1,3 @@
+<pre><code class="sh">
+$> git push origin --tags
+</code></pre>
