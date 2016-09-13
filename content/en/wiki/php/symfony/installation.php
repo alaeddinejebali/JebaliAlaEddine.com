@@ -103,7 +103,7 @@
                     	<?php include "code/symfony_code_71.txt"; ?>
                     </li>
 				</ul>
-			</li>	
+			</li>
 			<li>
 				<h2>Check environnement</h2>
 				<ul>

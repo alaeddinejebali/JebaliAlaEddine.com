@@ -65,35 +65,32 @@
 			<li>
 				<h2>Requests and Responses</h2>
 				<ul>
-					<li>
-                        When client make a request, server reponses like that:
-                        <ul>
-                        	<li class="noStyle">
+					<li>When client make a request, server reponses like that:
+						<ul>
+							<li class="noStyle">
                         		<?php include "code/symfony_code_01.txt"; ?>
                         	</li>
-                        </ul>
-                    </li>
+						</ul>
+					</li>
 					<li>Symfony provides an alternative to the raw PHP approach via two
 						classes that allow you to interact with the HTTP request and
 						response in an easier way.</li>
 					<li><a
 						href="http://api.symfony.com/2.7/Symfony/Component/HttpFoundation/Request.html"
 						target="_blank">Request</a> class in Symfony:
-                        <ul>
-                        	<li class="noStyle">
+						<ul>
+							<li class="noStyle">
                         		<?php include "code/symfony_code_02.txt"; ?>
                         	</li>
-                        </ul>
-                    </li>
+						</ul></li>
 					<li><a
 						href="http://api.symfony.com/2.7/Symfony/Component/HttpFoundation/Response.html"
 						target="_blank">Response</a> class in Symfony:
 						<ul>
-                        	<li class="noStyle">
+							<li class="noStyle">
                         		<?php include "code/symfony_code_03.txt"; ?>
                         	</li>
-                        </ul>
-                    </li>
+						</ul></li>
 				</ul>
 			</li>
 			<li>
@@ -124,9 +121,7 @@
 			<li>
 				<h2>Tree of a Symfony application</h2>
 				<ul>
-					<li>
-					
-					</li>
+					<li></li>
 				</ul>
 			</li>
 		</ul>
