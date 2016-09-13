@@ -1,0 +1,14 @@
+<pre><code class="javascript">
+class A{
+	private variable;
+	get Variable(){
+		return this.variable();
+	}
+	set Variable(variable){
+		this.variable = variable;
+	}
+}
+
+//Use
+this.variable();
+</code></pre>

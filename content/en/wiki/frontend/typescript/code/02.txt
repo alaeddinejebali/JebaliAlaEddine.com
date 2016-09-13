@@ -1,0 +1,27 @@
+<pre><code class="json">
+{
+	// signals to the IDE to generate all files upon saving
+	"compileOnSave": true,
+		
+	"compilerOptions": {
+		"module": "commonjs",
+		"noImplicitAny": true,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"outFile": "app.js", //generated file
+		"sourceMap": true
+	},
+	    
+	"files": [
+		"a.ts",
+		"b.ts",
+		"c.ts"
+		],
+	    
+	// or
+	"exclude": [
+		"node_modules",
+		"wwwroot"
+		]
+}
+</code></pre>

@@ -1,0 +1,4 @@
+<pre><code class="sh">
+$> npm install -g typescript
+$> tsc -v
+</code></pre>
