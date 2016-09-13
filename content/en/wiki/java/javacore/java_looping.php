@@ -1,17 +1,21 @@
 <section class="wiki-article">
 	<div class="wiki-article-title">
-		<h1 class="btnShowHideArticleBody" data-article-visibility="off"> Operators and statements<h1>
+		<h1 class="btnShowHideArticleBody" data-article-visibility="off">
+			Operators and statements
+			<h1>
+	
 	</div>
 	<div class="wiki-article-body invisible">
 		<ul>
 			<li>
 				<h2>Java Operators</h2>
 				<ul>
-					<li>
-						An <i>operator</i> is a special symbol that can be applied to operands (a set of variables, values, or literals) and that returns a result.
+					<li>An <i>operator</i> is a special symbol that can be applied to
+						operands (a set of variables, values, or literals) and that
+						returns a result.
 					</li>
-					<li>
-						Java operators are not necessarily evaluated from left-to-right order.
+					<li>Java operators are not necessarily evaluated from left-to-right
+						order.
 						<ul>
 							<li>
 								Example:
@@ -25,41 +29,26 @@
 							</li>
 						</ul>
 					</li>
-					<li>
-						Post-unary operators: i++, i--
-					</li>
-					<li>
-						Pre-unary operators: ++i, --i
-					</li>
-					<li>
-						If two operators have the same level of precedence, then Java guarantees left-to-right evaluation.
-					</li>
-					<li>
-						The multiplicative operators (*, /, %) have a higher order of precedence than the additive operators (+ ,-).
-					</li>
-					<li>
-						You can change the order of operation explicitly by wrapping parentheses around the sections you want evaluated first.
-					</li>
+					<li>Post-unary operators: i++, i--</li>
+					<li>Pre-unary operators: ++i, --i</li>
+					<li>If two operators have the same level of precedence, then Java
+						guarantees left-to-right evaluation.</li>
+					<li>The multiplicative operators (*, /, %) have a higher order of
+						precedence than the additive operators (+ ,-).</li>
+					<li>You can change the order of operation explicitly by wrapping
+						parentheses around the sections you want evaluated first.</li>
 				</ul>
 			</li>
 			<li>
 				<h2>Binary operators</h2>
 				<ul>
-					<li>
-						They can be used to perform mathematical operations on variables, create logical expressions, as well as perform basic variable assignments.
-					</li>
-					<li>
-					
-					</li>
-					<li>
-					
-					</li>
-					<li>
-					
-					</li>
-					<li>
-					
-					</li>
+					<li>They can be used to perform mathematical operations on
+						variables, create logical expressions, as well as perform basic
+						variable assignments.</li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
 				</ul>
 			</li>
 		</ul>
