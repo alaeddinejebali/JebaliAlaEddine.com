@@ -1,3 +1,13 @@
 <pre><code class="javascript">
-
+class Geometricforms<T>{
+	private allForms = new Array<T>();
+	add(item: T){
+		this.allForms.push(item);
+	}
+	getTotalValues(){
+		let result = 0;
+		this.allForms.foreach(c=>result += c.value);
+		return result;
+	}
+}
 </code></pre>

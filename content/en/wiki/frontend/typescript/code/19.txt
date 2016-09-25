@@ -1,3 +1,4 @@
 <pre><code class="javascript">
-
+declare var v: JQueryStatic;
+v(".body").addClass('customClass');
 </code></pre>

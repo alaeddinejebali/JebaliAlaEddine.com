@@ -1,3 +1,18 @@
 <pre><code class="javascript">
+class Person{
+	private name;
+	constructor(name){
+		this.name = name;
+	}
+	sayHello():void{
+		console.log("Hello " + this.name);
+	}
+	calculateAge(dateOfBirth): number{
+		return 22*dateOfBirth;
+	}
+}
 
+var p:Person = new Person("Ala");
+console.log(p.sayHello());
+console.log(p.calculateAge(1.2));
 </code></pre>

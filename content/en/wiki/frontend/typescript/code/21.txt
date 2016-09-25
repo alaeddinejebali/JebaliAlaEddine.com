@@ -1,3 +1,5 @@
 <pre><code class="javascript">
-
+var a: number = 15;
+var b:string = 'Hello';
+var c: boolean = false;
 </code></pre>

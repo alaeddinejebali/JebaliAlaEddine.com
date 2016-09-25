@@ -1,3 +1,3 @@
-<pre><code class="javascript">
-
+<pre><code class="sh">
+$> tsc -t "ES5" app.tsc
 </code></pre>

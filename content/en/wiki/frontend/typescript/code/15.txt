@@ -1,3 +1,8 @@
 <pre><code class="javascript">
-
+class Collection<T>{
+	add(item: T){
+		//...
+	}
+}
+let stringCollection = new Collection<string>();
 </code></pre>

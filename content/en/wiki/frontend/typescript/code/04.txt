@@ -1,14 +1,19 @@
 <pre><code class="javascript">
 class A{
-	private variable;
-	get Variable(){
-		return this.variable();
+	private _variable;
+	constructor(){
+	
 	}
-	set Variable(variable){
-		this.variable = variable;
+	get variable(): string{
+		return this._variable;
+	}
+	set variable(v:string){
+		this._variable = v;
 	}
 }
 
 //Use
-this.variable();
+let a = new A();
+a.variable = "Ala";
+console.log(a.variable);
 </code></pre>

@@ -1,3 +1,5 @@
 <pre><code class="javascript">
-
+var gpt: any;
+//or
+declare var gpt;
 </code></pre>

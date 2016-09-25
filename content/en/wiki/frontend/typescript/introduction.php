@@ -8,7 +8,15 @@
 	<div class="wiki-article-body invisible">
 		<ul>
 			<li>
-				<h2>TypeScript is</h2>
+				<h2>Typescript is</h2>
+				<ul>
+					<li>
+						JavaScript + Code Encapsulation + Type support.
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2>TypeScript is also</h2>
 				<ul>
 					<li>
 						open source
@@ -47,6 +55,18 @@
 					<li>
 						It compile TypeScript code to a configured version of JavaScript (ES3, ES5, ES6). Default is ES3.
 					</li>
+					<li>
+						To compile a single file
+						<?php include 'code/08.txt'; ?>
+					</li>
+					<li>
+						To compile all .ts files
+						<?php include 'code/09.txt'; ?>
+					</li>
+					<li>
+						To compile to a single .ts file, update <i>tsconfig.json</i> by adding this line:
+						<?php include 'code/10.txt'; ?>
+					</li>
 				</ul>
 			</li>
 			<li>
@@ -72,7 +92,20 @@
 					</li>
 					<li>
 						The "files" property cannot be used in conjunction with the "exclude" property.
-						<?php include 'code/02.txt'; ?>
+						<ul>
+							<li class="noStyle">
+								<?php include 'code/02.txt'; ?>
+							</li>
+						</ul>
+					</li>
+					<li>
+						When <strong><i>sourceMap</i></strong> is true, <strong><i>.map</i></strong> files are source map files that let tools map between the generated JavaScript code and the TypeScript source files that created it.
+					</li>
+					<li>
+						Many debuggers (e.g. Visual Studio or Chrome's dev tools) can consume these files so you can debug the TypeScript file instead of the JavaScript file.
+					</li>
+					<li>
+						Find all descriptions explanation here <a href="http://json.schemastore.org/tsconfig" target="_blank">http://json.schemastore.org/tsconfig</a>.
 					</li>
 				</ul>
 			</li>
@@ -93,6 +126,28 @@
 							<li>boolean</li>
 							<li>string</li>
 							<li>number</li>
+							<li class="noStyle">
+								<?php include 'code/21.txt'; ?>
+							</li>
+							<li>
+								Array
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/20.txt'; ?>
+									</li>
+								</ul>
+							</li>
+							<li>
+								null and undefined: See <a href="#undefinedvsnull">this sections</a> for more details.
+							</li>
+							<li>
+								Function
+								<ul>
+									<li class="noStyle">
+										<?php include 'code/22.txt'; ?>
+									</li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<li>
@@ -120,13 +175,39 @@
 					<li class="noStyle">
 						<?php include 'code/04.txt'; ?>
 					</li>
+					<li>
+						This is only available when targeting ES5 version and higher (tsc -t ES5 app.tsc).
+					</li>
 				</ul>
 			</li>
 			<li>
 				<h2>Arrow functions (Lambda)</h2>
 				<ul>
 					<li>
-						See <a href="/frontend/javascript#advancedtopics" taget="_blank">this section</a>.
+						See <a href="/frontend/javascript#advancedtopics" target="_blank">this section</a>.
+					</li>
+				</ul>
+			</li>
+			<li id="declare">
+				<h2>"declare" keyword</h2>
+				<ul>
+					<li>
+						It is used to declare variables that may not have originated from a TypeScript file.
+					</li>
+					<li>
+						For example, lets imagine that we have a library called "gpt" that doesn’t have a TypeScript declaration file. You can declare it like taht:
+						<?php include 'code/18.txt'; ?>
+						<ul>
+							<li>
+								The problem the 1<em>st</em> declaration is that you won’t have Intellisense for that variable in design time but you will be able to use the library in your code.
+							</li>
+							<li>
+								With <strong><i>declare</i></strong> in the 2<em>nd</em> it's more readable and expresses an ambient declaration.
+							</li>
+						</ul>
+					</li>
+					<li>
+						See <a href="#jquery">Example use jQuery in your typescript project</a>
 					</li>
 				</ul>
 			</li>

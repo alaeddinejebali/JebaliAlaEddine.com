@@ -1,3 +1,6 @@
 <pre><code class="javascript">
-
+var tab: string[] = ['a', 'b', 'c'];
+var tab: Array&lt;string&gt; = ['a', 'b', 'c'];
+var tab: string[][] = [ ['a', 'x'], ['b', 'y']];
+var tab: Array&lt;string&gt;[] = [ ['a', 'x'], ['b', 'y']];
 </code></pre>

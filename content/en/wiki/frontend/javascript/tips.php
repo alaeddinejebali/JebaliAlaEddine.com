@@ -10,7 +10,7 @@
 			<li class="accordion" id="simulateModule">
 				<h2>Simulate a JavaScript module</h2>
 				<ul>
-					<li>Let's create a module <i>createWorker</i>
+					<li>Let's create a module <i>createWorker
 						<?php include "code/javascript_code_56.txt"; ?>
 					</li>
 					<li>
@@ -57,9 +57,72 @@
 							<li>pronouced "iffi" ("i" like "i" in French accent).</li>
 							<li>
 								Having 0 global variable
-								<?php include "code/javascript_ceode_61.txt"; ?>
+								<?php include "code/javascript_code_61.txt"; ?>
 							</li>
 						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="accordion">
+				<h2>Send form using AJAX</h2>
+				<ul>
+					<li>
+						index.html
+						<?php include "code/javascript_code_62.txt"; ?>
+					</li>
+					<li>
+						app.js
+						<?php include "code/javascript_code_63.txt"; ?>
+					</li>
+					<li>
+						contact.php
+						<?php include "code/javascript_code_64.txt"; ?>
+					</li>
+				</ul>
+			</li>
+			<li class="accordion" id="simulateModule">
+				<h2>var vs let</h2>
+				<ul>
+					<li>
+						Javascript hoisting: It is JavaScript's default behavior of moving declarations to the top.
+						<?php include "code/javascript_code_65.txt"; ?>
+						The code above will output 'Hello' because JS will move the declaration of v to the beginning of the function and then continue.
+					</li>
+					<li>
+						If you replace var by "let" in the above example, an error will be generated (ReferenceError: can't access lexical declaration `v' before initialization). 
+					</li>
+					<li>
+						So you need to do:
+						<?php include "code/javascript_code_66.txt"; ?>
+					</li>
+				</ul>
+			</li>
+			<li class="accordion" id="undefinedvsnull">
+				<h2>undefined vs null</h2>
+				<ul>
+					<li>
+						undefined
+						<ul>
+							<li>
+								When you declare a variable without assigning any value to it, javascript will <i>tag</i> it as 'undefined' and your variable will be of type 'undefined'.
+								<?php include "code/javascript_code_67.txt"; ?>
+							</li>
+						</ul>
+					</li>
+					<li>
+						null
+						<ul>
+							<li>
+								When you declare a variable and assign it the value 'null', this variable will be of type 'object'.
+								<?php include "code/javascript_code_68.txt"; ?>
+							</li>
+							<li>
+								It is a special purpose object that does not do anything.
+							</li>
+						</ul>
+					</li>
+					<li>
+						So, <i>undefined</i> is a special type, whereas <i>null</i> is an object in JavaScript.
 					</li>
 				</ul>
 			</li>

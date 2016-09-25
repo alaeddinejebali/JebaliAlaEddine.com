@@ -1,3 +1,12 @@
 <pre><code class="javascript">
+function f(a:number, b?: number){
+	if(b === undefined){
+		console.log("a: " + a);
+	}else{
+		console.log("a*b: " + a*b);
+	}
+}
 
+f(6, 3);
+f(5);
 </code></pre>

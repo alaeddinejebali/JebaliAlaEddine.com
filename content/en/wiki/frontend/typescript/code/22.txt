@@ -1,3 +1,7 @@
 <pre><code class="javascript">
-
+var fct: Function;
+fct = function(){
+	//...
+}
+fct();
 </code></pre>

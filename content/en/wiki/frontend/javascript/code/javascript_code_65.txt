@@ -1,0 +1,6 @@
+<pre><code class="javascript">
+function f(){
+	console.log(v);
+	var v= "Hello";
+}
+</code></pre>

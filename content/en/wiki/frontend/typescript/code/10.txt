@@ -1,3 +1,5 @@
-<pre><code class="javascript">
-
+<pre><code class="sh">
+{
+	"outFile": "path/to/a/result/file.js"
+}
 </code></pre>

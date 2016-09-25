@@ -1,3 +1,7 @@
 <pre><code class="javascript">
-
+class A extends B{
+	constructor(){
+		super();
+	}
+}
 </code></pre>
