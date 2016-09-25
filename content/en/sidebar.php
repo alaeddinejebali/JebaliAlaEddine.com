@@ -7,8 +7,8 @@
 	<!--logopanel-->
 
 	<div class="menupanel">
-		<ul>
             <?php if (!empty($_SESSION['login.loggedUser'])) { ?>
+		<ul>
             <li class="<?= $currentActivePage['designPatterns'] ?>"><a
 				href="/designpatterns"><span class="iconfa-road"></span> Design
 					patterns</a></li>
@@ -36,10 +36,9 @@
 					<li><a href="/divers/docker">Docker</a></li>
 					<li><a href="/divers/git">GIT</a></li>
 					<li><a href="/divers/go">Go</a></li>
-					<li><a href="/divers/ide">IDE</a></li>
+					<li><a href="/divers/eclipse">Eclipse</a></li>
 					<li><a href="/divers/linux">Linux</a></li>
 				</ul></li>
-            <?php } ?>
 			<li class="<?= $currentActivePage['php'] ?>"><a href="#"><span class="iconfa-refresh"></span> PHP</a><i
 				class="iconfa-angle-right sub-indicator"></i>
 				<ul>
@@ -61,6 +60,7 @@
 				</ul></li>
 			<li class="<?= $currentActivePage['xml'] ?>"><a href="/xml"><span class="iconfa-random"></span> XML</a></li>
         </ul>
+            <?php } ?>
 	</div>
 	<!--menupanel-->
 </div>
