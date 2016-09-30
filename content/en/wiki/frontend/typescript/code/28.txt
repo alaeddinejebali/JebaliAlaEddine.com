@@ -1,3 +1,14 @@
 <pre><code class="javascript">
-
+interface IEngine{
+	start());
+	stop();
+}
+class Engine <strong>implements</strong> IEngine{
+	start(){
+		//code here
+	}
+	stop(){
+		//code here
+	}	
+}
 </code></pre>

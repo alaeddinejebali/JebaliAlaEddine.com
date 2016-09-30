@@ -9,7 +9,7 @@ class Person{
 	set name(name){
 		console.log('constructor called...');
 		if(name === 'anonymous'){
-			this._name = 'not registered user';
+			throw 'Error: name not accepted';
 		}else{
 			this._name = name;
 		}

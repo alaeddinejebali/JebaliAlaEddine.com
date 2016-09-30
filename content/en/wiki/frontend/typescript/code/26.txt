@@ -1,3 +1,29 @@
 <pre><code class="javascript">
-
+var Person = (function () {
+    function Person() {
+    }
+    Object.defineProperty(Person.prototype, "name", {
+        get: function () {
+            return this._name;
+        },
+        set: function (name) {
+            console.log('constructor called...');
+            if (name === 'anonymous') {
+                throw 'Error: name not accepted';
+            }
+            else {
+                this._name = name;
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Person.prototype.sayHello = function () {
+        console.log("Hello " + this.name);
+    };
+    Person.prototype.calculateAge = function (dateOfBirth) {
+        return 22 * dateOfBirth;
+    };
+    return Person;
+}());
 </code></pre>
