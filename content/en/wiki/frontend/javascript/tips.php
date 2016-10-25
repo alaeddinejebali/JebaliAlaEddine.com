@@ -20,6 +20,14 @@
 				</ul>
 			</li>
 			<li class="accordion">
+				<h2>Function scope</h2>
+				<ul>
+					<li>
+						<?php include "code/javascript_code_57.txt"; ?>
+					</li>
+				</ul>
+			</li>			
+			<li class="accordion">
 				<h2>Encapsulation</h2>
 				<ul>
 					<li>Using <i>global variables</i> in JavaScript is dangerous since
