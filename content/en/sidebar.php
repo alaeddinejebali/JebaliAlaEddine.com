@@ -17,6 +17,7 @@
 				<ul>
 					<li><a href="/frontend/angularjs1">Angular 1</a></li>
 					<li><a href="/frontend/angularjs2">Angular 2</a></li>
+					<li><a href="/frontend/electron">Electron</a></li>
 					<li><a href="/frontend/javascript">JavaScript</a></li>
 					<li><a href="/frontend/nodejs">NodeJS</a></li>
 					<li><a href="/frontend/typescript">TypeScript</a></li>

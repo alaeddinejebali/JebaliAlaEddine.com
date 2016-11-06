@@ -9,7 +9,7 @@
 		<ul>
 			<li>When you want to test the project "myProject":
 				<ul>
-					<li class="noStyle"><<?php include "code/nightwatch_code_01.txt"; ?></li>
+					<li class="noStyle"><?php include "code/nightwatch_code_01.txt"; ?></li>
 				</ul>
 			</li>
 		</ul>

@@ -1,0 +1,4 @@
+<pre><code class="sh">
+$> sudo npm install electron
+$> electron -v
+</code></pre>
