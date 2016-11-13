@@ -166,7 +166,16 @@
 				<h2><i>"new"</i> keyword</h2>
 				<ul>
 					<li>
-						
+<li>
+	In other OOP languages, <i>new</i> is used to instantiate classes.
+</li>
+<li>
+	JavaScript has no "classes" loke in other OOP languages.
+</li>
+<li>
+	In JavaScript, wwhen you use <i>new</i> keyword, it'll turn the function call to "constructor" call.
+	<?php include "code/javascript_code_83.txt"; ?>
+</li>						
 					</li>
 				</ul>
 			</li>
