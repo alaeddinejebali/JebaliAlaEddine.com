@@ -1,0 +1,9 @@
+<pre><code class="javascript">
+function f(){
+	var name = "John Doe";
+	country = "Tunisia"
+}
+f();
+console.log("name", name); //outputs undefined
+console.log("country", country); //outputs Tunisa
+</code></pre>
