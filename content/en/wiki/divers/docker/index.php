@@ -16,9 +16,20 @@
 				</div>
 				<div class="wiki-article-body invisible">
 					<ul>
-						<li>Instructions:
+						<li>
+							Install Docker:
 							<ul>
-                                <?php include "code/git_code_01.txt"; ?>
+								<li class="noStyle">
+                                	<?php include "code/git_code_01.txt"; ?>
+                                </li>
+                            </ul>
+						</li>
+						<li>
+							Install Docker-compose:
+							<ul>
+								<li class="noStyle">
+                                	<?php include "code/git_code_03.txt"; ?>
+                                </li>
                             </ul>
 						</li>
 						<li>If you encounter this problem: "The following signatures
