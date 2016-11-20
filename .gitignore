@@ -1,7 +1,7 @@
 #Do not commit those folders/files
 .htaccess
 .gitignore
-index.php
+/index.php
 settings.php
 admin.php
 404.php
