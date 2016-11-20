@@ -30,6 +30,14 @@
 								<li class="noStyle">
                                 	<?php include "code/git_code_03.txt"; ?>
                                 </li>
+				<li>
+					Install docker machine
+					<ul>
+						<li class="noStyle">
+							<?php include 'code/git_code_04.txt'; ?>
+						</li>
+					</ul>
+				</li>
                             </ul>
 						</li>
 						<li>If you encounter this problem: "The following signatures
