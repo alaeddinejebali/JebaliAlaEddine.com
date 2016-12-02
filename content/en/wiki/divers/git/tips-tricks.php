@@ -94,29 +94,28 @@
 
 		<ul>
 			<li>
-				<h2>Check for remote updates (without doing git pull)</h2>
+				<h2>Check for remote updates (without/before doing git pull)</h2>
 				<ul>
-					<li>Update the remote branch in your repository to point to the latest version
+					<li>Update the remote branch in your repository to point to the latest version (suppose we're working on develop branch)
 		            	<?php include "code/git_code_02.txt"; ?>
 		            </li>
-					<li>Show difference against remote
-		            	<?php include "code/git_code_03.txt"; ?>
+					<li>Show the log entries between your last common commit and the origin branch:
+						<?php include "code/git_code_03.txt"; ?>
 		            </li>
+
+					<li>Show differences:
+						<?php include "code/git_code_29.txt"; ?>
+		            </li>					
 					<li>
-						Accept (if you're okay) the remote changes:
+						If you're okay, accept <strong>all</strong> changes:
 		            	<?php include "code/git_code_04.txt"; ?>
 		            </li>
-					<li>To be verified if this solution is better
-						<ul>
-							<li>$> git remote update</li>
-							<li>$> git status -uno will tell you whether the branch you are
-								tracking is ahead, behind or has diverged. If it says nothing,
-								the local and remote are the same.</li>
-							<li>$> git show-branch *master will show you the commits in all
-								of the branches whose names end in master (eg master and
-								origin/master).</li>
-						</ul>
-					</li>
+					
+					<li>
+						If you're not prepared to do a pull and merge in all the remote commits, you can use:
+		            	<?php include "code/git_code_04.txt"; ?>
+						to accept only the specific remote commits you want. Later, when you're ready to get everything, a git pull will merge in the rest of the commits.
+		            </li>					
 				</ul>
 			</li>
 		</ul>

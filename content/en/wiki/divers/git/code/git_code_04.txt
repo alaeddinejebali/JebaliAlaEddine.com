@@ -1,5 +1,5 @@
 <pre>
 <code class="sh">
-	$> git merge origin/master
+	$> git pull
 </code>
 </pre>

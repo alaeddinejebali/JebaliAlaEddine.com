@@ -40,6 +40,20 @@
 				</ul>
 			</li>
 			<li>
+				<h2>Upgrade current node version</h2>
+				<ul>
+					<li>
+						Updgrade to a specific version
+						<?php include "code/nodejs_code_25.txt"; ?>
+					</li>
+
+					<li>
+						Updgrade to latest version
+						<?php include "code/nodejs_code_26.txt"; ?>
+					</li>					
+				</ul>
+			</li>
+			<li>
 				<h2>Run a Hello world example</h2>
 				<ul>
 					<li class="noStyle">
