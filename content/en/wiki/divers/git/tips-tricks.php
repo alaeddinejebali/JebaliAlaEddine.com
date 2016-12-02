@@ -141,6 +141,14 @@
 				</ul>
 			</li>
 		</ul>
+		<ul>
+			<li>
+				<h2>Discard las commit (which is not pushed)</h2>
+				<ul>
+					<li class="noStyle"><?php include "code/git_code_32.txt"; ?></li>
+				</ul>
+			</li>
+		</ul>		
 
 		<ul>
 			<li>
