@@ -1,3 +1,7 @@
 <pre><code class="sh">
-$> 
+#Remove last commit 
+$> git reset HEAD~1
+
+#Remove last 4 commits
+$> git reset HEAD~4
 </code></pre>
