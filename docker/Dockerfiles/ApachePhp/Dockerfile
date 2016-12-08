@@ -1,16 +1,16 @@
-FROM ubuntu:12.04
+FROM ubuntu:16.04
 
 MAINTAINER Ala Eddine JEBALI <jebali.alaeddine@gmail.com>
 
 #install apache2 and php5 - si les packages n'existent plus : incrementer le dernier chiffre
 #RUN apt-get update && apt-get install -y apache2=2.2.22-1ubuntu1.10 php5=5.3.10-1ubuntu3.19 && apt-get clean
-RUN apt-get update && apt-get install -y apache2 php5 && apt-get clean
+RUN apt-get update && apt-get install -y apache2 php7.0 libapache2-mod-php7.0 && apt-get clean
 
-ADD index.php /var/www/
+#ADD index.php /var/www/
 
 #ADD apache2.conf /etc/apache2/
 #ADD php.ini /etc/php5/apache2/
-ADD 000-default /etc/apache2/sites-enabled/
+COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
 
 
 #activate Mod_Rewrites

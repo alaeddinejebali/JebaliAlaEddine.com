@@ -3,6 +3,5 @@ web:
   ports:
    - "80:80"
   volumes:
-   - /var/www/wiki.jebalialaeddine.com:/var/www/html
-   - /var/www/wiki.jebalialaeddine.com:/var/www/src/public
+   - /var/www/wiki.jebalialaeddine.com:/var/www
 
