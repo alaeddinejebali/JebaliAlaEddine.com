@@ -88,7 +88,7 @@
 					</li>
 				</ul>
 			</li>
-			<li class="accordion" id="simulateModule">
+			<li class="accordion" id="varvslet">
 				<h2>var vs let</h2>
 				<ul>
 					<li>

@@ -41,6 +41,14 @@
 					</li>
 				</ul>
 			</li>
+			<li class="accordion" id="letKeyword">
+				<h2><strong>let</strong> keyword</h2>
+				<ul>
+					<li>
+						aaa
+					</li>
+				</ul>
+			</li>
 		</ul>
 	</div>
 </section>
