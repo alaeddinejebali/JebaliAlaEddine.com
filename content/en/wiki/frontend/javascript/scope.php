@@ -48,7 +48,7 @@
 			<li>
 				<h2><i>"this"</i> keyword</h2>
 		<ul>
-			<li>
+			<li class="noStyle">
 				<h3>Presentation</h3>
 				<ul>
 					<li>
@@ -56,13 +56,13 @@
 					</li>
 				</ul>
 			</li>
-			<li>
+			<li class="noStyle">
 				<h3>Implicit binding</h3>
 				<ul>
 					<li class="noStyle"><?php include "code/javascript_code_70.txt"; ?></li>
 				</ul>
 			</li>
-			<li>
+			<li class="noStyle">
 				<h3>Default binding</h3>
 				<ul>
 					<li class="noStyle"><?php include "code/javascript_code_71.txt"; ?></li>
@@ -82,10 +82,10 @@
 								<?php include "code/javascript_code_78.txt"; ?>
 							</li>
 						</ul>					
-					</li>this
+					</li>
 				</ul>
 			</li>
-			<li>
+			<li class="noStyle">
 				<h3>Explicit binding</h3>
 				<ul>
 					<li>
@@ -116,7 +116,7 @@
 					</li>
 				</ul>
 			</li>
-			<li>
+			<li class="noStyle">
 				<h3>Hard binding</h3>
 				<ul>
 					<li>
@@ -166,17 +166,15 @@
 				<h2><i>"new"</i> keyword</h2>
 				<ul>
 					<li>
-<li>
-	In other OOP languages, <i>new</i> is used to instantiate classes.
-</li>
-<li>
-	JavaScript has no "classes" loke in other OOP languages.
-</li>
-<li>
-	In JavaScript, wwhen you use <i>new</i> keyword, it'll turn the function call to "constructor" call.
-	<?php include "code/javascript_code_83.txt"; ?>
-</li>						
+						In other OOP languages, <i>new</i> is used to instantiate classes.
 					</li>
+					<li>
+						JavaScript has no "classes" loke in other OOP languages.
+					</li>
+					<li>
+						In JavaScript, when you use <i>new</i> keyword, it'll turn the function call to "constructor" call.
+						<?php include "code/javascript_code_83.txt"; ?>
+					</li>						
 				</ul>
 			</li>
 		</ul>

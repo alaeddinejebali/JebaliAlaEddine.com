@@ -60,6 +60,34 @@
 				</ul>
 			</li>
 			<li>
+				<h2>Data types</h2>
+				<ul>
+					<li>
+						JavaScript has one complex data type: the <a href="#oop">Object</a> data type.
+					</li>
+					<li>
+						JavaScript has 5 primitive types (all other values are objects):
+						<ol>
+							<li>
+								Number
+							</li>
+							<li>
+								String
+							</li>
+							<li>
+								Boolean
+							</li>
+							<li>
+								Undefined
+							</li>
+							<li>
+								Null
+							</li>
+						</ol>
+					</li>
+				</ul>
+			</li>
+			<li>
 				<h2>Functions</h2>
 				<ul>
 					<li>

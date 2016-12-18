@@ -10,10 +10,11 @@
 	<div class="row-fluid">
 		<div class="span12">
 			<?php include "presentation.php"; ?>
+			<?php include "datatype.php"; ?>
 			<?php include "scope.php"; ?>
 			<?php include "closures.php"; ?>
+			<?php include "oop.php"; ?>
 			<?php include "advancedtopics.php"; ?>
-			<?php //include "javascript__dataTypes.php"; ?>
 			<?php //include "javascript__loopsAndFunctions.php"; ?>
 			<?php //include "javascript__dataTypes.php"; ?>
 			<?php //include "javascript__oop.php"; ?>

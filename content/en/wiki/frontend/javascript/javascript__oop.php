@@ -9,8 +9,7 @@
 		<h2>Is JavaScript Object Oriented?</h2>
 		<p>To be done...</p>
 		<h2></h2>
-		<p>- Variables assigned to objects don't hold the actual data, but
-			rather a reference to the memory address where the data can be found.</p>
+		<p>- </p>
 		<p>- When it comes to objects, it's a reference to the object and not
 			the object itself that is stored in a variable. When you did the
 			assignment, it didn't make a copy of the array object, it simply
