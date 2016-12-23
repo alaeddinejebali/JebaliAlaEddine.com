@@ -1,3 +1,23 @@
 <pre><code class="javascript">
+function add(a, b){
+	a[1] = '9'; //L-2
+	return a+b;
+}
 
+var a = 11;
+var b = 2;
+add(a, b);
+//In L-2: a still equal 11
+//outputs: 13
+
+console.log(a); //outputs: 11
+
+var a = ['a','b','c']; 
+var b = ['x'];
+add(a, b);
+//In L-2: a became equal ['a','9','c']
+//outputs: a,9,c, x
+
+console.log(a);
+//outputs: ['a','9','c']
 </code></pre>
