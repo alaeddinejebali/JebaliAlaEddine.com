@@ -15,13 +15,6 @@
 			<?php include "closures.php"; ?>
 			<?php include "oop.php"; ?>
 			<?php include "advancedtopics.php"; ?>
-			<?php //include "javascript__loopsAndFunctions.php"; ?>
-			<?php //include "javascript__dataTypes.php"; ?>
-			<?php //include "javascript__oop.php"; ?>
-			<?php //include "javascript__browser.php"; ?>
-			<?php //include "javascript__oop.php"; ?>
-			<?php //include "javascript__browser.php"; ?>
-			<?php //include "javascript__cookies.php"; ?>
 			<?php include "tips.php"; ?>
 		</div>
 	</div>
