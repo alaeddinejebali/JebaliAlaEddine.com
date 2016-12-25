@@ -1,0 +1,5 @@
+<pre><code class="javascript">
+gunction foo(){}
+var obj = new foo();
+console.log(obj); //outputs: {}
+</code></pre>

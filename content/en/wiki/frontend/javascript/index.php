@@ -13,6 +13,7 @@
 			<?php include "datatype.php"; ?>
 			<?php include "scope.php"; ?>
 			<?php include "closures.php"; ?>
+			<?php include "prototype.php"; ?>
 			<?php include "oop.php"; ?>
 			<?php include "advancedtopics.php"; ?>
 			<?php include "tips.php"; ?>

@@ -19,6 +19,20 @@
 						Functions in JavaScript have other capabilities than functions in other OOP languages don't have.
 					</li>
 					<li>
+						There are 2 default arguments to every function
+						<ol>
+							<li>arguments</li>
+							<li>
+								this
+								<ul>
+									<li class="noStyle">
+										<?php include "code/javascript_code_101.txt"; ?>
+									</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+					<li>
 						Closures
 						<ul>
 							<li>
