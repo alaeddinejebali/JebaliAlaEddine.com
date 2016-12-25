@@ -1,0 +1,23 @@
+<pre><code class="javascript">
+function Employee(name){
+	this.name = name;
+}
+Employee.prototype.getName = function(){
+	return this.name;
+}
+
+var empl1 = new Employee("Ala");
+empl1.getName(); //outputs: Ala
+
+function Manager(name, department){
+	this.name = name;
+	this.department = department;
+}
+Manager.prototype.getDepartment = function(){
+	return this.department;
+}
+
+var manager = new Manager("John", "DSI");
+manager.getName();
+//outputs: Error: manager.getName is not a function
+</code></pre>
