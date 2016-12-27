@@ -21,6 +21,7 @@
 					<li><a href="/frontend/javascript">JavaScript</a></li>
 					<li><a href="/frontend/nodejs">NodeJS</a></li>
 					<li><a href="/frontend/typescript">TypeScript</a></li>
+					<li><a href="/frontend/webpack">Webpack</a></li>
 				</ul></li>
 			<li class="<?= $currentActivePage['java'] ?>"><a href="company.html"><span class="iconfa-tint"></span> Java/J2EE</a><i
 				class="iconfa-angle-right sub-indicator"></i>
