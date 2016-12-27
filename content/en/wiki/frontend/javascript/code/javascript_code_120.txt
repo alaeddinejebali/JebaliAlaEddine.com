@@ -1,0 +1,4 @@
+<pre><code class="javascript">
+var b1 = new Bar("b1");
+console.log(b1.__proto__.constructor); // Foo(who)
+</code></pre>
