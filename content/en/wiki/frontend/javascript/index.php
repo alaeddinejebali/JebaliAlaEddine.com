@@ -15,6 +15,7 @@
 			<?php include "closures.php"; ?>
 			<?php include "prototype.php"; ?>
 			<?php include "oop.php"; ?>
+			<?php include "asynchrone.php"; ?>
 			<?php include "advancedtopics.php"; ?>
 			<?php include "tips.php"; ?>
 		</div>
