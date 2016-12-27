@@ -13,6 +13,28 @@
 				</ul>
 			</li>
 			<li>
+				<h2>"<i>new</i>" keyword</h2>
+				<ul>
+					<li>
+						When <i>new</i> keyword is used. 4 things happen (to be verified):
+						<oL>
+							<li>
+								Creates new object
+							</li>
+							<li>
+								Object is linked to...
+							</li>
+							<li>
+								The context is set
+							</li>
+							<li>
+								return <i>this</i>.
+							</li>
+						</oL>
+					</li>
+				</ul>
+			</li>
+			<li>
 				<h2>Introduction to prototype</h2>
 				<ul>
 					<li>
@@ -31,6 +53,17 @@
 					<li>
 						When you execute a function using "<i>new</i>" keyword, JS creates a new object having "<i>__proto__</i>" property which points to the prototype of the original function.
 						<?php include 'code/javascript_code_116.txt'; ?>
+					</li>
+					<li>
+						As ES5, <i>obj.__proto__</i> is the same as:
+						<ul>
+							<li>
+								<i>Object.getPrototypeOf(obj)</i>;
+							</li>
+							<li>
+								<i>obj.constructor.prototype;</i>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</li>
@@ -137,6 +170,10 @@
 													</li>
 												</ul>
 											</li>
+											<li>
+												We can also cretes property which are linked to only one objects
+												<?php include 'code/javascript_code_118.txt'; ?>
+											</li>
 										</ul>
 									</li>
 								</ol>
@@ -159,7 +196,7 @@
 			<li>
 				<h2>Linked prototype Diagram</h2>
 				<ul>
-					<li style="noStyle">
+					<li class="noStyle">
 						<img src="/content/en/wiki/frontend/javascript/images/js_01.png" alt="Linked prototype Diagram" />
 					</li>
 					<li>
@@ -170,15 +207,60 @@
 							</li>
 						</ul>
 					</li>
+					<li class="noStyle">
+						<h3>OLOO: Objects Linked to Other Objects</h3>
+						<ul>
+							<li>
+								known as "<strong>Delegation of behaviour</strong>" ???
+							</li>
+							<li>
+								When you requet a property of an object <i>obj</i>, JS will look if <i>obj</i> has this it. Else JS will look at <i>obj.__proto__</i>
+							</li>
+							<li>
+								It means: If it's not in me, I delegate it to my <i>super</i> object.
+							</li>
+							<li>
+								The advantage is that we have only one copy of the function (not duplicated on all objects).
+							</li>
+						</ul>
+					</li>
 				</ul>
 			<li>
 				<h2>.constructor</h2>
 				<ul>
 					<li>
-						Returns a reference to the Object constructor function that created the instance object.
+						Every single object is built by a constructor function.
 					</li>
 					<li>
-						Note that the value of this property is a reference to the function itself, not a string containing the function's name.
+						Each time a constructor is called a new object is created.
+					</li>
+					<li>
+						A constructor makes an object <strong>linked to</strong> it's own property.
+					</li>
+					<li>
+						It's not correct to say that: "Fct's prototype" is built by "Fct function" or is constructed by "Fct function".
+						<ul>
+							<li>
+								This is an example:
+								<?php include 'code/javascript_code_119.txt'; ?>
+							</li>
+							<li>
+								When you create an object b1 like that
+								<?php include 'code/javascript_code_120.txt'; ?>
+								Even <i>b1 = new Bar()</i>, b1.__proto__.constructor is not Bar!
+							</li>
+						</ul>
+					</li>
+					<li>
+						.constructor()
+						<ul>
+							<li>
+								Returns a reference to the Object constructor function that created the instance object.
+							</li>
+							<li>
+								Note that the value of this property is a reference to the function itself, not a string containing the function's name.
+							</li>
+						</ul>
 					</li>
 					<li>
 						Example 1: get and change the constructor of an object
