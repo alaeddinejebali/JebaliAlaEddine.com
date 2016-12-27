@@ -1,0 +1,4 @@
+<pre><code="html">
+&lt;script src="getUsers.js"&gt;&lt;script/&gt;
+&lt;script src="useUsers.js"&gt;&lt;script/&gt;
+</code><pre>
