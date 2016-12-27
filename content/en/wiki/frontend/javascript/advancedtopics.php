@@ -7,15 +7,6 @@
 	</div>
 	<div class="wiki-article-body invisible">
 		<ul>
-			<li class="accordion" id="promise">
-				<h2>Promise</h2>
-				<ul>
-					<li>
-						aaa
-					</li>
-				</ul>
-				<h2>Chained Promise</h2>
-			</li>
 			<li class="accordion">
 				<h2>EcmaScripts</h2>
 				<ul>
