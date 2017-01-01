@@ -1,0 +1,123 @@
+.invisible{display: none;}
+.visible{display: block;}
+
+
+.languages img{opacity: 0.2;}
+.languages img:hover{opacity: 0.8;}
+.activeLanguage{opacity: 0.8 !important;}
+
+.formFieldError{color: red;}
+#portfoliofilter{max-width: 500px; margin: 0 auto; padding-bottom: 13px;}
+
+.accordion > h2{
+	cursor: pointer;
+}.accordion > h2:hover{
+	text-decoration: underline;
+}
+
+
+
+
+#wiki{font-family: Ubuntu;}
+#wiki .wiki-title{text-align: center; text-transform: uppercase;}
+#wiki .wiki-title span{cursor: pointer;}
+#wiki .wiki-title span:hover{color: #f3a00f;}
+#wiki .wiki-article{padding: 10px;}
+#wiki section::before{width: 33px; height: 27px; border-radius: 50%; position: absolute; color: #fff; font-weight: bold; text-align: center; padding-top: 6px; margin-left: -15px}
+.wiki-article-body p, .wiki-article-body ul{margin-bottom: 15px;}
+.wiki-article-body {font-size: 15px;}
+.wiki-article-body h2{font-size: 16px; border-left: 3px solid #9C9292; color: #1f1f1f; padding-left: 5px;}
+.wiki-article-body h3{font-size: 16px;}
+.wiki-article-body ul{list-style-type: none;}
+.wiki-article-body ul li:before{content: '- ';}
+.wiki-article-body > ul > li:before{content: '';}
+.wiki-article-body ol{padding-left: 40px;}
+.wiki-article-body ul li, .wiki-article-body ol li{line-height: 25px;}
+.wiki-article-body ul li ul{padding-left: 40px;}
+.wiki-article-body ul li ol{padding-left: 57px;}
+.wiki-article-body ul li ol li:before{content: '';}
+#wiki .wiki-title img{padding-top: 7px; padding-bottom: 12px;}
+.wiki-article-body .caution{background: url('../images/icons/caution.png') no-repeat; padding-left: 25px; background-position-y: 5px;}
+.wiki-article-body .caution:before, .wiki-article-body .noStyle:before{content: ''}
+.wiki-article-body ul > li > h3:before{content: '° ';}
+
+#wiki section .wiki-article-title{border-bottom: 2px solid; padding: 5px 15px 5px 25px; }
+#wiki section .wiki-article-title h1{color: #444; font-size: 18px; font-weight: bold; cursor: pointer;}
+#wiki section .wiki-article-body{padding: 10px 20px; border-left: 2px solid; color: #000;}
+
+#wiki section:nth-of-type(1)::before{content: "01"; background-color: #154fa1;}
+#wiki section:nth-of-type(1) .wiki-article-title{border-color: #154fa1;}
+#wiki section:nth-of-type(1) .wiki-article-body{border-left-color: #154fa1;}
+#wiki  .wiki-article-title-background-0{background-color: #154fa1;}
+
+#wiki section:nth-of-type(2)::before{content: "02"; background-color: #0a79b6;}
+#wiki section:nth-of-type(2) .wiki-article-title{border-color: #0a79b6;}
+#wiki section:nth-of-type(2) .wiki-article-body{border-left-color: #0a79b6;}
+#wiki .wiki-article-title-background-1{background-color: #0a79b6;}
+
+#wiki section:nth-of-type(3)::before{content: "03"; background-color: #3599b7;}
+#wiki section:nth-of-type(3) .wiki-article-title{border-color: #3599b7;}
+#wiki section:nth-of-type(3) .wiki-article-body{border-left-color: #3599b7;}
+#wiki .wiki-article-title-background-2{background-color: #3599b7;}
+
+#wiki section:nth-of-type(4)::before{content: "04"; background-color: #fa225d;}
+#wiki section:nth-of-type(4) .wiki-article-title{border-color: #fa225d;}
+#wiki section:nth-of-type(4) .wiki-article-body{border-left-color: #fa225d;}
+#wiki  .wiki-article-title-background-3{background-color: #fa225d;}
+
+#wiki section:nth-of-type(5)::before{content: "05"; background-color: #d4444a;}
+#wiki section:nth-of-type(5) .wiki-article-title{border-color: #d4444a;}
+#wiki section:nth-of-type(5) .wiki-article-body{border-left-color: #d4444a;}
+#wiki .wiki-article-title-background-4{background-color: #d4444a;}
+
+#wiki section:nth-of-type(6)::before{content: "06"; background-color: #f18087;}
+#wiki section:nth-of-type(6) .wiki-article-title{border-color: #f18087;}
+#wiki section:nth-of-type(6) .wiki-article-body{border-left-color: #f18087;}
+#wiki .wiki-article-title-background-5{background-color: #f18087;}
+
+#wiki section:nth-of-type(7)::before{content: "07"; background-color: #118A11;}
+#wiki section:nth-of-type(7) .wiki-article-title{border-color: #118A11;}
+#wiki section:nth-of-type(7) .wiki-article-body{border-left-color: #118A11;}
+#wiki .wiki-article-title-background-6{background-color: #118A11;}
+
+#wiki section:nth-of-type(8)::before{content: "08"; background-color: #84c103;}
+#wiki section:nth-of-type(8) .wiki-article-title{border-color: #84c103;}
+#wiki section:nth-of-type(8) .wiki-article-body{border-left-color: #84c103;}
+#wiki .wiki-article-title-background-7{background-color: #84c103;}
+
+#wiki section:nth-of-type(9)::before{content: "09"; background-color: #768347;}
+#wiki section:nth-of-type(9) .wiki-article-title{border-color: #768347;}
+#wiki section:nth-of-type(9) .wiki-article-body{border-left-color: #768347;}
+#wiki .wiki-article-title-background-8{background-color: #768347;}
+
+#wiki section:nth-of-type(10)::before{content: "10"; background-color: #ffa22f;}
+#wiki section:nth-of-type(10) .wiki-article-title{border-color: #ffa22f;}
+#wiki section:nth-of-type(10) .wiki-article-body{border-left-color: #ffa22f;}
+#wiki  .wiki-article-title-background-9{background-color: #ffa22f;}
+
+#wiki section:nth-of-type(11)::before{content: "11"; background-color: #eae57e;}
+#wiki section:nth-of-type(11) .wiki-article-title{border-color: #eae57e;}
+#wiki section:nth-of-type(11) .wiki-article-body{border-left-color: #eae57e;}
+#wiki .wiki-article-title-background-10{background-color: #eae57e;}
+
+#wiki section:nth-of-type(12)::before{content: "03"; background-color: #f1eba0;}
+#wiki section:nth-of-type(12) .wiki-article-title{border-color: #f1eba0;}
+#wiki section:nth-of-type(12) .wiki-article-body{border-left-color: #f1eba0;}
+#wiki .wiki-article-title-background-11{background-color: #f1eba0;}
+
+#wiki section:nth-of-type(13)::before{content: "12"; background-color: #492a08;}
+#wiki section:nth-of-type(13) .wiki-article-title{border-color: #492a08;}
+#wiki section:nth-of-type(13) .wiki-article-body{border-left-color: #492a08;}
+#wiki .wiki-article-title-background-12{background-color: #492a08;}
+
+#wiki section:nth-of-type(14)::before{content: "13"; background-color: #393222;}
+#wiki section:nth-of-type(14) .wiki-article-title{border-color: #393222;}
+#wiki section:nth-of-type(14) .wiki-article-body{border-left-color: #393222;}
+#wiki .wiki-article-title-background-13{background-color: #393222;}
+
+#wiki section:nth-of-type(15)::before{content: "14"; background-color: #5a4b3c;}
+#wiki section:nth-of-type(15) .wiki-article-title{border-color: #5a4b3c;}
+#wiki section:nth-of-type(15) .wiki-article-body{border-left-color: #5a4b3c;}
+#wiki .wiki-article-title-background-14{background-color: #5a4b3c;}
+
+

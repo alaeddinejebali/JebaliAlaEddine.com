@@ -1,0 +1,3 @@
+Disallow: /~demo/
+User-agent: "*"
+sitemap: http://cdn.attracta.com/sitemap/1791909.xml.gz
