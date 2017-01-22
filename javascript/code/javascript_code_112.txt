@@ -1,0 +1,7 @@
+<pre><code class="javascript">
+Object.prototype.getName = function(){
+  return this.name;
+}
+manager.getName();
+//outputs: John
+</code></pre>

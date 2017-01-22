@@ -1,0 +1,8 @@
+<pre><code class="javascript">
+var foo = (function(){
+	var obj = {bar: "bar"};
+	return {myObject: obj};
+})();
+console.log(foo.myObject.bar);
+//outputs: bar
+</code></pre>

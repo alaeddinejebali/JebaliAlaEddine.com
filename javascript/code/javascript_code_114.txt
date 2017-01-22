@@ -1,0 +1,7 @@
+<pre><code class="javascript">
+Employee.prototype.getSalary = function(){
+  return 1000;
+}
+console.log( empl1.getSalary() ); //ouputs: 1000
+console.log( manager.getSalary() ); //ouputs: 1000
+</code></pre>

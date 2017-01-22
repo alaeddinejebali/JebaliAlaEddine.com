@@ -1,0 +1,25 @@
+<pre>
+<code class="javascript">
+var score = prompt("What is your score?", 0);
+score = parseInt(score);
+switch(score){
+	case 0:
+		console.log('You get a very bad score');
+		break;
+	case 1:
+	case 2:
+		console.log('You get a low score');
+		break;
+	case 3:
+	case 4:
+		console.log('You get a good score');
+		break;
+	case 5:
+		console.log('You get a high score');
+		break;
+	default:
+		console.log('Score must be between 1 and 5');
+		break;
+}
+</code>
+</pre>

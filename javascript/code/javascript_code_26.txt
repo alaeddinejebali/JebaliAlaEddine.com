@@ -1,0 +1,11 @@
+<pre>
+<code class="javascript">
+var message = "Hello James, how are you tody? Please James call me";
+
+var lastCharacter = message.charAt( message.length-1 );
+console.log("lastCharacter = " + lastCharacter); //outputs: e
+
+var lastCharacterCharCode = message.charCodeAt( message.length-1 );
+console.log("lastCharacterCharCode = " + lastCharacterCharCode); //outputs: 101
+</code>
+</pre>

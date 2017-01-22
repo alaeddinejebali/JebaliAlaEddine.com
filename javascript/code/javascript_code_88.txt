@@ -1,0 +1,19 @@
+<pre><code class="javascript">
+function foo(){
+	var bar = 0;
+	setTimeout(function(){
+		var baz = 1;
+		console.log(bar++); //L-5
+		//outputs: 0
+		//bar now has the value: 1
+		setTimeout(function(){
+			console.log(baz);
+			//outputs: 1
+			
+			console.log(bar); //L-12
+			//outputs: 1
+		}, 5000);
+	}, 2000);
+}
+foo();
+</code></pre>

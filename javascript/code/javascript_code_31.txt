@@ -1,0 +1,12 @@
+<pre>
+<code class="javascript">
+var myArray1 = new Array('a', 'b', 'c', 'A', 'd', 'Z');
+var myArray2 = myArray1.sort();
+console.log(myArray2);
+//ouputs: ['A', 'Z', 'a', 'b', 'c']
+
+var myArray3 = myArray1.reverse();
+console.log(myArray3);
+//ouputs: ['c', 'b', 'a', 'Z', 'A']
+</code>
+</pre>

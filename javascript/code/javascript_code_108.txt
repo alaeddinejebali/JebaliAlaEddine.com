@@ -1,0 +1,20 @@
+<pre><code class="javascript">
+function Employee(){}
+var empl1 = new Employee();
+console.log( empl1.ala ); //outputs: undefined
+
+empl1.ala = "Ala";
+empl1.__proto__.parentProperty = "Parent property of Employee";
+console.log( empl1.__proto__.__proto__ === Object.prototype ); //outputs: true
+
+Object.prototype.grandParentProperty = "Grand parent of all objects";
+console.log( empl1.grandParentProperty);
+//outputs: Grand parent of all objects
+console.log( Employee.prototype.grandParentProperty);
+//outputs: Grand parent of all objects
+
+function foo(){}
+var tmp = new foo();
+console.log( tmp.grandParentProperty);
+//outputs: Grand parent of all objects
+</code></pre>

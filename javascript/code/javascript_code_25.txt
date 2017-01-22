@@ -1,0 +1,18 @@
+<pre>
+<code class="javascript">
+var message = "Hello James, how are you tody? Please James call me.";
+var part1 = message.substring(6, 11);
+console.log("part1 = " + part1); //outputs: James
+
+var part2 = message.substring(6);
+console.log("part2 = " + part2);
+//outputs: James, how are you tody? Please James call me.
+
+var part3 = message.substr(6, 5);
+console.log("part3 = " + part3);//outputs: James
+
+var part4 = message.substr(6);
+console.log("part4 = " + part4);
+//outputs: James, how are you tody? Please James call me.
+</code>
+</pre>

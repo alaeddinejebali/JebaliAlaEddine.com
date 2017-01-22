@@ -1,0 +1,21 @@
+<pre><code class="javascript">
+function bind(fn, obj){
+	return function(){
+		fn.call(obj);
+	}
+}
+function foo(){
+	console.log(this.bar);
+}
+
+var obj1 = {bar: "bar1"};
+var obj2 = {bar: "bar2"};
+var obj3 = {bar: "bar3"};
+
+//Hard bind foo to obj1
+foo = bind(foo, obj1);
+
+foo(); //outputs: bar1
+foo.call(obj2); //outputs: bar1
+foo.call(obj3); //outputs: bar1
+</code></pre>

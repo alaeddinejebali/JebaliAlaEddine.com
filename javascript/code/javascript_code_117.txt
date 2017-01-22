@@ -1,0 +1,10 @@
+<pre><code class="javascript">
+function* gen(){
+	console.log("Hello");
+	yield null;
+	console.log("world");
+}
+var iterator = gen();
+iterator.next(); //outputs: Hello
+iterator.next(); //outputs: world
+</code></pre>

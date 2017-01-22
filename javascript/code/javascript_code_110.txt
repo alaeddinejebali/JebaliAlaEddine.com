@@ -1,0 +1,7 @@
+<pre><code class="javascript">
+var a = ['a', 'b'];
+a.constructor === Array; //outputs: true
+
+var n = 66;
+n.constructor === Number; //outputs: true
+</code></pre>

@@ -1,0 +1,9 @@
+<pre><code class="html">
+&lt;form action="#" class="b-contact-form" method="POST"&gt;
+	&lt;input name="txtContactName" type="text"&gt;
+	&lt;input name="txtContactEmail" type="text"&gt;
+	&lt;input name="txtContactSubject" type="text"&gt;
+	&lt;textarea name="txtContactMessage"&gt;&lt;/textarea&gt;
+	&lt;input type="submit" value="Envoyer message"&gt;
+&lt;/form&gt;
+</code></pre>

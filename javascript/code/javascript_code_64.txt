@@ -1,0 +1,22 @@
+<pre><code class="php">
+$errors = array ();
+$data = array ();
+
+if (empty ( $_POST ['name'] ))
+	$errors ['name'] = 'Le nom est obligatoire.';
+if (empty ( $_POST ['email'] ))
+	$errors ['email'] = 'Le email est obligatoire.';
+if (empty ( $_POST ['subject'] ))
+	$errors ['subject'] = 'Le sujet obligatoire.';
+if (empty ( $_POST ['message'] ))
+	$errors ['message'] = 'Le message est obligatoire.';
+	
+if (! empty ( $errors )) {
+	$data ['success'] = false;
+	$data ['errors'] = $errors;
+} else {
+	//Doing job here
+	$data ['success'] = true;
+}
+echo json_encode ($data);
+</code></pre>

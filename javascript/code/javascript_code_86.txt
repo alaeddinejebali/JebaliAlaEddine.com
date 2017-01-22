@@ -1,0 +1,16 @@
+<pre><code class="javascript">
+function foo(){
+	var bar = "bar";
+	return function(){
+		console.log(bar);
+	}
+}
+function bam(){
+	foo()(); //L-9
+}
+console.log(bar);
+// ReferenceError: bar is not defined
+
+bam();
+//outputs: bar
+</code></pre>
