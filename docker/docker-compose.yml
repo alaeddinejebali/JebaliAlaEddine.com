@@ -1,7 +1,0 @@
-web:
-  build: ./Dockerfiles/ApachePhp/
-  ports:
-   - "80:80"
-  volumes:
-   - /var/www/wiki.jebalialaeddine.com:/var/www
-
