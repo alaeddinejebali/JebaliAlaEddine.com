@@ -1,9 +1,0 @@
-<pre>
-<code class="javascript">
-var worker = createWorker();
-worker.job1();
-worker.job2();
-worker.job3();
-worker.job2();
-</code>
-</pre>

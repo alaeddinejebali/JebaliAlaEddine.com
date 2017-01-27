@@ -1,8 +1,0 @@
-<pre><code class="javascript">
-var obj = {name: "ala", age: 31};
-console.log(obj.name);
-console.log(obj["name"]);
-
-//Add other property
-obj.country = "Tunisia";
-</code></pre>

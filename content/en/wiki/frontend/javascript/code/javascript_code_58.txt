@@ -1,6 +1,0 @@
-<pre>
-<code class="javascript">
-var worker = createWorker();
-worker.task1();
-</code>
-</pre>

@@ -1,4 +1,0 @@
-<pre><code class="javascript">
-manager.__proto__.__proto__ = Employee.prototype;
-manager.getName();
-</code></pre>

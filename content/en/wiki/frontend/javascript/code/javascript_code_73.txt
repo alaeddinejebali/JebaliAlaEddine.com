@@ -1,9 +1,0 @@
-<pre><code class="javascript">
-var name = "Ala";
-function f(){
-	var name = "John Doe";
-	console.log(name); //outputs John Doe
-}
-f();
-console.log(name); //outputs: Ala
-</code></pre>

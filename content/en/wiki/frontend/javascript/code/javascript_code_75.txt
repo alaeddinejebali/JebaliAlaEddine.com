@@ -1,9 +1,0 @@
-<pre><code class="javascript">
-var score = 0;
-function f(){
-	score = 63;
-}
-console.log("score", score); //outputs 0
-f();
-console.log("score", score); //outputs 63
-</code></pre>

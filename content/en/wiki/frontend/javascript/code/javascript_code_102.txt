@@ -1,7 +1,0 @@
-<pre><code class="javascript">
-function Employee(name){
-	this.name = name;
-}
-var empl1 = new Employee("Ala");
-var empl2 = new Employee("John");
-</code></pre>

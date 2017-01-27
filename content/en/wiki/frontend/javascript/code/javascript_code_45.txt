@@ -1,6 +1,0 @@
-<pre>
-<code class="javascript">
-("A" < "B") = true //because A comes before B in the alphabet.
-("a" < "B") = false //because uppercase letters are treated as always coming before lowercase letters.
-</code>
-</pre>

@@ -1,5 +1,0 @@
-<pre><code class="javascript">
-var simpleObject = {}
-var complexObject = new Object();
-console.log( simpleObject.__proto__ === complexObject.__proto__ ); //outputs: true
-</code></pre>

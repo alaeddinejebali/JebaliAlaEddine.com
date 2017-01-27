@@ -1,8 +1,0 @@
-<pre>
-<code class="javascript">
-var absValue = Math.abs(-9);
-console.log(9); //ouputs: 9
-
-var absValue = Math.abs(4);
-console.log(4); //ouputs: 4
-</code></pre>

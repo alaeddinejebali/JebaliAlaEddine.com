@@ -1,7 +1,0 @@
-<pre><code class="javascript">
-window.location.replace("anotherPage.htm");
-//replace any occurrence of the current page in the history stack with anotherPage.htm
-
-window.location.href = "anotherPage.htm";
-//load the same page and to add it to the history of pages navigated to
-</code></pre>

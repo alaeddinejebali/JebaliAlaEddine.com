@@ -1,9 +1,0 @@
-<pre>
-<code class="javascript">
-var myArray1 = new Array('a', 'b', 'c');
-var myArray2 = new  Array(1, 2, 3);
-myArray1 = myArray1.concat(myArray2);
-console.log(myArray1);
-//ouputs: ['a', 'b', 'c', 1, 2, 3]
-</code>
-</pre>

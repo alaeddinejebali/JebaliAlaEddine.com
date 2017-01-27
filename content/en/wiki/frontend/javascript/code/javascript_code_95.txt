@@ -1,3 +1,0 @@
-<pre><code class="javascript">
-
-</code></pre>

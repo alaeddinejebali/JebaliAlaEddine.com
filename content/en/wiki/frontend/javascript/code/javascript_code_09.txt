@@ -1,3 +1,0 @@
-<pre><code class="javascript">
-document.write("Your screen supports " + window.screen.colorDepth );
-</code></pre>
