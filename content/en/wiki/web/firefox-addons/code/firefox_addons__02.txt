@@ -1,6 +1,0 @@
-<pre><code class="sh">
-$> sudo npm install jpm --global
-
-# Verify if jpm is installed
-$> jpm #you should see some command
-</code></pre>

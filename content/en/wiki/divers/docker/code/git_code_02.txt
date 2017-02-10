@@ -1,3 +1,0 @@
-<pre><code class="sh">
-    $> sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 16126D3A3E5C1192
-</code></pre>

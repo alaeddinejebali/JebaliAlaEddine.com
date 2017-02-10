@@ -1,4 +1,0 @@
-<pre><code class="xml">
-127.0.0.1       localhost
-127.0.0.1       jebalialaeddine.dev
-</code></pre>
