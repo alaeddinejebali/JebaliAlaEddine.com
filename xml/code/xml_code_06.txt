@@ -1,0 +1,8 @@
+<pre><code class="xml">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;homepages 
+	xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+	&lt;!-- create simple link and open it in a new window -->
+	&lt;homepage xlink:type="simple" xlink:show="new" xlink:href="http://www.jebalialaedine.com"&gt;Visit my website&lt;/homepage&gt;
+&lt;/homepages&gt; 
+</code></pre>
