@@ -1,0 +1,13 @@
+<pre><code class="xml">
+#Make "http://localhost:8081/jebalialaeddine.com" accessible via "http://jebalialaeddine.dev:8081"
+&lt;VirtualHost *:8081&gt;
+	ServerAdmin alaeddine.jebali@whitecapetech.com
+	DocumentRoot "C:/xampp/htdocs/jebalialaeddine.com"
+	ServerName jebalialaeddine.dev
+	ServerAlias jebalialaeddine.dev
+	&lt;Directory"C:/xampp/htdocs/jebalialaeddine.com"&gt;
+		Order allow,deny
+		Allow from all
+	&lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</code></pre>
