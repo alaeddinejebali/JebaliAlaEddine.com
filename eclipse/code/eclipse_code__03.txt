@@ -1,0 +1,4 @@
+<pre><code class="sh">
+$> cd /opt/eclipse/
+$> ./eclipse -clean &
+</code></pre>
