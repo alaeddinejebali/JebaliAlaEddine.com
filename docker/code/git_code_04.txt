@@ -1,0 +1,14 @@
+<pre><code class="sh">
+$> sudo -s
+$> curl -L https://github.com/docker/machine/releases/download/v0.8.2/docker-machine-`uname -s`-`uname -m` >/usr/local/bin/docker-machine && \
+chmod +x /usr/local/bin/docker-machine
+$> docker-machine -version
+
+#List docker-machine
+$> docker-machine ls
+
+#If you do not see 'default' machine, you need to create it
+$> sudo apt-get install virtualbox
+$> docker-machine create -d virtualbox default
+
+</code></pre>
