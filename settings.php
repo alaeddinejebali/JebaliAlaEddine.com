@@ -278,6 +278,15 @@ if (!empty($_POST)){
 			$headerTitle = "Java/J2EE";
 			$headerSubTitle = "Java/J2EE wiki";
 			break;
+
+		case('/java/javacore'==$uri):
+			$fileContent = "content/en/wiki/java/javacore/index.php";
+			$formattedUrl = "Java-Core";
+			$currentActivePage['java'] = 'current';
+			$headerIcon = "iconfa-heart";
+			$headerTitle = "Java/J2EE";
+			$headerSubTitle = "Java/J2EE wiki";
+			break;
 		
 		default:
 			$fileContent = 'content/' . $language . '/404.php';
