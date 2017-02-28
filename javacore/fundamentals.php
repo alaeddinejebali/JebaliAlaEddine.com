@@ -10,7 +10,6 @@
 				<li>
 					<h2>Basics</h2>
 					<ul>
-						<li>JDk vs JRE</li>
 						<li>Javadoc comment
 							<ul>
 								<li class="noStyle"><?php include 'code/java_01.txt'; ?></li>
@@ -32,9 +31,6 @@
 									execute.
 								</li>
 							</ul>
-						</li>
-						<li>A <i>JAR</i> file is like a zip file of mainly Java class
-							files.
 						</li>
 					</ul>
 				</li>
