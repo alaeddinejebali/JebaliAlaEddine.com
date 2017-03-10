@@ -37,7 +37,7 @@
 				<li>
 					<h2>Packages and imports</h2>
 					<ul>
-						<li>ackages are logical groupings for classes.</li>
+						<li>Packages are logical groupings for classes.</li>
 						<li>Java automatically looks (first) in the current package for
 							other classes.</li>
 						<li>Wildcards
@@ -93,47 +93,6 @@
 									elsewhere or in special JAR files.
 									<ul>
 										<li class="noStyle"><?php include 'code/java_06.txt'; ?></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<h2>Creating Objects</h2>
-					<ul>
-						<li>constructor
-							<ul>
-								<li>The name of the constructor matches the name of the class.</li>
-								<li>There’s no return type.</li>
-							</ul>
-						</li>
-						<li>Order of Initialization
-							<ul>
-								<li><i>Fields</i> and <i>instance initializer</i> blocks are run
-									in the order in which they appear in the file.</li>
-								<li>The constructor runs after all fields and instance
-									initializer blocks have run.</li>
-							</ul>
-						</li>
-						<li>instance initializers
-							<ul>
-								<li>It's a code blocks which appears outside a method.</li>
-								<li>When an object is initialized, instance initializers will be
-									called (before the constructor block).
-									<ul>
-										<li><?php include 'code/java_07.txt'; ?></li>
-									</ul>
-								</li>
-								<li>In a class that had multiple constructors, you would have to
-									repeat the code in each constructor. With an instance
-									initializer, you can just write the code once, and it will be
-									executed no matter what constructor is used to create the
-									object.</li>
-								<li>Order matters for the fields and blocks of code. You can’t
-									refer to a variable before it has been initialized:
-									<ul>
-										<li class="noStyle"><?php include 'code/java_08.txt'; ?></li>
 									</ul>
 								</li>
 							</ul>
@@ -290,52 +249,104 @@
 					</ul>
 				</li>
 				<li>
-					<h2>Default Initialization of Variables</h2>
+					<h2>Variables types</h2>
 					<ul>
-						<li>Local Variables
+						<li>
+							Variables in Java can be defined anywhere in the code (inside a class, inside a method or as a method argument) and can have different modifiers.
+						</li>
+						<li>
+							Depending on these conditions variables in Java can be divided into 4 categories:
+							<ol>
+								<li>Local variables</li>
+								<li>Instance variables</li>
+								<li>Static variables (Class variable)</li>
+								<li>Method parametesr</li>
+							</ol>
+						</li>
+						<li>
+							Local Variables
 							<ul>
-								<li>A local variable is a variable defined within a method.</li>
-								<li>Local variables must be initialized before use.</li>
+								<li>There are variables defined within a method.</li>
+								<li>They must be initialized before use (they are not assigned a default value).</li>
 								<li>The compiler will not let you read an uninitialized value.
 									<ul>
 										<li class="noStyle"><?php include 'code/java_27.txt'; ?></li>
-									</ul> The compiler is also smart enough to recognize
-									initializations that are more complex.
+									</ul>
+									The compiler is also smart enough to recognize initializations that are more complex.
 									<ul>
 										<li class="noStyle"><?php include 'code/java_28.txt'; ?></li>
 									</ul>
 								</li>
+								<li>
+									They cannot use any of the access level since its scope is only inside the method.
+									"Final" is the Only Non Access Modifier that can be applied to a local variable.
+									<ul>
+										<li class="noStyle"><?php include 'code/java_40.txt'; ?></li>
+									</ul>
+								</li>
 							</ul>
 						</li>
-						<li>Instance and Class Variables
+						<li>
+							Instance variables
 							<ul>
-								<li>Variables that are not local variables are known as <i>instance
-										variables</i> or <i>class variables</i> or <i>fields</i>.
+								<li>
+									They are variables which are <u>not declared with static</u> keyword and are <u>outside any method declaration</u>. 
 								</li>
-								<li>Instance variables vs class variables
+								<li>
+									They are used by objects to store their states.
 									<ul>
-										<li>A variable is an <i>instance variable</i> if it has not the
-											"static" keyword in its declaration.
-										</li>
-										<li>A variable is a <i>class variable</i> or a <i>field</i> if
-											it has the "static" keyword in its declaration.
-											<ul>
-												<li class="noStyle"><?php include 'code/java_30.txt'; ?></li>
-											</ul>
+										<li class="noStyle">
+											<?php include "code/java_41.txt"; ?>
 										</li>
 									</ul>
 								</li>
-								<li>Instance and class variables do not require you to initialize
-									them</li>
-								<li>When you declare these variables, the compiler gives them a
-									default value:
+								<li>
+									The are called instance variables because their values are instance specific and <u>values</u> of these variables are <u>not shared among instances</u> ("<i>Ala</i>" value is only related to <i>a1</i> instance).
+								</li>
+							</ul>
+						</li>
+						<li>
+							Static variables (Class variables)
+							<ul>
+								<li>
+									They are declared with <u>static</u> keyword inside a Class (outside any method).
+								</li>
+								<li>
+									They are known as Class level variables because values of these variables are not specific to any instance but are common to all instances of a class.
+								</li>
+								<li>
+									They will be <u>shared by all instances</u> of an Object.
 									<ul>
-										<li>boolean: false</li>
-										<li>byte, short, int, long: 0</li>
-										<li>float , double: 0.0</li>
-										<li>char: null</li>
-										<li>Everything else: null</li>
+										<li class="noStyle">
+											<?php include "code/java_42.txt"; ?>
+										</li>
 									</ul>
+								</li>
+								<li>
+									
+								</li>
+							</ul>
+						</li>
+						<li class="caution">
+							Instance and Class Variables
+							<ul>
+								<li>
+									Instance and class variables do not require you to initialize them:
+									When you declare these variables, the compiler gives them a default value:
+									<ul>
+										<li>boolean => false</li>
+										<li>byte, short, int, long => 0</li>
+										<li>float , double => 0.0</li>
+										<li>Everything else => null</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							Method parameter
+							<ul>
+								<li>
+									They are variables that are passed in Methods. 
 								</li>
 							</ul>
 						</li>
@@ -358,7 +369,7 @@
 					</ul>
 				</li>
 				<li>
-					<h2>Elementss in a Class</h2>
+					<h2>Elements in a Class</h2>
 					<ul>
 						<li>Ordering elements in a class:
 							<ol>

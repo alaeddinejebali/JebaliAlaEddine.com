@@ -1,0 +1,13 @@
+<pre><code class="java">
+public class A{
+	public void f(){
+		// Errors
+		// since "name" variable exists only inside the method
+		// so {public, private, protected} will have no sense here
+		public String name;
+		
+		// works
+		final String name = "Ala";
+	}
+}
+</code></pre>

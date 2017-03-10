@@ -1,3 +1,4 @@
-<pre><code class="java">
-
+<pre><code class="sh">
+$> cd /path/to/my/project
+$> nano HelloWorld.java
 </code></pre>

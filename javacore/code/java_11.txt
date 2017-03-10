@@ -7,16 +7,16 @@ public class Scope {
 		
 		one = new String("a");
 		two = new String("b");
-		<img src="/content/en/wiki/java/javacore/images/java_01.png" alt="Java garbage collection" />
+		<img src="/wiki/javacore/images/java_01.png" alt="Java garbage collection" />
 		
 		one = two;
 		// This makes "a" eligible for garbage collection
 		
 		String three = one;
-		<img src="/content/en/wiki/java/javacore/images/java_02.png" alt="Java garbage collection" />
+		<img src="/wiki/javacore/images/java_02.png" alt="Java garbage collection" />
 		
 		one = null;
-		<img src="/content/en/wiki/java/javacore/images/java_03.png" alt="Java garbage collection" />
+		<img src="/wiki/javacore/images/java_03.png" alt="Java garbage collection" />
 		
 		// "b" geos out of scope
 	}

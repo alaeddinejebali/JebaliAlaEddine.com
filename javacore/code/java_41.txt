@@ -1,0 +1,14 @@
+<pre><code class="java">
+class A{
+	// This is an instance variable
+	// it's also called a "field"
+	private String name;
+
+	public A(String name){
+		this.name = name;
+	}
+}
+
+A a1 = new A("Ala");
+A a2 = new A("John Doe");
+</code></pre>

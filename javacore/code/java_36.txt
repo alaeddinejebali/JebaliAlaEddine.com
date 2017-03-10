@@ -1,0 +1,28 @@
+<pre><code class="java">
+//A.java
+public class A {
+	A(){}
+	protected void aSayHello(){
+		System.out.println("Hello from A");
+	}
+}
+
+//B.java
+class B extends A{
+	public void bSayHello(){
+		aSayHello();
+	}
+}
+
+//Program.java
+public class Program{
+	public static void main(String[] args){
+		B b = new B();
+		b.bSayHello();
+	}
+}
+
+//Execution
+$> javac Program.java && java Program
+//outputs: Hello from A
+</code></pre>

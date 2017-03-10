@@ -1,0 +1,32 @@
+<pre><code class="java">
+package com.ala.company;
+ 
+import java.lang.*;
+ 
+/*
+ * As this file contains public class. Then the name of this file should be TestClass.java
+ */
+public class TestClass {
+	public int i;
+
+	static {
+		System.out.println("This is static block");
+	}
+ 
+	{
+		System.out.println("This is ananuymous block");
+	}
+ 
+	TestClass() {
+		System.out.println("This is constructor");
+	}
+ 
+	void method() {
+		System.out.println("This is method");
+	}
+}
+ 
+class AnotherClass {
+
+}
+</code></pre>

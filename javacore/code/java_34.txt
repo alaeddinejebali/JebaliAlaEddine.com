@@ -1,0 +1,12 @@
+<pre><code class="java">
+&lt;Access_Modifier&gt; class &lt;Class_Name&gt; extends &lt;Super_Class_Name&gt; implements &lt;Interface_Name&gt;{
+    &lt;static initilizar block&gt;
+    &lt;ananymous_block&gt;
+    &lt;constructor_declarations&gt;
+    &lt;field_declarations (Static or Non-Static)&gt;
+    &lt;method_declarations (Static or Non-Static)&gt;
+    &lt;Inner_class_declarations&gt;
+    &lt;nested_interface_declarations&gt;
+    variables_inside_class(Static or Non Static)
+}
+</code></pre>

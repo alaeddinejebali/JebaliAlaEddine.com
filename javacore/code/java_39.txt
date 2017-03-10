@@ -1,0 +1,15 @@
+<pre><code class="java">
+public class A {
+	public A(){
+		System.out.println("constructor A is called...");
+	}
+}
+
+public class B extends A{
+
+}
+
+B b = new B();
+// outputs:
+// constructor A is called...
+</code></pre>

@@ -1,0 +1,36 @@
+<pre><code class="java">
+//A.java
+package packageA;
+public class A {
+	public A(){}
+	protected void aSayHello(){
+		System.out.println("Hello from A");
+	}
+}
+
+//B.java
+package packageB;
+import packageA.*;
+public class B extends A{
+	public void bSayHello(){
+		//outputs: Error because trying to access protected directly
+		A a = new A();
+		a.aSayHello();
+		
+		//outputs: Hello from A
+		aSayHello();
+		super.aSayHello();
+		this.aSayHello();
+	}
+}
+
+//Program.java
+import packageA.*;
+import packageB.*;
+public class Program{
+	public static void main(String[] args){
+		B b = new B();
+		b.bSayHello();
+	}
+}
+</code></pre>

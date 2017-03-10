@@ -1,0 +1,21 @@
+<pre><code class="java">
+class A{
+        private String name;
+        public static String language = "English";
+
+        public A(String name){
+                this.name = name;
+        }
+}
+
+public class Program{
+        public static void main(String[] args){
+                A a1 = new A("Ala");
+                A a2 = new A("John Doe");
+                //All of the following statelemnts output: English
+                a1.language;
+                a2.language;
+                A.language;
+        }
+}
+</code></pre>
