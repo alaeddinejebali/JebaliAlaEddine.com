@@ -1,3 +1,22 @@
 <pre><code class="java">
-
+class B{
+	B(){
+		System.out.println("B");
+	}
+}
+public class A extends B{
+	A(){
+		this("Ala");
+		super();
+	}
+	
+	A(String name){
+		System.out.println("Hello " + name);
+	}
+	
+	public static void main(String[] args){
+		A a = new A();
+		//outputs:  Error: call to super must be first statement in constructor
+	}
+}
 </code></pre>

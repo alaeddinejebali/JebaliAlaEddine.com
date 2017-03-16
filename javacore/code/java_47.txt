@@ -1,3 +1,22 @@
 <pre><code class="java">
-
+public class B {
+	public static void main(String[] args) {
+		A a = new A();
+		a.i = 10;
+		a.method();
+	}
+}
+ 
+class A extends B {
+	int i;
+ 
+	void method() {
+		method1(this);
+	}
+ 
+	void method1(A t) {
+		System.out.println(t.i);
+		//outputs: 10
+	}
+}
 </code></pre>

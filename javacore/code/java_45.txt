@@ -1,3 +1,17 @@
 <pre><code class="java">
-
+public class A{
+	A(){
+		System.out.println("01");
+		this("Ala");
+	}
+	
+	A(String name){
+		System.out.println("Hello " + name);
+	}
+	
+	public static void main(String[] args){
+		A a = new A();
+		//outputs: Error: call to this must be first statement in constructor
+	}
+}
 </code></pre>

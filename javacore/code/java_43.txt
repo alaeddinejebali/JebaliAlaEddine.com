@@ -1,3 +1,29 @@
 <pre><code class="java">
+public class A{
+	int variable = 5;
+	
+	public static void main(String args[]) {
+		A a = new A();
+		
+		a.method(20);
+		//Instance variable: 5
+		//Local variable: 10
+		
+		a.method();
+		//Instance variable: 5
+		//Local variable: 40
+	}
 
+	void method(int variable) {
+		variable = 10;
+		System.out.println("Instance variable: " + this.variable);
+		System.out.println("Local variable: " + variable);
+	}
+	
+	void method() {
+		int variable = 40;
+		System.out.println("Instance variable: " + this.variable);
+		System.out.println("Local variable: " + variable);
+	}
+}
 </code></pre>
