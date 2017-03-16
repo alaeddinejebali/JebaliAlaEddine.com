@@ -222,6 +222,43 @@
 					<h2>Non Access Modifiers</h2>
 					<ul>
 						<li>
+							<strong>Static</strong>
+							<ul>
+								<li>
+									Field
+									<ul>
+										<li>
+											A static field is a class field. There is only one instance of the field, regardless of the number of class instances created. It can be accessed through the class name.
+										</li>
+									</ul>
+								</li>
+								<li>
+									Method
+									<ul>
+										<li>
+											A static method is a class method. It is not passed an implicit this object reference. It can be invoked through the class name.
+										</li>
+									</ul>
+								</li>
+								<li>
+									Class
+									<ul>
+										<li>
+											An inner class declared static is a top-level class, not associated with a member of the containing class.
+										</li>
+									</ul>
+								</li>
+								<li>
+									Initializer
+									<ul>
+										<li>
+											The initializer is run when the class is loaded, rather than when an instance is created.
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
 							<strong>Final</strong>
 							<ul>
 								<li>
