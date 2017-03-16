@@ -6,6 +6,7 @@
             include "fundamentals.php";
             include "modifiers.php";
             include "classesandobjects.php";
+            include "tips.php";
             include "certifications.php";
         ?>
 	</div>
