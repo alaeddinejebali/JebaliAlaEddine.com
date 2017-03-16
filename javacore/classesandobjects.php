@@ -140,6 +140,72 @@
 						</li>
 					</ul>
 				</li>
+				<li>
+					<h2>"this" keyword</h2>
+					<ul>
+						<li>
+							It works as a reference to the current Object whose Method or constructor is being invoked.
+						</li>
+						<li>
+							 Variable Hiding
+							 <ul>
+							 	<li>
+							 		Using <i>this</i> keyword with a field to point to the instance variable instead of the local variable.
+							 		<?php include 'code/java_43.txt'; ?>
+							 	</li>
+							 </ul>
+						</li>
+						<li>
+							Explicit Constructor Invocation
+							<ul>
+								<li>
+									<i>this</i> keyword can be used inside the constructor to call another overloaded constructor in the same Class.
+								</li>
+								<li>
+									This occurs if a Class has two overloaded constructors, one without argument and another with argument
+								</li>
+								<li>
+									Then the <i>this</i> keyword can be used to call constructor with argument from the constructor without argument.
+								</li>
+								<li>
+									This is required as the constructor can not be called explicitly.
+								</li>
+								<li class="noStyle">
+									<?php include "code/java_44.txt"; ?>
+								</li>
+								<li class="caution">
+									Important
+									<ul>
+										<li>
+											<i>this</i> keyword can only be the first statement in Constructor (Like <i>super</i> keyword).
+											<ul>
+												<li class="noStyle">
+													<?php include "code/java_45.txt"; ?>
+												</li>
+											</ul>
+										</li>
+										<li>
+											A constructor can have either <i>this</i> or <i>super</i> keyword but not both.
+											<ul>
+												<li class="noStyle">
+													<?php include "code/java_46.txt"; ?>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									The <i>this</i> keyword can be used as Method parameter
+									<ul>
+										<li class="noStyle">
+											<?php include "code/java_47.txt"; ?>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 	</div>
