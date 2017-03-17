@@ -104,6 +104,17 @@
 								</li>
 							</ul>
 						</li>
+						<li>
+							When using Eclipse IDE, you can use
+							<ul>
+								<li>
+									CTRL+B to compile and build the application
+								</li>
+								<li>
+									ALT+SHIFT+X to run the code
+								</li>
+							</ul>
+						</li>
 					</ul>
 				</li>
 				<li>
