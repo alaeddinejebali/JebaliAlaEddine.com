@@ -1,0 +1,37 @@
+<pre><code class="java">
+public class Hibernate implements JPA {
+ 
+    public void insert(Object obj) {
+       //Persistence code
+    }
+ 
+    public void update(Object obj) {
+       //Persistence code
+         
+    }
+ 
+    public void delete(Object obj) {
+      //Persistence code
+         
+    }
+ 
+    public Object select() {
+        //Persistence code
+    }
+     
+    public Object superSelect(){
+        //Persistence Code
+    }
+}
+
+
+public class MyApplication {
+ 
+    public static JPA jpa = new Hibernate();
+     
+    public static void main(String[] args) {
+        Object object = new Object();
+        jpa.insert(object);  //writes to DB
+    }
+}
+</code></pre>
