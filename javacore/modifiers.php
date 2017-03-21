@@ -225,34 +225,66 @@
 							<strong>Static</strong>
 							<ul>
 								<li>
-									Field
+									Objective of using <i>static</i>
 									<ul>
 										<li>
-											A static field is a class field. There is only one instance of the field, regardless of the number of class instances created. It can be accessed through the class name.
+											The objective of using <i>static</i> keyword id to attach a Variable or Method to a Class.
+										</li>
+										<li>
+											So, the variable or Method that are marked <i>static</i> belongs to the Class rather than to any particular instance.
 										</li>
 									</ul>
 								</li>
 								<li>
-									Method
+									How to invoke?
 									<ul>
 										<li>
-											A static method is a class method. It is not passed an implicit this object reference. It can be invoked through the class name.
+											Static variable and Methods can be used without having any instance of the Class.
+											Only the Class is required to invoke a static Method or static variable.
+										</li>
+										<li>
+											Exemple of access Static method and Static Variable.
+											<?php include "code/java_48.txt"; ?>
 										</li>
 									</ul>
 								</li>
 								<li>
-									Class
+									It's applicable to:
 									<ul>
 										<li>
-											An inner class declared static is a top-level class, not associated with a member of the containing class.
+											Variable
+											<ul>
+												<li>
+													A static field is a class field. There is only one instance of the field, regardless of the number of class instances created. It can be accessed through the class name.
+												</li>
+											</ul>
 										</li>
-									</ul>
-								</li>
-								<li>
-									Initializer
-									<ul>
 										<li>
-											The initializer is run when the class is loaded, rather than when an instance is created.
+											Method
+											<ul>
+												<li>
+													A static method is a class method. It is not passed an implicit this object reference. It can be invoked through the class name.
+												</li>
+											</ul>
+										</li>
+										<li>
+											Nested-Class
+											<ul>
+												<li>
+													An inner class declared static is a top-level class, not associated with a member of the containing class.
+												</li>
+												<li>
+													The <i>static</i> is not applicable to Class (only for Nested Class).
+												</li>
+											</ul>
+										</li>
+										<li>
+											Initialization Block
+											<ul>
+												<li>
+													The initializer is run when the class is loaded, rather than when an instance is created.
+												</li>
+											</ul>
 										</li>
 									</ul>
 								</li>

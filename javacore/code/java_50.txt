@@ -1,3 +1,35 @@
 <pre><code class="java">
+class CreateObjectWithClone {
+	public static void main(String[] args) {
+		A obj1 = new A();
+		System.out.println(obj1);
+		//outputs: Value of i: 10
+		try {
+			A obj2 = (A) obj1.clone();
+			System.out.println(obj2);
+			//outputs: Value of i: 10
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+ 
+class A implements Cloneable { 
+	int i;
+	static int j = 10;
+	 
+	A(){
+		i = j++;
+	}
 
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+	 
+	@Override
+	public String toString() {
+		return "Value of i: " + i;
+	}
+}
 </code></pre>

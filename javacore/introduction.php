@@ -80,6 +80,54 @@
 								<li>
 									Note: When running Java application, you're running the ".class" files not the ".java" file.
 								</li>
+								<li>
+									Understand public static void main(String args[])
+									<ul>
+										<li>
+											public
+											<ul>
+												<li>
+													Means that this Method will be accessible by any Class(If other Classes are able to access this Class).
+												</li>
+											</ul>
+										</li>
+										<li>
+											static
+											<ul>
+												<li>
+													Means the given Method or variable is not instance related but Class related.
+												</li>
+												<li>
+													It can be accessed without creating the instance of a Class.
+												</li>
+											</ul>
+										</li>
+										<li>
+											void
+											<ul>
+												<li>
+													Means the Method will not return any value.
+												</li>
+											</ul>
+										</li>
+										<li>
+											main
+											<ul>
+												<li>
+													This Method name is searched by JVM as a starting point for an application with a particular signature only.
+												</li>
+											</ul>
+										</li>
+										<li>
+											String args[]
+											<ul>
+												<li>
+													is the parameter to the main Method.
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
 							</ul>
 						</li>
 						<li>

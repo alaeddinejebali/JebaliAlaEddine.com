@@ -138,6 +138,69 @@
 								</li>
 							</ul>
 						</li>
+						<li>
+							Different ways to create an object in Java
+							<ol>
+								<li>
+									Using <strong>new</strong> keyword
+								</li>
+								<li>
+									Using New Instance (Reflection)
+									<ul>
+										<li>
+											"<strong>Class.forName</strong>" loads the Class in Java but doesn't create any Object. 
+										</li>
+										<li>
+											To Create an Object of the Class you have to use the "<strong>newInstance</strong>" Method of the Class class.
+										</li>
+										<li class="noStyle">
+											<?php include 'code/java_49.txt'; ?>
+										</li>
+										<li>
+											This is the most common approach to register a JDBC driver to connect to a DB is to use Java's Class.forName() method, to dynamically load the driver's class file into memory, which automatically registers it.
+										</li>
+									</ul>
+								</li>
+								<li>
+									Using Clone
+									<ul>
+										<li>
+											Used to create a copy of <u>an existing</u> Object.
+										</li>
+										<li>
+											<?php include 'code/java_50.txt'; ?>
+										</li>
+										<li>
+											"<i>clone()</i>" method is declared "<i>protected</i>" in Object class.
+											So it can be accessed only in subclass or in same package.
+											That is the reason why it has been overridden here in Class.
+										</li>
+										<li>
+											Class need to implement "<i>Cloneable</i>" Interface otherwise it will throw "<i>CloneNotSupportedException</i>".
+										</li>
+									</ul>
+								</li>
+								<li>
+									Using Object Deserialization
+									<ul>
+										<li>
+											It produces the opposite of serializing an Object.
+										</li>
+									</ul>
+								</li>
+								<li>
+									Using ClassLoader
+									<ul>
+										<li>
+											This way is much the same as Class.forName option.
+										</li>
+										<li class="noStyle">
+											<?php include 'code/java_51.txt'; ?>
+										</li>
+									</ul>
+								</li>
+							</ol>
+						</li>
 					</ul>
 				</li>
 				<li>

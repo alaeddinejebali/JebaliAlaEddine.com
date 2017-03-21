@@ -1,0 +1,36 @@
+<pre><code class="java">
+public class CreateObjectWithClassLoader {
+	public static void main(String[] args) {
+		A obj = null;
+		try {
+			obj = (A) new CreateObjectWithClassLoader()
+					.getClass()
+					.getClassLoader()
+					.loadClass("A")
+					.newInstance();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		System.out.println(obj);
+		//outputs: Value of i: 10
+	}
+}
+
+class A {
+	int i;
+	static int j = 10;
+
+	A() {
+		i = j++;
+	}
+
+	@Override
+	public String toString() {
+		return "Value of i: " + i;
+	}
+}
+</code></pre>

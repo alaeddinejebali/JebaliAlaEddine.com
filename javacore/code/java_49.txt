@@ -1,3 +1,38 @@
 <pre><code class="java">
+class CreateObject {
+	public static void main(String[] args) {
+		try {
+			Class a = Class.forName("A");
+			A obj1 = (A) a.newInstance();
+			A obj2 = (A) a.newInstance();
+			A obj3 = (A) a.newInstance();
+			System.out.println(obj1);
+			//outputs: Value of i:10
+			System.out.println(obj2);
+			//outputs: Value of i:11
+			System.out.println(obj3);
+			//outputs: Value of i:12
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		}
+	}
+}
 
+class A {
+	static int j = 10;
+	int i;
+	
+	A() {
+		i = j++;
+	}
+ 
+	@Override
+	public String toString() {
+		return "Value of i:" + i;
+	}
+}
 </code></pre>
