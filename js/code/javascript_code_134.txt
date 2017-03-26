@@ -1,0 +1,5 @@
+<pre><code class="javascript">
+var ajax = someHelper();
+ajax.get(url)
+	.then(onFullfilled, onRejected);
+</code></pre>

@@ -8,6 +8,78 @@
 		<div class="panel-body wiki-article-body">
 		<ul>
 			<li>
+				Asynchrony: get the benefits of multi-threading without the need to create new threads.
+			</li>
+			<li>
+				<h2>Primeses</h2>
+				<ul>
+					<li>
+						A promise is an object that has a <i>then</i> method.
+						Look at <a href="https://promisesaplus.com/" target="_blank">https://promisesaplus.com/</a>
+						<ul>
+							<li class="noStyle">
+								<?php include "code/javascript_code_134.txt"; ?>
+								"onFullfilled" can:
+								<ul>
+									<li>
+										return another promise
+									</li>
+									<li>
+										return a value
+									</li>
+									<li>
+										throw an error
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						IE Browser supports of promises: Edge12 (no IE)
+					</li>
+					<li>
+						You can chain promises
+					</li>
+					<li>
+						You can pass an array of promises
+						<ul>
+							<li>
+								.call()
+								<ul>
+									<li>
+										"onFullfilled" is called when all promisess are passed.
+									</li>
+									<li>
+										"onRejected" is called when at least one promise is rejected.
+									</li>
+									<li>
+										Example:
+										<?php include "code/javascript_code_135.txt"; ?>
+									</li>
+								</ul>
+							</li>
+							<li>
+								.race()
+								<ul>
+									<li>
+										<?php include "code/javascript_code_136.txt"; ?>
+									</li>
+									<li>
+										When 1<sup>st</sup> promise passes, we execute "firstFulfilled".
+									</li>
+									<li>
+										When 1<sup>st</sup> promise rejected, we execute "firstRejected".
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Example of promises
+					</li>
+				</ul>
+			</li>
+			<li>
 				<h2>Callbacks</h2>
 				<ul>
 					<li>

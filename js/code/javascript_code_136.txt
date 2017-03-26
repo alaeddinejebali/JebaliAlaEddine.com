@@ -1,0 +1,10 @@
+<pre><code class="javascript">
+var ajax = someHelper();
+Promise
+	.race([
+		ajax.get("api1"),
+		ajax.get("api2"),
+		ajax.get("api3")
+	])
+	.then(firstFulfilled, firstRejected);
+</code></pre>	
