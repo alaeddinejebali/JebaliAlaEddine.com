@@ -1,0 +1,6 @@
+<pre><code class="javascript">
+onmessage = function(e){
+	(...)
+	postMessage(obj);
+}
+</code></pre>

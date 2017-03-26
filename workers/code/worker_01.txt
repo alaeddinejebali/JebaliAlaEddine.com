@@ -1,0 +1,23 @@
+<pre><code class="javascript">
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			if(window.Worker){
+				//Web workers are supported on this browser
+				var myWorker = new Worker("worker.js");
+				var msg = {
+					addThis: {num1: 1, num2: 2}
+				};
+				myWorker.postMessage(msg);
+				myWorker.onmessage = function(e){
+					console.log(e.data.resultAdd);
+				}
+			}else{
+				alert("Your browser does not support web worker");
+			}
+		</script>
+	</body>
+</html>
+</code></pre>

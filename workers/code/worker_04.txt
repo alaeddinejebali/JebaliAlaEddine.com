@@ -1,0 +1,7 @@
+<pre><code class="javascript">
+theWorker.postMessage(obj){
+	theWorker.onmessage = function(e){
+		//work with: e.data
+	}
+}
+</code></pre>
