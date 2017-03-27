@@ -126,7 +126,201 @@
 							</li>
 						</ul>
 					</li>
-					
+					<li>
+						CSS preprocessors
+						<ul>
+							<li>
+								Processor language => compile => CSS
+							</li>
+							<li>
+								Features
+								<ul>
+									<li>
+										Variables
+									</li>
+									<li>
+										Math
+										<ul>
+											<li class="noStyle">
+												<?php include 'code/frontend_01.txt'; ?>
+											</li>
+										</ul>
+									</li>
+									<li>
+										Mixins
+										<ul>
+											<li class="noStyle">
+												<?php include 'code/frontend_02.txt'; ?>
+											</li>
+										</ul>
+									</li>
+									<li>
+										Nested rules
+										<ul>
+											<li class="noStyle">
+												<?php include 'code/frontend_03.txt'; ?>
+											</li>
+										</ul>
+									</li>
+									<li>
+										Logic
+									</li>
+								</ul>
+							</li>
+							<li>
+								See
+								<ul>
+									<li>
+										<a href="">LESS</a>
+									</li>
+									<li>
+										<a href="">SASS</a>
+										<ul>
+											<li>
+												<a href="">SASS</a>
+											</li>
+											<li>
+												<a href="">SCSS</a>
+											</li>
+											<li>
+												<a href="">Compass</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="">Stylus</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Techniques of Responsive design
+						<ul>
+							<li>
+								Media queries
+							</li>
+						</ul>
+					</li>
+					<li>
+						Use icon fonts
+						<ul>
+							<li>
+								Advantages
+								<ul>
+									<li>
+										You cand do on <strong>the fly</strong>:
+										<ul>
+											<li>
+												Resize an icon
+											</li>
+											<li>
+												Add color
+											</li>
+											<li>
+												Add CSS effects
+											</li>
+											<li>
+												...etc
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								Disadvantages
+								<ul>
+									<li>
+										You can use only 1 color for the icon (you can't have an icon multi-colored)
+									</li>
+								</ul>
+							</li>
+							<li>
+								Examples
+								<ul>
+									<li>
+										<?php include 'code/frontend_04.txt'; ?>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						HTTP
+						<ul>
+							<li>
+								HTTP request methods: GET / PUT / POST / DELETE
+							</li>
+							<li>
+								using REST: READ / CREATE / UPDATE / DELETE
+							</li>
+							<li>
+								XHR: @todo: write an example of AJAX using JS and an other using jQuery
+							</li>
+						</ul>
+					</li>
+					<li>
+						Javascript object decoration vs JSON
+						<ul>
+							<li>
+								In JSON we define data, in JavaScript object decoration we define variables.
+							</li>
+							<li>
+								In JSON keys must be string
+								<?php include 'code/frontend_05.txt'; ?>
+							</li>
+							<li>
+								In JavaScript, we don't need the ""
+								<?php include 'code/frontend_06.txt'; ?>
+							</li>
+						</ul>
+					</li>
+					<li>
+						JSON vs XML
+					</li>
+					<li>
+						Browsers
+						<ul>
+							<li>
+								Evergreen: auto-updating
+							</li>
+							<li>
+								Supports: 
+								<ul>
+									<li>
+										<a href="http://caniuse.com">http://caniuse.com</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								Fallback
+								<ul>
+									<li>
+										Provide another way when browser doesn't support a feature (example: link to a downloade video if no HTML5 player)
+									</li>
+								</ul>
+							</li>
+							<li>
+								polyfill
+								<ul>
+									<li>
+										???
+									</li>
+								</ul>
+							</li>
+							<li>
+								Progressive enhancement
+								<ul>
+									<li>
+										???
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Chrome Developer Tools
+					</li>
 					
 					<li>
 						CDN
@@ -175,8 +369,46 @@
 							</li>
 						</ul>
 					</li>
+				</ul>
+			</li>
+			<li>
+				<h2>Testing</h2>
+				<ul>
 					<li>
-						
+						Karma
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2>Module system options</h2>
+				<ul>
+					<li>
+						CommonJS
+					</li>
+					<li>
+						ES6 module
+					</li>
+					<li>
+						AMPD
+					</li>
+				</ul>
+			</li>
+			<li>
+				Underscore.js
+			</li>
+			<li>
+				Lo-Dash
+			</li>
+			<li>
+				Modernizr
+				<ul>
+					<li>
+						Detect CSS and HTML5 support to take action.
+						<?php include 'code/frontend_07.txt'; ?>
+					</li>
+					<li>
+						Example2:
+						<?php include 'code/frontend_08.txt'; ?>
 					</li>
 				</ul>
 			</li>

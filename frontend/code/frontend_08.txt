@@ -1,0 +1,11 @@
+<pre><code class="javascript">
+&lt;script src="modernizr.js"&gt;&lt;script/&gt;
+Modernizr.load({
+	test: Modernizr.localstorage
+	
+	//When <i>localstorage</i> is supported, load <i>localstorageEngine.js</i>
+	yep : 'localstorageEngine.js'
+	
+	nop : 'cookieStorageEngine.js'
+})
+</code></pre>

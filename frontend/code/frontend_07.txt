@@ -1,0 +1,7 @@
+<pre><code class="javascript">
+if(Modernizr.aFeature){
+	//<i>aFeature</i> is supported
+}else{
+	//Do other thing
+}
+</code></pre>
