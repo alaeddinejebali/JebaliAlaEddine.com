@@ -13,6 +13,18 @@
 					<li>
 						Variables assigned to objects don't hold the actual data, but rather a reference to the memory address where the data can be found.
 					</li>
+					<li>
+						Using brackets option is useful when the property name contain "." for example
+						pbj["this.is.my.prop"] = "value;
+					</li>
+					<li>
+						This is function decoration
+						function f(){}
+					</li>
+					<li>
+						This is function expression
+						var f = function {}
+					</li>
 				</ul>
 			</li>
 			<li>
