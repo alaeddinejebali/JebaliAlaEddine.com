@@ -1,10 +1,10 @@
 <div class="panel panel-default wiki-article">
 	<div class="panel-heading wiki-article-title">
 		<h4 class="panel-title">
-        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#presentation">Services workers</a>
+        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#servicesworkers">Services workers</a>
 		</h4>
 	</div>
-	<div id="presentation" class="panel-collapse collapse">
+	<div id="servicesworkers" class="panel-collapse collapse">
 		<div class="panel-body wiki-article-body">
 		<ul>
 			<li>
