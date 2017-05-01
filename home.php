@@ -16,6 +16,10 @@
 			<td>Avancement</td>
 		</tr>
 		<tr>
+			<td>Rust</td>
+			<td>0%</td>
+		</tr>
+		<tr>
 			<td>Lazy loading</td>
 			<td>0%</td>
 		</tr>
