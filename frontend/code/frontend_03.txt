@@ -1,3 +1,10 @@
-<pre><code class="javascript">
-
+<pre><code class="css">
+.content{
+	span{
+		/*...*/
+	}
+	h3{
+		/*...*/
+	}
+}
 </code></pre>

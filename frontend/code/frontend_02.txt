@@ -1,3 +1,6 @@
-<pre><code class="javascript">
-
+<pre><code class="css">
+.box{f(10px)}
+f(radius){
+	/*...*/
+}
 </code></pre>

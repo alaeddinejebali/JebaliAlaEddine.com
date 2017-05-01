@@ -1,0 +1,3 @@
+<pre><code class="javascript">
+var obj = {name: "Ala"}
+</code></pre>

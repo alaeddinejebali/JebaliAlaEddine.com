@@ -1,3 +1,4 @@
-<pre><code class="javascript">
-
+<pre><code class="css">
+.fa-rotate-90
+.fa-primary-text-color
 </code></pre>

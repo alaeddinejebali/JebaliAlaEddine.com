@@ -1,3 +1,6 @@
-<pre><code class="javascript">
-
+<pre><code class="css">
+content_width: 780px;
+total_width: 1000px;
+div.content{width: content_width}
+div.secondary{width: total_width - content_width}
 </code></pre>

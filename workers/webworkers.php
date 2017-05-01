@@ -1,10 +1,10 @@
 <div class="panel panel-default wiki-article">
 	<div class="panel-heading wiki-article-title">
 		<h4 class="panel-title">
-        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#presentation">Web workers</a>
+        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#webworkers">Web workers</a>
 		</h4>
 	</div>
-	<div id="presentation" class="panel-collapse collapse">
+	<div id="webworkers" class="panel-collapse collapse">
 		<div class="panel-body wiki-article-body">
 		<ul>
 			<li>
@@ -64,7 +64,7 @@
 						Window space
 						<ul>
 							<li class="noStyle">
-								<?php incude "code/worker_03.txt"; ?>
+								<?php include "code/worker_03.txt"; ?>
 							</li>
 						</ul>
 					</li>
@@ -72,7 +72,7 @@
 						Worker space
 						<ul>
 							<li class="noStyle">
-								<?php incude "code/worker_04.txt"; ?>
+								<?php include "code/worker_04.txt"; ?>
 							</li>
 						</ul>
 					</li>
@@ -83,11 +83,11 @@
 				<ul>
 					<li>
 						index.html
-						<?php incude "code/worker_01.txt"; ?>
+						<?php include "code/worker_01.txt"; ?>
 					</li>
 					<li>
 						worker.js
-						<?php incude "code/worker_02.txt"; ?>
+						<?php include "code/worker_02.txt"; ?>
 					</li>
 				</ul>
 			</li>
@@ -144,7 +144,7 @@
 								Import other workers or other scripts
 								<ul>
 									<li class="noStyle">
-										<?php incude "code/worker_05.txt"; ?>
+										<?php include "code/worker_05.txt"; ?>
 									</li>
 								</ul>
 							</li>
