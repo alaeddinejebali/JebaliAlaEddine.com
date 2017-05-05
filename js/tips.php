@@ -88,28 +88,6 @@
 					</li>
 				</ul>
 			</li>
-			<li class="accordion" id="hoisting">
-				<h2>Hoisting</h2>
-				<ul>
-					<li>
-						Hoisting teaches that variable and function declarations are physically moved to the top of your coding, but this is not what happens at all.
-					</li>
-					<li>
-						What does happen is that <strong>variables and functions <u>declarations</u></strong> are put <strong>into memory during the compile phase</strong>, but stays exactly where you typed it in your coding.  
-					</li>
-					<li>
-						One of the advantages you get from JavaScript putting function declarations into the memory before it executes any code segment, is this allows you to use a function before you declare it in your code.
-						<ul>
-							<li class="noStyle">
-								Example the code below will outputs: Hello undefined
-								<?php include "code/javascript_code_130.txt"; ?>
-								This is because <strong>only declaration</strong> of variables and functions are put into memory during the compilation phase like this:
-								<?php include "code/javascript_code_131.txt"; ?>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</li>
 			<li class="accordion" id="varvslet">
 				<h2>var vs let</h2>
 				<ul>
