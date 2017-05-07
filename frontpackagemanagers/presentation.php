@@ -8,12 +8,39 @@
 		<div class="panel-body wiki-article-body">
 			<ul>
 				<li>
-					<h2>XXXXXXX</h2>
+				    <h2></h2>
+				    <ul>
+				        <li>
+				            There are 2 types of projects when working with a package managers:
+				            <ol>
+				                <li>
+				                    A 3<sup>rd</sup> party package (in the same project)
+				                </li>
+				                <li>
+				                    For other users (other websites...etc)
+				                </li>
+				            </ol>
+				        </li>
+				    </ul>
+				</li>
+				<li>
+					<h2>Module vs package</h2>
 					<ul>
 						<li>
-							xxx
+							A module is a single JavaScript file that has some usuable functionalities.
+						</li>
+						<li>
+						    A package is a directory with a <i>package.json</i> file plus one or more modules.
 						</li>
 					</ul>
+				</li>
+				<li>
+				    <h2></h2>
+				    <ul>
+				        <li>
+				        
+				        </li>
+				    </ul>
 				</li>
 			</ul>
 		</div>
