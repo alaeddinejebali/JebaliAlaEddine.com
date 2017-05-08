@@ -3,6 +3,7 @@
 		<?php include "introduction.php"; ?>
 		<?php include "modulesystems.php"; ?>
 		<?php include "packagemanagers.php"; ?>
-		<?php include "javascriptframeworks.php"; ?>
+		<?php //include "javascriptframeworks.php"; ?>
+		<?php include "debug.php"; ?>
 	</div>
 </div>
