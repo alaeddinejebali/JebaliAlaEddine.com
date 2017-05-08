@@ -1,3 +1,8 @@
 <pre><code class="sh">
+$> npm publish --tag beta
+#...
+$> npm install &lt;packageName&gt;@beta
 
+$> npm info &lt;packageName&gt;
+#outputs: "dist-tags": {latest: &lt;value&gt;, beta: &lt;value&gt;}
 </code></pre>

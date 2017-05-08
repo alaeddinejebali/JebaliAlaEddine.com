@@ -466,6 +466,28 @@
                 		</li>
                 	</ul>
                 </li>
+                <li>
+                	<h2>NPM Tags</h2>
+                	<ul>
+                		<li>
+                			Every package has at least 1 tag. By default it's named "latest".
+                		</li>
+                		<li>
+                			Each time you publish a version,NPM will update "<i>dist-tags</i>" which you can see it by running "$> npm info &lt;packageName&gt;".
+                			<ul>
+                				<li class="noStyle">
+                					<?php include "code/01.txt"; ?>
+                				</li>
+                			</ul>
+                		</li>
+                		<li>
+                			
+                		</li>
+                		<li>
+                			
+                		</li>
+                	</ul>
+                </li>
 			</ul>
 		</div>
 	</div>
