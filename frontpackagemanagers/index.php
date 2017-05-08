@@ -3,6 +3,7 @@
         <?php
             include "presentation.php";
             include "npm.php";
+            include "yarn.php";
         ?>
     </div>
 </div>

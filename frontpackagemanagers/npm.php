@@ -39,7 +39,7 @@
                             $> npm install
                             <ul>
                                 <li>
-                                    Install needed dependencies of a the project (founds in <i>package.json</li> file)
+                                    Install needed dependencies of a the project (founds in <i>package.json</i> file)
                                 </li>
                             </ul>
 						</li>
@@ -60,7 +60,7 @@
 						  </ul>
 						</li>
 						<li>
-						  $> npm help-search &lt;commandSubstringNam&gt;
+						  $> npm help-search &lt;commandSubstringName&gt;
 						  <ul>
 						      <li>
 						          List of commands using this word
@@ -177,7 +177,7 @@
 				    </ul>
 				</li>
 				<li>
-				    <h2>List installed packages</li>
+				    <h2>List installed packages</h2>
 				    <ul>
 				        <li>
 				            $> ls node_modules/
@@ -248,7 +248,7 @@
 				    </ul>
 				</li>
 				<li>
-				    <h2>Install specific version</li>
+				    <h2>Install specific version</h2>
 				    <ul>
 				        <li>
 				            vx.y.z
