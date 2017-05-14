@@ -19,7 +19,9 @@
 						<li>
 						      Install NPM
 						      <ul>
-						      
+									<li>
+										todo
+									</li>
 						      </ul>
 						</li>
 						<li>
@@ -47,7 +49,7 @@
                             $> npm <i>&lt;taskName&gt;</i>
                             <ul>
                                 <li>
-                                    Run tasks found in "script" section of <i>package.json</li> file.
+                                    Run tasks found in "script" section of <i>package.json</i> file.
                                 </li>
                             </ul>
 						</li>

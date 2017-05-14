@@ -4,6 +4,7 @@
             include "presentation.php";
             include "npm.php";
             include "yarn.php";
+            include "comparatif.php";
         ?>
     </div>
 </div>
