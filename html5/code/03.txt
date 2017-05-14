@@ -1,0 +1,3 @@
+<pre>code class="html">
+navigator.geolocation.clearWatch(watch_id);
+</code></pre>

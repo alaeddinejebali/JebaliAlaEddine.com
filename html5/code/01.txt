@@ -1,0 +1,25 @@
+<pre>code class="html">
+navigator.geolocation.getCurrentPosition(showPosition, positionError);
+function showPosition(position){
+	var result = position.coords;
+	var lat = result.latitude;
+	var long = result.longitude;
+	var valueInMetersOfActualPosition = result.accuracy
+	result.heading ???
+	result.speed???
+	result.timestamp???
+}
+
+function positionError(e){
+	switch(e.code){
+		case 0:
+			//unknown error
+		case 1:
+			//Permission denied
+		case 2:
+			//Position unavailable
+		case 3:
+			//Timeout reached
+	}
+}
+</code></pre>

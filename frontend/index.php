@@ -5,5 +5,6 @@
 		<?php include "packagemanagers.php"; ?>
 		<?php //include "javascriptframeworks.php"; ?>
 		<?php include "debug.php"; ?>
+		<?php include "webcomponents.php"; ?>
 	</div>
 </div>
