@@ -1,0 +1,6 @@
+<pre><code class="javascript">
+module foo from "./foo";
+foo.bar(); //outputs: bar
+foo.baz(); //outputs: baz
+foo.bom(); //outputs: Error
+</code></pre>

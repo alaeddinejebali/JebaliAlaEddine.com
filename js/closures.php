@@ -1,7 +1,7 @@
 <div class="panel panel-default wiki-article">
 	<div class="panel-heading wiki-article-title">
 		<h4 class="panel-title">
-        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#closures">Closures</a>
+        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#closures">Closures and Modules</a>
 		</h4>
 	</div>
 	<div id="closures" class="panel-collapse collapse">
@@ -184,6 +184,71 @@
 							</li>
 							<li>
 								This is not a closure because <i>foo.myObject</i> can remember and access it's lexical scope <i>bar</i> but <i>foo.myObject</i> is an object <i>not a function</i>.
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2>Practical use of scopes: Modules</h2>
+				<ul>
+					<li>
+						Benefits: Encapsulation & create public API.
+						<ul>
+							<li>
+								In the module, everything is private (like "<i>o</i>" object).
+							</li>
+							<li>
+								To expose things, use return. It's a public API.
+							</li>
+						</ul>
+					</li>
+					<li>
+						Disadvantages
+						<ul>
+							<li>
+								Using modules makes Unit-Testing difficult since the module can hide some function and do not expose them (so we can't test them).
+							</li>
+						</ul>
+					</li>
+					<li>
+						Classic module pattern
+						<ul>
+							<li class="noStyle">
+								<?php include "code/javascript_code_137.txt"; ?>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Modified module pattern
+						<ul>
+							<li class="noStyle">
+								<?php include "code/javascript_code_138.txt"; ?>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Modern module pattern
+						<ul>
+							<li class="noStyle">
+								<?php include "code/javascript_code_139.txt"; ?>
+							</li>
+						</ul>
+					</li>
+					<li>
+						ES6+ module pattern
+						<ul>
+							<li>
+								Define module
+								<?php include "code/javascript_code_140.txt"; ?>
+							</li>
+							<li>
+								Import all exported elements
+								<?php include "code/javascript_code_141.txt"; ?>
+							</li>
+							<li>
+								Import parts from exported elements
+								<?php include "code/javascript_code_142.txt"; ?>
 							</li>
 						</ul>
 					</li>

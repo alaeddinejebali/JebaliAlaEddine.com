@@ -93,6 +93,10 @@
 						<strong>Using Constructor</strong>
 						<ul>
 							<li>
+								A Javascript constructor is a function called with the "<i>new</i>" keyword.
+								A Javascript constructor makes an object <i>linked to</i> its own prototype.
+							</li>
+							<li>
 								When you use "<i>new</i>" keyword, you tell to JavaScript that you're calling the constructor.
 							</li>
 							<li>
@@ -200,7 +204,7 @@
 				<h2>Linked prototype Diagram</h2>
 				<ul>
 					<li class="noStyle">
-						<img src="/content/en/wiki/frontend/javascript/images/js_01.png" alt="Linked prototype Diagram" />
+						<img src="wiki/js/images/js_01.png" alt="Linked prototype Diagram" />
 					</li>
 					<li>
 						When you request <i>empl1.aPropertyName</i>, this how JavaScript internally works:
