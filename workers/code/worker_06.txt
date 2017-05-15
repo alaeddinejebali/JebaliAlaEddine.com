@@ -1,3 +1,25 @@
-<pre><code class="javascript">
+<pre><code class="html">
+&lt;html&gt;
+	&lt;head&gt;&lt;/head&gt;
+	&lt;body&gt;
+		&lt;script&gt;
+			if(window.Worker){
+				var _worker = new Worker("path/to/ajax-worker.js");
+				_worker.addEventListener("message", onMessageHandler, false);
+				_worker.addEventListener("error", onErrorHandler, false);
+				_worker.postMessage("getListOfUsers");
 
+				function onErrorHandler(e){
+					console.log(e.data);
+				}
+
+				function onMessageHandler(e){
+					console.log(e.data);
+				}
+			}else{
+				alert("Your browser does not support web worker");
+			}
+		&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
 </code></pre>

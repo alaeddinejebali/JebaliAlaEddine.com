@@ -1,0 +1,14 @@
+<pre><code class="html">
+var _worker = new Worker("ajax-worker.js");
+_worker.addEventListener("message", onMessageHandler, false);
+_worker.addEventListener("error", onErrorHandler, false);
+_worker.postMessage("getListOfUsers");
+
+function onErrorHandler(e){
+	console.log(e.data);
+}
+
+function onMessageHandler(e){
+	console.log(e.data);
+}
+</code></pre>

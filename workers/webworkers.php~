@@ -100,6 +100,7 @@
 					</li>
 					<li>
 						To terminate a worker use <i>&lt;worker&gt;.terminate()</i>. Note that there is no way to make a pause on a worker: once terminated, it'll start from the beginning.
+	
 					</li>
 				</ul>
 			</li>
