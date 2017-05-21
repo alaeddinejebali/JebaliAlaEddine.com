@@ -1,0 +1,3 @@
+<pre><code class="html">
+&lt;input ng-model="&lt;context&gt;.user.name" /&gt;
+</code></pre>

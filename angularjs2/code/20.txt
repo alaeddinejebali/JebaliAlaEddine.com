@@ -1,0 +1,12 @@
+<pre><code class="javascript">
+//character.component.ts
+@Component({
+	moduleId: module.id,
+	selector: 'story-character', //to be used from HTML files
+	templateUrl: 'character.component.html'
+});
+
+export class CharacterComponent{
+	name: 'Ala Eddine JEBALI';
+}
+</codepre></pre>

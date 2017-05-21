@@ -1,0 +1,9 @@
+<pre><code class="javascript">
+angular
+    .module('app')
+    .controller('VehiculesController', VehiculesController);
+VehiculesController.$inject = ['VehiculeService'];
+function VehiculesController(VehiculeService){
+    //...
+}
+</codepre></pre>

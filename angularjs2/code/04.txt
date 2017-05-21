@@ -1,0 +1,6 @@
+<pre><code class="html">
+&lt;h3 [&lt;htmlElementProperty&gt;]="user.name"&gt;&lt;/h3&gt;
+&lt;h3 [innerText]="user.name"&gt;&lt;/h3&gt;
+&lt;input [value]="user.name" /&gt;
+&lt;div [style.color]="red"&gt;{{user.name}}&lt;/div&gt;
+</code></pre>

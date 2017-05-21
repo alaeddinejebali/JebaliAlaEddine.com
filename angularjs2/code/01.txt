@@ -1,0 +1,3 @@
+<pre><code class="html">
+&lt;h3&gt;{{&lt;context&gt;.user.name}}&lt;/h3&gt;
+</code></pre>

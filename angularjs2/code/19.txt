@@ -1,0 +1,17 @@
+<pre><code class="javascript">
+@NgModule({
+	imports:[
+		//Import modules we depend on
+	],
+	declarations:[
+		//Declare components, directives, pipes
+	],
+	providers:[
+		//Provide services to app root injector
+	],
+	bootstrap: [
+		//From where to start
+	]
+});
+export class AppModule{}
+</codepre></pre>

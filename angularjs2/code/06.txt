@@ -1,0 +1,3 @@
+<pre><code class="html">
+&lt;button (click)="log('clicked')" (blur)="log('blur')"&gt;&lt;/button&gt;
+</code></pre>

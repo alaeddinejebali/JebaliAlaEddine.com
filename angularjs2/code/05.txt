@@ -1,0 +1,3 @@
+<pre><code class="html">
+&lt;button ng-click="&lt;context&gt;.log('clicked')" ng-blur="&lt;context&gt;.log('blur')"&gt;&lt;/button&gt;
+</code></pre>

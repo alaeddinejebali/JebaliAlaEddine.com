@@ -1,0 +1,4 @@
+<pre><code class="javascript">
+//character.component.html
+&lt;h1&gt;Hello {{name}}&lt;/h1&gt;
+</codepre></pre>

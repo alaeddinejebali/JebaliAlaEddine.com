@@ -2,6 +2,7 @@
 	<div class="panel-group" id="accordion">
 		<?php 
             include "presentation.php";
+            include "modules.php";
         ?>
 	</div>
 </div>

@@ -1,0 +1,9 @@
+<pre><code class="javascript">
+@Component({moduleId: module.id, selector: 'my-vehicules', templateUrl: 'vehicules.component.html'})
+export class VehiculesComponent{
+    vehicules = this.vehiculeService.getVehicules();
+    constructor(private vehiculeService: VehiculeService){
+        //...
+    }
+}
+</codepre></pre>
