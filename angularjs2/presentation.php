@@ -28,7 +28,7 @@
 										<li>
 											Angular1
 											<?php include "code/01.txt"; ?>
-										<li>
+										</li>
 										<li>
 											Angular2 (no context)
 											<?php include "code/02.txt"; ?>
@@ -41,7 +41,7 @@
 										<li>
 											Angular1
 											<?php include "code/03.txt"; ?>
-										<li>
+										</li>
 										<li>
 											Angular2
 											<?php include "code/04.txt"; ?>
@@ -64,10 +64,10 @@
 								<li>
 									Two way binding: from component to DOM and from DOM to component
 									<ul>
-										</li>
+										<li>
 											Angular1
 											<?php include "code/07.txt"; ?>
-										<li>
+										</li>
 										<li>
 											Angular2
 											<?php include "code/08.txt"; ?>

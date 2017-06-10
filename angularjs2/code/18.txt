@@ -7,4 +7,4 @@ export class VehiculeService{
 //vehicule.component.ts
 import { Component } from '@angular/core';
 import { Vehicule, VehiculeService } from './vehicule.service';
-</codepre></pre>
+</code></pre>

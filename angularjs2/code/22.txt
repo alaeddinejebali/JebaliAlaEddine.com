@@ -1,4 +1,4 @@
 <pre><code class="javascript">
 //index.html
 &lt;story-character&gt;...&lt;/story-character&gt;
-</codepre></pre>
+</code></pre>

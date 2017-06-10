@@ -6,4 +6,4 @@ VehiculesController.$inject = ['VehiculeService'];
 function VehiculesController(VehiculeService){
     //...
 }
-</codepre></pre>
+</code></pre>

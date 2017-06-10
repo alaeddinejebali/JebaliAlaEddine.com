@@ -6,4 +6,4 @@ export class VehiculesComponent{
         //...
     }
 }
-</codepre></pre>
+</code></pre>

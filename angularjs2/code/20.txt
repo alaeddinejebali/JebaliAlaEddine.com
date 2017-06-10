@@ -9,4 +9,4 @@
 export class CharacterComponent{
 	name: 'Ala Eddine JEBALI';
 }
-</codepre></pre>
+</code></pre>
