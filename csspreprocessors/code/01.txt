@@ -1,0 +1,4 @@
+<pre><code class="html">
+&lt;link rel="stylesheet/less" type="text/css" href="path/to/your/cssFile.less" &gt;
+&lt;script src="path/to/less.js" type="text/javascript" &gt;
+</code></pre>

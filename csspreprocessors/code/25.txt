@@ -1,0 +1,7 @@
+<pre><code class="css">
+$baseFontSize: 14px
+
+#main
+  h1
+    font-size: $baseFontSize
+</code></pre>

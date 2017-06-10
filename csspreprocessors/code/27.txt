@@ -1,0 +1,7 @@
+<pre><code class="css">
+$v = Black;					//color
+$v = 4px;					//units
+$v = 1.0em;					//units
+$v = Helvetica, arial;		//lists
+$v = 1px #000 solid 0 0;	//also lists
+</code></pre>

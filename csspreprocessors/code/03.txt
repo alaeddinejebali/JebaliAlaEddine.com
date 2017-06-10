@@ -1,0 +1,5 @@
+<pre><code class="css">
+/* This is a less comment (like in CSS) */
+
+//This is also a less comment
+</code></pre>

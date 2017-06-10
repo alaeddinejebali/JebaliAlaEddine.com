@@ -1,0 +1,7 @@
+<pre><code class="css">
+.submit-button{
+	@extend a:hover;
+	@extend .button;
+	border: 1px Black solid;
+}
+</code></pre>

@@ -1,0 +1,17 @@
+<pre><code class="css">
+.button{
+	color: Blue;
+}
+.submit-button{
+	@extend .button;
+	border: 1px Black solid;
+}
+
+//result:
+.submit-button{
+	border: 1px Black solid;
+}
+.button, .submit-button{
+	color: Blue;
+}
+</code></pre>

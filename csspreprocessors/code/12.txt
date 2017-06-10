@@ -1,0 +1,11 @@
+<pre><code class="css">
+.color(@color){
+	color: @color;
+}
+.color(@color, @factor){
+	color: lighten(@color, @factor);
+}
+#form{
+	.color(#888, 20%); //use the 2<sup>ns</sup> overload
+}
+</code></pre>

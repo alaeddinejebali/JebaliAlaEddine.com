@@ -1,0 +1,10 @@
+<pre><code class="javascript">
+//install LESS
+$> npm install less
+
+//use it
+var less = require('less');
+less.render(lessContents, function(e, css){
+	console.log(css);
+});
+</code></pre>

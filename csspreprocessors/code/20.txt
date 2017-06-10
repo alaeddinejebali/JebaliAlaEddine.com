@@ -1,0 +1,10 @@
+<pre><code class="css">
+#my-forms{
+	.set-button{
+		/*...*/
+	}
+}
+#submit-button{
+	#my-forms > .set-button;
+}
+</code></pre>

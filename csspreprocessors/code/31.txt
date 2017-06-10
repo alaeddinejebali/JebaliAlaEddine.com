@@ -1,0 +1,17 @@
+<pre><code class="css">
+$root: "/assets/images/";
+#form{
+	background: url("#{$root}background.jpg");
+	//result: url("/assets/images/background.jpg")
+}
+
+$name: "my-class";
+.#{$name}{/*...*/}
+//result: .my-class{/*...*/}
+
+//example to generate .col1, .col2 and .col3 classes
+$baseClass: "col";
+.#{$baseClass}1{/*...*/}
+.#{$baseClass}2{/*...*/}
+.#{$baseClass}3{/*...*/}
+</code></pre>

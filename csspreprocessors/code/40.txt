@@ -1,0 +1,13 @@
+<pre><code class="css">
+h1{
+	@if $size > 14px{
+		color: Blue;
+	}
+	@else if $size < 14px{
+		color: Red;
+	}
+	@else{
+		color: Green;
+	}
+}
+</code></pre>

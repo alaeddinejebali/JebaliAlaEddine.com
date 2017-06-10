@@ -1,0 +1,14 @@
+<pre><code class="css">
+color: lighten(@color, 10%);
+color: darken(@color, 10%);
+
+color: saturate(@color, 10%);
+color: desaturate(@color, 10%);
+
+color: fadein(@color, 10%);
+color: fadeout(@color, 10%);
+color: fade(@color, 50%);
+
+color: spin(@color, 10%);
+color: mix(@color, #246);
+</code></pre>

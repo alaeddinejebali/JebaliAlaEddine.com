@@ -1,0 +1,9 @@
+<pre><code class="css">
+$page-width: 100px;
+
+@for $col <strong>from</strong> 1 <strong>through</strong> 4{
+	.col#{$col}{
+		width: $page-width / $col;
+	}
+}
+</code></pre>

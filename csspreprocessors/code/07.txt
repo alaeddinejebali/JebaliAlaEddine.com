@@ -1,0 +1,14 @@
+<pre><code class="css">
+//color
+@variable: Black;
+
+//units
+@variable: 4px;
+@variable: 1.2em;
+
+//strings
+@variable: Helvetica, sans serif;
+
+//commples type
+@variable: 1px #000 solid 0 0;
+</code></pre>

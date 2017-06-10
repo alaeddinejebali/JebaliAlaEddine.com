@@ -1,0 +1,13 @@
+<pre><code class="css">
+@mixin rounded-corners-all($size: 5px){
+	border-radius: $size;
+	-webkit-border-radius: $size;
+	-moz-border-radius: $size;
+}
+#form1{
+	@include rounded-corners-all;
+}
+#form2{
+	@include rounded-corners-all(27px);
+}
+</code></pre>

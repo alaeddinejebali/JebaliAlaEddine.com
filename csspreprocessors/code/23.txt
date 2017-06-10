@@ -1,0 +1,8 @@
+<pre><code class="css">
+@root: "assets/images/";
+@app-root: `"@{root}".toUpperCase()`;
+#form{
+	background: url("@{@app-root}"/back.jpg");
+	//result: url("ASSETS/IMAGES/back.jpg");
+}
+</code></pre>

@@ -1,0 +1,16 @@
+<pre><code class="css">
+.button{
+	font: {
+		family: verdana, Helvetica;
+		size: 14px;
+		weight: bold;
+	}
+}
+
+//result:
+.button{
+	font-family: verdana, Helvetica;
+	font-size: 14px;
+	font-weight: bold;
+}
+</code></pre>

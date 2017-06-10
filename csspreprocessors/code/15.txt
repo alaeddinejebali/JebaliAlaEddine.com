@@ -1,0 +1,14 @@
+<pre><code class="css">
+nav{
+	font-size: 14px;
+	font-weight: bold;
+	float: right;
+}
+nav ul{
+	list-style-type: none;
+}
+nav ul li{
+	float: left;
+	margin: 2px;
+}
+</code></pre>

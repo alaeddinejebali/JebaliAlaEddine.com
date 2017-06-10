@@ -1,0 +1,7 @@
+<pre><code class="css">
+@each $item in first, second, third, fourth{
+	.#{$item}{
+		background-url: url("/images/#{$item}.jpg");
+	}
+}
+</code></pre>

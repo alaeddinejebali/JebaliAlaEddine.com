@@ -1,0 +1,3 @@
+<pre><code class="css">
+@import "foo.css";
+</code></pre>

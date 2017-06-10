@@ -1,0 +1,5 @@
+<pre><code class="css">
+//app.less
+@import "myLessFile"
+//or @import "myLessFile.less"
+</code></pre>

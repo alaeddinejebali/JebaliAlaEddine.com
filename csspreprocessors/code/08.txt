@@ -1,0 +1,8 @@
+<pre><code class="css">
+#elementId{
+	font-size: 4px +4 ; //8px
+	font-size: 20px * 0.8 //16px
+	color: #FFF / 4; //#404040
+	width: (100% / 2) + 25%; //75%
+}
+</code></pre>

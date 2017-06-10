@@ -1,0 +1,13 @@
+<pre><code class="css">
+.rounded-corners-all(@size: 5px){
+	border-radius: @size;
+	-webkit-border-radius: @size;
+	-moz-border-radius: @size;
+}
+#form1{
+	.rounded-corners-all(3px);
+}
+#form2{
+	.rounded-corners-all;
+}
+</code></pre>

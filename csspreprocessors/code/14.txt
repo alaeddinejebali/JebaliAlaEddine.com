@@ -1,0 +1,11 @@
+<pre><code class="css">
+.width(@size) when (isnumber(@size)){
+	width: @size*2;
+}
+.width(@size) when (ispercentage(@size)){
+	width: @size;
+}
+#form{
+	.width(50%); //uses the 2<sup>nd</sup> overload.
+}
+</code></pre>

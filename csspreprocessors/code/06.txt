@@ -1,0 +1,4 @@
+<pre><code class="css">
+//this doesn't work
+@main-color: @main-color + 5%;
+</code></pre>

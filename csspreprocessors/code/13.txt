@@ -1,0 +1,11 @@
+<pre><code class="css">
+.color(@color) when (alpha(@color)>=50){
+	color: Black;
+}
+.color(@color) when (alpha(@color)<50){
+	color: transparent;
+}
+#form{
+	.color(@main-color) //uses the 1<sup>st</sup> overload.
+}
+</code></pre>

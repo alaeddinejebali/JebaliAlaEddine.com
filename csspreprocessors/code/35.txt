@@ -1,0 +1,5 @@
+<pre><code class="css">
+@import "foo"
+//or
+@import "foo.scss"
+</code></pre>

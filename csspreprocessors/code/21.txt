@@ -1,0 +1,9 @@
+<pre><code class="css">
+@size: 24px;
+#form{
+	@size: 18px;
+	.button{
+		font-size: @size; //used 18px
+	}
+}
+</code></pre>

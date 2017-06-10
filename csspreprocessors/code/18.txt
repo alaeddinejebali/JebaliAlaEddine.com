@@ -1,0 +1,8 @@
+<pre><code class="css">
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+</code></pre>

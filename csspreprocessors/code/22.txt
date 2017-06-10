@@ -1,0 +1,6 @@
+<pre><code class="css">
+@root: "/assets/images/";
+#form{
+	background: url("@{root}background.jpg");
+}
+</code></pre>

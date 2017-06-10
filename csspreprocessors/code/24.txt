@@ -1,0 +1,10 @@
+<pre><code class="javascript">
+//install it
+npm install sass
+
+//use it
+var sass = require('sass');
+sass.render(sassContent, function(e, css){
+	console.log(css);
+});
+</code></pre>

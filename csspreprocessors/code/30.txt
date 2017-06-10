@@ -1,0 +1,12 @@
+<pre><code class="css">
+$addQuotes: quote($someText);
+$removeQuotes: unquote($someText);
+
+$value: if(true, $color1, $color2);
+
+//Math
+$rnd: round(3.14);
+$top: ceil(3.14);
+$bot: floor(3.14);
+$per: persentage(.14);
+</code></pre>
