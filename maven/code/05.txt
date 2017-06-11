@@ -1,0 +1,20 @@
+<pre><code class="java">
+&lt;build&gt;
+	&lt;plugins&gt;
+		...
+		&lt;plugin&gt;
+			&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+			&lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;
+			&lt;version&gt;3.0.2&lt;/version&gt;
+			&lt;configuration&gt;
+				&lt;manifestFile&gt;${project.build.outputDirectory}/META-INF/MANIFEST.MF&lt;/manifestFile&gt;
+				&lt;includes&gt;
+					&lt;include&gt; &lt; !-- what you want to include from source code into the jar --&gt; &lt;/include&gt;
+					&lt;exclude&gt; &lt; !-- what you want to exclude from source code into the jar --&gt; &lt;/exclude&gt;
+				&lt;/includes&gt;
+			&lt;/configuration&gt;
+		&lt;/plugin&gt;
+		...
+	&lt;/plugins&gt;
+&lt;/build&gt;
+</code></pre>

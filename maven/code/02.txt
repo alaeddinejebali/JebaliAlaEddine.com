@@ -1,0 +1,7 @@
+<pre><code class="xml">
+&lt;pluginRepositories&gt;
+	&lt;pluginRepository&gt;
+		&lt; !-- ... --&gt;
+	&lt;/pluginRepository&gt;
+&lt;/pluginRepositories&gt;
+</code></pre>
