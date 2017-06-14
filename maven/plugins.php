@@ -63,7 +63,7 @@
 					<h2>Compiler plugin</h2>
 					<ul>
 						<li>
-							Used to compile and test code. See <a href="http://maven.apache.org/plugins/maven-compiler-plugin" target="_blank">http://maven.apache.org/plugins/maven-compiler-plugin</a>.
+							Used to compile and test the code. See <a href="http://maven.apache.org/plugins/maven-compiler-plugin" target="_blank">http://maven.apache.org/plugins/maven-compiler-plugin</a>.
 						</li>
 						<li>
 							It invokes <span class="samplecode">Javac</span> but with a classpath set from dependencies.

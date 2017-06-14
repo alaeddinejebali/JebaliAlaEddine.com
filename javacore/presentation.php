@@ -1,7 +1,7 @@
 <div class="panel panel-default wiki-article">
 	<div class="panel-heading wiki-article-title">
 		<h4 class="panel-title">
-        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#introduction">Introduction</a>
+        	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#introduction">Presentation</a>
 		</h4>
 	</div>
 	<div id="introduction" class="panel-collapse collapse">
@@ -23,7 +23,7 @@
 							Java code gets compiled once rather than needing to be recompiled for different operating systems. This is known as "write once, run everywhere.".
 						</li>
 						<li>
-							A <i>JAR</i> file is like a zip file of mainly Java class files.
+							A <span class="samplecode">JAR</span> file is like a zip file of mainly Java class files.
 						</li>
 					</ul>
 				</li>	
@@ -31,10 +31,11 @@
 					<h2>Scenario</h2>
 					<ul>
 						<li>
-							You write the source code into a .java file.
+							You write the source code into a <span class="samplecode">.java</span> file.
 						</li>
 						<li>
-							You use javac to compile the code. A ".class" file is generated: It's the <strong>byte code</strong>.
+							You use <span class="samplecode">javac</span> to compile the code.
+							A <span class="samplecode">.class</span> file is generated: It's the <strong>byte code</strong>.
 						</li>
 						<li>
 							The byte code is executed by the JVM to run application.
@@ -61,27 +62,35 @@
 				<li>
 					<h2>Hello world example</h2>
 					<ul>
-						<li>
+						<li class="noStyle">
 							<h3>Without package</h3>
 							<ul>
-								<li>
+								<li class="noStyle">
 									<?php include "code/java_17.txt"; ?>
 									<?php include "code/java_16.txt"; ?>
 								</li>
 								<li>
 									Compile
-									<?php include "code/java_18.txt"; ?>
-									This will generate "HelloWorld.class" file at the same location of "HelloWorld.java".
+									<ul>
+										<li class="noStyle">
+											<?php include "code/java_18.txt"; ?>
+											This will generate "HelloWorld.class" file at the same location of "HelloWorld.java".
+										</li>
+									</ul>
 								</li>
 								<li>
 									Run
-									<?php include "code/java_19.txt"; ?>
+									<ul>
+										<li class="noStyle">
+											<?php include "code/java_19.txt"; ?>
+										</li>
+									</ul>
 								</li>
 								<li>
 									Note: When running Java application, you're running the ".class" files not the ".java" file.
 								</li>
 								<li>
-									Understand public static void main(String args[])
+									Understand <span class="samplecode">public static void main(String args[])</span>
 									<ul>
 										<li>
 											public
@@ -130,25 +139,33 @@
 								</li>
 							</ul>
 						</li>
-						<li>
+						<li class="noStyle">
 							<h3>Using a package</h3>
 							<ul>
-								<li>
+								<li class="noStyle">
 									<?php include "code/java_31.txt"; ?>
 								</li>
 								<li>
-									When you compile using the command
-									<?php include "code/java_18.txt"; ?>
-									It will generate "HelloWorld.class" file at the same location of "HelloWorld.java".
+									When you compile using the command:
+									<ul>
+										<li class="noStyle">
+											<?php include "code/java_18.txt"; ?>
+											It will generate "HelloWorld.class" file at the same location of "HelloWorld.java".
+										</li>
+									</ul>
 								</li>
 								<li>
 									When you compile using the command
 									<?php include "code/java_32.txt"; ?>
-									It will generate a 3 folders "com/ala/company/" and a "HelloWorld.class" file inside it.
+									It will generate a 3 folders "com/ala/company/" and 1 file "HelloWorld.class" inside "company" folder named.
 								</li>
 								<li>
 									To run:
-									<?php include "code/java_33.txt"; ?>
+									<ul>
+										<li class="noStyle">
+											<?php include "code/java_33.txt"; ?>
+										</li>
+									</ul>
 								</li>
 							</ul>
 						</li>
@@ -156,10 +173,10 @@
 							When using Eclipse IDE, you can use
 							<ul>
 								<li>
-									CTRL+B to compile and build the application
+									<span class="samplecode">CTRL+B</span> to compile and build the application.
 								</li>
 								<li>
-									ALT+SHIFT+X to run the code
+									<span class="samplecode">ALT+SHIFT+X</span> to run the code.
 								</li>
 							</ul>
 						</li>
@@ -168,7 +185,7 @@
 				<li>
 					<h2>JDK, JRE and JVM</h2>
 					<ul>
-						<li>
+						<li class="noStyle">
 							<h3>JDK</h3>
 							<ul>
 								<li>
@@ -179,7 +196,7 @@
 								</li>
 							</ul>
 						</li>
-						<li>
+						<li class="noStyle">
 							<h3>JRE</h3>
 							<ul>
 								<li>
@@ -193,8 +210,8 @@
 								</li>
 							</ul>
 						</li>
-						<li>
-							<h2>JVM</h2>
+						<li class="noStyle">
+							<h3>JVM</h3>
 							<ul>
 								<li>
 									Java Virtual Machine.
@@ -210,8 +227,8 @@
 								</li>
 							</ul>
 						</li>
-						<li>
-							<h2>JDK vs JRE vs JVM</h2>
+						<li class="noStyle">
+							<h3>JDK vs JRE vs JVM</h3>
 							<ul>
 								<li>
 									JRE = JVM + Required libraries to run application.
