@@ -43,6 +43,29 @@
 					</ul>
 				</li>
 				<li>
+					Java Just-in-time compiler
+					<ul>
+						<li>
+							 It's a component of the JRE that improves the performance of Java applications at run time.
+						</li>
+						<li>
+							A JIT compiler runs after the program has started and compiles the code on the fly (or just-in-time, as it's called).
+						</li>
+						<li>
+							In the past, most programs written in any language have had to be recompiled, and sometimes, rewritten for each computer platform.
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							
+						</li>
+						<li>
+							
+						</li>
+					</ul>
+				</li>
+				<li>
 					<h2>Java portability</h2>
 					<ul>
 						<li>
@@ -243,15 +266,37 @@
 				<li>
 					<h2>Benefits of Java</h2>
 					<ul>
-						<li>Object Oriented</li>
+						<li>
+							Simple
+							<ul>
+								<li>
+									The confusing and ambiguous concepts of C++ (pointers and operator overloading) are either left out in Java or they have been re-implemented in a cleaner way.
+								</li>
+							</ul>
+						</li>
+						<li>
+							Object Oriented
+							<ul>
+								<li>
+									In java everything is Object which has some data and behaviour.
+								</li>
+								<li>
+									Java can be easily extended as it is based on Object Model.
+								</li>
+							</ul>
+						</li>
 						<li>Encapsulation
 							<ul>
-								<li>Java supports access modifi ers to protect data from unintended access and modifi cation.</li>
+								<li>Java supports access modifiers to protect data from unintended access and modification.</li>
 							</ul>
 						</li>
 						<li>Platform Independent
 							<ul>
 								<li>Thanks to "write once, run everywhere."</li>
+								<li>
+									On compilation Java program is compiled into bytecode.
+									This bytecode is platform independent and can be run on any machine (witch has a JRE installed).
+								</li>
 							</ul>
 						</li>
 						<li>Robust
@@ -260,11 +305,33 @@
 								<li>Java manages memory on its own and does garbage collection automatically.</li>
 							</ul>
 						</li>
-						<li>Simple</li>
 						<li>Secure
 							<ul>
 								<li>Java code runs inside the JVM.</li>
-								<li>This creates a sandbox that makes it hard for Java code to do evil things to the computer it is running on.</li>
+								<li>This creates a sandbox that makes it hard for Java code to do evil things to the computer/server it is running on (almost no interaction with the OS).</li>
+							</ul>
+						</li>
+						<li>
+							Multi Threading
+							<ul>
+								<li>
+									It lets you write program that can do many tasks simultaneously.
+								</li>
+								<li>
+									Benefit of multithreading is that it utilizes same memory and other resources to execute multiple threads at the same time
+									(example: While typing, grammatical errors are checked along).
+								</li>
+							</ul>
+						</li>
+						<li>
+							High Performance
+							<ul>
+								<li>
+									Java is an interpreted language, so it will never be as fast as a compiled language like C or C++.
+								</li>
+								<li>
+									But, Java enables high performance with the use of <a href="javajit">just-in-time compiler</a>.
+								</li>
 							</ul>
 						</li>
 					</ul>
