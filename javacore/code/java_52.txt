@@ -1,0 +1,7 @@
+<pre><code class="java">
+public class Chick { 
+	public void Chick() { 
+		// This is not a constructor because it has a return type
+	}
+}
+</code></pre>

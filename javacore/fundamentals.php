@@ -105,58 +105,58 @@
 						<li>Primitive Types
 							<ul>
 								<li>Java has 8 built-in data types:
-									<ol>
+									<ul>
 										<li>boolean
 											<ul>
-												<li>true or false</li>
+												<li class="noStyle">true or false</li>
 											</ul>
 										</li>
 										<li>byte
 											<ul>
-												<li>8-bit integral value (expl: 123)</li>
+												<li class="noStyle">8-bit integral value (expl: 123)</li>
 											</ul>
 										</li>
 										<li>short
 											<ul>
-												<li>16-bit integral value (expl: 123)</li>
+												<li class="noStyle">16-bit integral value (expl: 123)</li>
 											</ul>
 										</li>
 										<li>int
 											<ul>
-												<li>32-bit integral value (expl: 123)</li>
+												<li class="noStyle">32-bit integral value (expl: 123)</li>
 											</ul>
 										</li>
 										<li>long
 											<ul>
-												<li>64-bit integral value (expl: 123)</li>
+												<li class="noStyle">64-bit integral value (expl: 123)</li>
 											</ul>
 										</li>
 										<li>float
 											<ul>
-												<li>32-bit floating-point value (expl: 123.45f)</li>
-												<li>java distinct a float from a double by the letter 'f'
+												<li class="noStyle">32-bit floating-point value (expl: 123.45f)</li>
+												<li class="noStyle">java distinct a float from a double by the letter 'f'
 													following the number.</li>
 											</ul>
 										</li>
 										<li>double
 											<ul>
-												<li>64-bit floating-point value (expl: 123.456)</li>
+												<li class="noStyle">64-bit floating-point value (expl: 123.456)</li>
 											</ul>
 										</li>
 										<li>char
 											<ul>
-												<li>16-bit Unicode value (expl: 'a')</li>
+												<li class="noStyle">16-bit Unicode value (expl: 'a')</li>
 											</ul>
 										</li>
-									</ol>
+									</ul>
 								</li>
 								<li>A byte is 8 bits.</li>
 								<li>A bit has two possible values: 0 or 1.</li>
-								<li>2<supp>8</supp>=256
+								<li>2<sup>8</sup>=256
 								</li>
 								<li>A byte can hold a value from –128 to 127.</li>
-								<li>-128 + 127 = 255</li>
-								<li>Since 0 needs to be included in the range, -128 + 127 + 1 =
+								<li>(-128 + 127) = 255</li>
+								<li>Since 0 needs to be included in the range, (-128 + 127 + 1) =
 									256</li>
 								<li>The number of bits is used by Java when it figures out how
 									much memory to reserve for your variable. (expl: when you write
