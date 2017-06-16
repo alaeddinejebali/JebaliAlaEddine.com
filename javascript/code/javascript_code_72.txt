@@ -1,0 +1,11 @@
+<pre><code class="javascript">
+function A(){
+	//some lines
+	if(true){
+		var v = "Ala";
+		// use v
+	}
+	//other lines
+}
+v has the scope of A. So it can be used in //some lines and in //other lines
+</code></pre>

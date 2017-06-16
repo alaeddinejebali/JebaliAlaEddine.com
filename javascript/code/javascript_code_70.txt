@@ -1,0 +1,7 @@
+<pre><code class="javascript">
+function foo(){
+	console.log(this.bar);
+}
+var bar = "bar1";
+foo(); //outputs: bar1
+</code></pre>

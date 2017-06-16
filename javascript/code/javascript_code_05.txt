@@ -1,0 +1,8 @@
+<pre>
+<code class="javascript">
+alert('hello');
+
+//or you can write
+window.alert('hello');
+</code>
+</pre>

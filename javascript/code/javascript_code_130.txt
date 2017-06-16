@@ -1,0 +1,9 @@
+<pre><code class="javascript">
+f();
+
+function f(){
+	console.log("Hello " + name);
+}
+
+var name = "Ala";
+</code></pre>

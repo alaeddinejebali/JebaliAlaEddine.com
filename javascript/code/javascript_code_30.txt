@@ -1,0 +1,12 @@
+<pre>
+<code class="javascript">
+var myArray1 = new Array('a', 'b', 'c', 'd');
+var myArray2 = myArray1.join();
+console.log(myArray2);
+//ouputs: abcd
+
+var myArray3 = myArray1.join('*-*');
+console.log(myArray3);
+//ouputs: a*-*b*-*c*-*d*-*
+</code>
+</pre>

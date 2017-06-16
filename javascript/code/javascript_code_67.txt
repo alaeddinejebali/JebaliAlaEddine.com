@@ -1,0 +1,5 @@
+<pre><code class="javascript">
+var x;
+console.log(x); //outputs: undefined
+console.log(typeof x); //outputs: undefined
+</code></pre>

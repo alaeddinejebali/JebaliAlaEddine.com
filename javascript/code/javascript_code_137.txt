@@ -1,0 +1,13 @@
+<pre><code class="javascript">
+var foo =(function(){
+	var o = {bar: "bar"};
+	return {
+		bar: function(){
+			console.log(o.bar);
+		}
+	}
+})();
+
+foo.bar(); //outputs: bar
+foo.o; //outputs: o is undefined
+</code></pre>

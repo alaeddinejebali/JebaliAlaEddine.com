@@ -1,0 +1,11 @@
+<pre>
+<code class="javascript">
+var score = 0;
+function updateScore(){
+	console.log("updateScore().score = " + score); //outputs: 0
+	score = 100;
+}
+updateScore();
+console.log("global.score = " + score); //outputs: 100
+</code>
+</pre>

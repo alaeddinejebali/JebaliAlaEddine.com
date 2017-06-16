@@ -1,0 +1,22 @@
+<pre><code class="javascript">
+function foo(){}
+var obj = new foo();
+
+foo.prototype.ala = "This is ala prototype of foo";
+console.log( obj.__proto__.ala );
+//outputs: This is ala prototype of foo
+console.log( obj.__proto__ === foo.prototype );
+//outputs: true
+
+obj.ala = 123;
+console.log( obj.ala );
+//obj has a property "ala"
+//outputs: 123
+
+delete obj.ala;
+
+console.log( obj.ala );
+//obj does not have a property "ala"
+//looks if obj.__proto__ has a property "ala"
+//outputs: This is ala prototype of foo
+</code></pre>

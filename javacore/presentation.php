@@ -53,6 +53,7 @@
 						</li>
 						<li>
 							In the past, most programs written in any language have had to be recompiled, and sometimes, rewritten for each computer platform.
+							This is because they compile <strong>all</strong> the code to machine language <strong>before</strong> the program is first run.
 						</li>
 						<li>
 							
@@ -61,7 +62,7 @@
 							
 						</li>
 						<li>
-							
+							The reason why people deactivate JIT  is that JIT compilation fundamentally uses executable data, and thus poses security challenges and possible exploits.
 						</li>
 					</ul>
 				</li>
@@ -240,10 +241,10 @@
 									Java Virtual Machine.
 								</li>
 								<li>
-									Works on top of your operating system to provide a recommended environment for your compiled Java code.
+									It's a virtual machine that provides runtime environment to execute Java <stong>byte code</strong> (It doesn't understand <span class="samplecode">.java</span> code).
 								</li>
 								<li>
-									Works with bytecode.
+									Works on top of your operating system to provide a recommended environment for your compiled Java code.
 								</li>
 								<li>
 									It only provide the environment. It needs the Java code library to run applications.
@@ -257,7 +258,7 @@
 									JRE = JVM + Required libraries to run application.
 								</li>
 								<li>
-									JDK = JRE + Required libraries to develop Java Application.
+									JDK = JRE + Required libraries and tools to develop Java Application (like compilers and debuggers...etc.).
 								</li>
 							</ul>
 						</li>						

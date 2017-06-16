@@ -1,0 +1,12 @@
+<pre>
+<code class="javascript">
+var myArray1 = new Array('a', 'b', 'c', 'd', 'e', 'f');
+var myArray2 = myArray1.slice(2, 4);
+console.log(myArray2);
+//ouputs: ['c', 'd']
+
+var myArray3 = myArray1.slice(2);
+console.log(myArray3);
+//ouputs: ['c', 'd', 'e', 'f']
+</code>
+</pre>

@@ -1,0 +1,9 @@
+<pre>
+<code class="javascript">
+var str = new String("Hello world");
+console.log("str.length = " + str.length);
+var nbr = new Number(19);
+console.log("toExponential(" + nbr + ") = " + nbr.toExponential());
+var test = new Boolean();
+</code>
+</pre>

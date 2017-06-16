@@ -184,6 +184,12 @@
 						<li>Robotics and games etc.</li>
 					</ul>
 				</li>
+				<li class="accordion">
+					<h2>Why we need to setup a <span class="samplecode">Environment variable</span>?</h2>
+					<ul>
+						<li>to do....</li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 	</div>

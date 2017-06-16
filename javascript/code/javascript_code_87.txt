@@ -1,0 +1,15 @@
+<pre><code class="javascript">
+function foo(){
+	var bar = "bar1";
+	setTimeout(function(){
+		console.log(bar);
+		//outputs: bar2
+	}, 5000);
+	setTimeout(function(){
+		console.log(bar);
+		//outputs: bar1
+		bar = "bar2";
+	}, 2000);
+}
+foo();
+</code></pre>

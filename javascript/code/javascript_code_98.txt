@@ -1,0 +1,10 @@
+<pre><code class="javascript">
+function Person(name, age, country){
+	var newObject = {};
+	newObject.name = name;
+	newObject.age = age;
+	newObject.country = country;
+	return newObject;
+}
+var obj = new <strong>Person</strong>("Ala", 31, "Tunisia");
+</code></pre>

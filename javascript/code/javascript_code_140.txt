@@ -1,0 +1,13 @@
+<pre><code class="javascript">
+//foo.js
+var o = {bar: "bar"};
+export function bar(){
+	return o.bar;
+}
+export function baz(){
+	return "baz";
+}
+function bom(){
+	return "bom";
+}
+</code></pre>

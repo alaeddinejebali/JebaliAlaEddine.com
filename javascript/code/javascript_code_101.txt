@@ -1,0 +1,13 @@
+<pre><code class="javascript">
+function sayHello(firstName, lastName){
+	console.log(arguments);
+  	//outputs: ["Ala", "Jebali"]
+  
+  	console.log(this);
+  	//outputs; Window
+	
+  	console.log("Hello " + firstName + " " + lastName);
+}
+
+sayHello("Ala", "Jebali");
+</code></pre>

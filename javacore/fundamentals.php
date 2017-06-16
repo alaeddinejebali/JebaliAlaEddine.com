@@ -15,18 +15,19 @@
 								<li class="noStyle"><?php include 'code/java_01.txt'; ?></li>
 							</ul>
 						</li>
-						<li>If you do have a public class, it needs to match the file name.
+						<li>If you have a <span class="samplecode">public class</span>, it needs to match the file name.
 						</li>
 						<li>You can put two (or more) classes in the same file. However,
-							there can only be one <i>public</i> class per <i>.java</i> file,
+							there can only be one <span class="samplecode">public class</span> per <span class="samplecode">.java</span> file,
 							as public classes must have the same name as the source file
-							(other classes must be declared ithout <i>public</i>).
+							(other classes must be declared without <i>public</i>).
 						</li>
 						<li>Hello program
 							<ul>
 								<li class="noStyle"><?php include 'code/java_02.txt'; ?></li>
 								<li>The result of <i>javac</i> is a file of <i>bytecode</i> by
-									the same name, but with a <i>.class</i> file name extension.
+									the same name, but with a <i>.class</i> file name extension.</li>
+								<li>
 									Bytecode consists of instructions that the JVM knows how to
 									execute.
 								</li>
@@ -40,26 +41,26 @@
 						<li>Packages are logical groupings for classes.</li>
 						<li>Java automatically looks (first) in the current package for
 							other classes.</li>
-						<li>Wildcards
+						<li>Wildcards (<i>the "*"</i>)
 							<ul>
 								<li>Using the wildcard can shorten the import list.</li>
-								<li><i>import java.util.*;</i>
+								<li><span class="samplecode">import java.util.*;</span>
 									<ul>
-										<li>Every class in the java.util package is available to this
+										<li>Every class in the <span class="samplecode">java.util</span> package is available to this
 											program when Java compiles it.</li>
-										<li>It doesn’t import child packages, fi elds, or methods; it
+										<li>It doesn’t import child packages, fields, or methods; it
 											imports only classes.</li>
 										<li class="caution">You might think that including so many
 											classes slows down your program, but it doesn’t. The compiler
 											fi gures out what’s actually needed. Which approach you choose
 											is personal preference.</li>
 									</ul></li>
-								<li>There’s one special package in the Java world called <i>java.lang</i>:
-									it is automatically imported (this is why we use <i>System</i>
+								<li>There's one special package in the Java world called <span class="samplecode">java.lang</span>:
+									it is automatically imported (this is why we use <span class="samplecode">System.</span>
 									without importing <i>java.lang</i>).
 								</li>
 								<li>you can only have one wildcard and it must be at the end
-									(expl of error: <i>import java.nio.*.*;</i>).
+									(example of error: <span class="samplecode">import java.nio.*.*;</span>).
 								</li>
 							</ul>
 						</li>
@@ -87,9 +88,9 @@
 						</li>
 						<li>Class Paths and JARs
 							<ul>
-								<li>You can also specify the location of the other fi les
+								<li>You can also specify the location of the other files
 									explicitly using a class path.</li>
-								<li>This technique is useful when the class fi les are located
+								<li>This technique is useful when the class files are located
 									elsewhere or in special JAR files.
 									<ul>
 										<li class="noStyle"><?php include 'code/java_06.txt'; ?></li>
@@ -102,61 +103,61 @@
 				<li>
 					<h2>Types of data</h2>
 					<ul>
-						<li>Primitive Types
+						<li><strong>Primitive Types</strong>
 							<ul>
 								<li>Java has 8 built-in data types:
-									<ul>
+									<ol>
 										<li>boolean
 											<ul>
-												<li class="noStyle">true or false</li>
+												<li>true or false</li>
 											</ul>
 										</li>
 										<li>byte
 											<ul>
-												<li class="noStyle">8-bit integral value (expl: 123)</li>
+												<li>8-bit integral value (expl: 123)</li>
 											</ul>
 										</li>
 										<li>short
 											<ul>
-												<li class="noStyle">16-bit integral value (expl: 123)</li>
+												<li>16-bit integral value (expl: 123)</li>
 											</ul>
 										</li>
 										<li>int
 											<ul>
-												<li class="noStyle">32-bit integral value (expl: 123)</li>
+												<li>32-bit integral value (expl: 123)</li>
 											</ul>
 										</li>
 										<li>long
 											<ul>
-												<li class="noStyle">64-bit integral value (expl: 123)</li>
+												<li>64-bit integral value (expl: 123)</li>
 											</ul>
 										</li>
 										<li>float
 											<ul>
-												<li class="noStyle">32-bit floating-point value (expl: 123.45f)</li>
-												<li class="noStyle">java distinct a float from a double by the letter 'f'
+												<li>32-bit floating-point value (expl: 123.45f)</li>
+												<li>java distinct a float from a double by the letter 'f'
 													following the number.</li>
 											</ul>
 										</li>
 										<li>double
 											<ul>
-												<li class="noStyle">64-bit floating-point value (expl: 123.456)</li>
+												<li>64-bit floating-point value (expl: 123.456)</li>
 											</ul>
 										</li>
 										<li>char
 											<ul>
-												<li class="noStyle">16-bit Unicode value (expl: 'a')</li>
+												<li>16-bit Unicode value (expl: 'a')</li>
 											</ul>
 										</li>
-									</ul>
+									</ol>
 								</li>
 								<li>A byte is 8 bits.</li>
 								<li>A bit has two possible values: 0 or 1.</li>
-								<li>2<sup>8</sup>=256
+								<li>2<supp>8</supp>=256
 								</li>
 								<li>A byte can hold a value from –128 to 127.</li>
-								<li>(-128 + 127) = 255</li>
-								<li>Since 0 needs to be included in the range, (-128 + 127 + 1) =
+								<li>-128 + 127 = 255</li>
+								<li>Since 0 needs to be included in the range, -128 + 127 + 1 =
 									256</li>
 								<li>The number of bits is used by Java when it figures out how
 									much memory to reserve for your variable. (expl: when you write
@@ -164,7 +165,7 @@
 								</li>
 							</ul>
 						</li>
-						<li>Reference Types
+						<li><strong>Reference Types</strong>
 							<ul>
 								<li>It refers to an object</li>
 								<li>Unlike primitive types that hold their values in the memory

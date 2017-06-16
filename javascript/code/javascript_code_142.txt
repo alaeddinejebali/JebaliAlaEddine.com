@@ -1,0 +1,6 @@
+<pre><code class="javascript">
+import {bar, baz} from "./foo";
+bar(); //outputs: bar
+baz(); //outputs: baz
+bom(); //outputs: Error
+</code></pre>

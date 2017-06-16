@@ -1,0 +1,32 @@
+<pre>
+<code class="javascript">
+var program = function(){
+	var createWorker = function(){
+		var nbrWorker = 0;
+		var task1 = function(){
+			nbrWorker++;
+			console.log("Task1: nbrWorker=" + nbrWorker);
+		};
+		var task2 = function(){
+			nbrWorker++;
+			console.log("Task2: nbrWorker=" + nbrWorker);
+		};
+		var task3 = function(){
+			nbrWorker++;
+			console.log("Task3: nbrWorker=" + nbrWorker);
+		};
+		return {
+			job1: task1,
+			job2: task2,
+			job3: task3
+		}
+	}
+	var worker = createWorker();
+	worker.job1();
+	worker.job2();
+	worker.job3();
+	worker.job2();
+}
+program();
+</code>
+</pre>

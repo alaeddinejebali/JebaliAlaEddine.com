@@ -1,0 +1,4 @@
+<pre><code class="javascript">
+empl1.language = "fr";
+empl1.direBonjour(); //outputs: Bonjour Ala
+</code></pre>

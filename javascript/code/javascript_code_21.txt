@@ -1,0 +1,9 @@
+<pre>
+<code class="javascript">
+var myArray1 = new Array('a', 'b', 'c');
+var myArray2 = myArray1;
+myArray2[2] = 'Yes';
+console.log(myArray1);
+//outputs: ['a', 'b', 'Yes']
+</code>
+</pre>
