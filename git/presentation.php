@@ -11,6 +11,10 @@
 					<h2>Presentation</h2>
 					<ul>
 						<li>
+							Installation
+							$> apt-get install git
+						</li>
+						<li>
 							Upgrade from v1 to v2
 							<ul>
 								<li class="noStyle">
