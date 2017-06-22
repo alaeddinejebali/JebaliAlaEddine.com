@@ -103,7 +103,44 @@
 						</ul>
 					</li>
 				</ul>
-			</li>		
+			</li>
+			<li class="accordion">
+				<h2>Install curl</h2>
+				<ul>
+					<li>
+						Curl can be used to call a REST webservice						
+					</li>
+					<li>
+						Check if curl is already installed
+						<ul>
+							<li>
+								Using Ubuntu
+								<ul>
+									<li class="noStyle">
+										<?php include "code/14.txt"; ?>
+									</li>
+								</ul>
+							</li>
+							<li>
+								Using a PHP script
+								<ul>
+									<li class="noStyle">
+										<?php include "code/15.txt"; ?>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						Installation
+						<ul>
+							<li class="noStyle">
+								<?php include "code/16.txt"; ?>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
 		</ul>
 		</div>
 	</div>								

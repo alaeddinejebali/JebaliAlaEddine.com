@@ -1,0 +1,3 @@
+<pre><code class="sh">
+$> sudo apt-get install mysql-server
+</code></pre>

@@ -1,0 +1,8 @@
+<pre><code class="sh">
+$> sudo apt-get install php5 libapache2-mod-php5
+# the restart Apache
+$> sudo service apache2 restart
+# or using:
+$> sudo /etc/init.d/apache2 restart
+# then check Apache by visiting htt://localhost
+</code></pre>

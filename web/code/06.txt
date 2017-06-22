@@ -1,0 +1,5 @@
+<pre><code class="sh">
+$> sudo nano /etc/hosts
+# then add this line
+127.0.0.1	jebalialaeddine.dev
+</code></pre>

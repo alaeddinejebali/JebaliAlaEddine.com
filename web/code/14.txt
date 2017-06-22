@@ -1,0 +1,4 @@
+<pre><code class="sh">
+# note that there is capital letter for "V" not lowercase!
+$> curl -V
+</code></pre>

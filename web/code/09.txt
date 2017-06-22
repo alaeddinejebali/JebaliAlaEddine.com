@@ -1,0 +1,5 @@
+<pre><code class="sh">
+$> sudo a2ensite jebalialaeddine.dev.conf
+# then restart apache
+$> sudo service apache2 restart
+</code></pre>

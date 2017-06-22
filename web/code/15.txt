@@ -1,0 +1,6 @@
+<pre><code class="php">
+function _isCurl(){
+    return function_exists('curl_version');
+}
+//if the return is true, it means that curl is already installed
+</code></pre>

@@ -1,0 +1,10 @@
+<pre><code class="sh">
+&lt;VirtualHost jebalialaeddine.dev:8081&gt;
+    ServerAdmin yourEmail@domain.com
+    ServerName jebalialaeddine.dev
+    ServerAlias www.jebalialaeddine.dev
+    DocumentRoot /var/www/jebalialaeddine.com/
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+&lt;/VirtualHost&gt;
+</code></pre>
