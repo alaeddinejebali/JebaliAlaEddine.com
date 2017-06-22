@@ -11,6 +11,13 @@
 					<h2>Presentation</h2>
 					<ul>
 						<li>
+							Installation
+							$> apt-get install git
+ala@ala-VirtualBox:~$ git config --global user.name "Ala Eddine JEBALI"
+ala@ala-VirtualBox:~$ git config --global user.email "jebali.alaeddineàgmail.com"
+							
+						</li>
+						<li>
 							Upgrade from v1 to v2
 							<ul>
 								<li class="noStyle">

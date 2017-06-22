@@ -10,7 +10,32 @@
 				<li>
 					<h2>Add SSH key</h2>
 					<ul>
-						<li></li>
+						<li>
+							Check if you already have the keys
+							<ul>
+								<li>
+									$> cd ~/.ssh && ls
+									if you see those 2 files <span class="samplecode">id_rsa</span><span class="samplecode">id_rsa.pub </span>, it means that you already have keys generated.
+								</li>
+								<li>
+									else you need to generate them
+									$> cd ~/.ssh
+									$> ssh-keygen
+									keep the passphrase empty
+								</li>
+							</ul>
+						</li>
+						<li>
+							Deploy your keys
+							$> cat ~/.ssh/id_rsa.pub
+							Copy the content of the public key and paste it into you github/gitlab interface
+						</li>
+						<li>
+							Never deploy your private key!
+						</li>
+						<li>
+							
+						</li>						
 					</ul>
 				</li>
 			</ul>

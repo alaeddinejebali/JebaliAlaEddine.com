@@ -198,12 +198,23 @@
 			</section>
 			<section class="wiki-article">
 				<div class="wiki-article-title">
-					<h1 class="btnShowHideArticleBody" data-article-visibility="off">To
-						be prepared</h1>
+					<h1 class="btnShowHideArticleBody" data-article-visibility="off">Setup a VM</h1>
 				</div>
 				<div class="wiki-article-body invisible">
 					<ul>
-						<li>....</li>
+						<li>Download Oracle VirtualBox</li>
+						<li>
+							After installation, select a VM -> configuration --> Make the video memory to max -> select Activate 3D acceleration
+							<img src="images/linux_01.txt" alt="VM" />
+						</li>
+						<li>
+							Activate copy paste and drag &and drop from Windows to the VM
+							Go to Genearl -> Advanced -> select "bidirectional" -> in the 2 dropdown boxes.
+						</li>
+						<li>
+							Launch your VM -> "perepherics" (when mouseover the bottom of the page) -> Insert image CD additional
+							<img src="images/linux_02.txt" alt="VM" />
+						</li>
 					</ul>
 				</div>
 			</section>
