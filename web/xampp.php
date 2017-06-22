@@ -145,11 +145,24 @@
 				<li>
 					<h2>How to change default Xampp port?</h2>
 					<ul>
-						<li>Open file "\xampp\apache\conf\httpd.conf"</li>
-						<li>Search following line "Listen 80".</li>
-						<li>Change the port 80 to another (like 8081).</li>
-						<li>Restart Apache.</li>
-						<li>Go to <a href="http://127.0.0.1:8081" target="_blank">http://127.0.0.1:8081</a>.</li>
+						<li>
+							Linux
+							<ul>
+								<li class="noStyle">
+									<?php include "code/17.txt"; ?>
+								</li>
+							</ul>
+						</li>
+						<li>
+							Windows
+							<ul>
+								<li>Open file "\xampp\apache\conf\httpd.conf"</li>
+								<li>Search following line "Listen 80".</li>
+								<li>Change the port 80 to another (like 8081).</li>
+								<li>Restart Apache.</li>
+								<li>Go to <a href="http://127.0.0.1:8081" target="_blank">http://127.0.0.1:8081</a>.</li>
+							</ul>
+						</li>
 					</ul>
 				</li>
 			</ul>
