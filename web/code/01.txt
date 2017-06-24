@@ -5,7 +5,7 @@
 	DocumentRoot "C:/xampp/htdocs/jebalialaeddine.com"
 	ServerName jebalialaeddine.dev
 	ServerAlias jebalialaeddine.dev
-	&lt;Directory"C:/xampp/htdocs/jebalialaeddine.com"&gt;
+	&lt;Directory "C:/xampp/htdocs/jebalialaeddine.com"&gt;
 		Order allow,deny
 		Allow from all
 	&lt;/Directory&gt;
