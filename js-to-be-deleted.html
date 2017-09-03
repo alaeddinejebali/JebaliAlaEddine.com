@@ -1,0 +1,876 @@
+
+
+Learning JavaScript Debugging		:	2h
+
+Learning ECMAScript 6
+
+Building a Progressive Web App		:	2h
+
+ES6: The Right Parts				:	5h
+Imperative: say to computer how to do something(expl: Ember)
+Declarative: say to computer how  (expl: Angular)
+ES6 is about adding more decalartive code => goal: make code more readable.
+Arrow functions variations
+	function f(){return 2;}
+	is translated in arrow fct to:
+	f = () => 2;
+	
+	function f(x){return 2*x;}
+	is translated in arrow fct to:
+	f = x => 2*x;
+	
+	function f(x, y){return 2*x*y;}
+	is translated in arrow fct to:
+	f = (x,y) => 2*x*y;
+	
+	function(){return 2;}
+	is translated in arrow fct to:
+	() => 2;
+	or
+	=> 2;
+	
+	function(x){return 2*x;}
+	is translated in arrow fct to:
+	x => 2;
+	
+	In case you return an object
+	x => ({a: b})
+	
+	
+var foo = x => 3;
+foo.name; //"foo" ???
+
+f( x=>3); ????
+
+
+
+var obj ={
+	id: 42,
+	foo: function foo(){
+		setTimeout(function(){
+			console.log(this.id);
+		}, 100);
+	}
+}
+obj.foo(); //undefined
+
+
+var obj ={
+	id: 42,
+	foo: function foo(){
+		var context = this;
+		setTimeout(function(){
+			console.log(context.id);
+		}, 100);
+	}
+}
+obj.foo(); //42
+
+
+var obj ={
+	id: 42,
+	foo: function foo(){
+		setTimeout(function(){
+			console.log(this.id);
+		}.bind(this), 100);
+	}
+}
+obj.foo(); //42
+
+==> Good use of AF
+Arrow fct doesn't has a "this"
+var obj ={
+	id: 42,
+	foo: function foo(){
+		setTimeout(() =>{
+			console.log(this.id);
+		}, 100);
+	}
+}
+obj.foo(); //42
+
+
+
+==> Good use of AF
+function foo(x){
+	if(x>5){
+		return x;
+	}else{
+		return 1;
+	}
+}
+
+var foo = x=> x>5?x:1;
+
+//Comma operator
+bar(3), baz(5);
+
+
+
+People use var inside if, for...etc only for stylistical purpose:
+they know that 'with hoisting', JS will mouve all variable declaration at the top
+of function so:
+function foo(x, y){
+	if(x>y){
+		var tmp = x;
+		w = y;
+		y = tmp;
+	}
+	
+	for(var i=0 ; i<10 ;i++){
+		//
+	}
+}
+is equivalent to:
+function foo(x, y){
+	var tmp, i;
+	if(x>y){
+		tmp = x;
+		w = y;
+		y = tmp;
+	}
+	
+	for(i=0 ; i<10 ;i++){
+		//
+	}
+}
+
+this is where block scope (with let) makes snce: it enforces things that we stylistical set.
+
+function foo(x, y){
+	if(x>y){
+		let tmp = x;
+		w = y;
+		y = tmp;
+	}
+	
+	for(let i=0 ; i<10 ;i++){
+		//
+	}
+}
+sot there is no sence to use let in top of function.
+function foo(x, y){
+	let tmp, i;
+	if(x>y){
+		tmp = x;
+		w = y;
+		y = tmp;
+	}
+	
+	for(i=0 ; i<10 ;i++){
+		//
+	}
+}
+
+Rember 'let' is not the new 'var'. Try to believe that there are let and var.
+
+
+function(){
+	try{
+		let z = bar();
+	}catch(){
+		// ==> z is not defined here????
+	}
+}
+
+
+
+************** Closure and exlicits blocks
+function foo(){
+	for(var i=0 ; i<10 ; i++){
+		document.getElementById('myElement').addEventListener('click', function(){
+			console.log('Clicked: i = ' + i);
+		});
+	}
+}
+foo(); //outputs 10 times Clicked: i = 10
+
+function foo(){
+	for(var i=0 ; i<10 ; i++){
+		document.getElementById('myElement').addEventListener('click', function(){
+			console.log('Clicked: i = ' + i);
+		});
+	}
+}
+foo(); //outputs 10 times Clicked: i = 0 i = 1... i=10
+
+note that this helps too
+function foo(){
+	for(let i=0 ; i<10 ; i++){
+		document.getElementById('myElement').addEventListener('click', function(){
+  var tmp = i;
+			console.log('Clicked: i = ' + tmp);
+		});
+	}
+}
+foo();
+
+
+
+See this
+if(x>y){
+	{
+		let x = 2
+	}
+}
+and 
+
+if(x>y){
+	let (x = 2)
+}
+
+
+
+
+************************const
+if(x>y){
+	{
+		const x=2;
+	}
+}
+a const is variable that can't be reassined (immutuble)
+const is not about value it's about variable!
+Not the variable cannot be changed but the variable cannot be assigned.
+This is why in Java you have const (for variable) and final (for value)
+la preuve in JS
+const y = [1, 2, 3];
+y = 2; //don't work because y can't be reassigne
+y[0] = 42; //works because const is not related to value!
+
+Disadvantage of const
+const obj = {a: 1};
+function f(t){
+   t.a = "x";
+}
+f(obj);
+console.log(obj); //outputs: {a: "x"}
+or:
+const tab = [1, 2, 3];
+function f(t){
+   tab[0] = "x";
+}
+f(tab);
+console.log(tab); //outputs: ["x", 2, 3]
+people think that tabis immutable and no function can change it.
+this is not true because you're passing a reference of tab and
+const is about variable not values
+
+Aadvantage of const
+using 
+const tab = [1, 2, 3];
+you're communicating to people that tab cannot be reassigned.
+
+If you really want to prevent people from changing the VALUE of tab, 
+you need to use Object.freeze() which available since ES5 (7 years old)
+
+const tab = Object.freeze([1, 2, 3]);
+function f(t){
+   tab[0] = "x";
+}
+f(tab);
+console.log(tab); //outputs: [1, 2, 3]
+
+see https://stackoverflow.com/questions/20014513/javascript-const-keyword
+
+
+
+************Defaults values
+in old versions:
+function f(x){
+ x = x || 42;
+}
+f(0); //42 because 0=>false
+
+
+function f(x){
+ x = x !== undefined ? x : 42
+}
+f(0); //0
+f(undefined) ????
+
+in new ES6
+
+function f(x=42){
+
+}
+f(0); //42
+f(null); //42
+f(undefined); //42
+f.apply(null, []); //42
+f.apply(null, [,]); //42
+
+Defaults values can ba a value or an expression
+function defaultId(){
+	return 123;
+}
+function f(id = defaultId()){
+
+}
+
+
+exaple of pratical real use
+function required(paramName){
+	throw "Prameter " + paramName + " is required!";
+}
+function f(id = required("id")){
+	
+}
+
+*****************Lazy expressions
+It'snot evaluated as less as needed
+
+
+
+
+
+
+********************** Gather and spread operators
+Imperative way
+befor we can get list of parameters using:
+function f(){
+console.log(arguments);
+}
+f("a", "b", "c");//outputs: ["a", "b", "c"]
+
+or
+
+function foo(){
+	var args = [].slice.call(arguments);
+	args.unshift(5);
+	console.log(args); //[5, "a", "b", "c"]
+	//we can pass those arguments to another function
+	bar.apply(null, args);
+}
+
+function bar(){
+	console.log(arguments);// [5, "a", "b", "c"]
+}
+f("a", "b", "c");
+
+
+Decalarative way
+a new operator is added to gather then spread arguments
+function foo( ...args ){
+	//args.unshift(5);
+	
+	//spread arguments to another function
+	bar( 5, ...args );
+}
+==> as you can see new ES6 feature is a declarative way (it's not like the old imperative way which says instruction to do)
+
+Oter example:
+
+function f(x, y, ...rest){
+	console.log("x:", x); //1
+	console.log("y:", y); //2
+	console.log("rest:", rest); //[3, 4, 5]
+}
+var a = [1, 2, 3];
+var b = [4, 5]
+f(...a, ...b);
+
+Using gather and spread
+let's say I have 2 arrays and I want to create a 3rd one with those 2 arrays and other values:
+*Imperative (old) way
+var x = [1, 2, 3];
+var y = [5, 6];
+var z = [0].concat(x, y, [7, 8]);
+log(z); //[0, 1, 2, 3, 5, 6, 7, 8]
+*Declarative (new) way:
+var x = [1, 2, 3];
+var y = [5, 6];
+//spread x and y
+var z = [0, ...x, ...y, 7, 8];
+log(z); //[0, 1, 2, 3, 5, 6, 7, 8]
+
+then we can regather 
+foo( 0, ...x, ...y, 7, 8 );
+or simply
+foo( 0, ...x, ...y, 7, 8 );
+
+Npow let's say that you want to convert a string to an array
+var str = "Hello";
+*Imperative (old) way:
+var tab = str.split("");
+*Declarative (new) way:
+var tab = [...str];
+tab; //["H", "e", "l", "l", "o"]
+
+Exercice:
+function foo(){}
+function bar(){
+	var a1 = [2, 4];
+	var a2 = [6, 8, 10, 12];
+	return foo();
+}
+consol.log(
+	bar().join("") === "281012"
+);
+how to makeconsole true?
+function foo(x, ignore1, ignore2, ...rest){
+	return [x, ...rest];
+}
+function bar(){
+	var a1 = [2, 4];
+	var a2 = [6, 8, 10, 12];
+	return foo(...a1, ...a2);
+}
+console.log(
+	bar().join("") === "281012"
+);
+
+
+===> To illustrate that ES6 feature are.... 
+try to write an ES6 code and see how babel translate it!
+
+
+
+
+
+********************** Array destructing
+Okay? So, really, de-structuring is an assignment operation.
+It's taking some bigger thing and assigning off its individual parts into different variables.
+
+function foo(){
+	return [1,2,3];
+}
+var tmp = foo();
+var a = tmp[1];
+var b = tmp[2];
+var c = tmp[3];
+
+Okay? So, really, de-structuring is an assignment operation.
+It's taking some bigger thing and assigning off its individual parts into different variables. 
+
+
+=> 
+
+function foo(){
+	return [1,2,3];
+}
+var [a,b,c] = foo();
+[a,b,c] is not an array
+there's no such thing as making an array the target of an assignment.
+It is always the source of an assignment because it's a value. But this isn't an array, what this is is a pattern.
+
+This is not real pattern matching but it's kind of in the same vicinity because what we're saying to Javascript is 
+I'm going to declare a pattern that describes what sort of value I'm expecting, here, and I want you to take 
+that pattern and do the work for me.
+
+ So, what we're doing is saying we are expecting an array that has at least three values here and we would like for you, 
+ Javascript engine, to take that value, deconstruct it down to it's individual parts and take the item in the first position, 
+ assign it to a variable called a.
+
+ The item in the second position to a variable called b and the item in the third position to a variable called c. 
+ It's a declaration of a pattern for assignment. Rather than telling Javascript how to do the assignment 
+ we're saying this is the end result that we want.
+
+this pattern does not have to be a fully inclusive pattern. It can be a partial pattern for the stuff that we care about. That's the point I'm trying to make.
+
+   
+Example 1
+function foo(){
+	return [1,2,3];
+}
+var [a,b,c] = foo();
+console.log([a,b,c]);
+//outputs: [1, 2, 3]
+
+ 
+   
+Example 2
+function foo(){
+	return [1,2];
+}
+var [a,b,c] = foo();
+console.log([a,b,c]);
+//outputs: [1, 2, undefined]
+
+   
+Example 3
+function foo(){
+	return [1,2,3,4];
+}
+var [a,b,c] = foo();
+console.log([a,b,c]);
+//outputs: [1, 2, 3]
+
+ 
+
+
+
+**********************  destructing and default values
+
+function foo(){
+	return [1,2,3];
+}
+var tmp = foo();
+var a = tmp[1];
+var b = tmp[2] !== undefined ? tmp[2] : 42;
+var c = tmp[3];
+ So now imagine all of that craziness added in with all of that undefined checking stuff that we'd be doing.
+ 
+function foo(){
+	return [1,2,3];
+}
+var [a,
+	b  = 42,
+	c] = foo();
+	
+	
+What if the foo() function return a null (or undefined) instead of array?
+function foo(){
+	return null;
+}
+var [a,
+	b,
+	c] = foo();
+console.log([a,b,c]);
+//outputs: Uncaught TypeError: Cannot read property 'Symbol(Symbol.iterator)' of null
+
+==> Solution:
+function foo(){
+	return null;
+}
+var [a,
+	b,
+	c] = foo() || [];
+console.log([a,b,c]);
+//outputs: [undefined, undefined, undefined]
+
+So this pattern is pretty safe. We're not likely to run into any scenario, 
+where the Or is gonna bite us and create a problem for us. It's pretty safe, because we're already saying, 
+we expect an array. If you create a function that's supposed to return false, you should expect for the pattern to fail, cause that's not a valid case.
+
+
+******
+ we're in an assignment context, exactly like we are in a parameter list, on the left-hand side of an equals. 
+ So a dot, dot, dot used on the left-hand side of an equals, anywhere on the left-hand side of an equals, 
+ is going to be treated as a gather, as a rest, as opposed to a spread, okay? So here we're saying, 
+ gather up all the rest of those values into an array, called args.
+ 
+function foo(){
+	return [1,2,3,4,5,6,7,8,9];
+}
+var [a,
+     b,
+     c,
+     ...args] = foo();
+console.log(a); //outputs: 1
+console.log(b); //outputs: 2
+console.log(c); //outputs: 3
+console.log(...args); //outputs: 4,5,6,7,8,9
+
+Note that you can declare a,b and c outsid like this:
+var a, b, c;
+[a,
+ b,
+ c,
+ ...args] = foo();
+ 
+ or you can use an object:
+ function foo(){
+	return [1,2,3,4,5,6,7,8,9];
+}
+var obj = {};
+[obj.a,
+obj.b,
+obj.c,
+...obj.args] = foo();
+console.log(obj.a); //outputs: 1
+console.log(obj.b); //outputs: 2
+console.log(obj.c); //outputs: 3
+console.log(obj.args); //outputs: [4, 5, 6, 7, 8, 9]
+
+
+
+
+**********************  Nested array destructing
+Note: args is not a keyword, it can replaced by any variable name!
+function foo(){
+	return [1, 2, 3, [4,5,6]];
+}
+var [a,
+b,
+c,
+...args] = foo();
+
+args would be an array with one item in it, the item in that one position in args would be the array 4, 5, 6.
+console.log(args); //outputs: [ [4,5,6] ]
+explanation: rgs is at the top level of our array destructuring pattern.
+What you're saying, any items that are left in my array, should all be collected up into an array called args.
+What is the only item that is left in our array? It's an array value.
+So there's going to be a single array holding that one value at position zero.
+
+what if I wanted 4, 5 and 6 individually addressable? Well, I can do array destructuring right inside of my pattern.
+
+function foo(){
+	return [1, 2, 3, [4,5,6]];
+}
+var [a,
+b,
+c,
+[
+d,
+,
+e
+]] = foo();
+console.log(d); //outputs: 4
+console.log(e); //outputs: 6
+ Array destructuring uses position, just like regular arrays use position.
+ When we talk about object destructuring you'll see those use property names to do the mapping
+
+ 
+ 
+function foo(){
+	return [1, 2, 3, [4,5,6]];
+}
+var x = [a, b] = foo();
+
+Many peaople think that x is an array of [a, b]. this is false because [a, b] are in the left side,
+so [a, b] is not an array.
+ x is [1, 2, 3, [4,5,6]]
+ That's what comes back from the assignment, okay? The destructuring assignment is not creating a 
+ new sub-array of just two items, 
+ it's breaking down the array according to a pattern.
+ 
+ 
+ Chain multiple destructing
+ [,,, 
+	[c, d]] 
+	= [a, b, ...args] 
+	=  foo();
+	
+console.log(c); //4
+console.log(c); //5
+irst the foo function returns us an array. 
+We destructure assign A to the value one, B to the value 2, and collect into args, the value 3 and the value 4,5,6.
+hen we say the whole array again is returned, and then we do another destructuring which throws away the first three 
+and then it goes into that 4,5,6 and it says C should be the value 4 and D should be the value 5. So it is possible 
+to chain multiple destructuring patterns together to accomplish that trick of accounting for the array in multiple ways
+
+
+
+
+********************** Object destructing
+function foo(){
+	return {a:1, b:2, c:3};
+}
+var tmp = {};
+var a = tmp.a;
+var b = tmp.b;
+var c = tmp.c;
+
+==>
+function foo(){
+	return {a:1, b:2, c:3};
+}
+var {
+	a: a,
+	b: b,
+	c:c
+} = foo();
+In the case where our target and our source are the same meaning we don't need to do any alias or renaming, 
+we do not have to specify them twice.
+
+var {
+	a,
+	b,
+	c
+} = foo();
+
+Note that we ca have this:
+var {
+	a = 10,
+	b: x = 42,
+	c
+} = foo();
+
+To handle the case where foo mat returns not an object:
+var {
+	a = 10,
+	b: x = 42,
+	c
+} = foo() || {};
+
+So if I wanted to use that destructured object I would just give it a name, and then I could use it for whatever I need it for? - 
+You mean you wanted to capture the object and also destructure it? - [Audience Member] Let's say I want to destructure the 
+return value from foo and then store that variable to use later? - Okay, that sentence doesn't make sense. Once it's 
+destructured, it's no longer an object. It's a bunch of individual assignments. You could capture the actual object that 
+came back from foo, and then also destructure it, but you can't do it the other way around.
+var obj;
+var {
+	a = 10,
+	b: x = 42,
+	c
+} = obj = foo() || {};
+
+
+
+
+**********************  Nested objects destructing
+function foo(){
+	return {a:1, b:2, c:3,
+			d:{
+				e: 4
+			}}
+}
+var {
+	a = 10,
+	b: x = 42,
+	c,
+	d: {
+		e
+	}
+} = foo() || {};
+
+There we have assigned off whatever was in D, which is an object, into variables X and Z, and yes that overwrote the B 
+because it's going in the top down. And we've also de-structured the contents of D's E property into an E variable. 
+So we can multiply account for a property.
+function foo(){
+	return {a:1, b:2, c:3,
+			d:{
+				e: 4
+			}}
+}
+var {
+	a = 10,
+	b: x = 42,
+	c,
+	d: x,
+	d: z,
+	d: {
+		e
+	}
+} = foo() || {};
+
+let's say that you want to declare variables beforere destructing:
+
+var var a, b, c, d, x, y;
+{
+	a = 10,
+	b: x = 42,
+	c,
+	d: x,
+	d: z,
+	d: {
+		e
+	}
+} = foo() || {};
+this is not legal syntax to start a statement with a "{}" because that's assumed to be a block.
+So in this specific case, where you don't have a declarator there, you have to wrap the whole statement in a parenthesis. 
+Just to let it know, this is an object de-structuring not a block label.
+function foo(){
+	return {a:1, b:2, c:3,
+			d:{
+				e: 4
+			}}
+}
+var a, b, c, d, x, y;
+({
+	a = 10,
+	b: x = 42,
+	c,
+	d: x,
+	d: z,
+	d: {
+		e
+	}
+} = foo() || {});
+console.log("d: ", d); //{e: 4}
+console.log("x: ", x); //{e: 4}
+console.log("z: ", z); //{e: 4}
+
+
+
+Now what id d object does not exist in foo()
+function foo(){
+	return {a:1, b:2, c:3}
+}
+var {
+	a = 10,
+	b: x = 42,
+	c,
+	d: {
+		e
+	}
+} = foo() || {};
+console.log("d:", d);
+//Uncaught TypeError: Cannot match against 'undefined' or 'null'.
+
+We would be trying to de-structure an undefined value which is an exception case, right? 
+
+So guess what we need to do here? Provide a default.
+function foo(){
+	return {a:1, b:2, c:3}
+}
+var {
+	a = 10,
+	b: x = 42,
+	c,
+	d: {
+		e
+	} = {}
+} = foo() || {};
+console.log("d:", d);
+
+You can not do here:
+		d: {
+		e
+	} || {}
+In de-structuring syntax, we need to provide a default empty object to be de-structured in the case where D doesn't come back.
+
+
+Processing order:
+{a: x = 2} = someThing
+first is it's going to go and look and see if there is an A property.
+So we're starting here in the left and it's going to say, is there an A property in the object that we're expecting? 
+If the answer is no, it's then going to go all the way over here to the right and say okay, let me go ahead and get the default value to use for that in place of that property (value 2).
+Then it's going to come back and say what is my target? 
+In this case my target is a regular lexical variable (named x), but my target could have been another pattern. 
+So it's going to go from the left to the right and then back into the middle. 
+So that is a processing order that seems a little awkward in those cases. 
+But if you think about it in terms of the imperative code that you would have written, it makes more sense. 
+Because you would have written it in that order. You would have said, go look and see if it's there. 
+If not apply the value, and then, assign it somewhere or de-structure it somewhere.
+
+
+
+*************************** Destructuring and function parameters
+Everything you saw with array destructuring and object destructuring (in the declarator sense and in the straight-up assignment sense) is exactly and identically applicable to function parameters.
+We can do array and object destructuring inside of our function parameter list.
+I could say that I am expecting to receive an array in the first argument position, the first parameter position of foo, but I want to go ahead and break that thing down, so I'm going to do an array destructuring 
+to say that the first item should be A, the second one should be B, and the third one should be C.
+function foo( [a, b, c] ){
+	console.log(a);
+	console.log(b);
+	console.log(c);
+}
+foo([1, 2, 3]);
+
+Note 1[0] equal undefined
+Whan you call foo(1,2,3)
+But we get undefined. We're not going to get the 1,2,3 that we're expecting and we're not even going to get an error here because we happen to give it a value that's it is legal to do a bracket syntax against. Null and undefined, it's not legal to do that, but the number value it is, because there's a thing in JavaScript called boxing, which is taking objects and boxing them into their object counterparts.
+==> Make a new wiki section about JS boxing
+
+
+Don't forget to give a default value in case you call foo without parameter:
+function foo( [a, b, c] = [] ){
+	console.log(a);
+	console.log(b);
+	console.log(c);
+}
+foo();
+
+
+Named arguments
+note: this is firrerent from named parameters!
+function foo({a, b=10, c}){
+	console.log(a); //outputs: 3
+	console.log(b); //outputs: 10
+	console.log(c); //outputs: 5
+}
+foo({c:5, a: 3})
+You can simulate "named arguments" here:
+	- The order of parameters is not important
+	- You can only pass the parameter you need.
